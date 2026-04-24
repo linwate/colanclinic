@@ -216,33 +216,6 @@ export const zh = {
     link: 'https://twmedpro.tw',
     cta: '前往閱讀',
     note: '涵蓋：神經痛・足底筋膜炎・五十肩・PRP・動脈硬化・糖尿病神經病變',
-    featured: [
-      {
-        title: '足底筋膜炎多久會好？早期 vs 慢性的治療時程完全不同',
-        tag: '足部疼痛',
-        url: 'https://twmedpro.tw/plantar-fasciitis-how-long-to-heal/',
-      },
-      {
-        title: '手掌麻是怎麼了？腕隧道症候群超音波診斷與治療',
-        tag: '手部神經',
-        url: 'https://twmedpro.tw/hand-numbness-causes/',
-      },
-      {
-        title: '肩膀痛看哪科？旋轉肌 vs 五十肩 vs 頸椎壓迫鑑別',
-        tag: '肩頸疼痛',
-        url: 'https://twmedpro.tw/shoulder-pain-causes-frozen-shoulder-rotator-cuff/',
-      },
-      {
-        title: 'PRP 增生療法完整解析：適應症、療程、費用一次說清楚',
-        tag: '再生醫學',
-        url: 'https://twmedpro.tw/prp-treatment-guide/',
-      },
-      {
-        title: '糖尿病神經病變腳麻燒痛？雙重夾擠症候群可能被忽略',
-        tag: '神經病變',
-        url: 'https://twmedpro.tw/diabetic-neuropathy-foot-numbness-burning-guide/',
-      },
-    ],
   },
   faq: {
     title: '常見問題',

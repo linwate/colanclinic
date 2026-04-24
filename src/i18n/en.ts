@@ -228,33 +228,6 @@ export const en = {
     link: 'https://twmedpro.tw',
     cta: 'Read Articles',
     note: 'Topics: neuropathy · plantar fasciitis · frozen shoulder · PRP · arterial health · diabetic neuropathy',
-    featured: [
-      {
-        title: 'How Long Does Plantar Fasciitis Take to Heal?',
-        tag: 'Foot Pain',
-        url: 'https://twmedpro.tw/plantar-fasciitis-how-long-to-heal/',
-      },
-      {
-        title: 'Numb Hands: Carpal Tunnel Diagnosis & Treatment',
-        tag: 'Nerve',
-        url: 'https://twmedpro.tw/hand-numbness-causes/',
-      },
-      {
-        title: 'Shoulder Pain: Rotator Cuff vs Frozen Shoulder vs Cervical',
-        tag: 'Shoulder',
-        url: 'https://twmedpro.tw/shoulder-pain-causes-frozen-shoulder-rotator-cuff/',
-      },
-      {
-        title: 'PRP Therapy Complete Guide',
-        tag: 'Regenerative',
-        url: 'https://twmedpro.tw/prp-treatment-guide/',
-      },
-      {
-        title: 'Diabetic Neuropathy: Double Crush Syndrome',
-        tag: 'Neuropathy',
-        url: 'https://twmedpro.tw/diabetic-neuropathy-foot-numbness-burning-guide/',
-      },
-    ],
   },
   faq: {
     title: 'FAQ',

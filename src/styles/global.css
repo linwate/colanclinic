@@ -1268,7 +1268,7 @@ details[open] .faq-q::after {
    ============================================================ */
 .hours {
   padding: 2.5rem 0;
-  background: var(--bg-blue);
+  background: #ece8df;
   border-top: 1px solid var(--line-soft);
 }
 .hours-note {

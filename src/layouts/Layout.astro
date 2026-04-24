@@ -176,19 +176,21 @@ const hreflangOf: Record<Lang, string> = {
     <a href="#main" class="skip-link">Skip to content</a>
     {activeAnns.length > 0 && (
       <div class="announcement-ticker" role="status" style={`--ticker-speed: ${tickerSpeed}s`}>
-        <div class="ticker-track">
-          {[0, 1, 2, 3].map((rep) => (
-            activeAnns.map((ann) => (
-              <>
-                <span
-                  class="ticker-text"
-                  style={`color: ${ann.color || '#f2f0eb'}`}
-                  {...(rep > 0 ? { 'aria-hidden': 'true' } : {})}
-                >{ann[lang]}</span>
-                <span class="ticker-sep" aria-hidden="true">・</span>
-              </>
-            ))
-          ))}
+        <div class="ticker-inner">
+          <div class="ticker-track">
+            {[0, 1, 2, 3].map((rep) => (
+              activeAnns.map((ann) => (
+                <>
+                  <span
+                    class="ticker-text"
+                    style={`color: ${ann.color || '#f2f0eb'}`}
+                    {...(rep > 0 ? { 'aria-hidden': 'true' } : {})}
+                  >{ann[lang]}</span>
+                  <span class="ticker-sep" aria-hidden="true">・</span>
+                </>
+              ))
+            ))}
+          </div>
         </div>
       </div>
     )}

@@ -223,18 +223,31 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   z-index: 200;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
-/* Track is as wide as its content naturally demands (2 copies + 2
-   large right-paddings). `width: max-content` is the magic — without
-   it, flex would constrain track to parent width and the animation
-   would collapse to "short content jumps to left then restarts". */
+/* Inner viewport — caps the scroll window on desktop at the content
+   container width (1000px), full width on mobile. The track animates
+   inside this element so content stays aligned with the page grid. */
+.ticker-inner {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+/* Track is as wide as its content naturally demands. `width: max-content`
+   is the magic — without it, flex would constrain track to parent width
+   and the animation would collapse to "short content jumps to left then
+   restarts". */
 .ticker-track {
   display: flex;
   align-items: center;
   white-space: nowrap;
   width: max-content;
-  animation: ticker-scroll var(--ticker-speed, 18s) linear infinite;
+  animation: ticker-desktop var(--ticker-speed, 18s) linear infinite;
   flex-shrink: 0;
 }
 .ticker-text {
@@ -253,6 +266,14 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   padding: 0 0.4rem;
   flex-shrink: 0;
 }
+/* Desktop: single-pass sweep across the 1000px window (enters from
+   right edge, exits past left edge). */
+@keyframes ticker-desktop {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+/* Mobile: seamless loop — track is duplicated so translating by -50%
+   lands on an identical frame with no visible seam. */
 @keyframes ticker-scroll {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
@@ -268,15 +289,18 @@ body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
   .announcement-ticker { height: 34px; }
   .announcement-ticker + .nav { top: 34px; }
   body:has(.announcement-ticker) .hero { padding-top: calc(5rem + 34px); }
+  .ticker-inner { max-width: 100%; }
   .ticker-text { font-size: 0.98rem; padding: 0 1rem; }
   .ticker-sep { font-size: 0.98rem; }
-  /* Mobile scroll is 1.3× slower so denser viewport stays readable */
+  /* Mobile uses seamless-loop keyframes (1.3× slower for readability) */
   .ticker-track {
-    animation-duration: calc(var(--ticker-speed, 18s) * 1.3);
+    animation: ticker-scroll calc(var(--ticker-speed, 18s) * 1.3) linear infinite;
   }
 }
 @media (min-width: 769px) {
-  body:has(.announcement-ticker) .hero { padding-top: calc(5rem + 36px); }
+  .announcement-ticker { height: 40px; }
+  .announcement-ticker + .nav { top: 40px; }
+  body:has(.announcement-ticker) .hero { padding-top: calc(5rem + 40px); }
 }
 
 /* Respect reduced-motion preference — no scrolling, show only the first

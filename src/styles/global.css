@@ -254,8 +254,8 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   font-family: 'Source Han Sans TC', 'Noto Sans TC', sans-serif;
   font-weight: 400;
   font-size: 0.88rem;
-  letter-spacing: 0.06em;
-  padding: 0 1.2rem;
+  letter-spacing: 0.12em;
+  padding: 0 1.6rem;
   flex-shrink: 0;
   /* Override the global mobile `span { max-width: 100% }` rule. */
   max-width: none;
@@ -263,7 +263,7 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
 .ticker-sep {
   font-size: 0.88rem;
   color: rgba(244, 241, 234, 0.55);
-  padding: 0 0.4rem;
+  padding: 0 0.9rem;
   flex-shrink: 0;
 }
 /* Desktop: single-pass sweep across the 1000px window (enters from
@@ -290,8 +290,8 @@ body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
   .announcement-ticker + .nav { top: 34px; }
   body:has(.announcement-ticker) .hero { padding-top: calc(5rem + 34px); }
   .ticker-inner { max-width: 100%; }
-  .ticker-text { font-size: 0.98rem; padding: 0 1rem; }
-  .ticker-sep { font-size: 0.98rem; }
+  .ticker-text { font-size: 0.98rem; padding: 0 1.3rem; }
+  .ticker-sep { font-size: 0.98rem; padding: 0 0.7rem; }
   /* Mobile uses seamless-loop keyframes (1.3× slower for readability) */
   .ticker-track {
     animation: ticker-scroll calc(var(--ticker-speed, 18s) * 1.3) linear infinite;

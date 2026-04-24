@@ -430,6 +430,8 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   text-transform: uppercase;
 }
 .hero-title {
+  display: block;
+  width: 100%;
   font-family: var(--sans);
   font-size: clamp(2.8rem, 5vw, 5rem);
   font-weight: 600;
@@ -440,6 +442,7 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
 }
 .hero-title-accent {
   display: block;
+  width: 100%;
   font-weight: 700;
   color: var(--cobalt);
   line-height: 1.15;
@@ -447,14 +450,22 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   margin-top: 0.15em;
 }
 .hero-sub {
+  display: block;
+  width: 100%;
+  max-width: 640px;
   font-size: 1.05rem;
   color: var(--ink-soft);
-  max-width: 640px;
   line-height: 1.9;
   margin: 0 auto 2rem 0;
   word-break: normal;
   overflow-wrap: break-word;
   white-space: normal;
+  /* Override the global `text-wrap: balance` from the typography
+     section — that rule was shrinking the first line of multi-line
+     CJK paragraphs so they ended at a uniform x-coordinate, which
+     reads as "wrapping too early". Natural wrap fills each line
+     before breaking. */
+  text-wrap: wrap;
 }
 
 /* Integrated / feature paragraph blocks — no artificial line constraints */

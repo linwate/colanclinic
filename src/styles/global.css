@@ -252,7 +252,10 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   align-items: center;
   white-space: nowrap;
   width: max-content;
-  animation: ticker-desktop 35s linear infinite;
+  /* Duration driven by `--ticker-speed` (injected per-language by
+     Layout.astro). Mobile overrides to a fixed 24s because the seamless
+     `-50%` loop has different pacing characteristics. */
+  animation: ticker-desktop var(--ticker-speed, 20s) linear infinite;
   flex-shrink: 0;
 }
 .ticker-text {

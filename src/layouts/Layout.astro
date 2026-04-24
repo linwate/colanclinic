@@ -69,6 +69,19 @@ const modalTitle = modal.title?.[lang] ?? ''
 const modalCtaLabel = modal.cta_label?.[lang] ?? ''
 const modalCtaUrl = modal.cta_url ?? ''
 
+// Per-language ticker speed (desktop only — mobile stays fixed at 24s).
+// CJK glyphs are wider than Latin, so fewer chars pass the 1000px window
+// per second. Shorter duration = more characters per second = compensates
+// for wider glyphs. English gets a longer duration so narrow Latin text
+// doesn't feel like it's flying by.
+const baseSpeed = 20
+const tickerSpeed =
+  lang === 'zh'
+    ? baseSpeed
+    : lang === 'ja'
+      ? Math.round(baseSpeed * 1.1)
+      : Math.round(baseSpeed * 1.4)
+
 const htmlLang: Record<Lang, string> = {
   zh: 'zh-Hant',
   en: 'en',
@@ -195,7 +208,7 @@ const hreflangOf: Record<Lang, string> = {
   <body>
     <a href="#main" class="skip-link">Skip to content</a>
     {activeAnns.length > 0 && (
-      <div class="announcement-ticker" role="status">
+      <div class="announcement-ticker" role="status" style={`--ticker-speed: ${tickerSpeed}s`}>
         <div class="ticker-inner">
           <div class="ticker-track">
             {[0, 1, 2, 3].map((rep) => (

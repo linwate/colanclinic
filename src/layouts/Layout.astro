@@ -17,13 +17,30 @@ const description = Astro.props.description || t.site.description
 const canonical = `https://golanclinic.com/${lang}/`
 const ogImage = 'https://golanclinic.com/images/doctor.webp'
 
-const announcement = announcementData as {
+interface Announcement {
+  id: number
   zh: string
   en: string
   ja: string
   active: boolean
+  expires_at: string | null
 }
-const announcementText = announcement.active ? announcement[lang] : ''
+
+const announcementsRaw = (announcementData as { announcements?: Announcement[] }).announcements ?? []
+const nowMs = Date.now()
+const activeAnnouncements = announcementsRaw.filter((a) => {
+  if (!a.active) return false
+  if (!a.expires_at) return true
+  const exp = Date.parse(a.expires_at)
+  return Number.isNaN(exp) ? true : exp > nowMs
+})
+const announcementTexts = activeAnnouncements
+  .map((a) => a[lang])
+  .filter((s): s is string => Boolean(s && s.trim()))
+// Join multiple announcements with a visual separator — stays one
+// `.ticker-text` node so the existing marquee CSS (padding-right: 100vw
+// on the single span) continues to produce a clean seamless loop.
+const announcementText = announcementTexts.join('　·　')
 
 const lineUrl = 'https://line.me/R/ti/p/@golanclinic'
 

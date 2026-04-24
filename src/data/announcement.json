@@ -1,6 +1,5 @@
 {
   "settings": {
-    "speed": 25,
     "active": true
   },
   "announcements": [
@@ -20,5 +19,25 @@
       "color": "#ffd700",
       "expires_at": "2026-05-08T17:39:00.000Z"
     }
-  ]
+  ],
+  "modal": {
+    "active": false,
+    "expires_at": null,
+    "title": {
+      "zh": "重要公告",
+      "en": "Important Notice",
+      "ja": "重要なお知らせ"
+    },
+    "content": {
+      "zh": "",
+      "en": "",
+      "ja": ""
+    },
+    "cta_label": {
+      "zh": "立即預約",
+      "en": "Book Now",
+      "ja": "今すぐ予約"
+    },
+    "cta_url": "https://line.me/R/ti/p/@golanclinic"
+  }
 }

@@ -18,7 +18,6 @@ const canonical = `https://golanclinic.com/${lang}/`
 const ogImage = 'https://golanclinic.com/images/doctor.webp'
 
 interface Settings {
-  speed?: number
   active?: boolean
 }
 interface Announcement {
@@ -29,9 +28,23 @@ interface Announcement {
   color?: string
   expires_at?: string | null
 }
+interface LangMap {
+  zh?: string
+  en?: string
+  ja?: string
+}
+interface Modal {
+  active?: boolean
+  expires_at?: string | null
+  title?: LangMap
+  content?: LangMap
+  cta_label?: LangMap
+  cta_url?: string
+}
 
 const settings = (announcementData as { settings?: Settings }).settings ?? {}
 const announcementsRaw = (announcementData as { announcements?: Announcement[] }).announcements ?? []
+const modal: Modal = (announcementData as { modal?: Modal }).modal ?? {}
 
 // Group toggle gates everything; then each ann is filtered by its own
 // expires_at and non-empty text in the current language.
@@ -45,7 +58,16 @@ const activeAnns: Announcement[] = groupActive
         (!a.expires_at || a.expires_at > nowIso),
     )
   : []
-const tickerSpeed = settings.speed ?? 18
+
+// Modal gate: active + not-expired + non-empty content in current lang.
+const modalContent = modal.content?.[lang]?.trim() ?? ''
+const showModal =
+  modal.active === true &&
+  (!modal.expires_at || modal.expires_at > nowIso) &&
+  modalContent !== ''
+const modalTitle = modal.title?.[lang] ?? ''
+const modalCtaLabel = modal.cta_label?.[lang] ?? ''
+const modalCtaUrl = modal.cta_url ?? ''
 
 const lineUrl = 'https://line.me/R/ti/p/@golanclinic'
 
@@ -175,7 +197,7 @@ const hreflangOf: Record<Lang, string> = {
   <body>
     <a href="#main" class="skip-link">Skip to content</a>
     {activeAnns.length > 0 && (
-      <div class="announcement-ticker" role="status" style={`--ticker-speed: ${tickerSpeed}s`}>
+      <div class="announcement-ticker" role="status">
         <div class="ticker-inner">
           <div class="ticker-track">
             {[0, 1, 2, 3].map((rep) => (
@@ -194,6 +216,53 @@ const hreflangOf: Record<Lang, string> = {
         </div>
       </div>
     )}
+
+    {showModal && (
+      <div class="modal-overlay" id="announcementModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-box">
+          <div class="modal-header">
+            <span class="modal-icon" aria-hidden="true">📢</span>
+            <h3 class="modal-title" id="modalTitle">{modalTitle}</h3>
+            <button type="button" class="modal-close" id="modalClose" aria-label="關閉公告視窗">✕</button>
+          </div>
+          <div class="modal-body">
+            <p class="modal-content">{modalContent}</p>
+          </div>
+          {modalCtaUrl && modalCtaLabel && (
+            <div class="modal-footer">
+              <a href={modalCtaUrl} class="modal-cta" target="_blank" rel="noopener">{modalCtaLabel}</a>
+            </div>
+          )}
+        </div>
+      </div>
+      <script is:inline>
+        (function () {
+          var modal = document.getElementById('announcementModal');
+          if (!modal) return;
+          // Already seen in this session — don't re-show
+          try {
+            if (sessionStorage.getItem('modalSeen')) {
+              modal.classList.add('hidden');
+              return;
+            }
+          } catch (e) { /* storage blocked — fall through to show */ }
+
+          function dismiss() {
+            modal.classList.add('hidden');
+            try { sessionStorage.setItem('modalSeen', '1'); } catch (e) {}
+          }
+          var closeBtn = document.getElementById('modalClose');
+          if (closeBtn) closeBtn.addEventListener('click', dismiss);
+          modal.addEventListener('click', function (e) {
+            if (e.target === modal) dismiss();
+          });
+          document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) dismiss();
+          });
+        })();
+      </script>
+    )}
+
     <nav class="nav" aria-label="Primary">
       <div class="nav-inner">
         <a href={`/${lang}/`} class="nav-logo">

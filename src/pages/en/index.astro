@@ -88,15 +88,18 @@ const trainingFlags = ['🇰🇷', '🇯🇵', '🇰🇷', '🌍', '🇰🇷']
   <!-- DOCTOR -->
   <section class="doctor" id="about">
     <div class="container doctor-inner">
-      <img
-        src="/images/doctor.jpg"
-        alt={`${t.doctor.title} — ${t.doctor.sub}`}
-        class="doctor-photo"
-        width="280"
-        height="360"
-        loading="lazy"
-        decoding="async"
-      />
+      <picture>
+        <source srcset="/images/doctor.webp" type="image/webp" />
+        <img
+          src="/images/doctor.jpg"
+          alt={t.doctor.title}
+          class="doctor-photo"
+          width="280"
+          height="360"
+          loading="lazy"
+          decoding="async"
+        />
+      </picture>
       <div class="doctor-text">
         <p class="eyebrow eyebrow-light">{t.doctor.sub}</p>
         <h2 class="doctor-title">{t.doctor.title}</h2>

@@ -220,7 +220,7 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   height: 36px;
   background: var(--cobalt);
   color: var(--cobalt-ink);
-  z-index: 200;
+  z-index: 400;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,7 +250,7 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   align-items: center;
   white-space: nowrap;
   width: max-content;
-  animation: ticker-desktop 25s linear infinite;
+  animation: ticker-desktop 35s linear infinite;
   flex-shrink: 0;
 }
 .ticker-text {
@@ -508,7 +508,7 @@ body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 100;
+  z-index: 300;
   background: rgba(244, 241, 234, 0.92);
   border-bottom: 1px solid var(--line-soft);
   backdrop-filter: blur(14px) saturate(140%);
@@ -525,6 +525,8 @@ body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
   align-items: center;
   gap: 0.75rem;
   min-height: var(--nav-h);
+  position: relative;
+  z-index: 301;
 }
 .nav-logo {
   display: inline-flex;
@@ -552,6 +554,8 @@ body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
   display: flex;
   gap: 1.6rem;
   align-items: center;
+  position: relative;
+  z-index: 301;
 }
 .nav-links a {
   color: var(--ink-soft);

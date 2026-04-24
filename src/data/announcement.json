@@ -14,11 +14,11 @@
     },
     {
       "id": 2,
-      "zh": "",
-      "en": "",
-      "ja": "",
+      "zh": "測試測設測試測設測試測設測試測設 2222測試測設測試測設測試測設測試測設",
+      "en": "Test setup test setup test setup test setup 2222 test setup test setup test setup test setup",
+      "ja": "テストセットアップテストセットアップテストセットアップテストセットアップ 2222テストセットアップテストセットアップテストセットアップテストセットアップ",
       "color": "#ffd700",
-      "expires_at": null
+      "expires_at": "2026-05-08T17:39:00.000Z"
     }
   ]
 }

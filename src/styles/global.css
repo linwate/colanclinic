@@ -90,6 +90,57 @@ img.emoji {
 button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
 summary { cursor: pointer; }
 
+/* ============================================================
+   CJK-friendly typography
+   — keep-all: don't break inside a Chinese/Japanese phrase
+   — text-wrap: balance: let modern browsers even out short-text line
+     lengths so headings and short paragraphs don't end with one
+     lonely word (graceful fallback on older browsers)
+   — overflow-wrap: break-word: safety net for long English/URL
+     strings so nothing overflows
+   ============================================================ */
+p, h1, h2, h3, h4, h5, h6, li, summary {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.hero-title,
+.hero-sub,
+.section-title,
+.section-sub-title,
+.section-sub-desc,
+.approach-title,
+.approach-desc,
+.approach-text,
+.approach-label,
+.problem-close,
+.problem-item,
+.service-name,
+.service-desc,
+.process-title,
+.process-desc,
+.process-sub,
+.process-type-note,
+.doctor-title,
+.doctor-desc,
+.credential-name,
+.credential-note,
+.credentials-sub,
+.credentials-col-title,
+.training-name,
+.training-desc,
+.faq-q,
+.faq-a,
+.hours-note,
+.book-title,
+.book-sub,
+.blog-desc,
+.blog-note,
+.stat-label,
+.split-item p,
+.announcement-text {
+  text-wrap: balance;
+}
+
 :focus-visible {
   outline: 2px solid var(--cobalt);
   outline-offset: 3px;
@@ -499,7 +550,7 @@ summary { cursor: pointer; }
 .approach-desc {
   font-size: 1rem;
   color: var(--ink-soft);
-  max-width: 680px;
+  max-width: 640px;
   line-height: 1.95;
   margin-bottom: 3rem;
 }

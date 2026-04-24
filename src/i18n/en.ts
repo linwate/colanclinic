@@ -6,6 +6,7 @@ export const en = {
     keywords:
       'neurology Luzhou, pain clinic, PRP, prolotherapy, hydrodissection, ultrasound-guided injection, botulinum toxin, needle knife, arterial stiffness, chronic inflammation, regenerative medicine, BMAC, bone marrow concentrate, Dr. Lin Wei-de',
   },
+  nav_logo: 'Golan Clinic',
   nav: {
     about: 'About',
     approach: 'Approach',

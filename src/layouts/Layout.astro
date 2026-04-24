@@ -170,7 +170,7 @@ const hreflangOf: Record<Lang, string> = {
       <div class="nav-inner">
         <a href={`/${lang}/`} class="nav-logo">
           <span class="nav-logo-mark" aria-hidden="true"></span>
-          <span class="nav-logo-text">{t.site.title}</span>
+          <span class="nav-logo-text">{t.nav_logo}</span>
         </a>
         <div class="nav-links">
           <a href="#approach">{t.nav.approach}</a>
@@ -198,6 +198,11 @@ const hreflangOf: Record<Lang, string> = {
       aria-label={t.nav.book}
     >
       <span class="line-float-dot" aria-hidden="true"></span>
+      <span>{t.nav.book}</span>
+    </a>
+
+    <a href="#book" class="floating-cta" aria-label={t.nav.book}>
+      <span class="floating-dot" aria-hidden="true"></span>
       <span>{t.nav.book}</span>
     </a>
 

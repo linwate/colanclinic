@@ -16,7 +16,7 @@ export const en = {
   },
   hero: {
     tag: 'Luzhou, New Taipei · Neurology · Pain · Regenerative Medicine',
-    title: 'Symptoms are gone,',
+    title: 'Symptoms are gone',
     title2: 'but is your body truly healed?',
     sub: "From a neurologist's perspective: precision ultrasound assessment to find the true source of pain and chronic inflammation, then regenerative medicine to restore function.",
     cta: "Find your pain's true source",

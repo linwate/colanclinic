@@ -39,9 +39,9 @@ export const en = {
   },
   approach: {
     tag: 'Integrated View',
-    title: 'Pain × Arterial Stiffness',
-    title2: 'Two faces of the same chronic inflammation',
-    desc: "From a neurologist's clinical perspective, stubborn pain and vascular stiffening often share one root: chronic inflammation. Golan integrates both assessments so you can see the whole picture, not just treat one symptom at a time.",
+    title: 'Pain × Chronic Inflammation × Whole-body Degeneration',
+    title2: 'Three faces of one underlying imbalance',
+    desc: "From a neurologist's clinical perspective, stubborn pain, chronic inflammation and whole-body degeneration aren't usually separate problems — they're interlinked stages on the same axis of imbalance. Golan Clinic integrates assessments across all three so you see the whole picture, not just one symptom at a time.",
     points: [
       {
         label: 'Neurology Lens',

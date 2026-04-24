@@ -428,11 +428,11 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
    Hero
    ============================================================ */
 .hero {
-  min-height: 75vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem 0 3rem;
+  padding: 4rem 0 2rem;
   position: relative;
   overflow: hidden;
   background: var(--bg);
@@ -470,14 +470,8 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   margin-bottom: 1.2rem;
   color: var(--ink);
 }
-/* Chinese: all-kanji blocks feel visually heavier than English (Latin)
-   or Japanese (mixed kana + kanji) at identical px. Trim the title
-   ~14% so the three languages read at comparable visual weight.
-   (Japanese kept at base — hiragana/kanji mix already balances.) */
-html[lang="zh-Hant"] .hero-title {
-  font-size: clamp(2.4rem, 4.3vw, 4.25rem);
-  letter-spacing: -0.005em;
-}
+/* Chinese hero-title kept at the same base size as EN/JA per user
+   preference — want visual parity across all three languages. */
 .hero-title-accent {
   display: block;
   width: 100%;
@@ -567,7 +561,7 @@ html[lang="zh-Hant"] .hero-title {
    Problem
    ============================================================ */
 .problem {
-  padding: 4rem 0;
+  padding: 3rem 0;
   background: var(--bg-blue);
   border-top: 1px solid var(--line-soft);
   border-bottom: 1px solid var(--line-soft);
@@ -611,7 +605,7 @@ html[lang="zh-Hant"] .hero-title {
    Approach (integrated view)
    ============================================================ */
 .approach {
-  padding: 4rem 0;
+  padding: 3rem 0;
   background: var(--bg);
   position: relative;
 }
@@ -688,7 +682,7 @@ html[lang="zh-Hant"] .hero-title {
    Services
    ============================================================ */
 .services {
-  padding: 4rem 0;
+  padding: 3rem 0;
   background: var(--bg-alt);
 }
 .services-sub {
@@ -819,7 +813,7 @@ html[lang="zh-Hant"] .hero-title {
    Process (first-visit flow — NHI vs Self-Pay)
    ============================================================ */
 .process {
-  padding: 4rem 0;
+  padding: 3rem 0;
   background: var(--bg);
 }
 .process-sub {
@@ -955,7 +949,7 @@ html[lang="zh-Hant"] .hero-title {
    Doctor
    ============================================================ */
 .doctor {
-  padding: 4rem 0;
+  padding: 3rem 0;
   background: var(--cobalt);
   color: var(--cobalt-ink);
   position: relative;
@@ -1015,7 +1009,7 @@ html[lang="zh-Hant"] .hero-title {
    Credentials (licenses + international training)
    ============================================================ */
 .credentials {
-  padding: 4rem 0;
+  padding: 3rem 0;
   background: var(--bg-alt);
   border-bottom: 1px solid var(--line-soft);
 }
@@ -1152,7 +1146,7 @@ a.training-item:focus-visible .training-read {
    FAQ
    ============================================================ */
 .faq {
-  padding: 4rem 0;
+  padding: 3rem 0;
   background: var(--bg-alt);
 }
 .faq-list {
@@ -1213,7 +1207,7 @@ details[open] .faq-q::after {
    Hours (clinic schedule — before booking CTA)
    ============================================================ */
 .hours {
-  padding: 3.5rem 0;
+  padding: 2.5rem 0;
   background: var(--bg-alt);
   border-top: 1px solid var(--line-soft);
 }
@@ -1256,7 +1250,7 @@ details[open] .faq-q::after {
    Book
    ============================================================ */
 .book {
-  padding: 4rem 0;
+  padding: 3rem 0;
   background: var(--bg-blue);
   text-align: center;
   position: relative;
@@ -1386,19 +1380,19 @@ details[open] .faq-q::after {
   .approach-grid { grid-template-columns: 1fr 1fr; }
 }
 
-/* Tablet+ — tightened section paddings (denser visual rhythm) */
+/* Tablet+ — compact section paddings (designed but denser) */
 @media (min-width: 769px) {
-  .hero { padding: 6rem 0 3rem; }
-  .problem { padding: 5rem 0; }
-  .approach { padding: 5rem 0; }
-  .services { padding: 5rem 0; }
-  .process { padding: 5rem 0; }
-  .doctor { padding: 5rem 0; }
-  .credentials { padding: 5rem 0; }
-  .blog-section { padding: 4rem 0; }
-  .faq { padding: 5rem 0; }
-  .hours { padding: 4rem 0; }
-  .book { padding: 5rem 0; }
+  .hero { padding: 5rem 0 2rem; }
+  .problem { padding: 4rem 0; }
+  .approach { padding: 4rem 0; }
+  .services { padding: 4rem 0; }
+  .process { padding: 4rem 0; }
+  .doctor { padding: 4rem 0; }
+  .credentials { padding: 4rem 0; }
+  .blog-section { padding: 3rem 0; }
+  .faq { padding: 4rem 0; }
+  .hours { padding: 3rem 0; }
+  .book { padding: 4rem 0; }
 }
 
 /* Desktop — layout-only overrides (grids, nav, doctor 2-col) */
@@ -1430,7 +1424,7 @@ details[open] .faq-q::after {
 
 /* Blog section */
 .blog-section {
-  padding: 3.5rem 0;
+  padding: 2.5rem 0;
   background: var(--cobalt);
   color: #f2f0eb;
 }

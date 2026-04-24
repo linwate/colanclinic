@@ -1749,6 +1749,90 @@ details[open] .faq-q::after {
   body { font-size: 17px; }
 }
 
+/* ============================================================
+   Mobile: hero title flow + text fills width
+   — disable text-wrap: balance so lines fill naturally instead
+     of being squeezed to equal-width (which caused the right-side
+     whitespace problem + the weird 3-line hero title split)
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Hero title — natural flow, no forced balance */
+  .hero-title {
+    font-size: clamp(2.4rem, 10vw, 3.2rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: wrap;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+  .hero-title-accent {
+    display: inline;
+  }
+  .hero-sub {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-wrap: wrap;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  /* Hero section padding (overrides earlier mobile block) */
+  .hero {
+    padding: 5rem 1.2rem 2.5rem;
+  }
+  .hero-inner {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* All prose — kill balance, let text naturally fill each line */
+  p,
+  .hero-sub,
+  .service-desc, .service-name,
+  .approach-desc, .approach-text, .approach-label,
+  .problem-close, .problem-item,
+  .process-desc, .process-title, .process-type-note,
+  .doctor-desc,
+  .credential-name, .credential-note, .credentials-sub,
+  .training-name, .training-desc,
+  .faq-a,
+  .hours-note,
+  .book-sub,
+  .blog-desc, .blog-note,
+  .section-sub-desc, .section-sub-title,
+  .stat-label,
+  .announcement-text {
+    text-wrap: wrap;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  /* Cards fill width, tight padding */
+  .service-card,
+  .nhi-grid .service-card,
+  .self-pay-grid .service-card,
+  .feature-grid .service-card {
+    padding: 1.5rem 1.2rem;
+    width: 100%;
+  }
+
+  /* Container + grids: use full viewport width available */
+  .container {
+    padding: 0 1.2rem;
+    width: 100%;
+  }
+  .services-grid,
+  .nhi-grid,
+  .self-pay-grid,
+  .feature-grid {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

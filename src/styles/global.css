@@ -440,6 +440,14 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   margin-bottom: 1.2rem;
   color: var(--ink);
 }
+/* Chinese: all-kanji blocks feel visually heavier than English (Latin)
+   or Japanese (mixed kana + kanji) at identical px. Trim the title
+   ~14% so the three languages read at comparable visual weight.
+   (Japanese kept at base — hiragana/kanji mix already balances.) */
+html[lang="zh-Hant"] .hero-title {
+  font-size: clamp(2.4rem, 4.3vw, 4.25rem);
+  letter-spacing: -0.005em;
+}
 .hero-title-accent {
   display: block;
   width: 100%;

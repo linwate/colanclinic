@@ -410,7 +410,7 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   background: var(--bg);
 }
 .hero-inner {
-  max-width: 1000px;
+  max-width: var(--max);
   margin: 0 auto;
   width: 100%;
   position: relative;

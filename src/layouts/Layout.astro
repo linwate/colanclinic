@@ -237,25 +237,42 @@ const hreflangOf: Record<Lang, string> = {
         (function () {
           var modal = document.getElementById('announcementModal');
           if (!modal) return;
-          // Already seen in this session — don't re-show
+          var closeBtn = document.getElementById('modalClose');
+
+          // Per-content gating: sessionStorage key is derived from the
+          // modal body text, so updating the announcement text invalidates
+          // prior dismissals and visitors see the new version once.
+          var contentEl = modal.querySelector('.modal-content');
+          var modalContent = (contentEl && contentEl.textContent ? contentEl.textContent.trim() : '');
+          var contentKey = 'modalSeen_' + btoa(encodeURIComponent(modalContent)).slice(0, 16);
+
           try {
-            if (sessionStorage.getItem('modalSeen')) {
+            if (sessionStorage.getItem(contentKey)) {
               modal.classList.add('hidden');
-              return;
             }
           } catch (e) { /* storage blocked — fall through to show */ }
 
-          function dismiss() {
+          // Admin preview: `?modal=force` bypasses the gate and clears the
+          // key so future testing in the same tab also shows the modal.
+          try {
+            var forceShow = new URLSearchParams(window.location.search).has('modal');
+            if (forceShow) {
+              modal.classList.remove('hidden');
+              sessionStorage.removeItem(contentKey);
+            }
+          } catch (e) {}
+
+          function closeModal() {
             modal.classList.add('hidden');
-            try { sessionStorage.setItem('modalSeen', '1'); } catch (e) {}
+            try { sessionStorage.setItem(contentKey, '1'); } catch (e) {}
           }
-          var closeBtn = document.getElementById('modalClose');
-          if (closeBtn) closeBtn.addEventListener('click', dismiss);
+
+          if (closeBtn) closeBtn.addEventListener('click', closeModal);
           modal.addEventListener('click', function (e) {
-            if (e.target === modal) dismiss();
+            if (e.target === modal) closeModal();
           });
           document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && !modal.classList.contains('hidden')) dismiss();
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
           });
         })();
       </script>

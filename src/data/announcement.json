@@ -7,6 +7,14 @@
       "ja": "テストテスト",
       "active": true,
       "expires_at": "2026-05-29T17:07:00.000Z"
+    },
+    {
+      "id": 1777050500627,
+      "zh": "golanclinic 測試測試02",
+      "en": "golanclinic Test Test 02",
+      "ja": "golanclinic テストテスト02",
+      "active": true,
+      "expires_at": "2026-05-25T17:07:00.000Z"
     }
   ]
 }

@@ -18,7 +18,7 @@ export const en = {
     tag: 'Luzhou, New Taipei · Neurology · Pain · Regenerative Medicine',
     title: 'Symptoms are gone',
     title2: 'but is your body truly healed?',
-    sub: "From a neurologist's perspective: precision ultrasound assessment to find the true source of pain and chronic inflammation, then regenerative medicine to restore function.",
+    sub: 'Treated but still relapsing? Tests done but no answers found? Golan Clinic combines Pain Medicine and Neurology with ultrasound precision, to find where it truly hurts.',
     cta: "Find your pain's true source",
   },
   stats: [

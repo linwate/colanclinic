@@ -155,6 +155,36 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   text-wrap: balance;
 }
 
+/* ============================================================
+   text-wrap: balance override
+   — Chinese paragraphs look "wrapped too early" under `balance`
+     because it equalises line lengths. For body text we want
+     the first line to fill naturally, then break.
+   — Applied across all desktop viewports (mobile already has
+     its own `wrap` override in the mobile block).
+   — display: block + width: 100% as defensive fallback in case
+     any selector inadvertently becomes inline via future edits.
+   ============================================================ */
+.hero-sub,
+.hero-title,
+.hero-title-accent,
+.problem-close,
+.doctor-desc,
+.book-sub,
+.book-title,
+.blog-desc,
+.blog-note,
+.service-desc,
+.process-desc,
+.faq-a,
+.hours-note,
+.approach-desc,
+.section-title {
+  text-wrap: wrap;
+  display: block;
+  width: 100%;
+}
+
 :focus-visible {
   outline: 2px solid var(--cobalt);
   outline-offset: 3px;

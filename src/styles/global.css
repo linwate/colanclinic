@@ -52,7 +52,20 @@ html[lang="ja"] body {
 /* ============================================================
    Reset
    ============================================================ */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+/* ============================================================
+   Global overflow guard — prevent any element from forcing
+   horizontal scroll on narrow viewports (375px and below)
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+* { margin: 0; padding: 0; }
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
 html {
   scroll-behavior: smooth;
@@ -69,7 +82,6 @@ body {
   font-weight: 400;
   line-height: 1.9;
   letter-spacing: 0.01em;
-  overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1622,6 +1634,99 @@ details[open] .faq-q::after {
 /* Very small phones — self-pay grid collapses to single column */
 @media (max-width: 400px) {
   .self-pay-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   Mobile overflow fix — belt-and-suspenders layer for ≤768px
+   Last-in-source so these rules win the cascade.
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Section heading + body prose — prevent long lines overflowing */
+  h1, h2, h3, h4, p, span, a {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+  .section-title {
+    font-size: clamp(1.4rem, 5.5vw, 2rem);
+    word-break: keep-all;
+  }
+
+  /* Container enforcement */
+  .container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Nav — logo truncates, CTA doesn't shrink, no horizontal overflow */
+  .nav-inner { width: 100%; overflow: hidden; }
+  .nav-logo { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .nav-links { display: none; }
+  .lang-switch { flex-shrink: 0; }
+  .nav-mobile-cta { flex-shrink: 0; white-space: nowrap; }
+
+  /* Hero — decorative line hidden, sub/title don't stretch beyond viewport */
+  .hero-line { display: none; }
+  .hero-sub { max-width: 100%; }
+
+  /* Stats bar — enforce 2-col, no overflow */
+  .stats-grid { grid-template-columns: repeat(2, 1fr); width: 100%; overflow: hidden; }
+
+  /* Services — enforce widths */
+  .services-grid,
+  .nhi-grid,
+  .self-pay-grid,
+  .feature-grid {
+    width: 100%;
+    overflow: hidden;
+  }
+  .nhi-grid { grid-template-columns: 1fr; }
+  .self-pay-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Process — stacked tabs, split collapses */
+  .process-type-tabs { flex-direction: column; width: 100%; }
+  .process-type { width: 100%; }
+  .process-split { grid-template-columns: 1fr; }
+
+  /* Doctor — 1-column stack, photo fills width */
+  .doctor-inner { grid-template-columns: 1fr; width: 100%; }
+  .doctor-photo { width: 100%; height: 250px; }
+  .doctor-desc { max-width: 100%; }
+
+  /* Credentials — 1-column, training items don't overflow */
+  .credentials-grid { grid-template-columns: 1fr; width: 100%; }
+  a.training-item { margin: 0; padding: 1rem 0; width: 100%; }
+  .training-name { word-break: keep-all; overflow-wrap: break-word; }
+
+  /* Blog */
+  .blog-inner {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1.2rem;
+  }
+
+  /* FAQ / Book / Hours — kill desktop max-widths */
+  .faq-a { max-width: 100%; }
+  .book-sub { max-width: 100%; }
+  .hours-grid { max-width: 100%; }
+
+  /* Announcement bar — long text truncates instead of wrapping awkwardly */
+  .announcement-bar { padding: 0.5rem 1.2rem; }
+  .announcement-inner { font-size: 0.82rem; gap: 0.5rem; }
+  .announcement-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* Footer — vertical stack, separators hidden */
+  .footer-inner {
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.75rem;
+  }
+  .footer-divider { display: none; }
 }
 
 /* Reduced motion */

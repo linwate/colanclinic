@@ -296,7 +296,7 @@ export const en = {
     sub: "If your pain has lasted more than 3 months, previous treatments haven't worked, or you want to find the real cause. Start with a precision evaluation.",
     cta: 'Book via LINE',
     addr: "No. 6, Ln. 58, Sec. 2, Yong'an N. Rd., Luzhou Dist., New Taipei City",
-    hours: 'Mon–Sat · NHI neurology + self-pay by appointment',
+    hours: 'Mon – Sat｜Pain Medicine・Neurology NHI Clinic・Private Appointments by Reservation',
     mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
     mapLabel: '📍 Open Google Maps Navigation',
   },

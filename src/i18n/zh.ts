@@ -248,7 +248,7 @@ export const zh = {
     sub: '如果你的疼痛超過 3 個月、治療過但沒好、想找到真正原因，建議先做一次精準評估。',
     cta: 'LINE 預約',
     addr: '新北市蘆洲區永安北路二段 58 巷 6 號',
-    hours: '週一至週六｜神經科健保門診・自費項目請先預約',
+    hours: '週一至週六｜疼痛科・神經科健保門診・自費項目請先預約',
     mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
     mapLabel: '📍 開啟 Google 地圖導航',
   },

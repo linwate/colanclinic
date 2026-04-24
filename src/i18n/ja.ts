@@ -286,7 +286,7 @@ export const ja = {
     sub: '痛みが3ヶ月以上続いている、治療を受けても改善しない、本当の原因を知りたい。そんな方は、まず精密評価からお始めください。',
     cta: 'LINEで予約',
     addr: '台湾 新北市蘆洲区永安北路二段58巷6号',
-    hours: '月〜土｜神経科保険外来・自費診療は事前予約制',
+    hours: '月〜土｜疼痛科・神経科 健康保険外来・自費診療は予約制',
     mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
     mapLabel: '📍 Google マップで経路案内',
   },

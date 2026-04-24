@@ -246,6 +246,24 @@ const trainingFlags = ['🇰🇷', '🇯🇵', '🇰🇷', '🌍', '🇰🇷']
         <span class="blog-label">篇專業文章</span>
       </div>
     </div>
+    {t.blog.featured && (
+      <div class="container">
+        <div class="blog-featured">
+          {t.blog.featured.map((article) => (
+            <a
+              href={article.url}
+              class="blog-card"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="blog-card-tag">{article.tag}</span>
+              <p class="blog-card-title">{article.title}</p>
+              <span class="blog-card-arrow" aria-hidden="true">→</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
   </section>
 
   <!-- FAQ -->

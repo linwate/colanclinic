@@ -1717,6 +1717,82 @@ details[open] .faq-q::after {
   letter-spacing: 0.1em;
 }
 
+/* Featured article cards — border-based dividers. */
+.blog-featured {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin: 2.5rem auto 0;
+  width: 100%;
+  max-width: 1000px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.blog-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: background 0.2s;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+.blog-card:last-child { border-right: none; }
+.blog-card:hover,
+.blog-card:focus-visible {
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+.blog-card-tag {
+  font-size: 0.72rem;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Source Han Sans TC', 'Noto Sans TC', sans-serif;
+}
+.blog-card-title {
+  font-size: 0.9rem;
+  color: #f2f0eb;
+  line-height: 1.65;
+  flex: 1;
+  margin: 0;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+.blog-card-arrow {
+  font-size: 0.82rem;
+  color: rgba(242, 240, 235, 0.35);
+  transition: color 0.2s, transform 0.2s;
+  display: inline-block;
+  align-self: flex-end;
+}
+.blog-card:hover .blog-card-arrow,
+.blog-card:focus-visible .blog-card-arrow {
+  color: var(--gold);
+  transform: translateX(4px);
+}
+@media (max-width: 900px) {
+  .blog-featured { grid-template-columns: repeat(2, 1fr); }
+  .blog-card { border-right: 1px solid rgba(255, 255, 255, 0.12); }
+  .blog-card:nth-child(even) { border-right: none; }
+  .blog-card:last-child { border-right: none; }
+}
+@media (max-width: 768px) {
+  .blog-featured {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .blog-card {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 1.2rem;
+  }
+  .blog-card:last-child { border-bottom: none; }
+}
+
 @media (max-width: 768px) {
   .blog-inner {
     flex-direction: column;

@@ -222,6 +222,33 @@ export const ja = {
     link: 'https://twmedpro.tw',
     cta: '記事を読む',
     note: '神経痛・足底筋膜炎・五十肩・PRP・動脈硬化・糖尿病性神経障害',
+    featured: [
+      {
+        title: '足底筋膜炎はどのくらいで治る？',
+        tag: '足の痛み',
+        url: 'https://twmedpro.tw/plantar-fasciitis-how-long-to-heal/',
+      },
+      {
+        title: '手のしびれ：手根管症候群の診断と治療',
+        tag: '神経',
+        url: 'https://twmedpro.tw/hand-numbness-causes/',
+      },
+      {
+        title: '肩の痛み：腱板断裂vs五十肩vs頸椎の鑑別',
+        tag: '肩・首',
+        url: 'https://twmedpro.tw/shoulder-pain-causes-frozen-shoulder-rotator-cuff/',
+      },
+      {
+        title: 'PRP療法完全ガイド',
+        tag: '再生医療',
+        url: 'https://twmedpro.tw/prp-treatment-guide/',
+      },
+      {
+        title: '糖尿病性神経障害とダブルクラッシュ症候群',
+        tag: '神経障害',
+        url: 'https://twmedpro.tw/diabetic-neuropathy-foot-numbness-burning-guide/',
+      },
+    ],
   },
   faq: {
     title: 'よくある質問',

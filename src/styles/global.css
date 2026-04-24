@@ -206,7 +206,9 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
 /* ============================================================
    Announcement ticker (admin-controlled, scrolls above the nav)
    — Fixed at the very top (36px desktop / 32px mobile)
-   — Nav shifts down to accommodate via `.announcement-ticker + .nav`
+   — Nav shifts down to accommodate via `body:has(.announcement-ticker) .nav`
+     (adjacency-sibling `+` would break when intervening DOM nodes like
+     the modal overlay are rendered between ticker and nav)
    — Hero padding-top pushes down via body:has() so the first
      content sits below the nav even when the ticker is visible
    — Close button calls `.remove()` so :has() and + selectors
@@ -287,14 +289,14 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
 }
 
 /* When ticker is present, push nav down */
-.announcement-ticker + .nav { top: 36px; }
+body:has(.announcement-ticker) .nav { top: 36px; }
 
 /* Hero gets extra top padding when ticker exists */
 body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
 
 @media (max-width: 768px) {
   .announcement-ticker { height: 34px; }
-  .announcement-ticker + .nav { top: 34px; }
+  body:has(.announcement-ticker) .nav { top: 34px; }
   body:has(.announcement-ticker) .hero { padding-top: calc(5rem + 34px); }
   .ticker-inner { max-width: 100%; }
   .ticker-text { font-size: 0.98rem; padding: 0 1.3rem; }
@@ -306,7 +308,7 @@ body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
 }
 @media (min-width: 769px) {
   .announcement-ticker { height: 40px; }
-  .announcement-ticker + .nav { top: 40px; }
+  body:has(.announcement-ticker) .nav { top: 40px; }
   body:has(.announcement-ticker) .hero { padding-top: calc(5rem + 40px); }
 }
 

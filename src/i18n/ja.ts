@@ -234,5 +234,7 @@ export const ja = {
     cta: 'LINEで予約',
     addr: '台湾 新北市蘆洲区永安北路二段58巷6号',
     hours: '月〜土｜神経科保険外来・自費診療は事前予約制',
+    mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
+    mapLabel: '📍 Google マップで経路案内',
   },
 }

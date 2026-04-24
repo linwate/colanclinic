@@ -244,5 +244,7 @@ export const en = {
     cta: 'Book via LINE',
     addr: "No. 6, Ln. 58, Sec. 2, Yong'an N. Rd., Luzhou Dist., New Taipei City",
     hours: 'Mon–Sat · NHI neurology + self-pay by appointment',
+    mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
+    mapLabel: '📍 Open Google Maps Navigation',
   },
 }

@@ -196,5 +196,7 @@ export const zh = {
     cta: 'LINE 預約',
     addr: '新北市蘆洲區永安北路二段 58 巷 6 號',
     hours: '週一至週六｜神經科健保門診・自費項目請先預約',
+    mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
+    mapLabel: '📍 開啟 Google 地圖導航',
   },
 }

@@ -32,7 +32,7 @@
   --nav-h: 60px;
   --radius: 3px;
   --radius-lg: 6px;
-  --max: 1120px;
+  --max: 1000px;
   --pad-x: 1.25rem;
 
   /* type */
@@ -431,6 +431,7 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   letter-spacing: 0.01em;
   margin-bottom: 1.2rem;
   color: var(--ink);
+  max-width: 800px;
 }
 .hero-title-accent {
   color: var(--cobalt);
@@ -1188,6 +1189,8 @@ details[open] .faq-q::after {
   flex-direction: column;
   align-items: center;
   gap: 1.15rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .book-title {
   font-family: var(--sans);
@@ -1724,6 +1727,26 @@ details[open] .faq-q::after {
     font-size: 0.75rem;
   }
   .footer-divider { display: none; }
+}
+
+/* ============================================================
+   Wide-desktop breathing room
+   — at 1200px+ give hero a bit more side padding to avoid edges
+   — at 1600px+ bump the max container back to 1100 and raise
+     base font-size slightly for comfortable reading on large
+     displays
+   ============================================================ */
+@media (min-width: 1200px) {
+  .hero {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .hero-inner { padding-left: 1rem; }
+}
+
+@media (min-width: 1600px) {
+  :root { --max: 1100px; }
+  body { font-size: 17px; }
 }
 
 /* Reduced motion */

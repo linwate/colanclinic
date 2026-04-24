@@ -277,5 +277,6 @@ export const en = {
     hours: 'Mon – Sat｜Pain Medicine・Neurology NHI Clinic・Private Appointments by Reservation',
     mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
     mapLabel: '📍 Open Google Maps Navigation',
+    qrLabel: 'Scan to add LINE',
   },
 }

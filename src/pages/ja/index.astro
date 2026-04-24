@@ -292,6 +292,10 @@ const trainingFlags = ['🇰🇷', '🇯🇵', '🇰🇷', '🌍', '🇰🇷']
       >
         {t.book.cta}
       </a>
+      <figure class="book-qr">
+        <img src="/images/line-qr.png" alt={t.book.qrLabel} width="180" height="180" loading="lazy" />
+        <figcaption>{t.book.qrLabel}</figcaption>
+      </figure>
       <p class="book-addr">{t.book.addr}</p>
       <a href={t.book.mapLink} class="map-link" target="_blank" rel="noopener">
         {t.book.mapLabel}

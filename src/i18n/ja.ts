@@ -267,5 +267,6 @@ export const ja = {
     hours: '月〜土｜疼痛科・神経科 健康保険外来・自費診療は予約制',
     mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
     mapLabel: '📍 Google マップで経路案内',
+    qrLabel: 'QRコードでLINE友だち追加',
   },
 }

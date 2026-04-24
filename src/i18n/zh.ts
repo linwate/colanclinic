@@ -265,5 +265,6 @@ export const zh = {
     hours: '週一至週六｜疼痛科・神經科健保門診・自費項目請先預約',
     mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
     mapLabel: '📍 開啟 Google 地圖導航',
+    qrLabel: '掃 QR 加 LINE 好友',
   },
 }

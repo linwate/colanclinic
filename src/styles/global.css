@@ -1207,7 +1207,7 @@ a.training-item:focus-visible .training-read {
    ============================================================ */
 .faq {
   padding: 3rem 0;
-  background: var(--bg-alt);
+  background: var(--bg);
 }
 .faq-list {
   display: flex;
@@ -1268,7 +1268,7 @@ details[open] .faq-q::after {
    ============================================================ */
 .hours {
   padding: 2.5rem 0;
-  background: var(--bg-alt);
+  background: var(--bg-blue);
   border-top: 1px solid var(--line-soft);
 }
 .hours-note {

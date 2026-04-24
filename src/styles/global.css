@@ -585,9 +585,11 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
 .approach-desc {
   font-size: 1rem;
   color: var(--ink-soft);
-  max-width: 640px;
-  line-height: 1.95;
+  max-width: 100%;
+  line-height: 1.9;
   margin-bottom: 3rem;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 .approach-grid {
   display: grid;
@@ -623,10 +625,14 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   margin-bottom: 0.65rem;
   letter-spacing: 0.02em;
 }
+.approach-card p,
 .approach-text {
   font-size: 0.95rem;
   color: var(--ink-soft);
   line-height: 1.85;
+  max-width: 100%;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 /* ============================================================

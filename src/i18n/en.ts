@@ -1,10 +1,10 @@
 export const en = {
   site: {
-    title: 'Golan Clinic',
+    title: 'Golan Clinic | Neurology · Pain Medicine · Regenerative Therapy | Luzhou, New Taipei',
     description:
-      'Neurology · Pain Medicine · Regenerative Therapy · Integrated Arterial Stiffness & Chronic Inflammation Evaluation — Luzhou, New Taipei',
+      'Golan Clinic in Luzhou, New Taipei. Specializing in ultrasound-guided injection, PRP therapy, hydrodissection, and BMAC regenerative medicine. NHI and private appointments available. Dr. Lin Wei-de.',
     keywords:
-      'neurology Luzhou, pain clinic, PRP, prolotherapy, hydrodissection, ultrasound-guided injection, botulinum toxin, needle knife, arterial stiffness, chronic inflammation, regenerative medicine, Dr. Lin Wei-de',
+      'neurology Luzhou, pain clinic, PRP, prolotherapy, hydrodissection, ultrasound-guided injection, botulinum toxin, needle knife, arterial stiffness, chronic inflammation, regenerative medicine, BMAC, bone marrow concentrate, Dr. Lin Wei-de',
   },
   nav: {
     about: 'About',

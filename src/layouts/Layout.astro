@@ -153,17 +153,19 @@ const hreflangOf: Record<Lang, string> = {
   <body>
     <a href="#main" class="skip-link">Skip to content</a>
     {announcementText && (
-      <div class="announcement-bar" role="status">
-        <div class="announcement-inner">
-          <span class="announcement-icon" aria-hidden="true">📢</span>
-          <span class="announcement-text">{announcementText}</span>
-          <button
-            type="button"
-            class="announcement-close"
-            aria-label="關閉公告"
-            onclick="this.closest('.announcement-bar').style.display='none'"
-          >✕</button>
+      <div class="announcement-ticker" role="status">
+        <div class="ticker-track">
+          <span class="ticker-text">{announcementText}</span>
+          <span class="ticker-sep" aria-hidden="true">・</span>
+          <span class="ticker-text">{announcementText}</span>
+          <span class="ticker-sep" aria-hidden="true">・</span>
         </div>
+        <button
+          type="button"
+          class="ticker-close"
+          aria-label="關閉公告"
+          onclick="this.closest('.announcement-ticker').remove()"
+        >✕</button>
       </div>
     )}
     <nav class="nav" aria-label="Primary">

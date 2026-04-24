@@ -1,6 +1,6 @@
 {
   "settings": {
-    "active": true
+    "active": false
   },
   "announcements": [
     {
@@ -21,7 +21,7 @@
     }
   ],
   "modal": {
-    "active": true,
+    "active": false,
     "expires_at": "2026-05-08T17:54:00.000Z",
     "title": {
       "zh": "重要公告",

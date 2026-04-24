@@ -5,11 +5,11 @@
   "announcements": [
     {
       "id": 1,
-      "zh": "",
+      "zh": "留空中文內容代表不顯示此則公告。",
       "en": "",
       "ja": "",
-      "color": "#ffffff",
-      "expires_at": "2026-04-28T17:36:00.000Z"
+      "color": "#ffd700",
+      "expires_at": "2026-05-07T17:36:00.000Z"
     },
     {
       "id": 2,

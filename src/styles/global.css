@@ -225,22 +225,27 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   align-items: center;
   overflow: hidden;
 }
+/* Track is as wide as its content naturally demands (2 copies + 2
+   large right-paddings). `width: max-content` is the magic — without
+   it, flex would constrain track to parent width and the animation
+   would collapse to "short content jumps to left then restarts". */
 .ticker-track {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  animation: ticker-scroll 24s linear infinite;
+  width: max-content;
+  animation: ticker-scroll 30s linear infinite;
   flex-shrink: 0;
 }
 .ticker-text {
   font-size: 0.85rem;
   letter-spacing: 0.04em;
-  padding: 0 1rem;
-}
-.ticker-sep {
-  color: rgba(244, 241, 234, 0.35);
-  font-size: 0.75rem;
-  padding: 0 0.25rem;
+  padding-left: 1rem;
+  /* 50vw gap after each copy → guarantees track > 2× viewport so
+     the marquee is continuous on any screen size, regardless of how
+     short/long the announcement text is. */
+  padding-right: 50vw;
+  flex-shrink: 0;
 }
 .ticker-close {
   background: rgba(0, 0, 0, 0.15);

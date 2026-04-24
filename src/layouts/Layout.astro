@@ -1,0 +1,128 @@
+---
+import '../styles/global.css'
+import { useTranslations, type Lang, languages } from '../i18n'
+
+export interface Props {
+  lang: Lang
+  title?: string
+}
+
+const { lang, title } = Astro.props
+const t = useTranslations(lang)
+const pageTitle = title ? `${title}｜${t.site.title}` : t.site.title
+const lineUrl = 'https://line.me/R/ti/p/@golanclinic'
+
+const htmlLang: Record<Lang, string> = {
+  zh: 'zh-Hant',
+  en: 'en',
+  ja: 'ja',
+}
+const ogLocale: Record<Lang, string> = {
+  zh: 'zh_TW',
+  en: 'en_US',
+  ja: 'ja_JP',
+}
+const langLabel: Record<Lang, string> = {
+  zh: '中',
+  en: 'EN',
+  ja: '日',
+}
+const langOrder: Lang[] = ['zh', 'en', 'ja']
+const otherLangs = langOrder.filter((l) => l !== lang) as Lang[]
+const hreflangOf: Record<Lang, string> = {
+  zh: 'zh-Hant',
+  en: 'en',
+  ja: 'ja',
+}
+---
+
+<!DOCTYPE html>
+<html lang={htmlLang[lang]}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1a2f6e" />
+    <meta name="description" content={t.site.description} />
+    <meta name="keywords" content={t.site.keywords} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={t.site.description} />
+    <meta property="og:locale" content={ogLocale[lang]} />
+    <meta property="og:site_name" content={t.site.title} />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    {Object.keys(languages).map((l) => (
+      <link rel="alternate" hreflang={hreflangOf[l as Lang]} href={`/${l}/`} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href="/zh/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{pageTitle}</title>
+    <!-- Twemoji: replace native emoji with SVG for consistent rendering on all OS.
+         Default MaxCDN base is dead, so we pin `base` to jsDelivr. -->
+    <script src="https://cdn.jsdelivr.net/npm/twemoji@14/dist/twemoji.min.js" crossorigin="anonymous" is:inline></script>
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', function () {
+        if (window.twemoji) {
+          window.twemoji.parse(document.body, {
+            folder: 'svg',
+            ext: '.svg',
+            base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/',
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <nav class="nav" aria-label="Primary">
+      <div class="nav-inner">
+        <a href={`/${lang}/`} class="nav-logo">
+          <span class="nav-logo-mark" aria-hidden="true"></span>
+          <span class="nav-logo-text">{t.site.title}</span>
+        </a>
+        <div class="nav-links">
+          <a href="#approach">{t.nav.approach}</a>
+          <a href="#services">{t.nav.services}</a>
+          <a href="#about">{t.nav.about}</a>
+          <a href="#faq">{t.nav.faq}</a>
+          <a href="#book" class="nav-cta">{t.nav.book}</a>
+        </div>
+        <a href="#book" class="nav-mobile-cta">{t.nav.book}</a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          {otherLangs.map((l) => (
+            <a href={`/${l}/`} hreflang={hreflangOf[l]} aria-label={`Switch to ${l}`}>{langLabel[l]}</a>
+          ))}
+        </div>
+      </div>
+    </nav>
+
+    <main id="main"><slot /></main>
+
+    <a
+      href={lineUrl}
+      class="line-float"
+      target="_blank"
+      rel="noopener"
+      aria-label={t.nav.book}
+    >
+      <span class="line-float-dot" aria-hidden="true"></span>
+      <span>{t.nav.book}</span>
+    </a>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>© {new Date().getFullYear()} {t.site.title}</span>
+        <span class="footer-divider" aria-hidden="true">·</span>
+        <span>{t.book.addr}</span>
+        <span class="footer-divider" aria-hidden="true">·</span>
+        <span>{t.book.hours}</span>
+      </div>
+    </footer>
+  </body>
+</html>

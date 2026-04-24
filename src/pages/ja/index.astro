@@ -1,0 +1,194 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { useTranslations } from '../../i18n'
+
+const lang = 'ja'
+const t = useTranslations(lang)
+type Scope = keyof typeof t.services.scopes
+
+const trainingFlags = ['🇰🇷', '🇯🇵', '🇰🇷', '🌍', '🇰🇷']
+---
+
+<Layout lang={lang}>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-tag">{t.hero.tag}</p>
+      <h1 class="hero-title">
+        {t.hero.title}<br />
+        <span class="hero-title-accent">{t.hero.title2}</span>
+      </h1>
+      <p class="hero-sub">{t.hero.sub}</p>
+      <a href="#book" class="btn-primary">{t.hero.cta}</a>
+    </div>
+    <div class="hero-line" aria-hidden="true"></div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem">
+    <div class="container">
+      <h2 class="section-title">{t.problem.title}</h2>
+      <ul class="problem-list">
+        {t.problem.items.map((item) => (
+          <li class="problem-item">
+            <span class="problem-dot" aria-hidden="true"></span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+      <p class="problem-close">{t.problem.close}</p>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="approach" id="approach">
+    <div class="container">
+      <p class="eyebrow">{t.approach.tag}</p>
+      <h2 class="approach-title">
+        {t.approach.title}
+        <span class="approach-title-accent">{t.approach.title2}</span>
+      </h2>
+      <p class="approach-desc">{t.approach.desc}</p>
+      <div class="approach-grid">
+        {t.approach.points.map((p, i) => (
+          <div class="approach-card">
+            <span class="approach-num">{String(i + 1).padStart(2, '0')}</span>
+            <h3 class="approach-label">{p.label}</h3>
+            <p class="approach-text">{p.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">{t.services.title}</h2>
+      <p class="services-sub">{t.services.sub}</p>
+      {t.services.groups.map((group) => (
+        <div class="section-block">
+          <h3 class="section-sub-title">{group.title}</h3>
+          <p class="section-sub-desc">{group.desc}</p>
+          <div class={group.key === 'nhi' ? 'nhi-grid' : group.key === 'private' ? 'self-pay-grid' : 'feature-grid'}>
+            {group.items.map((s) => (
+              <article class="service-card">
+                <span class={`service-badge service-badge-${s.scope}`}>
+                  {t.services.scopes[s.scope as Scope]}
+                </span>
+                <h4 class="service-name">{s.name}</h4>
+                <p class="service-desc">{s.desc}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- DOCTOR -->
+  <section class="doctor" id="about">
+    <div class="container doctor-inner">
+      <img
+        src="/images/doctor.jpg"
+        alt={`${t.doctor.title} — ${t.doctor.sub}`}
+        class="doctor-photo"
+        width="280"
+        height="360"
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="doctor-text">
+        <p class="eyebrow eyebrow-light">{t.doctor.sub}</p>
+        <h2 class="doctor-title">{t.doctor.title}</h2>
+        <p class="doctor-desc">{t.doctor.desc}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section class="credentials" id="credentials">
+    <div class="container">
+      <h2 class="section-title">{t.credentials.title}</h2>
+      <p class="credentials-sub">{t.credentials.sub}</p>
+      <div class="credentials-grid">
+        <div class="credentials-col">
+          <h3 class="credentials-col-title">{t.credentials.licenses.title}</h3>
+          <div class="credential-list">
+            {t.credentials.licenses.items.map((item) => (
+              <div class="credential-badge">
+                <p class="credential-name">{item.name}</p>
+                <p class="credential-note">{item.note}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div class="credentials-col">
+          <h3 class="credentials-col-title">{t.credentials.training.title}</h3>
+          <div class="training-list">
+            {t.credentials.training.items.map((item, i) => (
+              <div class="training-item">
+                <span class="training-country" aria-hidden="true">{trainingFlags[i]}</span>
+                <div class="training-body">
+                  <p class="training-name">{item.name}</p>
+                  <p class="training-desc">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="blog-section" id="blog">
+    <div class="container blog-inner">
+      <div class="blog-text">
+        <h2 class="section-title">{t.blog.title}</h2>
+        <p class="blog-desc">{t.blog.desc}</p>
+        <p class="blog-note">{t.blog.note}</p>
+        <a href={t.blog.link} class="btn-primary" target="_blank" rel="noopener">
+          {t.blog.cta} →
+        </a>
+      </div>
+      <div class="blog-stat">
+        <span class="blog-number">200+</span>
+        <span class="blog-label">記事</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">{t.faq.title}</h2>
+      <div class="faq-list">
+        {t.faq.items.map((item) => (
+          <details class="faq-item">
+            <summary class="faq-q">{item.q}</summary>
+            <p class="faq-a">{item.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="book" id="book">
+    <div class="container book-inner">
+      <h2 class="book-title">{t.book.title}</h2>
+      <p class="book-sub">{t.book.sub}</p>
+      <a
+        href="https://line.me/R/ti/p/@golanclinic"
+        class="btn-primary btn-large"
+        target="_blank"
+        rel="noopener"
+      >
+        {t.book.cta}
+      </a>
+      <p class="book-addr">{t.book.addr}</p>
+      <p class="book-hours">{t.book.hours}</p>
+    </div>
+  </section>
+</Layout>

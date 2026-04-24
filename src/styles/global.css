@@ -237,22 +237,19 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   animation: ticker-scroll var(--ticker-speed, 18s) linear infinite;
   flex-shrink: 0;
 }
-/* Each .ticker-copy wraps the full announcement set. The viewport-wide
-   right padding sits on the copy (not the individual spans) so
-   announcements within one copy stay tight while the seamless loop
-   gap still guarantees track ≥ 2× viewport. */
-.ticker-copy {
-  display: inline-flex;
-  align-items: center;
-  padding-right: 100vw;
-  flex-shrink: 0;
-}
 .ticker-text {
+  font-size: 0.82rem;
   letter-spacing: 0.04em;
-  padding: 0 1rem;
+  padding: 0 0.6rem;
   flex-shrink: 0;
   /* Override the global mobile `span { max-width: 100% }` rule. */
   max-width: none;
+}
+.ticker-sep {
+  font-size: 0.82rem;
+  color: rgba(244, 241, 234, 0.55);
+  padding: 0 0.4rem;
+  flex-shrink: 0;
 }
 .ticker-close {
   background: rgba(0, 0, 0, 0.15);
@@ -292,20 +289,22 @@ body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
   body:has(.announcement-ticker) .hero { padding-top: calc(5rem + 36px); }
 }
 
-/* Respect reduced-motion preference — no scrolling, centered static text */
+/* Respect reduced-motion preference — no scrolling, show only the first
+   repetition statically (reps 2-4 and their trailing separators hide). */
 @media (prefers-reduced-motion: reduce) {
   .ticker-track {
     animation: none;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
   }
-  .ticker-copy {
-    padding-right: 0;
-    flex-wrap: wrap;
-    justify-content: center;
+  .ticker-track .ticker-text[aria-hidden="true"],
+  .ticker-track .ticker-text[aria-hidden="true"] + .ticker-sep {
+    display: none;
   }
-  /* Hide the duplicate copy used for the loop seam */
-  .ticker-track .ticker-copy:nth-of-type(n+2) { display: none; }
+  /* Also drop the separator after the visible last item so it doesn't
+     dangle at the end of a wrapped list. */
+  .ticker-track > .ticker-sep:last-child { display: none; }
 }
 
 /* ============================================================

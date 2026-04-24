@@ -1,26 +1,23 @@
 {
+  "settings": {
+    "expires_at": null,
+    "speed": 18,
+    "active": true
+  },
   "announcements": [
     {
-      "id": 1777051050042,
-      "zh": "測試 測試",
-      "en": "Test Test",
-      "ja": "テスト テスト",
-      "active": true,
-      "expires_at": "2026-05-24T17:17:00.000Z",
-      "color": "#ffffff",
-      "font_size": "0.95rem",
-      "speed": 12
-    },
-    {
-      "id": 1777051417195,
-      "zh": "測試 測試 測試 測試 測試 測試",
+      "id": 1,
+      "zh": "",
       "en": "",
       "ja": "",
-      "active": true,
-      "expires_at": "2026-05-24T17:17:00.000Z",
-      "color": "#ffd700",
-      "font_size": "1.05rem",
-      "speed": 12
+      "color": "#f2f0eb"
+    },
+    {
+      "id": 2,
+      "zh": "",
+      "en": "",
+      "ja": "",
+      "color": "#ffd700"
     }
   ]
 }

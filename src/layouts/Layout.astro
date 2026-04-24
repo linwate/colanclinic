@@ -17,27 +17,32 @@ const description = Astro.props.description || t.site.description
 const canonical = `https://golanclinic.com/${lang}/`
 const ogImage = 'https://golanclinic.com/images/doctor.webp'
 
+interface Settings {
+  expires_at?: string | null
+  speed?: number
+  active?: boolean
+}
 interface Announcement {
   id: number
   zh: string
   en: string
   ja: string
-  active: boolean
-  expires_at: string | null
   color?: string
-  font_size?: string
-  speed?: number
 }
 
+const settings = (announcementData as { settings?: Settings }).settings ?? {}
 const announcementsRaw = (announcementData as { announcements?: Announcement[] }).announcements ?? []
-const nowMs = Date.now()
-const activeAnnouncements = announcementsRaw.filter((a) => {
-  if (!a.active) return false
-  if (!a.expires_at) return true
-  const exp = Date.parse(a.expires_at)
-  return Number.isNaN(exp) ? true : exp > nowMs
-})
-const tickerSpeed = activeAnnouncements[0]?.speed ?? 18
+
+// Group-level gate: active + not-expired. Below that, per-ann filter just
+// checks the current lang has text (empty slots stay hidden).
+const nowIso = new Date().toISOString()
+const groupActive =
+  settings.active !== false &&
+  (!settings.expires_at || settings.expires_at > nowIso)
+const activeAnns: Announcement[] = groupActive
+  ? announcementsRaw.filter((a) => a[lang] && a[lang].trim() !== '')
+  : []
+const tickerSpeed = settings.speed ?? 18
 
 const lineUrl = 'https://line.me/R/ti/p/@golanclinic'
 
@@ -166,25 +171,21 @@ const hreflangOf: Record<Lang, string> = {
   </head>
   <body>
     <a href="#main" class="skip-link">Skip to content</a>
-    {activeAnnouncements.length > 0 && (
+    {activeAnns.length > 0 && (
       <div class="announcement-ticker" role="status" style={`--ticker-speed: ${tickerSpeed}s`}>
         <div class="ticker-track">
-          <div class="ticker-copy">
-            {activeAnnouncements.map((ann) => (
-              <span
-                class="ticker-text"
-                style={`color: ${ann.color || '#f2f0eb'}; font-size: ${ann.font_size || '0.82rem'};`}
-              >{ann[lang]}</span>
-            ))}
-          </div>
-          <div class="ticker-copy" aria-hidden="true">
-            {activeAnnouncements.map((ann) => (
-              <span
-                class="ticker-text"
-                style={`color: ${ann.color || '#f2f0eb'}; font-size: ${ann.font_size || '0.82rem'};`}
-              >{ann[lang]}</span>
-            ))}
-          </div>
+          {[0, 1, 2, 3].map((rep) => (
+            activeAnns.map((ann) => (
+              <>
+                <span
+                  class="ticker-text"
+                  style={`color: ${ann.color || '#f2f0eb'}`}
+                  {...(rep > 0 ? { 'aria-hidden': 'true' } : {})}
+                >{ann[lang]}</span>
+                <span class="ticker-sep" aria-hidden="true">・</span>
+              </>
+            ))
+          ))}
         </div>
         <button
           type="button"

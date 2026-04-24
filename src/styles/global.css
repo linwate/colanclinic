@@ -149,9 +149,8 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
 .book-sub,
 .blog-desc,
 .blog-note,
-.stat-label,
-.split-item p,
-.announcement-text {
+.stat-item .stat-label,
+.split-item p {
   text-wrap: balance;
 }
 
@@ -1836,17 +1835,6 @@ details[open] .faq-q::after {
   .book-sub { max-width: 100%; }
   .hours-grid { max-width: 100%; }
 
-  /* Announcement bar — allow MULTI-LINE wrapping so long messages stay readable */
-  .announcement-bar { padding: 0.5rem 1.2rem; }
-  .announcement-inner {
-    font-size: 0.82rem;
-    gap: 0.5rem;
-    align-items: flex-start;
-  }
-  .announcement-text {
-    overflow-wrap: break-word;
-    line-height: 1.5;
-  }
 
   /* Footer */
   .footer-inner {
@@ -1930,8 +1918,7 @@ details[open] .faq-q::after {
   .book-sub,
   .blog-desc, .blog-note,
   .section-sub-desc, .section-sub-title,
-  .stat-label,
-  .announcement-text {
+  .stat-label {
     text-wrap: wrap;
     max-width: 100%;
     overflow-wrap: break-word;

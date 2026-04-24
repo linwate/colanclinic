@@ -232,7 +232,7 @@ export const en = {
       {
         title: 'How Long Does Plantar Fasciitis Take to Heal?',
         tag: 'Foot Pain',
-        url: 'https://twmedpro.tw/plantar-fasciitis-how-long-to-heal/',
+        url: 'https://twmedpro.tw/plantar-fasciitis-first-step-pain/',
       },
       {
         title: 'Numb Hands: Carpal Tunnel Diagnosis & Treatment',

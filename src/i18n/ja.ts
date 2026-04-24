@@ -226,7 +226,7 @@ export const ja = {
       {
         title: '足底筋膜炎はどのくらいで治る？',
         tag: '足の痛み',
-        url: 'https://twmedpro.tw/plantar-fasciitis-how-long-to-heal/',
+        url: 'https://twmedpro.tw/plantar-fasciitis-first-step-pain/',
       },
       {
         title: '手のしびれ：手根管症候群の診断と治療',

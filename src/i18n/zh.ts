@@ -220,7 +220,7 @@ export const zh = {
       {
         title: '足底筋膜炎多久會好？早期 vs 慢性的治療時程完全不同',
         tag: '足部疼痛',
-        url: 'https://twmedpro.tw/plantar-fasciitis-how-long-to-heal/',
+        url: 'https://twmedpro.tw/plantar-fasciitis-first-step-pain/',
       },
       {
         title: '手掌麻是怎麼了？腕隧道症候群超音波診斷與治療',

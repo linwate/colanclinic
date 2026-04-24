@@ -402,17 +402,21 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem 2rem 3rem;
-  padding-left: max(2rem, env(safe-area-inset-left));
-  padding-right: max(2rem, env(safe-area-inset-right));
+  padding: 5rem 0 3rem;
   position: relative;
   overflow: hidden;
   background: var(--bg);
 }
+/* hero-inner mirrors .container exactly:
+   same max-width token, same horizontal padding (var(--pad-x) +
+   safe-area inset). Keeps hero text on the same vertical gridline
+   as problem / services / doctor / etc. at every breakpoint. */
 .hero-inner {
   max-width: var(--max);
   margin: 0 auto;
   width: 100%;
+  padding-left: max(var(--pad-x), env(safe-area-inset-left));
+  padding-right: max(var(--pad-x), env(safe-area-inset-right));
   position: relative;
   z-index: 1;
   text-align: left;
@@ -1794,14 +1798,11 @@ details[open] .faq-q::after {
     overflow-wrap: break-word;
   }
 
-  /* Hero section padding (overrides earlier mobile block) */
+  /* Hero section — vertical padding only on mobile, horizontal
+     handled by hero-inner (same as container) so text aligns with
+     problem / services / etc. */
   .hero {
-    padding: 5rem 1.2rem 2.5rem;
-  }
-  .hero-inner {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
+    padding: 5rem 0 2.5rem;
   }
 
   /* All prose — kill balance, let text naturally fill each line */

@@ -1180,6 +1180,51 @@ body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
 }
 
 /* ============================================================
+   Clinic environment — concept renderings (4-up on desktop, 2-up
+   on mobile). Cards use 4:3 aspect ratio for consistent vertical
+   rhythm regardless of source crop.
+   ============================================================ */
+.clinic-env {
+  padding: 3rem 0;
+  background: var(--bg);
+}
+.clinic-env-sub {
+  color: var(--ink-mute);
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.75rem;
+}
+.clinic-env-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+.clinic-env-item {
+  margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-alt);
+  aspect-ratio: 4 / 3;
+}
+.clinic-env-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.clinic-env-item:hover img { transform: scale(1.03); }
+
+@media (max-width: 768px) {
+  .clinic-env { padding: 2.5rem 0; }
+  .clinic-env-sub { font-size: 0.85rem; margin-bottom: 1.25rem; }
+  .clinic-env-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+/* ============================================================
    Doctor
    ============================================================ */
 .doctor {

@@ -164,6 +164,21 @@ const trainingFlags = ['🇰🇷', '🇯🇵', '🇰🇷', '🌍', '🇰🇷']
     </div>
   </section>
 
+  <!-- CLINIC ENVIRONMENT -->
+  <section class="clinic-env" id="clinic-env">
+    <div class="container">
+      <h2 class="section-title">{t.clinicEnv.title}</h2>
+      <p class="clinic-env-sub">{t.clinicEnv.sub}</p>
+      <div class="clinic-env-grid">
+        {t.clinicEnv.images.map((img) => (
+          <figure class="clinic-env-item">
+            <img src={img.src} alt={img.alt} loading="lazy" decoding="async" />
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <!-- DOCTOR -->
   <section class="doctor" id="about">
     <div class="container doctor-inner">

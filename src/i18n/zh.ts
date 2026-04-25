@@ -160,6 +160,16 @@ export const zh = {
       },
     ],
   },
+  clinicEnv: {
+    title: '診所環境',
+    sub: '2026年9月蘆洲開幕・以下為設計示意圖',
+    images: [
+      { src: '/images/clinic-exterior.webp', alt: '鈷嵐診所外觀' },
+      { src: '/images/clinic-waiting.webp', alt: '鈷嵐診所候診室' },
+      { src: '/images/clinic-hall.webp', alt: '鈷嵐診所候診區' },
+      { src: '/images/clinic-reception.webp', alt: '鈷嵐診所櫃台' },
+    ],
+  },
   doctor: {
     title: '林瑋德醫師',
     sub: '神經科・疼痛治療・再生醫學',

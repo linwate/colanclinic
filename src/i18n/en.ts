@@ -160,6 +160,16 @@ export const en = {
       },
     ],
   },
+  clinicEnv: {
+    title: 'Clinic Environment',
+    sub: 'Opening September 2026 · Design concept images',
+    images: [
+      { src: '/images/clinic-exterior.webp', alt: 'Golan Clinic exterior' },
+      { src: '/images/clinic-waiting.webp', alt: 'Golan Clinic waiting room' },
+      { src: '/images/clinic-hall.webp', alt: 'Golan Clinic waiting area' },
+      { src: '/images/clinic-reception.webp', alt: 'Golan Clinic reception' },
+    ],
+  },
   doctor: {
     title: 'Dr. Lin Wei-de',
     sub: 'Neurology · Pain Medicine · Regenerative Medicine',

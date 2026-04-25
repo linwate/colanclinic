@@ -160,6 +160,16 @@ export const ja = {
       },
     ],
   },
+  clinicEnv: {
+    title: 'クリニックの環境',
+    sub: '2026年9月開院予定・内装イメージ図',
+    images: [
+      { src: '/images/clinic-exterior.webp', alt: 'ゴラン診療所外観' },
+      { src: '/images/clinic-waiting.webp', alt: 'ゴラン診療所待合室' },
+      { src: '/images/clinic-hall.webp', alt: 'ゴラン診療所待合エリア' },
+      { src: '/images/clinic-reception.webp', alt: 'ゴラン診療所受付' },
+    ],
+  },
   doctor: {
     title: '林瑋德 医師',
     sub: '神経内科・疼痛治療・再生医療',

@@ -5,9 +5,9 @@
   "announcements": [
     {
       "id": 1,
-      "zh": "",
-      "en": "",
-      "ja": "",
+      "zh": "本診所籌備中",
+      "en": "This clinic is under preparation.",
+      "ja": "本クリニックは準備中です。",
       "color": "#ffd700",
       "expires_at": "2026-05-07T17:36:00.000Z"
     },

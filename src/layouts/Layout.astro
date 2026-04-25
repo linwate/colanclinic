@@ -75,9 +75,9 @@ const modalCtaUrl = modal.cta_url ?? ''
 // duration to keep characters-per-second readable; narrow Latin text
 // needs a slower duration so it doesn't feel rushed.
 const tickerSpeedMap: Record<Lang, { desktop: number; mobile: number }> = {
-  zh: { desktop: 26, mobile: 24 },
-  ja: { desktop: 28, mobile: 26 },
-  en: { desktop: 32, mobile: 26 },
+  zh: { desktop: 26, mobile: 22 },
+  ja: { desktop: 28, mobile: 24 },
+  en: { desktop: 32, mobile: 24 },
 }
 const tickerSpeedDesktop = tickerSpeedMap[lang].desktop
 const tickerSpeedMobile = tickerSpeedMap[lang].mobile

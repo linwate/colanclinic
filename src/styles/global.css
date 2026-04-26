@@ -1203,8 +1203,14 @@ body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
    section paddings; below are the page-specific bits.
    ============================================================ */
 .fv-hero {
-  padding: 5rem 0 2rem;
+  /* Top padding clears the 60px fixed nav with breathing room.
+     Ticker-aware rule below adds the ticker height when it is present. */
+  padding: 6rem 0 2rem;
   background: var(--bg);
+}
+body:has(.announcement-ticker) .fv-hero { padding-top: calc(6rem + 40px); }
+@media (max-width: 768px) {
+  body:has(.announcement-ticker) .fv-hero { padding-top: calc(6rem + 34px); }
 }
 .fv-hero h1 {
   font-family: var(--sans);

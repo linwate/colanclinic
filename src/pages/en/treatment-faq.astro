@@ -1,0 +1,157 @@
+---
+import Layout from '../../layouts/Layout.astro'
+
+const lang = 'en' as const
+
+const lineUrl = 'https://line.me/R/ti/p/@twmedpro'
+const waUrl = 'https://wa.me/+886900000000'
+
+const generalCare = [
+  'Avoid bathing for 24 hours after any injection treatment',
+  'Mild soreness or swelling at the injection site is a normal response',
+  'Avoid anti-inflammatory medications (NSAIDs such as ibuprofen or diclofenac) — use acetaminophen (Tylenol/paracetamol) for pain relief instead',
+  'Seek immediate care if you experience fever, increasing redness or swelling, or unusual weakness',
+]
+
+const treatments = [
+  {
+    title: 'PRP Therapy',
+    faqs: [
+      { q: 'Why does it hurt more after PRP?', a: 'Mild soreness and swelling at the injection site is normal within 1 to 2 weeks after PRP, as the treatment works by inducing a controlled inflammatory response to trigger tissue repair. It is most noticeable within the first 48 hours, and may persist up to two weeks in some patients. Ice and acetaminophen can help manage discomfort.' },
+      { q: 'Can I take anti-inflammatory medication after PRP?', a: 'This is not recommended. NSAIDs and corticosteroids suppress the inflammatory response that PRP depends on to initiate healing. If pain relief is needed, use acetaminophen only.' },
+      { q: 'When can I exercise after PRP?', a: 'Avoid strenuous activity for 48 to 72 hours post-injection. Walking is fine. Gentle rehabilitation exercises can begin after soreness subsides, typically 1 to 2 weeks later. Return to high-impact activities only after consulting your doctor.' },
+      { q: 'Are there any dietary recommendations after PRP?', a: 'A diet rich in protein, vitamin B, and vitamin C supports tissue repair. Avoid alcohol for one week before and after treatment, as it can impair platelet quality.' },
+    ],
+  },
+  {
+    title: 'Prolotherapy (Glucose Injection)',
+    faqs: [
+      { q: 'What should I expect after prolotherapy?', a: 'Localized soreness at the injection site is common, typically lasting 1 to 3 days, occasionally up to 7 days. This is a normal part of the healing response. Ice and acetaminophen can help. Avoid anti-inflammatory medications.' },
+      { q: 'Is aftercare the same as PRP?', a: 'Largely yes — avoid NSAIDs, avoid strenuous exercise, and maintain good nutrition. The soreness from prolotherapy is generally milder than PRP and resolves more quickly.' },
+    ],
+  },
+  {
+    title: 'Acupotomy (Integrative Needle-Knife)',
+    faqs: [
+      { q: 'What should I do after acupotomy treatment?', a: 'Keep the treated area dry for 24 hours — avoid bathing or swimming. Mild soreness or bruising at the site is normal and typically resolves within 1 to 3 days. Avoid vigorous exercise for 48 hours. Seek care immediately if you notice increasing redness, heat, swelling, or fever.' },
+      { q: 'Can I continue rehabilitation after acupotomy?', a: 'Yes, and it is encouraged. After acupotomy releases fascial adhesions, targeted stretching and rehabilitation exercises improve outcomes. Begin gently 2 to 3 days after treatment once initial soreness has settled.' },
+    ],
+  },
+  {
+    title: 'BMAC (Bone Marrow Aspirate Concentrate)',
+    faqs: [
+      { q: 'Is the bone marrow extraction painful?', a: 'Local anesthesia is administered before the procedure to minimize discomfort. Some patients feel mild pressure or aching during extraction. The marrow is drawn from the iliac crest of the pelvis — not the spine — so there is no risk to spinal nerves. Bone marrow replenishes naturally with adequate rest and nutrition.' },
+      { q: 'Is BMAC related to spinal fluid?', a: 'No. Bone marrow is the blood-producing tissue inside bones, harvested from the pelvic iliac crest. Spinal fluid surrounds the spinal cord and is entirely unrelated. BMAC treatment does not involve the spine or nervous system.' },
+      { q: 'Is hospitalization required?', a: 'No. The full procedure takes approximately 1 to 1.5 hours and is performed as an outpatient appointment. You may return home after a short rest. We recommend arranging a ride home rather than driving yourself.' },
+      { q: 'When can I resume exercise?', a: 'Avoid strenuous activity and heavy loading for 48 to 72 hours. Light rehabilitation can typically begin 1 to 2 weeks after treatment. Your doctor will advise based on your recovery.' },
+    ],
+  },
+  {
+    title: 'Simple TAME (Ultrasound-Guided Microarterial Embolization)',
+    faqs: [
+      { q: 'Is TAME at Golan Clinic a catheter procedure?', a: 'No. We perform Simple TAME using real-time ultrasound guidance — medication is injected precisely at the site of abnormal neovascularization from outside the body. No catheter is inserted, no hospitalization is required, and the procedure is completed in a single outpatient visit.' },
+      { q: 'What should I do after Simple TAME?', a: 'Avoid bathing for 24 hours after the procedure. Mild soreness at the injection site may occur and should resolve within 1 to 3 days. Light activity is generally fine from day 2 onward. Return to strenuous exercise gradually based on how you feel.' },
+      { q: 'How does Simple TAME differ from catheter-based TAME?', a: 'Catheter-based TAME involves threading a catheter through a blood vessel from the wrist or groin. Simple TAME uses ultrasound-guided injection directly through the skin, making it less invasive with a faster recovery. Both target abnormal neovascularization causing pain, but are suited to different patient profiles and severity levels.' },
+      { q: 'Is hospitalization required?', a: 'No. Simple TAME is an outpatient procedure. You can return home after a short rest following the injection.' },
+      { q: 'How many sessions are needed?', a: 'Most patients require 2 to 3 sessions. The interval between sessions depends on individual recovery. Your doctor will advise based on ultrasound findings during follow-up.' },
+    ],
+  },
+  {
+    title: 'Joint Hyaluronic Acid Injection',
+    faqs: [
+      { q: 'What should I do after a hyaluronic acid injection?', a: 'Avoid strenuous activity and prolonged weight-bearing for 24 to 48 hours. Mild swelling or discomfort at the injection site is normal and can be managed with ice. Avoid heat exposure to the treated area for 24 hours.' },
+      { q: 'How long until I feel the effect, and how often do I need injections?', a: 'Most patients notice gradual improvement over 1 to 4 weeks. Depending on the formulation, effects can last 6 months to 1 year. Discuss the timing of any repeat injections with your doctor.' },
+    ],
+  },
+  {
+    title: 'SportVis (Tendon and Ligament Hyaluronic Acid)',
+    faqs: [
+      { q: 'How is SportVis different from regular hyaluronic acid?', a: "Standard hyaluronic acid is primarily used for joint lubrication. SportVis is a patented formulation specifically designed to be absorbed by soft tissues such as tendons and ligaments, offering repair, lubrication, and inflammation control in one product. It is the only hyaluronic acid approved by Taiwan's TFDA for tendon and ligament repair." },
+      { q: 'What should I do after a SportVis injection?', a: 'Depending on the injection site, your doctor may ask you to perform a few specific movements after injection to help distribute the product. Avoid strenuous activity for 24 to 48 hours. Normal daily activities are generally fine. Post-treatment discomfort is typically milder than PRP.' },
+      { q: 'How many injections does a SportVis course involve?', a: 'The standard course is 2 injections, spaced 4 to 7 days apart. For acute injuries, the first injection is most effective within 48 hours of injury.' },
+    ],
+  },
+  {
+    title: 'Nerve Hydrodissection',
+    faqs: [
+      { q: 'What does nerve hydrodissection feel like afterward?', a: "Because the solution used is 5% glucose — which matches the body's osmotic pressure — post-injection soreness is generally milder than prolotherapy. Some patients with longer-standing nerve injury may experience stronger aching, which typically settles within 1 to 3 days. Many patients notice improvement immediately after the procedure." },
+      { q: 'Is the injection solution the same as prolotherapy?', a: 'No. Nerve hydrodissection uses 5% glucose to physically separate the nerve from surrounding tissue, stabilize the nerve, and reduce neurogenic inflammation. Prolotherapy uses 10 to 25% glucose to stimulate a mild inflammatory response for tissue repair. The goals and mechanisms are different.' },
+      { q: 'How many sessions are needed?', a: 'Typically one session every 2 to 4 weeks, with 3 to 6 sessions needed for stabilization. For more severe nerve damage, PRP-based hydrodissection may be recommended, with sessions spaced 4 to 6 weeks apart.' },
+      { q: 'Is rehabilitation still needed after nerve hydrodissection?', a: 'Yes. Once symptoms improve, it is important to address the underlying cause of nerve compression — such as joint instability or muscle tightness — through rehabilitation and postural correction to prevent recurrence.' },
+    ],
+  },
+  {
+    title: 'Botulinum Toxin (Pain Treatment)',
+    faqs: [
+      { q: 'What should I do after a botulinum toxin pain injection?', a: 'Avoid pressing on the injection site for 4 hours. Avoid strenuous activity and heat exposure for 24 hours. Mild localized weakness near the injection site may occur in the first 1 to 3 days and typically resolves within a few days. Effects usually begin within 1 to 2 weeks and last 3 to 6 months.' },
+      { q: 'Is pain-targeted botulinum toxin the same as cosmetic Botox?', a: 'The medication is the same, but the injection sites and goals are different. Pain treatment injections target muscles causing spasm or chronic pain — not cosmetic areas. The dosage, assessment criteria, and clinical approach differ and should be managed by a pain specialist.' },
+    ],
+  },
+]
+
+const allFaqs = treatments.flatMap((t) => t.faqs)
+---
+
+<Layout
+  lang={lang}
+  pathname="treatment-faq"
+  title="Treatment FAQ｜Golan Clinic・Luzhou Pain Treatment"
+  description="Common questions about PRP, prolotherapy, acupotomy, BMAC, TAME, hyaluronic acid, SportVis, hydrodissection, and botulinum toxin treatments — including aftercare and recovery tips."
+>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: allFaqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  })} />
+
+  <section class="fv-hero">
+    <div class="container">
+      <h1>Treatment FAQ</h1>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <p>Below are answers to common questions about treatments available at Golan Clinic, including what to expect before, during, and after each procedure. For further questions, feel free to contact us via LINE or WhatsApp.</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>General Aftercare Guidelines</h2>
+      <ul>
+        {generalCare.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  {treatments.map((tr) => (
+    <section class="fv-section fv-faq">
+      <div class="container">
+        <h2>{tr.title}</h2>
+        {tr.faqs.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>Still have questions?</h2>
+      <p>Contact us via LINE or WhatsApp — we reply within 24 hours on business days (GMT+8).</p>
+      <div class="fv-cta-row">
+        <a href={lineUrl} class="fv-cta fv-cta-line" target="_blank" rel="noopener">LINE Consultation</a>
+        <a href={waUrl} class="fv-cta fv-cta-wa" target="_blank" rel="noopener">WhatsApp</a>
+        <a href={`/${lang}/first-visit/`} class="fv-cta fv-cta-ghost">Back to First Visit Guide</a>
+      </div>
+    </div>
+  </section>
+</Layout>

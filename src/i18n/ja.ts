@@ -14,6 +14,7 @@ export const ja = {
     faq: 'よくある質問',
     book: 'ご予約',
     first_visit: '初めての方へ',
+    treatment_faq: '治療FAQ',
   },
   hero: {
     tag: '台湾 新北市蘆洲区・神経内科・疼痛・再生医療',

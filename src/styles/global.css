@@ -1223,6 +1223,10 @@ body:has(.announcement-ticker) .fv-hero { padding-top: calc(6rem + 40px); }
 .fv-section {
   padding: 2rem 0;
 }
+/* First section right after the hero: collapse top padding so the gap
+   between H1 and the first H2 matches the home page's section-title →
+   subtitle rhythm (~2rem total instead of 4rem). */
+.fv-hero + .fv-section { padding-top: 0; }
 .fv-section + .fv-section { border-top: 1px solid var(--line-soft); }
 .fv-section h2 {
   font-family: var(--sans);

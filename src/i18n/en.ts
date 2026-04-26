@@ -278,7 +278,7 @@ export const en = {
     ],
   },
   faq: {
-    title: 'FAQ',
+    title: 'Visit FAQ',
     items: [
       {
         q: 'What should I bring to my first visit?',

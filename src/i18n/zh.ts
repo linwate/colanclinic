@@ -14,7 +14,7 @@ export const zh = {
     faq: '常見問題',
     book: '立即預約',
     first_visit: '初診說明',
-    treatment_faq: '常見治療問題',
+    treatment_faq: '治療常見問題',
   },
   hero: {
     tag: '新北市蘆洲區・神經科・疼痛・再生醫學',
@@ -266,7 +266,7 @@ export const zh = {
     ],
   },
   faq: {
-    title: '常見問題',
+    title: '就診常見問題',
     items: [
       {
         q: '第一次來診需要帶什麼？',

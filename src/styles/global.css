@@ -1180,6 +1180,198 @@ body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
 }
 
 /* ============================================================
+   Process "see more" link (cross-link to /first-visit/)
+   ============================================================ */
+.process-more {
+  margin-top: 2rem;
+  text-align: center;
+}
+.process-more a {
+  color: var(--cobalt);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: color 0.2s, transform 0.2s;
+  display: inline-block;
+}
+.process-more a:hover { color: var(--cobalt-light); transform: translateX(4px); }
+
+/* ============================================================
+   First Visit standalone page — uses container + standard
+   section paddings; below are the page-specific bits.
+   ============================================================ */
+.fv-hero {
+  padding: 5rem 0 2rem;
+  background: var(--bg);
+}
+.fv-hero h1 {
+  font-family: var(--sans);
+  font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+.fv-section {
+  padding: 2rem 0;
+}
+.fv-section + .fv-section { border-top: 1px solid var(--line-soft); }
+.fv-section h2 {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--cobalt);
+  letter-spacing: 0.04em;
+  margin: 0 0 1rem;
+}
+.fv-section p,
+.fv-section li {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.85;
+}
+.fv-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.fv-section ul li {
+  padding-left: 1.25rem;
+  position: relative;
+  margin-bottom: 0.55rem;
+}
+.fv-section ul li::before {
+  content: '・';
+  position: absolute;
+  left: 0;
+  color: var(--cobalt);
+  font-weight: 600;
+}
+.fv-tracks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+.fv-track {
+  background: var(--bg-alt);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.4rem;
+}
+.fv-track-label {
+  font-weight: 600;
+  color: var(--cobalt);
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.04em;
+}
+.fv-track p { font-size: 0.92rem; color: var(--ink-soft); }
+@media (max-width: 768px) {
+  .fv-tracks { grid-template-columns: 1fr; gap: 0.8rem; }
+}
+.fv-steps {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  counter-reset: fvstep;
+}
+.fv-step {
+  background: var(--bg-alt);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem;
+  display: flex;
+  gap: 0.85rem;
+  align-items: baseline;
+}
+.fv-step::before {
+  counter-increment: fvstep;
+  content: counter(fvstep, decimal-leading-zero);
+  color: var(--cobalt);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+.fv-step-text { color: var(--ink-soft); font-size: 0.95rem; line-height: 1.75; }
+
+.fv-faq details {
+  background: var(--bg-card);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-lg);
+  margin-bottom: 0.6rem;
+  padding: 0.75rem 1.1rem;
+}
+.fv-faq summary {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.fv-faq summary::-webkit-details-marker { display: none; }
+.fv-faq summary::after {
+  content: '+';
+  color: var(--cobalt);
+  font-size: 1.3rem;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.fv-faq details[open] summary::after { content: '−'; }
+.fv-faq details p {
+  margin: 0.6rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.85;
+}
+
+.fv-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+.fv-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.4rem;
+  border-radius: 5px;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  flex: 1 1 auto;
+  min-width: 180px;
+  text-align: center;
+}
+.fv-cta-line { background: #06c755; color: #fff; }
+.fv-cta-line:hover { background: #05b04a; }
+.fv-cta-mail { background: var(--cobalt); color: var(--cobalt-ink); }
+.fv-cta-mail:hover { background: var(--cobalt-light); }
+.fv-cta-wa { background: #25d366; color: #fff; }
+.fv-cta-wa:hover { background: #1fbe5b; }
+.fv-cta-ghost {
+  background: transparent;
+  color: var(--cobalt);
+  border: 1px solid var(--line);
+}
+.fv-cta-ghost:hover { background: var(--bg); border-color: var(--cobalt); }
+.fv-reply-note {
+  font-size: 0.82rem;
+  color: var(--ink-mute);
+  margin-top: 0.75rem;
+}
+
+/* ============================================================
    Clinic environment — concept renderings (4-up on desktop, 2-up
    on mobile). Cards use 4:3 aspect ratio for consistent vertical
    rhythm regardless of source crop.

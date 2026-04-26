@@ -1,0 +1,151 @@
+---
+import Layout from '../../layouts/Layout.astro'
+
+const lang = 'en' as const
+
+const lineUrl = 'https://line.me/R/ti/p/@twmedpro'
+const waUrl = 'https://wa.me/+886900000000'
+const mailUrl = 'mailto:info@golanclinic.com'
+
+const faqs = [
+  {
+    q: 'How much does a private appointment cost?',
+    a: 'Fees vary depending on the treatment. Please contact us via WhatsApp or Email for current pricing. All fees will be explained clearly before any treatment begins.',
+  },
+  {
+    q: 'Will I receive treatment on my first visit?',
+    a: 'No. The first visit is for assessment only. We explain your options after evaluation — treatment only proceeds with your decision.',
+  },
+  {
+    q: 'Do I need an X-ray before my visit?',
+    a: 'No special preparation needed. We use real-time ultrasound as our primary assessment tool. If you have had previous imaging studies — X-ray, MRI, or CT — please bring the disc or report for a more complete evaluation.',
+  },
+  {
+    q: 'Can you provide receipts for international insurance reimbursement?',
+    a: 'Yes. Itemized receipts in English are available upon request. Please inform our staff at the time of your visit.',
+  },
+  {
+    q: 'Do you speak English?',
+    a: 'Basic English consultation is available. For detailed discussions, translation assistance can be arranged for private appointments at the patient’s expense.',
+  },
+  {
+    q: 'How many sessions will I need?',
+    a: 'This varies by individual. Most patients have a clear treatment plan after 1–3 assessments. We do not recommend open-ended follow-ups.',
+  },
+  {
+    q: 'When should I come in?',
+    a: 'If your pain has lasted more than 2–3 weeks, keeps recurring, or you want to explore non-surgical options before committing to surgery, a consultation is a good first step.',
+  },
+]
+---
+
+<Layout
+  lang={lang}
+  pathname="first-visit"
+  title="Your First Visit｜Golan Clinic・Luzhou Pain Treatment"
+  description="Planning your first visit to Golan Clinic? Learn about our consultation process, ultrasound assessment, NHI vs private appointments, FAQs, and how to book."
+>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  })} />
+
+  <section class="fv-hero">
+    <div class="container">
+      <h1>Your First Visit — What to Expect</h1>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>You may benefit from a visit if:</h2>
+      <ul>
+        <li>Pain, numbness, or stiffness lasting more than 2–3 weeks without improvement</li>
+        <li>Symptoms keep recurring despite rest, rehab, or medication</li>
+        <li>Tests came back normal but you still feel unwell</li>
+        <li>You want a clear diagnosis before considering injections or surgery</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>What's the difference between NHI and private?</h2>
+      <div class="fv-tracks">
+        <div class="fv-track">
+          <span class="fv-track-label">NHI Clinic</span>
+          <p>General neurology consultation, suitable for initial assessment and routine follow-up, focused ultrasound evaluation.</p>
+        </div>
+        <div class="fv-track">
+          <span class="fv-track-label">Private Appointment</span>
+          <p>Pain-focused consultation with more time, comprehensive ultrasound assessment, in-depth discussion of advanced treatment options.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>What happens when you arrive?</h2>
+      <div class="fv-steps">
+        <div class="fv-step"><span class="fv-step-text">Check in at reception</span></div>
+        <div class="fv-step"><span class="fv-step-text">Detailed consultation — how long, what you've tried, what matters most to you</span></div>
+        <div class="fv-step"><span class="fv-step-text">Real-time ultrasound assessment — we confirm the problem on the spot, no waiting for reports</span></div>
+        <div class="fv-step"><span class="fv-step-text">Treatment options explained clearly — you decide, no pressure</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>Do I need to prepare anything?</h2>
+      <p>No special preparation needed. Our clinic uses real-time ultrasound as the primary assessment tool. If you have had previous imaging studies at other clinics or hospitals — such as X-ray, MRI, or CT — please bring the disc or report. This helps us provide a more complete evaluation and treatment plan.</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>What language is the consultation in?</h2>
+      <p>Basic English consultation is available. For more detailed discussions, translation assistance can be arranged for private appointments at the patient's expense.</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>How to find us</h2>
+      <p>Address: No. 6, Ln. 58, Sec. 2, Yong'an N. Rd., Luzhou Dist., New Taipei City</p>
+      <p>MRT: 5–10 min walk from Xuhui Junior High School Station</p>
+      <p><a href="https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8" target="_blank" rel="noopener">📍 Open Google Maps</a></p>
+    </div>
+  </section>
+
+  <section class="fv-section fv-faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      {faqs.map((f) => (
+        <details>
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>Ready to take the next step?</h2>
+      <p class="fv-reply-note">We reply within 24 hours on business days (GMT+8). Replies may be delayed during busy clinic hours.</p>
+      <div class="fv-cta-row">
+        <a href={lineUrl} class="fv-cta fv-cta-line" target="_blank" rel="noopener">LINE Consultation</a>
+        <a href={waUrl} class="fv-cta fv-cta-wa" target="_blank" rel="noopener">WhatsApp</a>
+        <a href={mailUrl} class="fv-cta fv-cta-mail">Email</a>
+        <a href={`/${lang}/`} class="fv-cta fv-cta-ghost">Back to Home</a>
+      </div>
+    </div>
+  </section>
+</Layout>

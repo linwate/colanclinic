@@ -7,14 +7,23 @@ export interface Props {
   lang: Lang
   title?: string
   description?: string
+  /** Subpath under /<lang>/. e.g. 'first-visit' for /<lang>/first-visit/.
+   *  Omit for the home page. Drives canonical, hreflang, nav-home prefix. */
+  pathname?: string
 }
 
-const { lang } = Astro.props
+const { lang, pathname = '' } = Astro.props
 const t = useTranslations(lang)
 
 const title = Astro.props.title || t.site.title
 const description = Astro.props.description || t.site.description
-const canonical = `https://golanclinic.com/${lang}/`
+// Normalize: strip leading/trailing slashes; non-empty → 'segment/'
+const slug = pathname.replace(/^\/+|\/+$/g, '')
+const pageSegment = slug ? `${slug}/` : ''
+const canonical = `https://golanclinic.com/${lang}/${pageSegment}`
+// On a subpage, nav anchors must navigate back to the home page first;
+// on home, anchors are pure fragments.
+const navHome = slug ? `/${lang}/` : ''
 const ogImage = 'https://golanclinic.com/images/doctor.webp'
 
 interface Settings {
@@ -139,10 +148,10 @@ const hreflangOf: Record<Lang, string> = {
     <link rel="icon" href="/favicon.ico" />
 
     <!-- hreflang (absolute URLs for SEO clarity) -->
-    <link rel="alternate" hreflang="zh-TW" href="https://golanclinic.com/zh/" />
-    <link rel="alternate" hreflang="en" href="https://golanclinic.com/en/" />
-    <link rel="alternate" hreflang="ja" href="https://golanclinic.com/ja/" />
-    <link rel="alternate" hreflang="x-default" href="https://golanclinic.com/zh/" />
+    <link rel="alternate" hreflang="zh-TW" href={`https://golanclinic.com/zh/${pageSegment}`} />
+    <link rel="alternate" hreflang="en" href={`https://golanclinic.com/en/${pageSegment}`} />
+    <link rel="alternate" hreflang="ja" href={`https://golanclinic.com/ja/${pageSegment}`} />
+    <link rel="alternate" hreflang="x-default" href={`https://golanclinic.com/zh/${pageSegment}`} />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -191,21 +200,23 @@ const hreflangOf: Record<Lang, string> = {
       sameAs: [],
     })} />
 
-    <!-- FAQPage structured data — built from the same i18n source as the
-         visible FAQ list, so the rendered Q&A and the schema can never
-         drift apart. Each locale emits its own answers. -->
-    <script type="application/ld+json" is:inline set:html={JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: t.faq.items.map((item) => ({
-        '@type': 'Question',
-        name: item.q,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.a,
-        },
-      })),
-    })} />
+    <!-- FAQPage structured data — only on the home page, where the
+         visible FAQ list comes from t.faq.items. Subpages emit their
+         own FAQPage schema inline so each URL has exactly one. -->
+    {!slug && (
+      <script type="application/ld+json" is:inline set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: t.faq.items.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.a,
+          },
+        })),
+      })} />
+    )}
 
     <!-- Twemoji: replace native emoji with SVG for consistent rendering on all OS.
          Default MaxCDN base is dead, so we pin `base` to jsDelivr. -->
@@ -319,16 +330,17 @@ const hreflangOf: Record<Lang, string> = {
           <span class="nav-logo-text">{t.nav_logo}</span>
         </a>
         <div class="nav-links">
-          <a href="#approach">{t.nav.approach}</a>
-          <a href="#services">{t.nav.services}</a>
-          <a href="#about">{t.nav.about}</a>
-          <a href="#faq">{t.nav.faq}</a>
-          <a href="#book" class="nav-cta">{t.nav.book}</a>
+          <a href={`${navHome}#approach`}>{t.nav.approach}</a>
+          <a href={`${navHome}#services`}>{t.nav.services}</a>
+          <a href={`${navHome}#about`}>{t.nav.about}</a>
+          <a href={`/${lang}/first-visit/`}>{t.nav.first_visit}</a>
+          <a href={`${navHome}#faq`}>{t.nav.faq}</a>
+          <a href={`${navHome}#book`} class="nav-cta">{t.nav.book}</a>
         </div>
-        <a href="#book" class="nav-mobile-cta">{t.nav.book}</a>
+        <a href={`${navHome}#book`} class="nav-mobile-cta">{t.nav.book}</a>
         <div class="lang-switch" role="group" aria-label="Language">
           {otherLangs.map((l) => (
-            <a href={`/${l}/`} hreflang={hreflangOf[l]} aria-label={`Switch to ${l}`}>{langLabel[l]}</a>
+            <a href={`/${l}/${pageSegment}`} hreflang={hreflangOf[l]} aria-label={`Switch to ${l}`}>{langLabel[l]}</a>
           ))}
         </div>
       </div>
@@ -336,7 +348,7 @@ const hreflangOf: Record<Lang, string> = {
 
     <main id="main"><slot /></main>
 
-    <a href="#book" class="floating-cta" aria-label={t.nav.book}>
+    <a href={`${navHome}#book`} class="floating-cta" aria-label={t.nav.book}>
       <span class="floating-dot" aria-hidden="true"></span>
       <span>{t.nav.book}</span>
     </a>

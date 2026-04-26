@@ -13,6 +13,7 @@ export const ja = {
     services: '診療メニュー',
     faq: 'よくある質問',
     book: 'ご予約',
+    first_visit: '初めての方へ',
   },
   hero: {
     tag: '台湾 新北市蘆洲区・神経内科・疼痛・再生医療',
@@ -135,6 +136,7 @@ export const ja = {
     nhiNote: '初期スクリーニングと重点的な超音波評価',
     selfLabel: '自費予約診療',
     selfNote: '包括的な超音波全体評価、時間に余裕あり',
+    moreLink: '詳しくはこちら。初診ガイドとよくある質問 →',
     steps: [
       {
         num: '01',

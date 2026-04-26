@@ -13,6 +13,7 @@ export const zh = {
     services: '診療項目',
     faq: '常見問題',
     book: '立即預約',
+    first_visit: '初診說明',
   },
   hero: {
     tag: '新北市蘆洲區・神經科・疼痛・再生醫學',
@@ -135,6 +136,7 @@ export const zh = {
     nhiNote: '初步快速篩檢，超音波重點評估',
     selfLabel: '自費約診',
     selfNote: '完整超音波全面評估，時間較充裕',
+    moreLink: '想了解更多？查看完整初診說明與常見問題 →',
     steps: [
       {
         num: '01',

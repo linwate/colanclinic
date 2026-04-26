@@ -13,6 +13,7 @@ export const en = {
     services: 'Services',
     faq: 'FAQ',
     book: 'Book Now',
+    first_visit: 'First Visit',
   },
   hero: {
     tag: 'Luzhou, New Taipei · Neurology · Pain · Regenerative Medicine',
@@ -135,6 +136,7 @@ export const en = {
     nhiNote: 'Quick initial screening with focused ultrasound assessment',
     selfLabel: 'Private Appointment',
     selfNote: 'Comprehensive full ultrasound evaluation with more time',
+    moreLink: 'Want to know more? See our full First Visit Guide →',
     steps: [
       {
         num: '01',

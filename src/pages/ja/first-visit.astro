@@ -1,0 +1,149 @@
+---
+import Layout from '../../layouts/Layout.astro'
+
+const lang = 'ja' as const
+
+const lineUrl = 'https://line.me/R/ti/p/@twmedpro'
+const mailUrl = 'mailto:info@golanclinic.com'
+
+const faqs = [
+  {
+    q: '費用はどのくらいですか？',
+    a: '治療内容により異なります。LINEまたはEmailでお問い合わせください。診察時に費用を明確にご説明してから治療を進めます。',
+  },
+  {
+    q: '初診で治療を受けることはできますか？',
+    a: '初診は評価のみとなります。評価後にオプションをご説明し、患者様のご判断で治療を進めます。',
+  },
+  {
+    q: '受診前にX線撮影は必要ですか？',
+    a: '特別な準備は不要です。当院は超音波検査をメインの評価ツールとしており、診察当日に即時確認が可能です。他の医療機関で検査を受けたことがある場合は、画像データのCD-ROMや検査レポートをお持ちいただくと、より詳細な評価と治療計画に役立ちます。',
+  },
+  {
+    q: '領収書は英語で発行できますか？',
+    a: 'ご希望の方には英語の明細領収書を発行いたします。ご来院時にスタッフへお申し付けください。',
+  },
+  {
+    q: '日本語での対応は可能ですか？',
+    a: '診察は英語対応となります。自費約診の場合、通訳の手配が可能です（費用は患者様負担）。',
+  },
+  {
+    q: '療程は何回必要ですか？',
+    a: '個人の状態によります。通常1〜3回の評価で明確な治療計画をご提案します。無期限のフォローアップは行いません。',
+  },
+  {
+    q: 'どのような場合に受診すべきですか？',
+    a: '2〜3週間以上痛みが続く場合、再発を繰り返す場合、または手術前に非手術的な選択肢を検討したい場合は、まず評価のご予約をお勧めします。',
+  },
+]
+---
+
+<Layout
+  lang={lang}
+  pathname="first-visit"
+  title="初めての方へ｜ゴラン診療所・蘆洲疼痛治療"
+  description="ゴラン診療所への初診をお考えの方へ。診察の流れ、超音波評価、健保・自費の違い、よくある質問、予約方法をご案内します。"
+>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  })} />
+
+  <section class="fv-hero">
+    <div class="container">
+      <h1>初めてご来院される方へ</h1>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>以下に当てはまる方はご相談ください</h2>
+      <ul>
+        <li>2〜3週間以上、痛みやしびれ、違和感が続いている</li>
+        <li>安静、リハビリ、服薬を試みたが再発を繰り返している</li>
+        <li>検査では異常なしと言われたが、不調が続いている</li>
+        <li>注射や手術の前に、まず原因をはっきりさせたい</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>どちらを選べばいいですか？</h2>
+      <div class="fv-tracks">
+        <div class="fv-track">
+          <span class="fv-track-label">健保診察</span>
+          <p>神経科の一般診察。初回評価や定期フォローアップに適しています。超音波による重点評価を実施。</p>
+        </div>
+        <div class="fv-track">
+          <span class="fv-track-label">自費予約</span>
+          <p>疼痛修復に特化した診察。時間をかけて丁寧に評価し、超音波導引注射・PRP・神経解套・BMACなどの高度な治療オプションについて詳しくご説明します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>来院後の流れをご説明します</h2>
+      <div class="fv-steps">
+        <div class="fv-step"><span class="fv-step-text">受付・ご来院</span></div>
+        <div class="fv-step"><span class="fv-step-text">詳細な問診（いつから・何を試みたか・一番気になることは何か）</span></div>
+        <div class="fv-step"><span class="fv-step-text">超音波によるリアルタイム評価（その場で問題箇所を確認、レポート待ち不要）</span></div>
+        <div class="fv-step"><span class="fv-step-text">治療オプションのご説明（患者様のご判断で進めます。押しつけはありません）</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>事前に準備するものはありますか？</h2>
+      <p>特別な準備は不要です。当院は超音波検査をメインの評価ツールとしており、診察当日に即時確認が可能です。他の医療機関で検査を受けたことがある場合は、画像データのCD-ROMや検査レポートをお持ちいただくと、より詳細な評価と治療計画に役立ちます。</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>診察はどの言語で対応していますか？</h2>
+      <p>診察は英語での対応となります。自費約診の場合、ご希望に応じて通訳の手配が可能です（費用は患者様負担）。</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>来院方法</h2>
+      <p>住所：新北市蘆洲区永安北路二段58巷6号</p>
+      <p>MRT：徐匯中學駅より徒歩約5〜10分</p>
+      <p><a href="https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8" target="_blank" rel="noopener">📍 Google マップを開く</a></p>
+    </div>
+  </section>
+
+  <section class="fv-section fv-faq">
+    <div class="container">
+      <h2>よくある質問</h2>
+      {faqs.map((f) => (
+        <details>
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>準備ができましたら、お気軽にご連絡ください</h2>
+      <p class="fv-reply-note">営業日24時間以内にご返答いたします。診察が混み合っている場合は返答が遅れることがございます。</p>
+      <div class="fv-cta-row">
+        <a href={lineUrl} class="fv-cta fv-cta-line" target="_blank" rel="noopener">LINEで相談・予約</a>
+        <a href={mailUrl} class="fv-cta fv-cta-mail">メールでお問い合わせ</a>
+        <a href={`/${lang}/`} class="fv-cta fv-cta-ghost">トップページへ戻る</a>
+      </div>
+    </div>
+  </section>
+</Layout>

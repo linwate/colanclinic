@@ -1,0 +1,145 @@
+---
+import Layout from '../../layouts/Layout.astro'
+
+const lang = 'zh' as const
+
+const lineUrl = 'https://line.me/R/ti/p/@twmedpro'
+const mailUrl = 'mailto:info@golanclinic.com'
+
+const faqs = [
+  {
+    q: '費用大概多少？',
+    a: '依治療項目不同，自費項目費用請透過 LINE 詢問，門診時會完整說明後再進行。',
+  },
+  {
+    q: '第一次來會馬上治療嗎？',
+    a: '不會。第一次會先做完整評估，確認問題後說明選項，你決定後才進行治療。',
+  },
+  {
+    q: '需要先去拍 X 光嗎？',
+    a: '不需要特別去拍。本診所以超音波即時評估為主，門診當場即可確認問題位置。如果你在其他院所或醫院做過相關檢查，歡迎攜帶光碟片或影像報告前來，有助於更完整的評估與治療規劃。',
+  },
+  {
+    q: '健保門診和自費約診有什麼不同？',
+    a: '健保門診適合初步評估與常規追蹤；自費約診時間較充裕，可深入討論進階治療選項，包含超音波導引注射、PRP、神經解套、BMAC 等再生醫學療程。',
+  },
+  {
+    q: '療程需要來幾次？',
+    a: '依個人狀況不同，通常 1–3 次評估後會有明確計畫，不會無限期追蹤。',
+  },
+  {
+    q: '什麼時候應該來就診？',
+    a: '疼痛超過 2–3 週未改善、反覆發作、或想在手術前先了解非手術選項，都適合來評估。',
+  },
+]
+---
+
+<Layout
+  lang={lang}
+  pathname="first-visit"
+  title="初診說明｜鈷嵐診所・蘆洲疼痛治療"
+  description="第一次來鈷嵐診所？了解初診流程、健保與自費差異、超音波評估說明、常見問題與預約方式。"
+>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  })} />
+
+  <section class="fv-hero">
+    <div class="container">
+      <h1>第一次來診，你需要知道的事</h1>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>你是否有這些情況？</h2>
+      <ul>
+        <li>疼痛、麻木或卡卡的感覺已超過 2–3 週仍未改善</li>
+        <li>休息、復健、吃藥後還是反覆發作</li>
+        <li>做過檢查卻找不到原因</li>
+        <li>想在打針或手術前，先搞清楚問題出在哪</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>兩種門診有什麼不同？</h2>
+      <div class="fv-tracks">
+        <div class="fv-track">
+          <span class="fv-track-label">健保門診</span>
+          <p>一般神經科診療，適合初步評估與常規追蹤，超音波重點評估。</p>
+        </div>
+        <div class="fv-track">
+          <span class="fv-track-label">自費約診</span>
+          <p>以疼痛修復為核心，時間充裕，完整超音波全面評估，可深入討論進階治療選項。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>到診後會發生什麼？</h2>
+      <div class="fv-steps">
+        <div class="fv-step"><span class="fv-step-text">到院報到</span></div>
+        <div class="fv-step"><span class="fv-step-text">詳細問診，了解疼痛多久、試過什麼、最在意什麼</span></div>
+        <div class="fv-step"><span class="fv-step-text">超音波即時影像評估，當場確認問題位置，不用等報告</span></div>
+        <div class="fv-step"><span class="fv-step-text">說明治療選項，由你決定後才進行，不施壓</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>需要準備什麼？</h2>
+      <p>不需要特別去拍 X 光。本診所以超音波即時評估為核心，門診當場即可確認問題位置。如果你在其他院所或醫院做過相關檢查，歡迎攜帶光碟片或影像報告前來，有助於更完整的評估與治療規劃。</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>可以用什麼語言溝通？</h2>
+      <p>國語、台語皆可，用你習慣的方式說話。</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>怎麼來？</h2>
+      <p>地址：新北市蘆洲區永安北路二段 58 巷 6 號</p>
+      <p>捷運：距徐匯中學站步行約 5–10 分鐘</p>
+      <p><a href="https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8" target="_blank" rel="noopener">📍 開啟 Google 地圖導航</a></p>
+    </div>
+  </section>
+
+  <section class="fv-section fv-faq">
+    <div class="container">
+      <h2>常見問題</h2>
+      {faqs.map((f) => (
+        <details>
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>準備好了嗎？</h2>
+      <p class="fv-reply-note">工作日 24 小時內回覆，門診繁忙時可能延後。</p>
+      <div class="fv-cta-row">
+        <a href={lineUrl} class="fv-cta fv-cta-line" target="_blank" rel="noopener">加入 LINE 諮詢預約</a>
+        <a href={mailUrl} class="fv-cta fv-cta-mail">Email 詢問</a>
+        <a href={`/${lang}/`} class="fv-cta fv-cta-ghost">返回首頁</a>
+      </div>
+    </div>
+  </section>
+</Layout>

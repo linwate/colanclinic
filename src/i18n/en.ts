@@ -310,7 +310,7 @@ export const en = {
       },
       {
         q: 'What payment methods do you accept?',
-        a: 'We accept cash in New Taiwan Dollars (NTD) and major credit cards, including Visa and Mastercard. All fees will be clearly explained before any treatment begins.',
+        a: 'Registration and consultation fees are payable in cash only. For private treatment procedures such as PRP, BMAC, TAME, and other injection therapies, we accept cash in New Taiwan Dollars and major credit cards including Visa and Mastercard. All fees will be clearly explained before any treatment begins.',
       },
     ],
   },

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /cdn-cgi/
 
-Sitemap: https://golanclinic.com/sitemap-index.xml
+Sitemap: https://colanclinic.com/sitemap-index.xml

@@ -20,11 +20,11 @@ const description = Astro.props.description || t.site.description
 // Normalize: strip leading/trailing slashes; non-empty → 'segment/'
 const slug = pathname.replace(/^\/+|\/+$/g, '')
 const pageSegment = slug ? `${slug}/` : ''
-const canonical = `https://golanclinic.com/${lang}/${pageSegment}`
+const canonical = `https://colanclinic.com/${lang}/${pageSegment}`
 // On a subpage, nav anchors must navigate back to the home page first;
 // on home, anchors are pure fragments.
 const navHome = slug ? `/${lang}/` : ''
-const ogImage = 'https://golanclinic.com/images/doctor.webp'
+const ogImage = 'https://colanclinic.com/images/doctor.webp'
 
 interface Settings {
   active?: boolean
@@ -148,10 +148,10 @@ const hreflangOf: Record<Lang, string> = {
     <link rel="icon" href="/favicon.ico" />
 
     <!-- hreflang (absolute URLs for SEO clarity) -->
-    <link rel="alternate" hreflang="zh-TW" href={`https://golanclinic.com/zh/${pageSegment}`} />
-    <link rel="alternate" hreflang="en" href={`https://golanclinic.com/en/${pageSegment}`} />
-    <link rel="alternate" hreflang="ja" href={`https://golanclinic.com/ja/${pageSegment}`} />
-    <link rel="alternate" hreflang="x-default" href={`https://golanclinic.com/zh/${pageSegment}`} />
+    <link rel="alternate" hreflang="zh-TW" href={`https://colanclinic.com/zh/${pageSegment}`} />
+    <link rel="alternate" hreflang="en" href={`https://colanclinic.com/en/${pageSegment}`} />
+    <link rel="alternate" hreflang="ja" href={`https://colanclinic.com/ja/${pageSegment}`} />
+    <link rel="alternate" hreflang="x-default" href={`https://colanclinic.com/zh/${pageSegment}`} />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -168,7 +168,7 @@ const hreflangOf: Record<Lang, string> = {
       name: '鈷嵐診所',
       alternateName: ['Golan Clinic', 'ゴラン診療所'],
       description: '神經科暨疼痛專科診所，提供超音波導引注射、PRP、神經解套、BMAC再生醫學',
-      url: 'https://golanclinic.com',
+      url: 'https://colanclinic.com',
       image: ogImage,
       telephone: '',
       priceRange: '$$',
@@ -429,7 +429,7 @@ const hreflangOf: Record<Lang, string> = {
         <div class="footer-rule" aria-hidden="true"></div>
         <div class="footer-bottom">
           <span class="footer-copyright">© {new Date().getFullYear()} {t.footer.copyright_brand}</span>
-          <a class="footer-mail" href="mailto:info@golanclinic.com">info@golanclinic.com</a>
+          <a class="footer-mail" href="mailto:info@colanclinic.com">info@colanclinic.com</a>
         </div>
       </div>
     </footer>

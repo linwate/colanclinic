@@ -8,7 +8,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://golanclinic.com',
+  site: 'https://colanclinic.com',
   server: {
     host: true,
   },

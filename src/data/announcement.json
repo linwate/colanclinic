@@ -1,6 +1,6 @@
 {
   "settings": {
-    "active": false
+    "active": true
   },
   "announcements": [
     {
@@ -9,7 +9,7 @@
       "en": "This clinic is under preparation.",
       "ja": "本クリニックは準備中です。",
       "color": "#ffd700",
-      "expires_at": "2026-05-07T17:36:00.000Z"
+      "expires_at": "2026-07-29T17:36:00.000Z"
     },
     {
       "id": 2,

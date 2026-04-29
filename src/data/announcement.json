@@ -21,17 +21,17 @@
     }
   ],
   "modal": {
-    "active": false,
+    "active": true,
     "expires_at": "2026-05-08T17:54:00.000Z",
     "title": {
       "zh": "重要公告",
-      "en": "Important Notice",
+      "en": "Important Announcement",
       "ja": "重要なお知らせ"
     },
     "content": {
-      "zh": "重要公告重要公告重要公告重要公告重要公告",
-      "en": "Important Notice Important Notice Important Notice Important Notice Important Notice",
-      "ja": "重要なお知らせ重要なお知らせ重要なお知らせ重要なお知らせ重要なお知らせ"
+      "zh": "重要公告",
+      "en": "Important Announcement",
+      "ja": "重要なお知らせ"
     },
     "cta_label": {
       "zh": "立即預約",

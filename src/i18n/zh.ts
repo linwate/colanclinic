@@ -77,7 +77,7 @@ export const zh = {
         items: [
           {
             name: '神經科一般門診',
-            desc: '頭痛、頭暈、手麻、腳麻、神經痛',
+            desc: '頭痛、頭暈、手麻、腳麻、神經痛、糖尿病神經病變（DPN）',
             scope: 'nhi',
           },
           {

@@ -77,7 +77,7 @@ export const en = {
         items: [
           {
             name: 'General Neurology Clinic',
-            desc: 'Headache, dizziness, hand/foot numbness, nerve pain',
+            desc: 'Headache, dizziness, hand/foot numbness, nerve pain, diabetic peripheral neuropathy (DPN)',
             scope: 'nhi',
           },
           {

@@ -2882,3 +2882,253 @@ details[open] .faq-q::after {
 .cta-icons-row a:active {
   opacity: 0.8;
 }
+
+/* ── 症狀子頁面 Hero 區 ─────────────────── */
+
+.fv-hero h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a2f5e;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.fv-tagline {
+  font-size: 1.05rem;
+  color: #6b5e4f;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0;
+}
+
+/* ── Intro 段落 ─────────────────────────── */
+
+.fv-section p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #3d3530;
+  margin-bottom: 1.25rem;
+}
+
+.fv-section p:first-child {
+  font-size: 1.05rem;
+  color: #1a2f5e;
+  font-weight: 500;
+  border-left: 3px solid #c9b99a;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ── 分類小標題 ─────────────────────────── */
+
+.fv-section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a2f5e;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e0d8;
+}
+
+/* ── 疾病卡片 ───────────────────────────── */
+
+.symptom-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .symptom-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.symptom-card {
+  background: #ffffff;
+  border: 1px solid #e5e0d8;
+  border-radius: 10px;
+  padding: 1.25rem 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.symptom-card:hover {
+  border-color: #1a2f5e;
+  box-shadow: 0 4px 16px rgba(26, 47, 94, 0.08);
+}
+
+.symptom-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a2f5e;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.symptom-card > p:first-of-type {
+  font-size: 0.9rem;
+  color: #4a3f35;
+  margin: 0;
+  line-height: 1.6;
+  border-left: none;
+  padding-left: 0;
+  font-weight: 400;
+}
+
+.card-note {
+  font-size: 0.82rem;
+  color: #0b3a6f;
+  background: #f0ede8;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0b3a6f;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* ── 治療選項 ───────────────────────────── */
+
+.treatment-intro {
+  font-size: 0.92rem;
+  color: #6b5e4f;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  font-style: italic;
+  border-left: none;
+  padding-left: 0;
+  font-weight: 400;
+}
+
+.treatment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.treatment-list li a {
+  display: inline-block;
+  padding: 7px 16px;
+  background: #f0ede8;
+  border: 1px solid #c9b99a;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #1a2f5e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.treatment-list li a:hover {
+  background: #1a2f5e;
+  color: #ffffff;
+  border-color: #1a2f5e;
+}
+
+/* ── 品牌核心區塊 ───────────────────────── */
+
+.clinic-note-block {
+  background: #f5f3ef;
+  border-left: 4px solid #1a2f5e;
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+}
+
+.clinic-note-block p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #3d3530;
+  border-left: none;
+  padding-left: 0;
+  font-weight: 400;
+}
+
+.clinic-note-block p:last-child {
+  margin: 0;
+  font-weight: 700;
+  color: #1a2f5e;
+  font-size: 1rem;
+  border-left: none;
+  padding-left: 0;
+}
+
+/* ── fv-section 區塊間距 ────────────────── */
+
+.fv-section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #f0ede8;
+}
+
+.fv-section:last-of-type {
+  border-bottom: none;
+}
+
+.fv-hero {
+  padding: 3rem 0 2rem;
+  background: linear-gradient(135deg, #f5f3ef 0%, #ffffff 100%);
+  border-bottom: 1px solid #e5e0d8;
+}
+
+/* ── CTA 區塊 ───────────────────────────── */
+
+.fv-cta-section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a2f5e;
+  margin-bottom: 0.5rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.fv-reply-note {
+  font-size: 0.95rem;
+  color: #4a3f35;
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  border-left: none;
+  padding-left: 0;
+  font-weight: 400;
+}
+
+/* 手機版調整 */
+@media (max-width: 640px) {
+  .fv-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .fv-tagline {
+    font-size: 0.95rem;
+  }
+
+  .fv-hero {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .fv-section {
+    padding: 2rem 0;
+  }
+
+  .symptom-cards {
+    grid-template-columns: 1fr;
+  }
+}

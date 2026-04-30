@@ -2889,8 +2889,9 @@ details[open] .faq-q::after {
   font-size: 2rem;
   font-weight: 800;
   color: #1a2f5e;
-  margin-bottom: 0.75rem;
+  margin: 0 0 1rem 0;
   letter-spacing: -0.01em;
+  line-height: 1.2;
 }
 
 .fv-tagline {
@@ -2907,16 +2908,20 @@ details[open] .faq-q::after {
   font-size: 1rem;
   line-height: 1.85;
   color: #3d3530;
-  margin-bottom: 1.25rem;
+  margin: 0 0 1.1rem 0;
 }
 
-.fv-section p:first-child {
+.fv-section p:last-child {
+  margin-bottom: 0;
+}
+
+.fv-section p:first-of-type {
   font-size: 1.05rem;
   color: #1a2f5e;
   font-weight: 500;
   border-left: 3px solid #c9b99a;
   padding-left: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 /* ── 分類小標題 ─────────────────────────── */
@@ -2925,7 +2930,7 @@ details[open] .faq-q::after {
   font-size: 1.2rem;
   font-weight: 700;
   color: #1a2f5e;
-  margin-bottom: 1.25rem;
+  margin: 0 0 1.25rem 0;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #e5e0d8;
 }
@@ -3081,12 +3086,28 @@ details[open] .faq-q::after {
 
 .fv-section:last-of-type {
   border-bottom: none;
+  padding-bottom: 3rem;
+}
+
+/* Section 內第一個元素不要有上方 margin */
+.fv-section > .container > *:first-child {
+  margin-top: 0;
+}
+
+/* Section 內最後一個元素不要有下方 margin */
+.fv-section > .container > *:last-child {
+  margin-bottom: 0;
 }
 
 .fv-hero {
-  padding: 3rem 0 2rem;
+  padding: 3.5rem 0 2.5rem;
   background: linear-gradient(135deg, #f5f3ef 0%, #ffffff 100%);
   border-bottom: 1px solid #e5e0d8;
+}
+
+/* pricing 頁面的注意事項區塊 */
+.pricing-notice {
+  margin-bottom: 1.5rem;
 }
 
 /* ── CTA 區塊 ───────────────────────────── */
@@ -3112,23 +3133,20 @@ details[open] .faq-q::after {
 
 /* 手機版調整 */
 @media (max-width: 640px) {
+  .fv-hero {
+    padding: 2.5rem 0 2rem;
+  }
+
   .fv-hero h1 {
     font-size: 1.6rem;
-  }
-
-  .fv-tagline {
-    font-size: 0.95rem;
-  }
-
-  .fv-hero {
-    padding: 2rem 0 1.5rem;
+    margin-bottom: 0.75rem;
   }
 
   .fv-section {
     padding: 2rem 0;
   }
 
-  .symptom-cards {
-    grid-template-columns: 1fr;
+  .fv-section:last-of-type {
+    padding-bottom: 2rem;
   }
 }

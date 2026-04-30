@@ -2717,3 +2717,60 @@ details[open] .faq-q::after {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* ── 症狀總覽卡片 Grid ─────────────────── */
+
+.symptom-index-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a2f5e;
+  margin-bottom: 1.25rem;
+}
+
+.symptom-cat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.symptom-cat-card {
+  border: 1px solid #e0ddd8;
+  border-radius: 12px;
+  padding: 20px 16px;
+  background: #ffffff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 120px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.symptom-cat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #1a2f5e;
+}
+
+.symptom-cat-icon {
+  margin-bottom: 16px;
+}
+
+.symptom-cat-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a2f5e;
+  line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+  .symptom-cat-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .symptom-cat-card {
+    padding: 16px 12px;
+    min-height: 100px;
+  }
+}

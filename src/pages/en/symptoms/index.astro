@@ -1,10 +1,9 @@
 ---
 import Layout from '../../../layouts/Layout.astro'
-import { en, indexMeta } from '../../../data/symptoms'
+import { indexMeta } from '../../../data/symptoms'
 
 const lang = 'en'
 const meta = indexMeta[lang]
-const slugs = ['shoulder', 'back', 'knee', 'foot', 'elbow-wrist', 'neuropathy']
 ---
 
 <Layout title={meta.title} description={meta.description} lang={lang} pathname="symptoms">
@@ -17,19 +16,87 @@ const slugs = ['shoulder', 'back', 'knee', 'foot', 'elbow-wrist', 'neuropathy']
 
   <section class="fv-section">
     <div class="container">
-      <div class="symptom-index-grid">
-        {slugs.map((slug) => {
-          const d = en[slug]
-          return (
-            <a href={`/en/symptoms/${slug}/`} class="symptom-index-card">
-              <h2>{d.h1}</h2>
-              <p>{d.heroSub}</p>
-              <ul>
-                {d.category.cards.slice(0, 3).map((c) => <li>{c.name}</li>)}
-              </ul>
-            </a>
-          )
-        })}
+      <h2 class="symptom-index-heading">Find Treatment by Symptom</h2>
+      <div class="symptom-cat-grid">
+
+        <a href="/en/symptoms/shoulder/" class="symptom-cat-card">
+          <div class="symptom-cat-icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
+                 stroke="#1a2f5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C9 2 7 4 7 7v2H5a2 2 0 0 0-2 2v9h18v-9a2 2 0 0 0-2-2h-2V7c0-3-2-5-5-5z"/>
+              <line x1="12" y1="11" x2="12" y2="18"/>
+            </svg>
+          </div>
+          <span class="symptom-cat-name">Shoulder & Neck</span>
+        </a>
+
+        <a href="/en/symptoms/back/" class="symptom-cat-card">
+          <div class="symptom-cat-icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
+                 stroke="#1a2f5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                 xmlns="http://www.w3.org/2000/svg">
+              <line x1="12" y1="2" x2="12" y2="22"/>
+              <path d="M12 6c2 0 4 1 4 3s-2 3-4 3-4-1-4-3 2-3 4-3z"/>
+              <path d="M12 14c2 0 4 1 4 3s-2 3-4 3-4-1-4-3 2-3 4-3z"/>
+            </svg>
+          </div>
+          <span class="symptom-cat-name">Lower Back Pain</span>
+        </a>
+
+        <a href="/en/symptoms/knee/" class="symptom-cat-card">
+          <div class="symptom-cat-icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
+                 stroke="#1a2f5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 2v8l-3 4 3 4v4"/>
+              <path d="M15 2v8l3 4-3 4v4"/>
+              <ellipse cx="12" cy="12" rx="3" ry="4"/>
+            </svg>
+          </div>
+          <span class="symptom-cat-name">Knee Degeneration</span>
+        </a>
+
+        <a href="/en/symptoms/foot/" class="symptom-cat-card">
+          <div class="symptom-cat-icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
+                 stroke="#1a2f5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 20c0-4 2-8 5-10l3-2 3 1c2 1 5 4 5 7v4H4z"/>
+              <line x1="8" y1="20" x2="8" y2="22"/>
+              <line x1="12" y1="20" x2="12" y2="22"/>
+              <line x1="16" y1="20" x2="16" y2="22"/>
+            </svg>
+          </div>
+          <span class="symptom-cat-name">Foot & Ankle</span>
+        </a>
+
+        <a href="/en/symptoms/elbow-wrist/" class="symptom-cat-card">
+          <div class="symptom-cat-icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
+                 stroke="#1a2f5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 2l2 8-4 5 6 7"/>
+              <path d="M18 2l-2 8 4 5-6 7"/>
+              <line x1="10" y1="10" x2="14" y2="10"/>
+            </svg>
+          </div>
+          <span class="symptom-cat-name">Elbow & Wrist</span>
+        </a>
+
+        <a href="/en/symptoms/neuropathy/" class="symptom-cat-card">
+          <div class="symptom-cat-icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
+                 stroke="#1a2f5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                 xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+              <path d="M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/>
+            </svg>
+          </div>
+          <span class="symptom-cat-name">Neuropathy</span>
+        </a>
+
       </div>
     </div>
   </section>

@@ -3100,9 +3100,18 @@ details[open] .faq-q::after {
 }
 
 .fv-hero {
-  padding: 4rem 0 3rem;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  padding: 0;
   background: linear-gradient(135deg, #f5f3ef 0%, #ffffff 100%);
   border-bottom: 1px solid #e5e0d8;
+}
+
+.fv-hero .container {
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .fv-eyebrow {
@@ -3159,7 +3168,12 @@ details[open] .faq-q::after {
 /* 手機版調整 */
 @media (max-width: 640px) {
   .fv-hero {
-    padding: 3rem 0 2.5rem;
+    min-height: 180px;
+  }
+
+  .fv-hero .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .fv-hero h1 {

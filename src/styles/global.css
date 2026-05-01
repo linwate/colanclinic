@@ -295,12 +295,12 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
 body:has(.announcement-ticker) .nav { top: 36px; }
 
 /* Hero gets extra top padding when ticker exists */
-body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
+body:has(.announcement-ticker) .hero { padding-top: calc(var(--nav-h) + 2rem + 36px); }
 
 @media (max-width: 768px) {
   .announcement-ticker { height: 36px; }
   body:has(.announcement-ticker) .nav { top: 36px; }
-  body:has(.announcement-ticker) .hero { padding-top: calc(5rem + 36px); }
+  body:has(.announcement-ticker) .hero { padding-top: calc(var(--nav-h) + 2rem + 36px); }
   .ticker-inner { max-width: 100%; }
   .ticker-text { font-size: 0.92rem; padding: 0 1rem; }
   .ticker-sep { font-size: 0.92rem; padding: 0 0.5rem; }
@@ -313,7 +313,7 @@ body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
 @media (min-width: 769px) {
   .announcement-ticker { height: 40px; }
   body:has(.announcement-ticker) .nav { top: 40px; }
-  body:has(.announcement-ticker) .hero { padding-top: calc(5rem + 40px); }
+  body:has(.announcement-ticker) .hero { padding-top: calc(var(--nav-h) + 2rem + 40px); }
 }
 
 /* Respect reduced-motion preference — no scrolling, show only the first
@@ -693,7 +693,7 @@ body:has(.announcement-ticker) .hero { padding-top: calc(4rem + 36px); }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4rem 0 2rem;
+  padding: calc(var(--nav-h) + 2rem) 0 2rem;
   position: relative;
   overflow: hidden;
   background: var(--bg);

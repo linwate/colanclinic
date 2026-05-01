@@ -330,8 +330,8 @@ export const en = {
     title: 'Clinic Hours',
     note: 'Currently by appointment only. Official clinic hours will be announced before opening. Feel free to send your symptoms and imaging reports via LINE in the meantime.',
     slots: [
-      { day: 'Mon – Fri', time: 'To be confirmed' },
-      { day: 'Saturday', time: 'To be confirmed' },
+      { day: 'Mon – Fri', time: 'By appointment' },
+      { day: 'Saturday', time: 'By appointment' },
       { day: 'Sunday', time: 'Closed' },
     ],
     phone: 'To be confirmed',

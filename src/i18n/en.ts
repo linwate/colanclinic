@@ -6,7 +6,7 @@ export const en = {
     keywords:
       'neurology Luzhou, pain clinic, PRP, prolotherapy, hydrodissection, ultrasound-guided injection, botulinum toxin, needle knife, arterial stiffness, chronic inflammation, regenerative medicine, BMAC, bone marrow concentrate, Dr. Lin Wei-de',
   },
-  nav_logo: 'Golan Clinic',
+  nav_logo: 'Colan Clinic',
   nav: {
     about: 'About',
     approach: 'Approach',
@@ -45,7 +45,7 @@ export const en = {
     tag: 'Integrated View',
     title: 'Pain × Chronic Inflammation × Whole-body Degeneration',
     title2: 'Three faces of one underlying imbalance',
-    desc: "From a neurologist's clinical perspective, stubborn pain, chronic inflammation and whole-body degeneration aren't usually separate problems — they're interlinked stages on the same axis of imbalance. Golan Clinic integrates assessments across all three so you see the whole picture, not just one symptom at a time.",
+    desc: "From a neurologist's clinical perspective, stubborn pain, chronic inflammation and whole-body degeneration aren't usually separate problems — they're interlinked stages on the same axis of imbalance. Colan Clinic integrates assessments across all three so you see the whole picture, not just one symptom at a time.",
     points: [
       {
         label: 'Neurology Lens',
@@ -121,7 +121,7 @@ export const en = {
       {
         key: 'signature',
         title: 'Signature Integrated Evaluation',
-        desc: "Golan's differentiator: vessels and pain on the same assessment blueprint.",
+        desc: "Colan's differentiator: vessels and pain on the same assessment blueprint.",
         items: [
           {
             name: 'Arterial Stiffness × Chronic Pain Integrated Evaluation',
@@ -169,10 +169,10 @@ export const en = {
     title: 'Clinic Environment',
     sub: 'Opening September 2026 · Design concept images',
     images: [
-      { src: '/images/clinic-exterior.webp', alt: 'Golan Clinic exterior' },
-      { src: '/images/clinic-waiting.webp', alt: 'Golan Clinic waiting room' },
-      { src: '/images/clinic-hall.webp', alt: 'Golan Clinic waiting area' },
-      { src: '/images/clinic-reception.webp', alt: 'Golan Clinic reception' },
+      { src: '/images/clinic-exterior.webp', alt: 'Colan Clinic exterior' },
+      { src: '/images/clinic-waiting.webp', alt: 'Colan Clinic waiting room' },
+      { src: '/images/clinic-hall.webp', alt: 'Colan Clinic waiting area' },
+      { src: '/images/clinic-reception.webp', alt: 'Colan Clinic reception' },
     ],
   },
   doctor: {
@@ -317,14 +317,14 @@ export const en = {
     ],
   },
   footer: {
-    brand: 'Golan Clinic',
+    brand: 'Colan Clinic',
     tagline: 'Neurology · Pain Medicine · Regenerative Therapy',
     addr_label: 'Address',
     hours_label: 'Hours',
     hours_main: 'Mon – Sat',
     hours_sub: 'Pain Medicine · Neurology NHI Clinic',
     reservation_note: 'Private appointments by reservation',
-    copyright_brand: 'Golan Clinic｜Luzhou, New Taipei',
+    copyright_brand: 'Colan Clinic｜Luzhou, New Taipei City',
   },
   hours: {
     title: 'Clinic Hours',

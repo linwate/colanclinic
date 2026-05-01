@@ -3189,3 +3189,23 @@ details[open] .faq-q::after {
     padding-bottom: 2rem;
   }
 }
+
+/* ── 次按鈕（home #book） ───────────────── */
+
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #1a2f5e;
+  border-radius: 6px;
+  color: #1a2f5e;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.02em;
+}
+
+.btn-secondary:hover {
+  background: #1a2f5e;
+  color: #ffffff;
+}

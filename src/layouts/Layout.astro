@@ -200,6 +200,43 @@ const hreflangOf: Record<Lang, string> = {
       sameAs: [],
     })} />
 
+    <!-- Physician structured data (top-level, complements embedded one above) -->
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Physician',
+      name: '林瑋德',
+      alternateName: 'Lin Wei-De',
+      jobTitle: '疼痛科醫師・神經科專科',
+      worksFor: {
+        '@type': 'MedicalClinic',
+        name: '鈷嵐診所',
+        url: 'https://colanclinic.com',
+      },
+      medicalSpecialty: ['Neurology', 'Pain Medicine', 'Regenerative Medicine'],
+      url: `https://colanclinic.com/${lang}/`,
+    })} />
+
+    {slug.startsWith('symptoms') && (
+      <script type="application/ld+json" is:inline set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: lang === 'en' ? 'Home' : lang === 'ja' ? 'ホーム' : '首頁',
+            item: `https://colanclinic.com/${lang}/`,
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: t.nav.find_symptom,
+            item: `https://colanclinic.com/${lang}/symptoms/`,
+          },
+        ],
+      })} />
+    )}
+
     <!-- FAQPage structured data — only on the home page, where the
          visible FAQ list comes from t.faq.items. Subpages emit their
          own FAQPage schema inline so each URL has exactly one. -->

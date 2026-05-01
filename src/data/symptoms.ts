@@ -30,7 +30,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     metaTitle: "肩膀疼痛｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "五十肩、旋轉肌撕裂、肩峰下夾擠，超音波精準評估找出真正原因，非手術修復。",
     h1: "肩膀疼痛",
-    heroSub: "舉手會痛、夜間痛醒、肩膀卡住？找出真正原因才能修復。",
+    heroSub: "舉手會痛、夜間痛醒、肩膀卡住？先確認問題在哪裡。",
     introParagraphs: [
       "醫師，我肩膀已經快三個月了，手舉起來會痛，晚上翻身也會痛，連穿衣服都很困難。",
       "肩膀痛的原因很多，五十肩、旋轉肌撕裂、肩峰下夾擠，每一種的處理方式都不一樣。打錯針不只沒效，有時候讓問題更嚴重。旋轉肌如果已經撕裂，繼續拉筋伸展可能讓裂口更大。",
@@ -56,7 +56,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     metaTitle: "頸部疼痛｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "頸椎壓迫、頸因性頭痛、頸部肌肉筋膜疼痛，神經科背景精準評估，超音波確認壓迫位置。",
     h1: "頸部疼痛",
-    heroSub: "脖子僵硬、手麻、頭痛？這些可能都從頸椎來。",
+    heroSub: "脖子僵硬、手麻、頭痛？先確認症狀是否來自頸椎。",
     introParagraphs: [
       "醫師，我脖子一直很緊，有時候轉頭會痛，最近開始手麻，睡覺起來頭也會痛。",
       "頸部疼痛容易被忽略，但頸椎問題影響範圍很廣。頸椎神經根受壓迫，症狀可以出現在肩膀、手臂、甚至手指。頸因性頭痛常被誤診為偏頭痛，治療方向完全不同。",
@@ -82,7 +82,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     metaTitle: "下背痛｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "腰椎間盤突出、薦髂關節炎、肌肉筋膜疼痛，超音波找出壓迫位置，非手術修復。",
     h1: "下背痛",
-    heroSub: "腰痛一直好不了？找到真正壓迫位置，才能有效修復。",
+    heroSub: "腰痛一直好不了？先找出真正的壓迫位置。",
     introParagraphs: [
       "醫師，我的腰痛已經快半年了，MRI 說輕微，但我每天坐超過一小時就開始不舒服，起身的時候更明顯，有時候還會痛到臀部。",
       "這種情形很常見。MRI 看的是結構，但結構輕微不代表症狀輕微。腰椎間盤、薦髂關節、肌筋膜，位置不同，症狀可以很像，但治療方向完全不同。",
@@ -108,7 +108,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     metaTitle: "髖臀疼痛｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "髖關節退化、梨狀肌症候群、大轉子疼痛、鼠蹊部拉傷，超音波評估，非手術修復。",
     h1: "髖臀疼痛",
-    heroSub: "臀部深處痛、走路會跛、久坐站起來很難？找出真正的問題位置。",
+    heroSub: "臀部深處痛、走路卡、久坐站起來很難？先確認問題位置。",
     introParagraphs: [
       "醫師，我臀部深處一直有悶痛，久坐之後站起來最明顯，爬樓梯也會加重。去骨科說是髖關節問題，但還沒有嚴重到要換關節。",
       "髖臀部位的疼痛容易被誤判。臀部深處痛不一定是髖關節本身，梨狀肌壓迫坐骨神經、大轉子的肌腱問題、薦髂關節炎，都可能有類似的感覺。",
@@ -134,7 +134,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     metaTitle: "膝蓋退化｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "退化性關節炎、半月板損傷、跳躍膝，玻尿酸至 BMAC 依程度選擇，非手術修復。",
     h1: "膝蓋退化",
-    heroSub: "退化不等於要換關節。找到適合的修復方案，很多人能夠避免手術。",
+    heroSub: "上下樓梯痛、蹲不下去、膝蓋腫？先確認軟骨和關節的實際狀況。",
     introParagraphs: [
       "醫師，我膝蓋退化，骨科說要換關節，但我才五十幾歲，不想換。還有別的選擇嗎？",
       "退化是一個過程，不是終點。很多人聽到退化就覺得一定要換，但只要關節間隙還在，關節軟骨還沒有完全磨損，再生醫學就還有介入的空間。",
@@ -160,7 +160,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     metaTitle: "足部疼痛｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "足底筋膜炎、腳踝扭傷、跟腱炎，超音波評估筋膜厚度，從保守治療到 PRP 修復。",
     h1: "足部疼痛",
-    heroSub: "腳跟痛、腳踝不穩定？腳的問題不處理，膝蓋和腰遲早跟著出問題。",
+    heroSub: "腳跟痛、腳踝不穩定？先評估才能有效修復。",
     introParagraphs: [
       "醫師，我早上下床的第一步是最痛的，走幾步之後會稍微好一點，但站久了又開始。已經痛了快一年，試過鞋墊，也做過物理治療，沒有明顯改善。",
       "足底筋膜炎拖超過三個月，就進入慢性退化期了。急性發炎期休息就能好，慢性退化期需要的是修復，這兩件事完全不一樣。",
@@ -186,7 +186,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     metaTitle: "手肘手腕疼痛｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "網球肘、腕隧道症候群、TFCC 損傷、板機指，超音波確認肌腱神經狀態，精準修復。",
     h1: "手肘手腕疼痛",
-    heroSub: "手肘外側一直痛、手腕使不上力？打針止痛沒用，問題可能在肌腱退化。",
+    heroSub: "手肘外側痛、手腕使不上力？打針止痛前，先確認肌腱狀況。",
     introParagraphs: [
       "醫師，我網球肘打了三次類固醇，每次好個兩三個月又回來。現在連端碗、轉門把都會痛，工作也受影響。",
       "類固醇打三次還在復發，通常代表一件事：問題不是發炎，是肌腱退化。類固醇可以壓住發炎，但退化的肌腱它沒辦法修復。發炎消了，退化還在，下次一用力就又復發。",
@@ -212,7 +212,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     metaTitle: "神經病變｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "糖尿病神經病變（DPN）、神經壓迫、手麻腳麻，神經科專科評估，超音波確認神經狀態。",
     h1: "神經病變",
-    heroSub: "腳麻、燒灼感、像電到一樣？神經科背景讓診斷更精準。",
+    heroSub: "腳麻、燒灼感、像電到一樣？先確認是神經壓迫還是神經病變。",
     introParagraphs: [
       "醫師，我糖尿病控制得還不錯，但腳底一直麻，晚上特別明顯，像踩在棉花上，有時候還有灼熱感。神經科說是糖尿病神經病變，但除了吃藥好像沒什麼其他辦法。",
       "糖尿病神經病變是可以治療的，不是只能等。血糖控制是基礎，但神經已經受損，光控制血糖不夠，受損的神經需要額外的修復介入。",
@@ -241,7 +241,7 @@ export const en: Record<string, LocalizedSymptom> = {
     metaTitle: "Shoulder Pain | Colan Clinic · Luzhou Pain Treatment",
     metaDescription: "Frozen shoulder, rotator cuff tear, subacromial impingement — ultrasound-guided evaluation to find the real cause, non-surgical repair.",
     h1: "Shoulder Pain",
-    heroSub: "Pain when raising your arm, waking up at night, shoulder stiffness? Finding the real cause is the first step.",
+    heroSub: "Shoulder stiff, painful, won't lift? Find out where the problem actually is.",
     introParagraphs: [
       "Doctor, my shoulder has been painful for about three months. It hurts to raise my arm, I wake up in pain when I turn over at night, and even getting dressed is difficult.",
       "Shoulder pain has many causes — frozen shoulder, rotator cuff tears, subacromial impingement — and each requires a completely different approach. The wrong treatment doesn't just fail to help; sometimes it makes things worse. If the rotator cuff is already torn, continuing to stretch may enlarge the tear.",
@@ -267,7 +267,7 @@ export const en: Record<string, LocalizedSymptom> = {
     metaTitle: "Neck Pain | Colan Clinic · Luzhou Pain Treatment",
     metaDescription: "Cervical nerve compression, cervicogenic headache, myofascial pain — neurology-trained evaluation, ultrasound confirms compression site.",
     h1: "Neck Pain",
-    heroSub: "Stiff neck, arm numbness, headaches? These may all be coming from your cervical spine.",
+    heroSub: "Stiff neck, arm numbness, headaches? Find out if it's coming from your cervical spine.",
     introParagraphs: [
       "Doctor, my neck has been tight for a while. Sometimes turning my head hurts, recently my hand started going numb, and I've been waking up with headaches.",
       "Neck problems are easy to underestimate, but cervical spine issues have a wide reach. A compressed cervical nerve root can cause symptoms in the shoulder, arm, or fingers. Cervicogenic headaches are frequently misdiagnosed as migraines — and the treatment direction is completely different.",
@@ -293,7 +293,7 @@ export const en: Record<string, LocalizedSymptom> = {
     metaTitle: "Lower Back Pain | Colan Clinic · Luzhou Pain Treatment",
     metaDescription: "Disc herniation, sacroiliac joint inflammation, myofascial pain — ultrasound pinpoints the compression site, non-surgical repair.",
     h1: "Lower Back Pain",
-    heroSub: "Back pain that just won't go away? Finding the exact compression site is where real treatment begins.",
+    heroSub: "Back pain that won't go away? Find the exact compression site first.",
     introParagraphs: [
       "Doctor, my back has been hurting for almost six months. The MRI says it's mild, but I can't sit for more than an hour without discomfort. Getting up is the worst, and sometimes the pain spreads into my buttock.",
       "This is very common. MRI shows structure — but mild structure doesn't mean mild symptoms. Disc herniation, sacroiliac joint inflammation, and myofascial pain can all look similar, but they require completely different treatment approaches.",
@@ -319,7 +319,7 @@ export const en: Record<string, LocalizedSymptom> = {
     metaTitle: "Hip & Buttock Pain | Colan Clinic · Luzhou Pain Treatment",
     metaDescription: "Hip joint degeneration, piriformis syndrome, greater trochanteric pain, groin strain — ultrasound evaluation, non-surgical repair.",
     h1: "Hip & Buttock Pain",
-    heroSub: "Deep buttock pain, limping when you walk, hard to stand up after sitting? Find out where the problem really is.",
+    heroSub: "Deep buttock pain, limping, hard to stand up? Pinpoint the problem location first.",
     introParagraphs: [
       "Doctor, I've had a deep aching pain in my buttock for a while. It's most noticeable when I stand up after sitting for a long time, and it gets worse going up stairs. The orthopedic surgeon said it's a hip joint issue, but not severe enough for replacement yet.",
       "Pain in the hip and buttock area is easy to misidentify. Deep buttock pain isn't always the hip joint itself — piriformis muscle compression of the sciatic nerve, greater trochanteric tendon problems, and sacroiliac joint inflammation can all feel similar.",
@@ -345,7 +345,7 @@ export const en: Record<string, LocalizedSymptom> = {
     metaTitle: "Knee Degeneration | Colan Clinic · Luzhou Pain Treatment",
     metaDescription: "Osteoarthritis, meniscus tear, jumper's knee — from hyaluronic acid to BMAC based on severity, non-surgical repair.",
     h1: "Knee Degeneration",
-    heroSub: "Degeneration doesn't mean you need a replacement. Many patients can avoid surgery with the right approach.",
+    heroSub: "Stairs hurt, can't squat, knee swollen? Check the actual condition of cartilage and the joint.",
     introParagraphs: [
       "Doctor, my knee is degenerating. The orthopedic surgeon said I need a replacement, but I'm only in my fifties. I don't want to go that route. Are there other options?",
       "Degeneration is a process, not an endpoint. Many people assume a replacement is inevitable once they hear the word degeneration — but as long as joint space remains and the cartilage environment hasn't completely collapsed, regenerative medicine still has room to intervene.",
@@ -371,7 +371,7 @@ export const en: Record<string, LocalizedSymptom> = {
     metaTitle: "Foot & Ankle Pain | Colan Clinic · Luzhou Pain Treatment",
     metaDescription: "Plantar fasciitis, ankle sprain, Achilles tendinitis — ultrasound evaluates fascia thickness, from conservative care to PRP repair.",
     h1: "Foot & Ankle Pain",
-    heroSub: "Heel pain or an unstable ankle? Untreated foot problems often lead to knee and back issues down the line.",
+    heroSub: "Heel pain, unstable ankle? Accurate assessment before effective repair.",
     introParagraphs: [
       "Doctor, the first step out of bed every morning is the worst. It eases up after a few steps, but after standing for a while it comes back. It's been almost a year. I've tried insoles and physical therapy — neither made a clear difference.",
       "Once plantar fasciitis has been going on for more than three months, it's entered the chronic degeneration phase. During acute inflammation, rest can help. In the chronic phase, what's needed is repair. Those are two completely different things.",
@@ -397,7 +397,7 @@ export const en: Record<string, LocalizedSymptom> = {
     metaTitle: "Elbow & Wrist Pain | Colan Clinic · Luzhou Pain Treatment",
     metaDescription: "Tennis elbow, carpal tunnel syndrome, TFCC injury, trigger finger — ultrasound confirms tendon and nerve status, precise repair.",
     h1: "Elbow & Wrist Pain",
-    heroSub: "Outer elbow pain, weak grip, wrist that won't cooperate? Injections alone won't fix tendon degeneration.",
+    heroSub: "Outer elbow pain, weak wrist? Check tendon condition before reaching for an injection.",
     introParagraphs: [
       "Doctor, I've had three corticosteroid injections for tennis elbow. Each time it gets better for a couple of months, then comes back. Now even lifting a bowl or turning a door handle hurts, and it's affecting my work.",
       "When the pain keeps returning after three injections, that usually means one thing: the problem isn't inflammation, it's tendon degeneration. Corticosteroids suppress inflammation, but they can't repair a degenerated tendon. Once the inflammation settles, the degeneration is still there — and the next time you exert force, it flares up again.",
@@ -423,7 +423,7 @@ export const en: Record<string, LocalizedSymptom> = {
     metaTitle: "Neuropathy & Nerve Pain | Colan Clinic · Luzhou Pain Treatment",
     metaDescription: "Diabetic peripheral neuropathy (DPN), nerve compression, hand and foot numbness — neurology-trained evaluation, ultrasound nerve assessment.",
     h1: "Neuropathy & Nerve Pain",
-    heroSub: "Numbness, burning, electric sensations? A neurology background means more precise diagnosis.",
+    heroSub: "Numbness, burning, electric sensations? Find out if it's nerve compression or neuropathy.",
     introParagraphs: [
       "Doctor, my diabetes is fairly well controlled, but the soles of my feet are always numb — especially at night, like walking on cotton. Sometimes there's a burning sensation too. The neurologist said it's diabetic neuropathy, but medication seems to be the only option they offered.",
       "Diabetic peripheral neuropathy is treatable — it's not something you just have to wait out. Blood sugar control is the foundation, but once nerve damage has occurred, controlling blood sugar alone isn't enough. Damaged nerves need additional intervention to repair.",
@@ -452,7 +452,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     metaTitle: "肩の痛み｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "五十肩、腱板断裂、肩峰下インピンジメント。超音波で正確に評価し、本当の原因を特定します。",
     h1: "肩の痛み",
-    heroSub: "腕を上げると痛い、夜中に目が覚める、肩が固まる？本当の原因を見つけることが回復への第一歩です。",
+    heroSub: "腕が上がらない、夜間痛、肩が固まる？まず問題の場所を確認しましょう。",
     introParagraphs: [
       "先生、もう3ヶ月ほど肩が痛くて、腕を上げると痛く、夜中に寝返りで目が覚めます。着替えも辛いです。",
       "肩の痛みには多くの原因があります。五十肩、腱板断裂、肩峰下インピンジメント、それぞれ対処法がまったく違います。間違った治療は効かないだけでなく、悪化させることもあります。腱板がすでに断裂しているなら、ストレッチを続けると断裂が広がる可能性があります。",
@@ -478,7 +478,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     metaTitle: "頸部の痛み｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "頸椎神経根症、頸因性頭痛、筋膜性疼痛。神経内科専門の評価、超音波で圧迫部位を確認。",
     h1: "頸部の痛み",
-    heroSub: "首のこわばり、腕のしびれ、頭痛。これらは頸椎から来ている可能性があります。",
+    heroSub: "首のこわばり、腕のしびれ、頭痛？頸椎から来ているかどうか確認しましょう。",
     introParagraphs: [
       "先生、首がずっと張っていて、頭を回すと痛いことがあります。最近は手がしびれるようになり、朝起きると頭も痛いです。",
       "頸部の問題は見逃されやすいですが、頸椎の問題は広範囲に影響します。頸椎の神経根が圧迫されると、肩・腕・指に症状が出ることがあります。頸因性頭痛は偏頭痛と誤診されることが多く、治療の方向がまったく異なります。",
@@ -504,7 +504,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     metaTitle: "腰痛・下背部痛｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "椎間板ヘルニア、仙腸関節炎、筋膜性疼痛。超音波で圧迫部位を特定し、非手術で修復。",
     h1: "腰痛・下背部痛",
-    heroSub: "なかなか治らない腰痛。正確な圧迫部位の特定が、本当の治療の始まりです。",
+    heroSub: "なかなか治らない腰痛？まず正確な圧迫部位を特定しましょう。",
     introParagraphs: [
       "先生、腰が痛くてもう半年近くになります。MRIでは軽度と言われましたが、1時間以上座っていると辛くなります。立ち上がるときが一番しんどくて、臀部まで痛みが広がることもあります。",
       "これはよくある状況です。MRIは構造を見るものですが、構造が軽度でも症状が重いことはあります。椎間板ヘルニア、仙腸関節炎、筋膜性疼痛、場所が違えば症状は似ていても治療の方向はまったく異なります。",
@@ -530,7 +530,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     metaTitle: "股関節・臀部の痛み｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "股関節変性、梨状筋症候群、大転子疼痛症候群、鼠径部痛。超音波評価、非手術修復。",
     h1: "股関節・臀部の痛み",
-    heroSub: "臀部深部の痛み、歩くと跛行、座った後に立ち上がりにくい？問題の場所を正確に特定します。",
+    heroSub: "臀部深部の痛み、跛行、立ち上がりにくい？まず問題の場所を特定しましょう。",
     introParagraphs: [
       "先生、臀部の奥がずっと鈍く痛んでいます。長時間座った後に立ち上がるときが特につらく、階段でも悪化します。整形外科では股関節の問題と言われましたが、人工関節が必要なほどではないと言われました。",
       "股関節・臀部の痛みは誤診されやすいです。臀部深部の痛みが必ずしも股関節自体の問題とは限りません。梨状筋による坐骨神経の圧迫、大転子の腱の問題、仙腸関節炎も似た感覚を引き起こす可能性があります。",
@@ -556,7 +556,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     metaTitle: "膝関節の変性・疼痛｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "変形性膝関節症、半月板損傷、ジャンパー膝。重症度に応じてヒアルロン酸からBMACまで選択。",
     h1: "膝関節の変性・疼痛",
-    heroSub: "変性があっても、人工関節が唯一の選択肢ではありません。適切な修復で手術を避けられる方も多くいます。",
+    heroSub: "階段が痛い、しゃがめない、膝が腫れる？軟骨と関節の実際の状態を確認しましょう。",
     introParagraphs: [
       "先生、膝が変性していると言われて、整形外科では人工関節が必要だと言われました。でもまだ50代で、手術は避けたいと思っています。他に選択肢はないでしょうか。",
       "変性は終点ではなくプロセスです。変性と聞くと人工関節しかないと思う方が多いですが、関節の隙間が残っていて関節軟骨がまだ完全に摩耗していない限り、再生医療が介入できる余地があります。",
@@ -582,7 +582,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     metaTitle: "足・足首の痛み｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "足底筋膜炎、足関節捻挫、アキレス腱炎。超音波で筋膜の厚みを評価し、保存療法からPRPまで。",
     h1: "足・足首の痛み",
-    heroSub: "踵の痛み、足首の不安定感。放置すると膝や腰にも影響が出てきます。",
+    heroSub: "踵の痛み、足首の不安定感？正確な評価から始めましょう。",
     introParagraphs: [
       "先生、毎朝ベッドから出た最初の一歩が一番痛いです。少し歩くと和らぐのですが、長時間立っているとまた痛くなります。もう1年近く続いています。インソールも試しましたし、理学療法もしましたが、はっきりした改善がありません。",
       "足底筋膜炎が3ヶ月以上続くと、慢性変性期に入っています。急性炎症期は安静にすれば良くなりますが、慢性変性期に必要なのは修復です。この2つはまったく別のことです。",
@@ -608,7 +608,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     metaTitle: "肘・手首の痛み｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "テニス肘、手根管症候群、TFCC損傷、ばね指。超音波で腱・神経の状態を確認し精密修復。",
     h1: "肘・手首の痛み",
-    heroSub: "肘の外側が痛い、手首に力が入らない。注射だけでは腱の変性は治りません。",
+    heroSub: "肘の外側が痛い、手首に力が入らない？注射の前にまず腱の状態を確認しましょう。",
     introParagraphs: [
       "先生、テニス肘でステロイド注射を3回受けました。毎回2、3ヶ月は良くなるのですが、また戻ってきます。今は茶碗を持つのもドアノブを回すのも痛くて、仕事にも支障が出ています。",
       "3回注射しても繰り返す場合、それは通常一つのことを意味します。問題は炎症ではなく、腱の変性です。ステロイドは炎症を抑えますが、変性した腱は修復できません。炎症が治まっても変性はそのままで、次に力を入れるとまた再発します。",
@@ -634,7 +634,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     metaTitle: "神経障害・神経痛｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "糖尿病性末梢神経障害(DPN)、神経圧迫、手足のしびれ。神経内科専門の評価、超音波で神経状態を確認。",
     h1: "神経障害・神経痛",
-    heroSub: "しびれ、灼熱感、電気が走るような痛み。神経内科の背景でより精密な診断を。",
+    heroSub: "しびれ、灼熱感、電気が走る感覚？神経圧迫か神経障害か、まず確認しましょう。",
     introParagraphs: [
       "先生、糖尿病はそこそこコントロールできているのですが、足の裏がずっとしびれています。夜になると特にひどくて、綿の上を歩いているような感じです。灼熱感もあります。神経内科では糖尿病性神経障害と言われましたが、薬以外に方法がないような言い方でした。",
       "糖尿病性神経障害は治療できます。ただ待つしかないわけではありません。血糖コントロールは基本ですが、神経がすでに損傷している場合、血糖コントロールだけでは不十分です。損傷した神経には追加の修復介入が必要です。",

@@ -1,8 +1,8 @@
 export const en = {
   site: {
-    title: 'Golan Clinic | Neurology · Pain Medicine · Regenerative Therapy | Luzhou, New Taipei',
+    title: 'Colan Clinic | Luzhou Neurology · Pain Treatment · Ultrasound-Guided Regenerative Medicine',
     description:
-      'Golan Clinic in Luzhou, New Taipei. Specializing in ultrasound-guided injection, PRP therapy, hydrodissection, and BMAC regenerative medicine. NHI and private appointments available. Dr. Lin Wei-de.',
+      'Colan Clinic in Luzhou, New Taipei combines neurology, pain management, ultrasound-guided injection, and regenerative medicine. We evaluate headaches, numbness, chronic pain, knee degeneration, frozen shoulder, nerve compression, PRP, BMAC, and TAME. NHI and self-pay available. Assessment first, no pressure to treat.',
     keywords:
       'neurology Luzhou, pain clinic, PRP, prolotherapy, hydrodissection, ultrasound-guided injection, botulinum toxin, needle knife, arterial stiffness, chronic inflammation, regenerative medicine, BMAC, bone marrow concentrate, Dr. Lin Wei-de',
   },
@@ -20,10 +20,10 @@ export const en = {
   },
   hero: {
     tag: 'Luzhou, New Taipei · Neurology · Pain · Regenerative Medicine',
-    title: 'Symptoms are gone',
-    title2: 'but is your body truly healed?',
-    sub: 'Treated but still relapsing? Tests done but no answers found? Golan Clinic combines Pain Medicine and Neurology with ultrasound precision, to find where it truly hurts.',
-    cta: "Find your pain's true source",
+    title: 'Colan Clinic',
+    title2: 'Neurology, Pain Treatment & Regenerative Medicine in Luzhou',
+    sub: 'Has the pain gone — or has your body actually healed?  Colan Clinic is located in Luzhou, New Taipei. We combine neurology, pain management, ultrasound-guided injection, and regenerative medicine to help you identify the real cause behind pain, numbness, degeneration, and nerve compression. Assessment first. No pressure to start treatment immediately.',
+    cta: 'Describe your symptoms — get a direction',
   },
   stats: [
     { num: '200+', label: 'Medical Articles' },
@@ -328,7 +328,7 @@ export const en = {
   },
   hours: {
     title: 'Clinic Hours',
-    note: 'By appointment only. Please confirm via LINE.',
+    note: 'Currently by appointment only. Official clinic hours will be announced before opening. Feel free to send your symptoms and imaging reports via LINE in the meantime.',
     slots: [
       { day: 'Mon – Fri', time: 'To be confirmed' },
       { day: 'Saturday', time: 'To be confirmed' },
@@ -340,7 +340,8 @@ export const en = {
   book: {
     title: 'Ready to Find Answers?',
     sub: "If your pain has lasted more than 3 months, previous treatments haven't worked, or you want to find the real cause. Start with a precision evaluation.",
-    cta: 'Book via LINE',
+    cta: 'Describe your symptoms — get a direction',
+    cta2: 'Learn about the first visit',
     addr: "No. 6, Ln. 58, Sec. 2, Yong'an N. Rd., Luzhou Dist., New Taipei City",
     hours: 'Mon – Sat｜Pain Medicine・Neurology NHI Clinic・Private Appointments by Reservation',
     mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',

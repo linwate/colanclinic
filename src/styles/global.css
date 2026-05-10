@@ -3251,3 +3251,27 @@ details[open] .faq-q::after {
   left: 0;
   color: #c9b99a;
 }
+
+/* ── Google Maps 嵌入（首頁） ─────────── */
+
+.map-section {
+  padding: 0 0 2.5rem 0;
+  border-bottom: 1px solid #f0ede8;
+}
+
+.map-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.map-wrapper iframe {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .map-wrapper iframe {
+    height: 280px;
+  }
+}

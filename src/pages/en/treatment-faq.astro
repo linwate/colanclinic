@@ -18,6 +18,16 @@ const generalCare = [
 const treatments = [
   {
     title: 'PRP Therapy',
+    contraindications: {
+      title: 'Who should not receive PRP',
+      items: [
+        'Clotting disorders or use of anticoagulants (e.g. Warfarin)',
+        'Active infection or infection at the injection site',
+        'Platelet function disorders',
+        'Active malignancy',
+        'Fever or acute systemic infection',
+      ],
+    },
     faqs: [
       { q: 'Why does it hurt more after PRP?', a: 'Mild soreness and swelling at the injection site is normal within 1 to 2 weeks after PRP, as the treatment works by inducing a controlled inflammatory response to trigger tissue repair. It is most noticeable within the first 48 hours, and may persist up to two weeks in some patients. Ice and acetaminophen can help manage discomfort.' },
       { q: 'Can I take anti-inflammatory medication after PRP?', a: 'This is not recommended. NSAIDs and corticosteroids suppress the inflammatory response that PRP depends on to initiate healing. If pain relief is needed, use acetaminophen only.' },
@@ -27,6 +37,15 @@ const treatments = [
   },
   {
     title: 'Prolotherapy (Glucose Injection)',
+    contraindications: {
+      title: 'Who should not receive prolotherapy',
+      items: [
+        'Allergy to glucose or injection components',
+        'Active infection at the injection site',
+        'Uncontrolled diabetes',
+        'Clotting disorders',
+      ],
+    },
     faqs: [
       { q: 'What should I expect after prolotherapy?', a: 'Localized soreness at the injection site is common, typically lasting 1 to 3 days, occasionally up to 7 days. This is a normal part of the healing response. Ice and acetaminophen can help. Avoid anti-inflammatory medications.' },
       { q: 'Is aftercare the same as PRP?', a: 'Largely yes — avoid NSAIDs, avoid strenuous exercise, and maintain good nutrition. The soreness from prolotherapy is generally milder than PRP and resolves more quickly.' },
@@ -34,6 +53,13 @@ const treatments = [
   },
   {
     title: 'Acupotomy (Integrative Needle-Knife)',
+    contraindications: {
+      title: 'Who should not receive needling',
+      items: [
+        'Infection at the injection site',
+        'Clotting disorders or use of anticoagulants',
+      ],
+    },
     faqs: [
       { q: 'What should I do after acupotomy treatment?', a: 'Keep the treated area dry for 24 hours — avoid bathing or swimming. Mild soreness or bruising at the site is normal and typically resolves within 1 to 3 days. Avoid vigorous exercise for 48 hours. Seek care immediately if you notice increasing redness, heat, swelling, or fever.' },
       { q: 'Can I continue rehabilitation after acupotomy?', a: 'Yes, and it is encouraged. After acupotomy releases fascial adhesions, targeted stretching and rehabilitation exercises improve outcomes. Begin gently 2 to 3 days after treatment once initial soreness has settled.' },
@@ -41,6 +67,16 @@ const treatments = [
   },
   {
     title: 'BMAC (Bone Marrow Aspirate Concentrate)',
+    contraindications: {
+      title: 'Who should not receive BMAC',
+      items: [
+        'Blood or bone marrow disorders',
+        'Active infection',
+        'Active malignancy (requires evaluation)',
+        'Clotting disorders',
+        'Severely compromised immune function',
+      ],
+    },
     faqs: [
       { q: 'Is the bone marrow extraction painful?', a: 'Local anesthesia is administered before the procedure to minimize discomfort. Some patients feel mild pressure or aching during extraction. The marrow is drawn from the iliac crest of the pelvis — not the spine — so there is no risk to spinal nerves. Bone marrow replenishes naturally with adequate rest and nutrition.' },
       { q: 'Is BMAC related to spinal fluid?', a: 'No. Bone marrow is the blood-producing tissue inside bones, harvested from the pelvic iliac crest. Spinal fluid surrounds the spinal cord and is entirely unrelated. BMAC treatment does not involve the spine or nervous system.' },
@@ -50,6 +86,16 @@ const treatments = [
   },
   {
     title: 'Simple TAME (Ultrasound-Guided Microarterial Embolization)',
+    contraindications: {
+      title: 'Who should not receive TAME',
+      items: [
+        'Multiple antibiotic allergies',
+        'Clotting disorders',
+        'Infection at the injection site',
+        'Poor vascular condition',
+        'Pregnancy',
+      ],
+    },
     faqs: [
       { q: 'Is TAME at Colan Clinic a catheter procedure?', a: 'No. We perform Simple TAME using real-time ultrasound guidance — medication is injected precisely at the site of abnormal neovascularization from outside the body. No catheter is inserted, no hospitalization is required, and the procedure is completed in a single outpatient visit.' },
       { q: 'What should I do after Simple TAME?', a: 'Avoid bathing for 24 hours after the procedure. Mild soreness at the injection site may occur and should resolve within 1 to 3 days. Light activity is generally fine from day 2 onward. Return to strenuous exercise gradually based on how you feel.' },
@@ -60,6 +106,14 @@ const treatments = [
   },
   {
     title: 'Joint Hyaluronic Acid Injection',
+    contraindications: {
+      title: 'Who should not receive hyaluronic acid injection',
+      items: [
+        'Infection at the injection site',
+        'Allergy to hyaluronic acid or avian-derived products',
+        'Joint space infection or haematoma',
+      ],
+    },
     faqs: [
       { q: 'What should I do after a hyaluronic acid injection?', a: 'Avoid strenuous activity and prolonged weight-bearing for 24 to 48 hours. Mild swelling or discomfort at the injection site is normal and can be managed with ice. Avoid heat exposure to the treated area for 24 hours.' },
       { q: 'How long until I feel the effect, and how often do I need injections?', a: 'Most patients notice gradual improvement over 1 to 4 weeks. Depending on the formulation, effects can last 6 months to 1 year. Discuss the timing of any repeat injections with your doctor.' },
@@ -67,6 +121,14 @@ const treatments = [
   },
   {
     title: 'SportVis (Tendon and Ligament Hyaluronic Acid)',
+    contraindications: {
+      title: 'Who should not receive hyaluronic acid injection',
+      items: [
+        'Infection at the injection site',
+        'Allergy to hyaluronic acid or avian-derived products',
+        'Joint space infection or haematoma',
+      ],
+    },
     faqs: [
       { q: 'How is SportVis different from regular hyaluronic acid?', a: "Standard hyaluronic acid is primarily used for joint lubrication. SportVis is a patented formulation specifically designed to be absorbed by soft tissues such as tendons and ligaments, offering repair, lubrication, and inflammation control in one product. It is the only hyaluronic acid approved by Taiwan's TFDA for tendon and ligament repair." },
       { q: 'What should I do after a SportVis injection?', a: 'Depending on the injection site, your doctor may ask you to perform a few specific movements after injection to help distribute the product. Avoid strenuous activity for 24 to 48 hours. Normal daily activities are generally fine. Post-treatment discomfort is typically milder than PRP.' },
@@ -75,6 +137,14 @@ const treatments = [
   },
   {
     title: 'Nerve Hydrodissection',
+    contraindications: {
+      title: 'Who should not receive nerve hydrodissection',
+      items: [
+        'Infection at the injection site',
+        'Allergy to injection components',
+        'Clotting disorders',
+      ],
+    },
     faqs: [
       { q: 'What does nerve hydrodissection feel like afterward?', a: "Because the solution used is 5% glucose — which matches the body's osmotic pressure — post-injection soreness is generally milder than prolotherapy. Some patients with longer-standing nerve injury may experience stronger aching, which typically settles within 1 to 3 days. Many patients notice improvement immediately after the procedure." },
       { q: 'Is the injection solution the same as prolotherapy?', a: 'No. Nerve hydrodissection uses 5% glucose to physically separate the nerve from surrounding tissue, stabilize the nerve, and reduce neurogenic inflammation. Prolotherapy uses 10 to 25% glucose to stimulate a mild inflammatory response for tissue repair. The goals and mechanisms are different.' },
@@ -84,6 +154,15 @@ const treatments = [
   },
   {
     title: 'Botulinum Toxin (Pain Treatment)',
+    contraindications: {
+      title: 'Who should not receive botulinum toxin',
+      items: [
+        'Allergy to botulinum toxin',
+        'Myasthenia gravis or neuromuscular junction disorders',
+        'Pregnancy or breastfeeding',
+        'Infection at the injection site',
+      ],
+    },
     faqs: [
       { q: 'What should I do after a botulinum toxin pain injection?', a: 'Avoid pressing on the injection site for 4 hours. Avoid strenuous activity and heat exposure for 24 hours. Mild localized weakness near the injection site may occur in the first 1 to 3 days and typically resolves within a few days. Effects usually begin within 1 to 2 weeks and last 3 to 6 months.' },
       { q: 'Is pain-targeted botulinum toxin the same as cosmetic Botox?', a: 'The medication is the same, but the injection sites and goals are different. Pain treatment injections target muscles causing spasm or chronic pain — not cosmetic areas. The dosage, assessment criteria, and clinical approach differ and should be managed by a pain specialist.' },
@@ -142,6 +221,14 @@ const allFaqs = treatments.flatMap((t) => t.faqs)
             <p>{f.a}</p>
           </details>
         ))}
+        {tr.contraindications && (
+          <div class="contraindication-block">
+            <h4>{tr.contraindications.title}</h4>
+            <ul>
+              {tr.contraindications.items.map((item) => <li>{item}</li>)}
+            </ul>
+          </div>
+        )}
       </div>
     </section>
   ))}

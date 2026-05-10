@@ -71,16 +71,28 @@ const tiers = [
   <section class="fv-section">
     <div class="container">
       <h2>費用層級表</h2>
-      {tiers.map((tier) => (
-        <div class="fv-tier">
-          <div class="fv-tier-head">
-            <span class="fv-tier-label">{tier.label}</span>
-            <span class="fv-tier-fee">{tier.fee}</span>
-          </div>
-          <p class="fv-tier-items">{tier.items}</p>
-          <p class="fv-tier-desc">{tier.desc}</p>
-        </div>
-      ))}
+      <div class="pricing-table-wrapper">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>層級</th>
+              <th>治療項目</th>
+              <th>參考費用</th>
+              <th>適合情況</th>
+            </tr>
+          </thead>
+          <tbody>
+            {tiers.map((tier) => (
+              <tr>
+                <td class="tier-label">{tier.label}</td>
+                <td class="tier-items">{tier.items}</td>
+                <td class="tier-fee">{tier.fee}</td>
+                <td class="tier-desc">{tier.desc}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 

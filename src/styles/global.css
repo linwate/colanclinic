@@ -3275,3 +3275,101 @@ details[open] .faq-q::after {
     height: 280px;
   }
 }
+
+/* ── 費用層級表（pricing） ─────────────── */
+
+.pricing-table-wrapper {
+  overflow-x: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e0d8;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: #ffffff;
+}
+
+.pricing-table thead {
+  background: #1a2f5e;
+  color: #ffffff;
+}
+
+.pricing-table thead th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.pricing-table tbody tr {
+  border-bottom: 1px solid #f0ede8;
+  transition: background 0.15s;
+}
+
+.pricing-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.pricing-table tbody tr:hover {
+  background: #faf9f7;
+}
+
+.pricing-table tbody td {
+  padding: 14px 16px;
+  vertical-align: top;
+  color: #3d3530;
+  line-height: 1.6;
+}
+
+.tier-label {
+  font-weight: 700;
+  color: #1a2f5e;
+  white-space: nowrap;
+  min-width: 140px;
+}
+
+.tier-fee {
+  font-weight: 600;
+  color: #0b3a6f;
+  white-space: nowrap;
+}
+
+.tier-items {
+  color: #4a3f35;
+}
+
+.tier-desc {
+  color: #6b5e4f;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .pricing-table thead {
+    display: none;
+  }
+
+  .pricing-table tbody tr {
+    display: block;
+    padding: 1rem 0;
+    border-bottom: 2px solid #e5e0d8;
+  }
+
+  .pricing-table tbody td {
+    display: block;
+    padding: 4px 16px;
+  }
+
+  .tier-label {
+    font-size: 1rem;
+    padding-top: 8px;
+  }
+
+  .tier-fee {
+    padding-bottom: 8px;
+  }
+}

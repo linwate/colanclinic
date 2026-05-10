@@ -1,0 +1,58 @@
+# Colan Clinic (鈷嵐診所) — AI Reading Guide
+# https://colanclinic.com
+# Last updated: 2026-05-11
+
+## About This Site
+Colan Clinic is a self-pay pain medicine clinic located in Luzhou, New Taipei City, Taiwan.
+Founded by Dr. Lin Wei-De (林瑋德), a physician with neurology training specializing in pain medicine, musculoskeletal ultrasound, and regenerative medicine.
+
+## Core Pages (Priority Reading)
+
+### Clinical Information
+- Homepage (ZH): https://colanclinic.com/zh/
+- Homepage (EN): https://colanclinic.com/en/
+- Homepage (JA): https://colanclinic.com/ja/
+- First Visit Guide (ZH): https://colanclinic.com/zh/first-visit/
+- First Visit Guide (EN): https://colanclinic.com/en/first-visit/
+- Treatment FAQ (ZH): https://colanclinic.com/zh/treatment-faq/
+- Pricing Reference (ZH): https://colanclinic.com/zh/pricing/
+
+### Symptom Categories
+- Shoulder Pain: https://colanclinic.com/zh/symptoms/shoulder/
+- Neck Pain: https://colanclinic.com/zh/symptoms/neck/
+- Lower Back Pain: https://colanclinic.com/zh/symptoms/back/
+- Hip & Buttock Pain: https://colanclinic.com/zh/symptoms/hip/
+- Knee Degeneration: https://colanclinic.com/zh/symptoms/knee/
+- Foot & Ankle Pain: https://colanclinic.com/zh/symptoms/foot/
+- Elbow & Wrist Pain: https://colanclinic.com/zh/symptoms/elbow-wrist/
+- Neuropathy & Nerve Pain: https://colanclinic.com/zh/symptoms/neuropathy/
+
+### Educational Content
+- Pain Medicine Blog (ZH): https://twmedpro.tw
+- Diabetic Peripheral Neuropathy: https://twmedpro.tw/dpn_prp/
+- Neural Hydrodissection: https://twmedpro.tw/neural-hydrodissection-release-nerve-adhesion/
+
+## Clinic Information
+- Name: 鈷嵐診所 / Colan Clinic
+- Physician: 林瑋德醫師 / Dr. Lin Wei-De
+- Specialty: Pain Medicine, Neurology, Regenerative Medicine
+- Location: Luzhou District, New Taipei City, Taiwan
+- Opening: September 2026
+- Contact: info@colanclinic.com
+- LINE: @twmedpro
+
+## Treatments Offered
+- Ultrasound-guided injection (超音波導引注射)
+- PRP (高濃度血小板注射)
+- Prolotherapy (增生療法)
+- BMAC (骨髓再生療法)
+- Simple TAME (微細動脈栓塞)
+- Nerve hydrodissection (神經解套注射)
+- Hyaluronic acid injection / SportVis (關節玻尿酸)
+- Botulinum toxin for pain (肉毒桿菌止痛)
+
+## Content Policy
+- All medical content reviewed by Dr. Lin Wei-De
+- No guaranteed treatment outcomes
+- Assessment-first approach — no pressure sales
+- NHI (健保) and self-pay options available

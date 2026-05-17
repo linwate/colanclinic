@@ -187,17 +187,16 @@ const hreflangOf: Record<Lang, string> = {
       },
       hasMap: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
       medicalSpecialty: ['Neurology', 'PainMedicine', 'RegenerativeMedicine'],
-      openingHoursSpecification: [{
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      }],
-      physician: {
+      reviewedBy: {
         '@type': 'Physician',
         name: '林瑋德',
-        alternateName: 'Dr. Lin Wei-de',
-        medicalSpecialty: ['Neurology', 'PainMedicine'],
+        alternateName: 'Lin Wei-De',
       },
-      sameAs: [],
+      sameAs: [
+        'https://www.facebook.com/colanclinic',
+        'https://line.me/R/ti/p/@twmedpro',
+        'https://twmedpro.tw',
+      ],
     })} />
 
     <!-- Physician structured data (top-level, complements embedded one above) -->
@@ -214,6 +213,7 @@ const hreflangOf: Record<Lang, string> = {
       },
       medicalSpecialty: ['Neurology', 'Pain Medicine', 'Regenerative Medicine'],
       url: `https://colanclinic.com/${lang}/`,
+      sameAs: ['https://twmedpro.tw'],
     })} />
 
     {slug.startsWith('symptoms') && (
@@ -233,6 +233,12 @@ const hreflangOf: Record<Lang, string> = {
             name: t.nav.find_symptom,
             item: `https://colanclinic.com/${lang}/symptoms/`,
           },
+          ...(slug !== 'symptoms' ? [{
+            '@type': 'ListItem',
+            position: 3,
+            name: title.split(/[｜|]/)[0].trim(),
+            item: canonical,
+          }] : []),
         ],
       })} />
     )}

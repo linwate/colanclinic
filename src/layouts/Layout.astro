@@ -489,14 +489,6 @@ const hreflangOf: Record<Lang, string> = {
           })
         })
 
-        // 箭頭點擊強制關閉
-        document.querySelectorAll('.nav-dropdown-arrow').forEach((arrow) => {
-          arrow.addEventListener('click', (e) => {
-            e.stopPropagation()
-            closeAll()
-          })
-        })
-
         // 點擊其他地方關閉
         document.addEventListener('click', closeAll)
 

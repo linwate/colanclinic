@@ -3523,10 +3523,6 @@ details[open] .faq-q::after {
   cursor: pointer;
 }
 
-.nav-dropdown-arrow:hover {
-  background: rgba(26, 47, 94, 0.08);
-}
-
 .nav-dropdown-btn[aria-expanded="true"] .nav-dropdown-arrow {
   transform: rotate(180deg);
 }

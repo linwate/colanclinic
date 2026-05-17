@@ -396,7 +396,7 @@ const hreflangOf: Record<Lang, string> = {
         </button>
         <div class="nav-links" id="primary-nav-links">
           <div class="nav-dropdown">
-            <button type="button" class="nav-dropdown-btn">
+            <button type="button" class="nav-dropdown-btn" tabindex="0">
               {t.nav.find_symptom}
               <span class="nav-dropdown-arrow" aria-hidden="true">▾</span>
             </button>
@@ -413,7 +413,7 @@ const hreflangOf: Record<Lang, string> = {
             </div>
           </div>
           <div class="nav-dropdown">
-            <button type="button" class="nav-dropdown-btn">
+            <button type="button" class="nav-dropdown-btn" tabindex="0">
               {lang === 'zh' ? '治療項目' : lang === 'en' ? 'Treatments' : '治療項目'}
               <span class="nav-dropdown-arrow" aria-hidden="true">▾</span>
             </button>
@@ -470,32 +470,6 @@ const hreflangOf: Record<Lang, string> = {
         document.addEventListener('keydown', function (e) {
           if (e.key === 'Escape' && menu.classList.contains('open')) close();
         });
-
-        // 下拉選單 tap 支援
-        document.querySelectorAll('.nav-dropdown-btn').forEach((btn) => {
-          btn.addEventListener('click', (e) => {
-            e.stopPropagation()
-            const dropdown = btn.closest('.nav-dropdown')
-            const isOpen = dropdown.classList.contains('is-open')
-
-            // 關閉所有其他下拉
-            document.querySelectorAll('.nav-dropdown').forEach((d) => {
-              d.classList.remove('is-open')
-            })
-
-            // 切換目前下拉
-            if (!isOpen) {
-              dropdown.classList.add('is-open')
-            }
-          })
-        })
-
-        // 點擊其他地方關閉下拉
-        document.addEventListener('click', () => {
-          document.querySelectorAll('.nav-dropdown').forEach((d) => {
-            d.classList.remove('is-open')
-          })
-        })
       })();
     </script>
 

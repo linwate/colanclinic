@@ -3513,7 +3513,8 @@ details[open] .faq-q::after {
   transition: transform 0.2s;
 }
 
-.nav-dropdown:hover .nav-dropdown-arrow {
+.nav-dropdown:hover .nav-dropdown-arrow,
+.nav-dropdown:focus-within .nav-dropdown-arrow {
   transform: rotate(180deg);
 }
 
@@ -3533,7 +3534,8 @@ details[open] .faq-q::after {
   margin-top: 8px;
 }
 
-.nav-dropdown:hover .nav-dropdown-menu {
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
   display: block;
 }
 
@@ -3605,9 +3607,13 @@ details[open] .faq-q::after {
     background: transparent;
   }
 
-  /* is-open 時顯示 */
-  .nav-dropdown.is-open .nav-dropdown-menu {
+  /* focus-within 時顯示 */
+  .nav-dropdown:focus-within .nav-dropdown-menu {
     display: block;
+  }
+
+  .nav-dropdown:focus-within .nav-dropdown-arrow {
+    transform: rotate(180deg);
   }
 
   /* 下拉項目：縮排，讓視覺上像子選單 */
@@ -3642,15 +3648,7 @@ details[open] .faq-q::after {
 
 }
 
-/* JS tap-toggle state (mobile/touch) + symptoms overview link */
-.nav-dropdown.is-open .nav-dropdown-menu {
-  display: block;
-}
-
-.nav-dropdown.is-open .nav-dropdown-arrow {
-  transform: rotate(180deg);
-}
-
+/* Symptoms overview link + divider (base styles) */
 .nav-dropdown-all {
   font-weight: 600;
   color: #1a2f5e;

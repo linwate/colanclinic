@@ -3509,8 +3509,22 @@ details[open] .faq-q::after {
 }
 
 .nav-dropdown-arrow {
-  font-size: 0.7rem;
-  transition: transform 0.2s;
+  font-size: 1rem;
+  flex-shrink: 0;
+  padding: 4px 8px;
+  margin-right: -8px;
+  min-width: 36px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: transform 0.2s, background 0.15s;
+  cursor: pointer;
+}
+
+.nav-dropdown-arrow:hover {
+  background: rgba(26, 47, 94, 0.08);
 }
 
 .nav-dropdown:hover .nav-dropdown-arrow,

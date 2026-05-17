@@ -1,6 +1,6 @@
 export const en = {
   site: {
-    title: 'Colan Clinic | Neurology · Pain Treatment · Regenerative Medicine · Luzhou',
+    title: 'Colan Clinic | Neurology · Pain · Regenerative Medicine · Luzhou',
     description:
       'Colan Clinic in Luzhou, New Taipei combines neurology, pain management, ultrasound-guided injection, and regenerative medicine. We evaluate headaches, numbness, chronic pain, knee degeneration, frozen shoulder, nerve compression, PRP, BMAC, and TAME. NHI and self-pay available. Assessment first, no pressure to treat.',
     keywords:

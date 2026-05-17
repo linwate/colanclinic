@@ -540,7 +540,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "prolotherapy": {
       slug: "prolotherapy",
-      metaTitle: "Prolotherapy (Glucose Injection) | Colan Clinic · Luzhou Pain Treatment",
+      metaTitle: "Prolotherapy (Dextrose Injection) | Colan Clinic · Luzhou",
       metaDescription: "Prolotherapy uses dextrose injection to stimulate tissue repair — an accessible regenerative treatment option for ligament laxity and chronic tendon pain.",
       h1: "Prolotherapy",
       heroSub: "Using glucose to trigger the body's own repair response — an accessible regenerative treatment.",
@@ -633,7 +633,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "bmac": {
       slug: "bmac",
-      metaTitle: "BMAC Bone Marrow Aspirate Concentrate | Colan Clinic · Luzhou Pain Treatment",
+      metaTitle: "BMAC Bone Marrow Concentrate | Colan Clinic · Luzhou",
       metaDescription: "BMAC harvests stem cells and growth factors from bone marrow — the most advanced regenerative option, suitable for severe degeneration or cases where PRP has shown limited results.",
       h1: "BMAC Bone Marrow Aspirate Concentrate",
       heroSub: "A more potent regenerative source than PRP — for severe joint and tissue degeneration.",
@@ -681,7 +681,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "tame": {
       slug: "tame",
-      metaTitle: "TAME Transcatheter Arterial Micro-Embolization | Colan Clinic · Luzhou Pain Treatment",
+      metaTitle: "TAME Micro-Embolization | Colan Clinic · Luzhou Pain Treatment",
       metaDescription: "TAME targets abnormal neovascularization at chronic pain sites, addressing treatment-resistant chronic pain at its vascular root.",
       h1: "TAME Transcatheter Arterial Micro-Embolization",
       heroSub: "Pain that won't resolve? Abnormal neovascularization may be part of the reason.",

@@ -3514,7 +3514,7 @@ details[open] .faq-q::after {
 }
 
 .nav-dropdown:hover .nav-dropdown-arrow,
-.nav-dropdown:focus-within .nav-dropdown-arrow {
+.nav-dropdown-btn[aria-expanded="true"] .nav-dropdown-arrow {
   transform: rotate(180deg);
 }
 
@@ -3535,7 +3535,7 @@ details[open] .faq-q::after {
 }
 
 .nav-dropdown:hover .nav-dropdown-menu,
-.nav-dropdown:focus-within .nav-dropdown-menu {
+.nav-dropdown-btn[aria-expanded="true"] + .nav-dropdown-menu {
   display: block;
 }
 
@@ -3607,12 +3607,12 @@ details[open] .faq-q::after {
     background: transparent;
   }
 
-  /* focus-within 時顯示 */
-  .nav-dropdown:focus-within .nav-dropdown-menu {
+  /* aria-expanded 時顯示 */
+  .nav-dropdown-btn[aria-expanded="true"] + .nav-dropdown-menu {
     display: block;
   }
 
-  .nav-dropdown:focus-within .nav-dropdown-arrow {
+  .nav-dropdown-btn[aria-expanded="true"] .nav-dropdown-arrow {
     transform: rotate(180deg);
   }
 

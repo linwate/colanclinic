@@ -396,7 +396,7 @@ const hreflangOf: Record<Lang, string> = {
         </button>
         <div class="nav-links" id="primary-nav-links">
           <div class="nav-dropdown">
-            <button type="button" class="nav-dropdown-btn" tabindex="0">
+            <button type="button" class="nav-dropdown-btn" aria-expanded="false" tabindex="0">
               {t.nav.find_symptom}
               <span class="nav-dropdown-arrow" aria-hidden="true">▾</span>
             </button>
@@ -413,7 +413,7 @@ const hreflangOf: Record<Lang, string> = {
             </div>
           </div>
           <div class="nav-dropdown">
-            <button type="button" class="nav-dropdown-btn" tabindex="0">
+            <button type="button" class="nav-dropdown-btn" aria-expanded="false" tabindex="0">
               {lang === 'zh' ? '治療項目' : lang === 'en' ? 'Treatments' : '治療項目'}
               <span class="nav-dropdown-arrow" aria-hidden="true">▾</span>
             </button>
@@ -470,6 +470,40 @@ const hreflangOf: Record<Lang, string> = {
         document.addEventListener('keydown', function (e) {
           if (e.key === 'Escape' && menu.classList.contains('open')) close();
         });
+
+        // 下拉選單
+        const dropdownBtns = document.querySelectorAll('.nav-dropdown-btn')
+
+        dropdownBtns.forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation()
+            const isOpen = btn.getAttribute('aria-expanded') === 'true'
+
+            // 關閉所有下拉
+            dropdownBtns.forEach((b) => {
+              b.setAttribute('aria-expanded', 'false')
+            })
+
+            // 切換目前下拉
+            btn.setAttribute('aria-expanded', isOpen ? 'false' : 'true')
+          })
+        })
+
+        // 點擊其他地方關閉
+        document.addEventListener('click', () => {
+          dropdownBtns.forEach((b) => {
+            b.setAttribute('aria-expanded', 'false')
+          })
+        })
+
+        // ESC 關閉
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            dropdownBtns.forEach((b) => {
+              b.setAttribute('aria-expanded', 'false')
+            })
+          }
+        })
       })();
     </script>
 

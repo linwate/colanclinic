@@ -57,6 +57,27 @@ const data = treatments[lang][slug]
 
   <section class="fv-section">
     <div class="container">
+      <h2>副作用と注意事項</h2>
+      <ul class="treatment-suitable-list">
+        {data.sideEffects.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>この治療が適さない場合</h2>
+      <ul class="treatment-suitable-list treatment-contraindication-list">
+        {data.contraindications.map((item) => <li>{item}</li>)}
+      </ul>
+      <p class="treatment-faq-link">
+        <a href="/ja/treatment-faq/">治療に関するよくある質問を見る →</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
       <h2>費用について</h2>
       <p>{data.pricingNote}</p>
       <p class="treatment-faq-link">

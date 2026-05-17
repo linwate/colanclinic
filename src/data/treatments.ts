@@ -13,6 +13,8 @@ export type TreatmentCard = {
   pricingNote: string
   faqItems: { q: string; a: string }[]
   relatedSymptoms: { name: string; href: string }[]
+  contraindications: string[]
+  sideEffects: string[]
 }
 
 export const treatments: Record<string, Record<string, TreatmentCard>> = {
@@ -51,6 +53,16 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "膝蓋退化", href: "/zh/symptoms/knee/" },
         { name: "神經病變", href: "/zh/symptoms/neuropathy/" },
       ],
+      contraindications: [
+        "注射部位感染或皮膚破損",
+        "凝血功能異常或服用抗凝血藥物",
+        "對注射藥物成分過敏",
+      ],
+      sideEffects: [
+        "注射後局部輕微痠脹（24–48小時內消退）",
+        "極少數有輕微瘀青",
+        "感染風險極低（無菌操作下）",
+      ],
     },
     "prp": {
       slug: "prp",
@@ -88,6 +100,18 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "足踝疼痛", href: "/zh/symptoms/foot/" },
         { name: "神經病變", href: "/zh/symptoms/neuropathy/" },
       ],
+      contraindications: [
+        "凝血功能異常或服用抗凝血藥物（如 Warfarin）",
+        "活動性感染或注射部位感染",
+        "血小板功能異常疾病",
+        "惡性腫瘤患者",
+        "發燒或急性全身性感染",
+      ],
+      sideEffects: [
+        "注射後 24–72 小時局部痠脹，屬正常修復反應",
+        "輕微瘀青",
+        "極少數有暫時性疼痛加劇（1–3天）",
+      ],
     },
     "prolotherapy": {
       slug: "prolotherapy",
@@ -123,6 +147,17 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "足踝疼痛", href: "/zh/symptoms/foot/" },
         { name: "手肘手腕", href: "/zh/symptoms/elbow-wrist/" },
         { name: "下背痛", href: "/zh/symptoms/back/" },
+      ],
+      contraindications: [
+        "對葡萄糖或注射成分過敏",
+        "注射部位活動性感染",
+        "未控制的糖尿病",
+        "凝血功能異常",
+      ],
+      sideEffects: [
+        "注射後 24–48 小時局部痠脹，屬正常反應",
+        "輕微瘀青",
+        "注射當天建議避免劇烈運動",
       ],
     },
     "nerve-hydrodissection": {
@@ -160,6 +195,16 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "手肘手腕", href: "/zh/symptoms/elbow-wrist/" },
         { name: "頸部疼痛", href: "/zh/symptoms/neck/" },
       ],
+      contraindications: [
+        "注射部位感染",
+        "對注射成分過敏",
+        "凝血功能異常",
+      ],
+      sideEffects: [
+        "注射後輕微痠脹（通常 24 小時內）",
+        "少數患者有暫時性麻木感增加（1–3天後改善）",
+        "極少數輕微瘀青",
+      ],
     },
     "bmac": {
       slug: "bmac",
@@ -196,6 +241,18 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "髖臀疼痛", href: "/zh/symptoms/hip/" },
         { name: "肩膀疼痛", href: "/zh/symptoms/shoulder/" },
       ],
+      contraindications: [
+        "血液疾病或骨髓疾病",
+        "活動性感染",
+        "惡性腫瘤（需評估）",
+        "凝血功能異常",
+        "免疫功能嚴重低下",
+      ],
+      sideEffects: [
+        "骨髓抽取部位痠痛（1–2天，一般止痛藥可處理）",
+        "注射部位輕微痠脹（24–72小時）",
+        "極少數有輕微發燒反應（治療當天）",
+      ],
     },
     "tame": {
       slug: "tame",
@@ -230,6 +287,19 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "膝蓋退化", href: "/zh/symptoms/knee/" },
         { name: "肩膀疼痛", href: "/zh/symptoms/shoulder/" },
         { name: "手肘手腕", href: "/zh/symptoms/elbow-wrist/" },
+      ],
+      contraindications: [
+        "抗生素多重過敏",
+        "凝血功能異常",
+        "注射部位感染",
+        "血管狀態不佳",
+        "懷孕",
+        "嚴重腎功能不全",
+      ],
+      sideEffects: [
+        "術後局部輕微痠脹（數天內消退）",
+        "少數有短暫性疼痛加劇（1–5天，為正常反應）",
+        "極少數有皮膚輕微變色（通常可自行恢復）",
       ],
     },
     "hyaluronic-acid": {
@@ -266,6 +336,16 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "膝蓋退化", href: "/zh/symptoms/knee/" },
         { name: "髖臀疼痛", href: "/zh/symptoms/hip/" },
       ],
+      contraindications: [
+        "注射部位感染",
+        "對玻尿酸或禽類製品過敏",
+        "關節腔感染、血腫",
+      ],
+      sideEffects: [
+        "注射後輕微痠脹（24–48小時）",
+        "偶有注射後關節腫脹感（通常 1–3 天消退）",
+        "極少數有過敏反應",
+      ],
     },
     "botulinum": {
       slug: "botulinum",
@@ -300,6 +380,18 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       relatedSymptoms: [
         { name: "神經病變", href: "/zh/symptoms/neuropathy/" },
         { name: "頸部疼痛", href: "/zh/symptoms/neck/" },
+      ],
+      contraindications: [
+        "對肉毒桿菌毒素過敏",
+        "重症肌無力或神經肌肉接頭疾病",
+        "懷孕或哺乳期",
+        "注射部位感染",
+      ],
+      sideEffects: [
+        "注射部位輕微瘀青或腫脹",
+        "起效時間 7–14 天，期間疼痛仍可能存在",
+        "少數有暫時性局部肌肉無力感",
+        "效果持續 3–6 個月後自然消退",
       ],
     },
     "peripheral-neuropathy": {
@@ -336,6 +428,17 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "神經病變", href: "/zh/symptoms/neuropathy/" },
         { name: "手肘手腕", href: "/zh/symptoms/elbow-wrist/" },
         { name: "足踝疼痛", href: "/zh/symptoms/foot/" },
+      ],
+      contraindications: [
+        "注射部位感染",
+        "凝血功能異常",
+        "對注射成分過敏",
+        "依選擇的治療方式參考各治療禁忌症",
+      ],
+      sideEffects: [
+        "依選擇的治療方式（神經解套／PRP／肉毒桿菌）參考各治療副作用",
+        "部分患者初期症狀可能有短暫波動",
+        "神經修復過程中偶有短暫麻感變化",
       ],
     },
   },
@@ -375,6 +478,16 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "Knee Degeneration", href: "/en/symptoms/knee/" },
         { name: "Neuropathy", href: "/en/symptoms/neuropathy/" },
       ],
+      contraindications: [
+        "Infection or broken skin at the injection site",
+        "Clotting disorders or anticoagulant use",
+        "Allergy to the injection medication",
+      ],
+      sideEffects: [
+        "Mild local soreness and swelling (resolves within 24–48 hours)",
+        "Occasional minor bruising",
+        "Infection risk is extremely low with sterile technique",
+      ],
     },
     "prp": {
       slug: "prp",
@@ -412,6 +525,18 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "Foot & Ankle", href: "/en/symptoms/foot/" },
         { name: "Neuropathy", href: "/en/symptoms/neuropathy/" },
       ],
+      contraindications: [
+        "Clotting disorders or use of anticoagulants (e.g. Warfarin)",
+        "Active infection or infection at the injection site",
+        "Platelet function disorders",
+        "Active malignancy",
+        "Fever or acute systemic infection",
+      ],
+      sideEffects: [
+        "Local soreness and swelling for 24–72 hours — a normal repair response",
+        "Minor bruising",
+        "Temporary increase in pain in rare cases (1–3 days)",
+      ],
     },
     "prolotherapy": {
       slug: "prolotherapy",
@@ -447,6 +572,17 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "Foot & Ankle", href: "/en/symptoms/foot/" },
         { name: "Elbow & Wrist", href: "/en/symptoms/elbow-wrist/" },
         { name: "Lower Back Pain", href: "/en/symptoms/back/" },
+      ],
+      contraindications: [
+        "Allergy to glucose or injection components",
+        "Active infection at the injection site",
+        "Uncontrolled diabetes",
+        "Clotting disorders",
+      ],
+      sideEffects: [
+        "Local soreness and swelling for 24–48 hours — a normal response",
+        "Minor bruising",
+        "Avoid vigorous activity on the day of treatment",
       ],
     },
     "nerve-hydrodissection": {
@@ -484,6 +620,16 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "Elbow & Wrist", href: "/en/symptoms/elbow-wrist/" },
         { name: "Neck Pain", href: "/en/symptoms/neck/" },
       ],
+      contraindications: [
+        "Infection at the injection site",
+        "Allergy to injection components",
+        "Clotting disorders",
+      ],
+      sideEffects: [
+        "Mild local soreness and swelling (usually within 24 hours)",
+        "Temporary increase in numbness in some patients (improves within 1–3 days)",
+        "Occasional minor bruising",
+      ],
     },
     "bmac": {
       slug: "bmac",
@@ -520,6 +666,18 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "Hip & Buttock", href: "/en/symptoms/hip/" },
         { name: "Shoulder Pain", href: "/en/symptoms/shoulder/" },
       ],
+      contraindications: [
+        "Blood or bone marrow disorders",
+        "Active infection",
+        "Active malignancy (requires evaluation)",
+        "Clotting disorders",
+        "Severely compromised immune function",
+      ],
+      sideEffects: [
+        "Soreness at the bone marrow aspiration site (1–2 days, manageable with standard pain relief)",
+        "Mild swelling at the injection site (24–72 hours)",
+        "Mild fever on the day of treatment in rare cases",
+      ],
     },
     "tame": {
       slug: "tame",
@@ -554,6 +712,19 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "Knee Degeneration", href: "/en/symptoms/knee/" },
         { name: "Shoulder Pain", href: "/en/symptoms/shoulder/" },
         { name: "Elbow & Wrist", href: "/en/symptoms/elbow-wrist/" },
+      ],
+      contraindications: [
+        "Multiple antibiotic allergies",
+        "Clotting disorders",
+        "Infection at the injection site",
+        "Poor vascular condition",
+        "Pregnancy",
+        "Severe renal impairment",
+      ],
+      sideEffects: [
+        "Mild local soreness and swelling (resolves within a few days)",
+        "Temporary increase in pain in some cases (1–5 days — a normal response)",
+        "Minor skin discoloration in rare cases (usually self-resolving)",
       ],
     },
     "hyaluronic-acid": {
@@ -590,6 +761,16 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "Knee Degeneration", href: "/en/symptoms/knee/" },
         { name: "Hip & Buttock", href: "/en/symptoms/hip/" },
       ],
+      contraindications: [
+        "Infection at the injection site",
+        "Allergy to hyaluronic acid or avian-derived products",
+        "Joint space infection or haematoma",
+      ],
+      sideEffects: [
+        "Mild soreness and swelling after injection (24–48 hours)",
+        "Occasional sensation of joint fullness (usually resolves within 1–3 days)",
+        "Allergic reaction in rare cases",
+      ],
     },
     "botulinum": {
       slug: "botulinum",
@@ -624,6 +805,18 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       relatedSymptoms: [
         { name: "Neuropathy", href: "/en/symptoms/neuropathy/" },
         { name: "Neck Pain", href: "/en/symptoms/neck/" },
+      ],
+      contraindications: [
+        "Allergy to botulinum toxin",
+        "Myasthenia gravis or neuromuscular junction disorders",
+        "Pregnancy or breastfeeding",
+        "Infection at the injection site",
+      ],
+      sideEffects: [
+        "Minor bruising or swelling at the injection site",
+        "Onset takes 7–14 days — pain may persist during this period",
+        "Temporary localised muscle weakness in some patients",
+        "Effects naturally wear off after 3–6 months",
       ],
     },
     "peripheral-neuropathy": {
@@ -660,6 +853,17 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "Neuropathy", href: "/en/symptoms/neuropathy/" },
         { name: "Elbow & Wrist", href: "/en/symptoms/elbow-wrist/" },
         { name: "Foot & Ankle", href: "/en/symptoms/foot/" },
+      ],
+      contraindications: [
+        "Infection at the injection site",
+        "Clotting disorders",
+        "Allergy to injection components",
+        "Refer to the specific contraindications for each treatment selected",
+      ],
+      sideEffects: [
+        "Refer to the side effects for each selected treatment (hydrodissection / PRP / botulinum toxin)",
+        "Some patients may experience temporary symptom fluctuation in the early phase",
+        "Occasional transient changes in sensation during the nerve recovery process",
       ],
     },
   },
@@ -699,6 +903,16 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "膝関節の変性", href: "/ja/symptoms/knee/" },
         { name: "神経障害・神経痛", href: "/ja/symptoms/neuropathy/" },
       ],
+      contraindications: [
+        "注射部位の感染または皮膚損傷",
+        "凝固障害または抗凝固薬の使用",
+        "注射薬成分へのアレルギー",
+      ],
+      sideEffects: [
+        "注射後の軽度な局所痠痛・腫脹（24〜48時間で消退）",
+        "まれに軽微な内出血",
+        "無菌操作下での感染リスクは極めて低い",
+      ],
     },
     "prp": {
       slug: "prp",
@@ -736,6 +950,18 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "足・足首の痛み", href: "/ja/symptoms/foot/" },
         { name: "神経障害・神経痛", href: "/ja/symptoms/neuropathy/" },
       ],
+      contraindications: [
+        "凝固障害または抗凝固薬（ワーファリン等）の使用",
+        "活動性感染症または注射部位の感染",
+        "血小板機能障害",
+        "悪性腫瘍のある方",
+        "発熱または急性の全身感染症",
+      ],
+      sideEffects: [
+        "24〜72時間の局所痠痛・腫脹（正常な修復反応）",
+        "軽微な内出血",
+        "まれに一時的な疼痛増強（1〜3日）",
+      ],
     },
     "prolotherapy": {
       slug: "prolotherapy",
@@ -771,6 +997,17 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "足・足首の痛み", href: "/ja/symptoms/foot/" },
         { name: "肘・手首の痛み", href: "/ja/symptoms/elbow-wrist/" },
         { name: "腰痛・下背部痛", href: "/ja/symptoms/back/" },
+      ],
+      contraindications: [
+        "ブドウ糖または注射成分へのアレルギー",
+        "注射部位の活動性感染",
+        "コントロール不良の糖尿病",
+        "凝固障害",
+      ],
+      sideEffects: [
+        "24〜48時間の局所痠痛・腫脹（正常反応）",
+        "軽微な内出血",
+        "処置当日は激しい運動を避けることを推奨",
       ],
     },
     "nerve-hydrodissection": {
@@ -808,6 +1045,16 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "肘・手首の痛み", href: "/ja/symptoms/elbow-wrist/" },
         { name: "頸部の痛み", href: "/ja/symptoms/neck/" },
       ],
+      contraindications: [
+        "注射部位の感染",
+        "注射成分へのアレルギー",
+        "凝固障害",
+      ],
+      sideEffects: [
+        "軽度の局所痠痛・腫脹（通常24時間以内）",
+        "一部の患者様で一時的なしびれ感の増強（1〜3日後に改善）",
+        "まれに軽微な内出血",
+      ],
     },
     "bmac": {
       slug: "bmac",
@@ -844,6 +1091,18 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "股関節・臀部の痛み", href: "/ja/symptoms/hip/" },
         { name: "肩の痛み", href: "/ja/symptoms/shoulder/" },
       ],
+      contraindications: [
+        "血液疾患または骨髄疾患",
+        "活動性感染症",
+        "悪性腫瘍（要評価）",
+        "凝固障害",
+        "免疫機能の著しい低下",
+      ],
+      sideEffects: [
+        "骨髄採取部位の痠痛（1〜2日、通常の鎮痛薬で対処可能）",
+        "注射部位の軽度腫脹（24〜72時間）",
+        "まれに処置当日の軽微な発熱",
+      ],
     },
     "tame": {
       slug: "tame",
@@ -878,6 +1137,19 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "膝関節の変性", href: "/ja/symptoms/knee/" },
         { name: "肩の痛み", href: "/ja/symptoms/shoulder/" },
         { name: "肘・手首の痛み", href: "/ja/symptoms/elbow-wrist/" },
+      ],
+      contraindications: [
+        "抗生物質への多重アレルギー",
+        "凝固障害",
+        "注射部位の感染",
+        "血管状態が不良な方",
+        "妊娠中",
+        "重篤な腎機能障害",
+      ],
+      sideEffects: [
+        "術後の軽度な局所痠痛・腫脹（数日で消退）",
+        "一部の症例で一時的な疼痛増強（1〜5日、正常反応）",
+        "まれに皮膚の軽微な変色（通常自然回復）",
       ],
     },
     "hyaluronic-acid": {
@@ -914,6 +1186,16 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "膝関節の変性", href: "/ja/symptoms/knee/" },
         { name: "股関節・臀部の痛み", href: "/ja/symptoms/hip/" },
       ],
+      contraindications: [
+        "注射部位の感染",
+        "ヒアルロン酸または鳥類由来製品へのアレルギー",
+        "関節腔内感染または血腫",
+      ],
+      sideEffects: [
+        "注射後の軽度痠痛・腫脹（24〜48時間）",
+        "まれに注射後の関節膨満感（通常1〜3日で消退）",
+        "まれにアレルギー反応",
+      ],
     },
     "botulinum": {
       slug: "botulinum",
@@ -948,6 +1230,18 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       relatedSymptoms: [
         { name: "神経障害・神経痛", href: "/ja/symptoms/neuropathy/" },
         { name: "頸部の痛み", href: "/ja/symptoms/neck/" },
+      ],
+      contraindications: [
+        "ボツリヌス毒素へのアレルギー",
+        "重症筋無力症または神経筋接合部疾患",
+        "妊娠中または授乳中",
+        "注射部位の感染",
+      ],
+      sideEffects: [
+        "注射部位の軽微な内出血または腫脹",
+        "効果発現まで7〜14日かかり、その間は疼痛が持続する場合あり",
+        "一部の患者様で一時的な局所筋力低下",
+        "3〜6ヶ月後に効果は自然に消退",
       ],
     },
     "peripheral-neuropathy": {
@@ -984,6 +1278,17 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { name: "神経障害・神経痛", href: "/ja/symptoms/neuropathy/" },
         { name: "肘・手首の痛み", href: "/ja/symptoms/elbow-wrist/" },
         { name: "足・足首の痛み", href: "/ja/symptoms/foot/" },
+      ],
+      contraindications: [
+        "注射部位の感染",
+        "凝固障害",
+        "注射成分へのアレルギー",
+        "選択する治療法ごとの禁忌事項を参照",
+      ],
+      sideEffects: [
+        "選択した治療法（神経解套・PRP・ボツリヌス毒素）の副作用を参照",
+        "一部の患者様で初期に症状の一時的な変動が生じる場合あり",
+        "神経回復過程でまれに一時的な感覚変化",
       ],
     },
   },

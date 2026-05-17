@@ -3748,3 +3748,12 @@ details[open] .faq-q::after {
   padding: 0;
   border: none;
 }
+
+/* Contraindication list — overrides the ✓ marker from .treatment-suitable-list */
+.treatment-contraindication-list li::before {
+  content: "✗";
+  position: absolute;
+  left: 0;
+  color: #c9b99a;
+  font-weight: 700;
+}

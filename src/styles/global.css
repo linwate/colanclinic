@@ -3552,21 +3552,94 @@ details[open] .faq-q::after {
   color: #1a2f5e;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 899px) {
+
+  /* 下拉容器：全寬，和其他 nav-links 項目一致 */
+  .nav-dropdown {
+    display: block;
+    width: 100%;
+  }
+
+  /* 下拉按鈕：視覺和 .nav-links a 完全一致 */
+  .nav-dropdown-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ink, #1a2f5e);
+    padding: 0.95rem 0.25rem;
+    min-height: 44px;
+    border-bottom: 1px solid rgba(26, 47, 94, 0.08);
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .nav-dropdown-btn:hover {
+    color: var(--cobalt, #0b3a6f);
+  }
+
+  /* 下拉箭頭靠右 */
+  .nav-dropdown-arrow {
+    font-size: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  /* 下拉選單：in-flow，不浮動 */
   .nav-dropdown-menu {
+    display: none;
     position: static;
     transform: none;
     box-shadow: none;
     border: none;
-    border-top: 1px solid #f0ede8;
     border-radius: 0;
     min-width: unset;
-    padding: 0.25rem 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: transparent;
   }
 
-  .nav-dropdown:hover .nav-dropdown-menu {
+  /* is-open 時顯示 */
+  .nav-dropdown.is-open .nav-dropdown-menu {
     display: block;
   }
+
+  /* 下拉項目：縮排，讓視覺上像子選單 */
+  .nav-dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 0.25rem 0.7rem 1.25rem;
+    font-size: 0.92rem;
+    color: #4a3f35;
+    border-bottom: 1px solid rgba(26, 47, 94, 0.05);
+    min-height: 40px;
+    background: transparent;
+  }
+
+  .nav-dropdown-item:hover {
+    color: var(--cobalt, #0b3a6f);
+    background: transparent;
+  }
+
+  /* 總覽頁連結稍微不同 */
+  .nav-dropdown-all {
+    font-weight: 600;
+    color: #1a2f5e;
+    padding-left: 0.25rem;
+  }
+
+  /* 分隔線 */
+  .nav-dropdown-divider {
+    margin: 2px 0;
+    border-color: rgba(26, 47, 94, 0.08);
+  }
+
 }
 
 /* JS tap-toggle state (mobile/touch) + symptoms overview link */

@@ -158,10 +158,13 @@ const hreflangOf: Record<Lang, string> = {
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;500;600&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;500;600&display=swap">
+    </noscript>
 
     <!-- MedicalClinic + Physician structured data -->
     <script type="application/ld+json" is:inline set:html={JSON.stringify({
@@ -270,7 +273,7 @@ const hreflangOf: Record<Lang, string> = {
 
     <!-- Twemoji: replace native emoji with SVG for consistent rendering on all OS.
          Default MaxCDN base is dead, so we pin `base` to jsDelivr. -->
-    <script src="https://cdn.jsdelivr.net/npm/twemoji@14/dist/twemoji.min.js" crossorigin="anonymous" is:inline></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/twemoji@14/dist/twemoji.min.js" crossorigin="anonymous" is:inline></script>
     <script is:inline>
       document.addEventListener('DOMContentLoaded', function () {
         if (window.twemoji) {

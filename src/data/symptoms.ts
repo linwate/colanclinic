@@ -686,6 +686,21 @@ export const cta = {
   },
 }
 
+export const treatmentLink = {
+  zh: {
+    text: "了解各治療的注意事項與禁忌症",
+    href: "/zh/treatment-faq/",
+  },
+  en: {
+    text: "Learn about treatment precautions and contraindications",
+    href: "/en/treatment-faq/",
+  },
+  ja: {
+    text: "各治療の注意事項と禁忌事項について",
+    href: "/ja/treatment-faq/",
+  },
+}
+
 export const indexMeta = {
   zh: {
     title: "症狀查詢｜鈷嵐診所・蘆洲疼痛治療",

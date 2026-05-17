@@ -3373,3 +3373,22 @@ details[open] .faq-q::after {
     padding-bottom: 8px;
   }
 }
+
+.treatment-faq-link {
+  margin-top: 1rem;
+  font-size: 0.88rem;
+}
+
+.treatment-faq-link a {
+  color: #0b3a6f;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid #c9b99a;
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.treatment-faq-link a:hover {
+  color: #1a2f5e;
+  border-color: #1a2f5e;
+}

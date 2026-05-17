@@ -1,11 +1,12 @@
 ---
 import Layout from '../../../layouts/Layout.astro'
-import { zh, cta } from '../../../data/symptoms'
+import { zh, cta, treatmentLink } from '../../../data/symptoms'
 
 const lang = 'zh'
 const slug = 'neuropathy'
 const data = zh[slug]
 const ctaData = cta[lang]
+const treatmentLinkData = treatmentLink[lang]
 ---
 
 <Layout title={data.metaTitle} description={data.metaDescription} lang={lang} pathname={`symptoms/${slug}`}>
@@ -51,6 +52,9 @@ const ctaData = cta[lang]
           <li><a href="/zh/treatment-faq/">{t}</a></li>
         ))}
       </ul>
+      <p class="treatment-faq-link">
+        <a href={treatmentLinkData.href}>{treatmentLinkData.text} →</a>
+      </p>
     </div>
   </section>
 

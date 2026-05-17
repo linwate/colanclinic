@@ -474,21 +474,18 @@ const hreflangOf: Record<Lang, string> = {
         // 下拉選單
         const dropdownBtns = document.querySelectorAll('.nav-dropdown-btn')
 
+        function closeAll() {
+          dropdownBtns.forEach((b) => b.setAttribute('aria-expanded', 'false'))
+        }
+
         dropdownBtns.forEach((btn) => {
           btn.addEventListener('click', (e) => {
+            e.stopPropagation()
             const isOpen = btn.getAttribute('aria-expanded') === 'true'
-
-            // 關閉所有下拉（包含自己）
-            dropdownBtns.forEach((b) => {
-              b.setAttribute('aria-expanded', 'false')
-            })
-
-            // 只有原本是關閉的才開啟
+            closeAll()
             if (!isOpen) {
               btn.setAttribute('aria-expanded', 'true')
-              e.stopPropagation()
             }
-            // 原本是開啟的 → 已經關閉，不需要 stopPropagation
           })
         })
 
@@ -496,27 +493,16 @@ const hreflangOf: Record<Lang, string> = {
         document.querySelectorAll('.nav-dropdown-arrow').forEach((arrow) => {
           arrow.addEventListener('click', (e) => {
             e.stopPropagation()
-            const btn = arrow.closest('.nav-dropdown-btn')
-            if (btn) {
-              btn.setAttribute('aria-expanded', 'false')
-            }
+            closeAll()
           })
         })
 
         // 點擊其他地方關閉
-        document.addEventListener('click', () => {
-          dropdownBtns.forEach((b) => {
-            b.setAttribute('aria-expanded', 'false')
-          })
-        })
+        document.addEventListener('click', closeAll)
 
         // ESC 關閉
         document.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape') {
-            dropdownBtns.forEach((b) => {
-              b.setAttribute('aria-expanded', 'false')
-            })
-          }
+          if (e.key === 'Escape') closeAll()
         })
       })();
     </script>

@@ -8,15 +8,15 @@ export const en = {
   },
   nav_logo: 'Colan Clinic',
   nav: {
-    about: 'About',
+    about: 'Dr. Lin',
     approach: 'Approach',
     services: 'Services',
-    faq: 'Visit FAQ',
+    faq: 'FAQ',
     book: 'Book Now',
     first_visit: 'First Visit',
     treatment_faq: 'Tx FAQ',
     fees: 'Fees',
-    find_symptom: 'Find Your Symptom',
+    find_symptom: 'Symptoms',
   },
   hero: {
     tag: 'Luzhou, New Taipei · Neurology · Pain · Regenerative Medicine',

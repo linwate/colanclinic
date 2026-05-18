@@ -580,6 +580,13 @@ const hreflangOf: Record<Lang, string> = {
           <div class="footer-col footer-col-brand">
             <h2 class="footer-brand">{t.footer.brand}</h2>
             <p class="footer-tagline">{t.footer.tagline}</p>
+            <p class="footer-doctor-link">
+              <a href={`/${lang}/about/`}>
+                {lang === 'zh' ? '主治醫師：林瑋德醫師 →' :
+                 lang === 'en' ? 'Physician: Dr. Lin Wei-De →' :
+                 '担当医師：林瑋德医師 →'}
+              </a>
+            </p>
           </div>
           <div class="footer-col">
             <h3 class="footer-col-title">{t.footer.addr_label}</h3>

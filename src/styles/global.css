@@ -1991,6 +1991,18 @@ details[open] .faq-q::after {
   letter-spacing: 0.04em;
   margin: 0;
 }
+.footer-doctor-link {
+  margin-top: 0.5rem;
+}
+.footer-doctor-link a {
+  font-size: 0.85rem;
+  color: #c9b99a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-doctor-link a:hover {
+  color: #ffffff;
+}
 .footer-col-title {
   font-family: 'Noto Serif TC', 'Georgia', serif;
   font-size: 0.78rem;

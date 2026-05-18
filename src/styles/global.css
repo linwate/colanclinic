@@ -1996,8 +1996,9 @@ details[open] .faq-q::after {
 }
 .footer-doctor-link a {
   font-size: 0.85rem;
-  color: #7ba7d4;
-  text-decoration: none;
+  color: #a8c8e8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
   transition: color 0.2s;
 }
 .footer-doctor-link a:hover {

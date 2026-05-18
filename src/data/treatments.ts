@@ -28,7 +28,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "看得到才打得準，這是所有注射治療的基礎。",
       eyebrow: "治療說明",
       whatIs: "超音波導引注射是在超音波即時影像的監控下進行注射治療。醫師可以在螢幕上清楚看到針頭位置、目標結構和周圍組織，確保藥物精準到達需要治療的位置，避免傷害周圍神經和血管。",
-      whyImportant: "傳統的盲打注射依靠醫師的解剖知識和手感，即使經驗豐富的醫師也有一定的誤差率。研究顯示，肩膀關節注射若不使用超音波導引，準確率只有約 70%。超音波導引可以將準確率提升到 95% 以上，治療效果更穩定，併發症風險更低。",
+      whyImportant: "傳統的盲打注射依靠醫師的解剖知識和手感，即使經驗豐富的醫師也有一定的誤差率。研究顯示，肩膀關節注射若不使用超音波導引，準確率只有約 70%。超音波導引可以將準確率提升到 95% 以上，治療效果更穩定，併發症風險更低。[1]",
       suitable: [
         "需要精準注射的深層結構（如關節腔、腱鞘、神經周圍）",
         "體型較大或解剖位置特殊的患者",
@@ -42,7 +42,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "超音波即時監控下進行注射",
         "確認藥物分布位置後完成治療",
       ],
-      clinicAdvantage: "林醫師的神經科訓練背景讓超音波判讀更精準，不只是找到目標位置，更能同時評估神經、血管和軟組織的狀況，在同一次門診完成診斷和治療。",
+      clinicAdvantage: "林醫師的神經科訓練背景讓超音波判讀更精準，不只是找到目標位置，更能同時評估神經、血管和軟組織的狀況，在同一次門診完成診斷和治療。[2][3]",
       pricingNote: "超音波導引注射的費用依注射部位和使用藥物而定，請參考費用說明頁面。",
       faqItems: [
         { q: "超音波導引注射會痛嗎？", a: "進針時會有輕微不適感，視注射部位和使用藥物而定。大部分患者表示可以接受，視需要可以先做局部麻醉。" },
@@ -78,7 +78,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "用自己的血修復自己的組織，這是 PRP 的核心概念。",
       eyebrow: "治療說明",
       whatIs: "PRP（Platelet-Rich Plasma）是從患者自身血液中分離出高濃度血小板的治療方式。血小板含有多種生長因子，可以促進組織修復、減少發炎、加速癒合。整個過程在門診完成，抽血、離心、注射約需 30–45 分鐘。",
-      whyImportant: "很多慢性疼痛的根本原因是組織退化或損傷沒有完全修復。止痛藥和類固醇只是暫時壓制發炎，沒有修復受損的結構。PRP 提供組織修復所需的生長因子，有機會讓身體完成本來無法完成的修復過程。",
+      whyImportant: "很多慢性疼痛的根本原因是組織退化或損傷沒有完全修復。止痛藥和類固醇只是暫時壓制發炎，沒有修復受損的結構。PRP 提供組織修復所需的生長因子，有機會讓身體完成本來無法完成的修復過程。[1]",
       suitable: [
         "肌腱退化（網球肘、足底筋膜炎、旋轉肌問題）",
         "關節軟骨磨損（膝蓋、肩膀、髖關節）",
@@ -93,7 +93,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "超音波導引下精準注射 PRP",
         "說明術後注意事項和預期反應",
       ],
-      clinicAdvantage: "林醫師會依據超音波評估結果決定 PRP 的注射位置和劑量，不是每個人都打同一個位置。神經科背景讓 DPN 的 PRP 神經水解治療更精準，可以同時處理多個神經壓迫位置。",
+      clinicAdvantage: "林醫師會依據超音波評估結果決定 PRP 的注射位置和劑量，不是每個人都打同一個位置。神經科背景讓 DPN 的 PRP 神經水解治療更精準，可以同時處理多個神經壓迫位置。[2][3]",
       pricingNote: "PRP 費用依治療部位和療程次數而定，請參考費用說明頁面。通常建議 2–3 次為一個療程。",
       faqItems: [
         { q: "PRP 需要打幾次才有效？", a: "一般建議 2–3 次為一個療程，每次間隔 4–6 週。部分患者第一次就有明顯改善，也有些人需要完整療程才看到效果，和個人體質、損傷程度有關。" },
@@ -132,7 +132,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "用葡萄糖刺激身體自我修復，費用合理的再生治療選擇。",
       eyebrow: "治療說明",
       whatIs: "增生療法（Prolotherapy）是將高濃度葡萄糖溶液注射到受損的韌帶、肌腱或關節，引發輕微局部發炎反應，刺激身體啟動修復機制。原理類似 PRP，但使用葡萄糖而非血液製品，費用較低。",
-      whyImportant: "韌帶和肌腱的血液供應本來就不豐富，受損後自我修復能力有限。增生療法提供外在刺激，讓身體重新啟動修復過程，適合慢性韌帶鬆弛或反覆扭傷後一直不穩定的患者。",
+      whyImportant: "韌帶和肌腱的血液供應本來就不豐富，受損後自我修復能力有限。增生療法提供外在刺激，讓身體重新啟動修復過程，適合慢性韌帶鬆弛或反覆扭傷後一直不穩定的患者。[1]",
       suitable: [
         "韌帶鬆弛造成的關節不穩定",
         "反覆腳踝扭傷後的慢性不穩定",
@@ -147,7 +147,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "說明術後可能的痠脹反應",
         "安排追蹤評估時間",
       ],
-      clinicAdvantage: "增生療法的效果很大程度取決於注射位置是否精準。超音波導引確保葡萄糖確實注射到需要修復的韌帶和肌腱，而不是周圍組織。",
+      clinicAdvantage: "增生療法的效果很大程度取決於注射位置是否精準。超音波導引確保葡萄糖確實注射到需要修復的韌帶和肌腱，而不是周圍組織。[2][3]",
       pricingNote: "增生療法費用較 PRP 低，是性價比高的再生治療選擇，請參考費用說明頁面。",
       faqItems: [
         { q: "增生療法和 PRP 哪個比較好？", a: "兩者原理類似，PRP 含有更多生長因子，適合較嚴重的損傷。增生療法費用較低，適合輕中度問題或想先嘗試再生治療的患者。有時候可以搭配使用。" },
@@ -184,7 +184,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "神經被卡住了，用水把它鬆開。這是神經科背景才能做好的治療。",
       eyebrow: "治療說明",
       whatIs: "神經解套注射（Neural Hydrodissection）是在超音波導引下，將生理食鹽水或稀釋的葡萄糖溶液注射到神經周圍，利用水壓分離神經和周圍組織的沾黏，恢復神經的正常滑動空間。",
-      whyImportant: "很多麻木、燒灼感、刺痛的根本原因是神經在特定位置被卡住，傳統治療只處理最明顯的壓迫點，但如果神經在多個位置都有問題（雙重夾擠），只處理一處效果會有限。林醫師的神經科訓練讓他能追蹤神經走向，找出所有的壓迫位置一起處理。",
+      whyImportant: "很多麻木、燒灼感、刺痛的根本原因是神經在特定位置被卡住，傳統治療只處理最明顯的壓迫點，但如果神經在多個位置都有問題（雙重夾擠），只處理一處效果會有限。林醫師的神經科訓練讓他能追蹤神經走向，找出所有的壓迫位置一起處理。[1]",
       suitable: [
         "腕隧道症候群（正中神經壓迫）",
         "尺神經壓迫（小指和無名指麻木）",
@@ -199,7 +199,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "超音波導引下逐一進行神經解套",
         "評估症狀改善情況，安排追蹤",
       ],
-      clinicAdvantage: "這是林醫師最具差異化的治療項目。神經科訓練讓他能用超音波追蹤完整的神經走向，不只是找到最明顯的壓迫點，而是評估整條神經的健康狀況，找出所有需要處理的位置。",
+      clinicAdvantage: "這是林醫師最具差異化的治療項目。神經科訓練讓他能用超音波追蹤完整的神經走向，不只是找到最明顯的壓迫點，而是評估整條神經的健康狀況，找出所有需要處理的位置。[2][3]",
       pricingNote: "神經解套注射費用依治療部位和神經數量而定，請參考費用說明頁面。",
       faqItems: [
         { q: "神經解套和類固醇注射有什麼差別？", a: "類固醇主要是消炎止痛，效果短暫。神經解套用水壓分離沾黏，讓神經有更多活動空間，目標是解決根本原因。有時候兩者可以搭配使用。" },
@@ -288,7 +288,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: '不需要自體抽血，異體來源的高濃度再生修復成分。',
       eyebrow: '治療說明',
       whatIs: '羊膜基質注射（Amniotic Matrix Injection）使用來自人類胎盤羊膜的生物製劑，含有豐富的生長因子、細胞外基質蛋白、抗發炎物質和細胞素。這些成分可以促進組織修復、減少發炎、改善再生環境。和 PRP 或 BMAC 不同，羊膜基質是異體來源，不需要從患者身上抽血或抽取骨髓。',
-      whyImportant: '部分患者因為血液狀況不適合製備 PRP，或不願意接受骨髓抽取，羊膜基質提供了另一種高品質的再生治療選擇。羊膜組織在自然界中本來就有強大的修復和抗發炎功能，是天然的再生材料。',
+      whyImportant: '部分患者因為血液狀況不適合製備 PRP，或不願意接受骨髓抽取，羊膜基質提供了另一種高品質的再生治療選擇。羊膜組織在自然界中本來就有強大的修復和抗發炎功能，是天然的再生材料。[1]',
       suitable: [
         '關節軟骨退化（膝蓋、肩膀、髖關節）',
         '肌腱損傷（旋轉肌、足底筋膜、跟腱）',
@@ -303,7 +303,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         '超音波導引下精準注射羊膜基質',
         '說明術後注意事項和追蹤計畫',
       ],
-      clinicAdvantage: '羊膜基質注射需要精準的超音波導引，確保高價值的生物製劑確實到達需要修復的位置。林醫師會依據超音波評估結果，判斷羊膜基質是否比 PRP 或 BMAC 更適合當前的損傷狀況。',
+      clinicAdvantage: '羊膜基質注射需要精準的超音波導引，確保高價值的生物製劑確實到達需要修復的位置。林醫師會依據超音波評估結果，判斷羊膜基質是否比 PRP 或 BMAC 更適合當前的損傷狀況。[2][3]',
       pricingNote: '羊膜基質注射費用依治療部位而定，請參考費用說明頁面或透過 LINE 諮詢。',
       contraindications: [
         '對人類組織製品或羊膜成分過敏',
@@ -350,7 +350,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "痛了很久都沒好？異常新生血管可能是原因之一。",
       eyebrow: "治療說明",
       whatIs: "TAME（Transcatheter Arterial Micro-Embolization）是一種介入性治療，針對慢性疼痛部位過度增生的異常新生血管進行栓塞。慢性發炎會刺激局部長出不正常的微細血管，這些血管帶來更多神經，加重疼痛感。TAME 針對這些異常血管，從根源減少疼痛信號。",
-      whyImportant: "某些慢性疼痛用一般注射治療效果有限，是因為疼痛的根源在血管層面。當局部長出大量異常新生血管，即使消炎止痛也難以根本改善。TAME 是這類難治性慢性疼痛的重要選擇。",
+      whyImportant: "某些慢性疼痛用一般注射治療效果有限，是因為疼痛的根源在血管層面。當局部長出大量異常新生血管，即使消炎止痛也難以根本改善。TAME 是這類難治性慢性疼痛的重要選擇。[1]",
       suitable: [
         "慢性膝蓋疼痛（難治性退化性關節炎）",
         "冰凍肩（頑固性五十肩）",
@@ -364,7 +364,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "確認栓塞效果",
         "術後觀察，說明恢復注意事項",
       ],
-      clinicAdvantage: "TAME 是鈷嵐診所的特色治療項目之一，適合其他治療效果有限的難治性慢性疼痛患者。林醫師會在治療前仔細評估是否適合，不是所有慢性疼痛都需要 TAME。",
+      clinicAdvantage: "TAME 是鈷嵐診所的特色治療項目之一，適合其他治療效果有限的難治性慢性疼痛患者。林醫師會在治療前仔細評估是否適合，不是所有慢性疼痛都需要 TAME。[2][3]",
       pricingNote: "TAME 為進階介入治療，請參考費用說明頁面或透過 LINE 諮詢詳細費用。",
       faqItems: [
         { q: "TAME 和一般注射治療有什麼差別？", a: "一般注射治療針對肌腱、關節或神經，TAME 針對的是異常新生血管。兩者可以搭配使用，TAME 通常在其他治療效果有限時考慮。" },
@@ -403,7 +403,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "補充關節潤滑液，讓退化的關節動得更順。高分子量製劑單次注射效果長達一年。",
       eyebrow: "治療說明",
       whatIs: "關節玻尿酸注射將玻尿酸（透明質酸）注射到關節腔，補充因退化而減少的關節液，恢復關節的潤滑功能，減少骨頭間的摩擦和疼痛。目前可選擇傳統低至中分子量製劑（健保或自費），或進階高分子量交聯製劑，後者單次注射效果可維持半年至一年，大幅減少注射頻率。",
-      whyImportant: "退化性關節炎的早中期，關節液品質下降是疼痛的重要原因之一。玻尿酸注射可以在不需要更侵入性治療的情況下，有效改善關節功能和疼痛，是膝蓋退化保守治療的重要選項。",
+      whyImportant: "退化性關節炎的早中期，關節液品質下降是疼痛的重要原因之一。玻尿酸注射可以在不需要更侵入性治療的情況下，有效改善關節功能和疼痛，是膝蓋退化保守治療的重要選項。[1]",
       suitable: [
         "輕中度退化性膝關節炎",
         "關節液減少造成的關節摩擦痛",
@@ -418,7 +418,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "確認藥物在關節腔內分布",
         "說明術後活動建議",
       ],
-      clinicAdvantage: "超音波導引確保玻尿酸確實注射進關節腔，而不是周圍軟組織。有積水時可以先抽除再注射，效果更好。進階高分子量交聯製劑的單次注射可以持續 6–12 個月，減少患者回診次數。",
+      clinicAdvantage: "超音波導引確保玻尿酸確實注射進關節腔，而不是周圍軟組織。有積水時可以先抽除再注射，效果更好。進階高分子量交聯製劑的單次注射可以持續 6–12 個月，減少患者回診次數。[2][3]",
       pricingNote: "關節玻尿酸費用依製劑種類（傳統低分子量或進階高分子量交聯製劑）和注射部位而定，請參考費用說明頁面。",
       faqItems: [
         {
@@ -480,7 +480,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: '台灣 TFDA 唯一核准的肌腱韌帶修復注射劑，不是潤滑，是修復。',
       eyebrow: '治療說明',
       whatIs: 'SportVis 是含有 STABHA（軟組織適應性生物相容玻尿酸）的注射治療，專門針對肌腱和韌帶損傷設計。STABHA 是目前台灣 TFDA 唯一核准可用於肌腱與韌帶修復的玻尿酸製劑，與傳統關節腔潤滑用的玻尿酸完全不同。注射後 STABHA 嵌入受損組織，搭建修復所需的臨時支撐環境，同時發揮控制發炎、促進修復、提供潤滑三大作用。',
-      whyImportant: '肌腱和韌帶損傷的修復環境和關節腔不同，需要能滲透軟組織的特殊結構。傳統玻尿酸用於關節潤滑效果良好，但無法有效修復肌腱韌帶。SportVis 的 STABHA 分子結構特別設計，可以嵌入肌腱周圍組織，加速細胞修復、減少疤痕沾黏，幫助運動員和患者更快恢復功能。',
+      whyImportant: '肌腱和韌帶損傷的修復環境和關節腔不同，需要能滲透軟組織的特殊結構。傳統玻尿酸用於關節潤滑效果良好，但無法有效修復肌腱韌帶。SportVis 的 STABHA 分子結構特別設計，可以嵌入肌腱周圍組織，加速細胞修復、減少疤痕沾黏，幫助運動員和患者更快恢復功能。[1]',
       suitable: [
         '急性或慢性肌腱炎（網球肘、高爾夫球肘、跟腱炎）',
         '韌帶損傷（腳踝扭傷、膝蓋韌帶部分撕裂）',
@@ -495,7 +495,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         '說明注射後注意事項（48小時避免劇烈運動）',
         '兩週後進行第二劑注射，評估恢復狀況',
       ],
-      clinicAdvantage: '超音波導引確保 SportVis 精準注射至肌腱周圍軟組織，而不是關節腔或其他位置。林醫師的肌肉骨骼超音波訓練背景（CIPS 認證）讓注射位置更精準，療效更穩定。',
+      clinicAdvantage: '超音波導引確保 SportVis 精準注射至肌腱周圍軟組織，而不是關節腔或其他位置。林醫師的肌肉骨骼超音波訓練背景（CIPS 認證）讓注射位置更精準，療效更穩定。[2][3]',
       pricingNote: 'SportVis 標準療程為 2 劑，費用請參考費用說明頁面或透過 LINE 諮詢。',
       contraindications: [
         '對玻尿酸或 STABHA 成分過敏',
@@ -559,7 +559,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "肉毒桿菌不只是美容，它也是神經痛和肌肉痙攣的有效止痛工具。",
       eyebrow: "治療說明",
       whatIs: "醫療用肉毒桿菌毒素（Botulinum Toxin）注射到特定神經或肌肉，阻斷神經訊號傳遞，達到止痛和肌肉放鬆的效果。在疼痛醫學的應用和美容完全不同，是針對神經痛和肌肉痙攣的治療工具。",
-      whyImportant: "某些頑固性神經痛（如帶狀皰疹後神經痛、糖尿病神經病變）和慢性頭痛，用一般止痛藥或注射治療效果有限。肉毒桿菌可以直接作用在神經層面，提供 3–6 個月的疼痛緩解。",
+      whyImportant: "某些頑固性神經痛（如帶狀皰疹後神經痛、糖尿病神經病變）和慢性頭痛，用一般止痛藥或注射治療效果有限。肉毒桿菌可以直接作用在神經層面，提供 3–6 個月的疼痛緩解。[1]",
       suitable: [
         "帶狀皰疹後神經痛（PHN）",
         "糖尿病周邊神經病變的燒灼感",
@@ -574,7 +574,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "說明起效時間（通常 7–14 天後）",
         "3–6 個月後評估是否需要再次注射",
       ],
-      clinicAdvantage: "林醫師的神經科背景讓他能精準定位神經痛的來源，選擇最有效的注射位置。用於疼痛治療的劑量和位置和美容用途完全不同，需要神經科的診斷基礎。",
+      clinicAdvantage: "林醫師的神經科背景讓他能精準定位神經痛的來源，選擇最有效的注射位置。用於疼痛治療的劑量和位置和美容用途完全不同，需要神經科的診斷基礎。[2][3]",
       pricingNote: "費用依注射部位和劑量而定，請參考費用說明頁面或透過 LINE 諮詢。",
       faqItems: [
         { q: "肉毒桿菌止痛和美容用有什麼不同？", a: "美容用途針對表情肌，目標是讓皮膚平滑。止痛用途針對疼痛相關的神經或深層肌肉，目標是阻斷疼痛訊號和放鬆痙攣肌肉，位置和劑量完全不同。" },
@@ -611,7 +611,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "腳麻、燒灼感、像電到一樣的刺痛——這些是神經在發出求救訊號。",
       eyebrow: "治療說明",
       whatIs: "周邊神經痛（Peripheral Neuropathy）泛指周邊神經系統受損或功能異常造成的疼痛、麻木、燒灼感或刺痛。常見原因包括糖尿病（DPN）、帶狀皰疹後遺症（PHN）、神經壓迫和自體免疫疾病。林醫師的神經科訓練讓他能全面評估神經狀況，選擇最適合的治療組合。",
-      whyImportant: "周邊神經痛常被誤診或治療不完整，原因是症狀多樣且原因複雜。有些患者長年服用神經痛藥物但效果有限，是因為沒有找到真正的神經壓迫位置。超音波可以直接看到神經的狀況，找出可以介入治療的位置。",
+      whyImportant: "周邊神經痛常被誤診或治療不完整，原因是症狀多樣且原因複雜。有些患者長年服用神經痛藥物但效果有限，是因為沒有找到真正的神經壓迫位置。超音波可以直接看到神經的狀況，找出可以介入治療的位置。[1]",
       suitable: [
         "糖尿病周邊神經病變（DPN）",
         "帶狀皰疹後神經痛（PHN）",
@@ -626,7 +626,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "依症狀選擇神經解套、PRP 水解或肉毒桿菌",
         "定期追蹤評估治療效果",
       ],
-      clinicAdvantage: "神經痛的治療需要同時有診斷能力和介入治療能力。林醫師的神經科背景提供精準的診斷，超音波和再生醫學工具提供有效的治療，不需要在不同科別之間來回轉診。",
+      clinicAdvantage: "神經痛的治療需要同時有診斷能力和介入治療能力。林醫師的神經科背景提供精準的診斷，超音波和再生醫學工具提供有效的治療，不需要在不同科別之間來回轉診。[2][3]",
       pricingNote: "周邊神經痛治療費用依評估結果和選擇的治療方式而定，請透過 LINE 描述症狀後諮詢詳細費用。",
       faqItems: [
         { q: "DPN 可以治療嗎？", a: "DPN 的神經損傷不能完全逆轉，但透過神經解套注射和 PRP 神經水解，可以改善神經的血流供應和傳導功能，減輕麻木和疼痛症狀。配合血糖控制效果更好。" },
@@ -666,7 +666,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "Seeing where you're going is the foundation of accurate injection treatment.",
       eyebrow: "Treatment Guide",
       whatIs: "Ultrasound-guided injection is performed under real-time ultrasound imaging. The physician can clearly see the needle position, target structure, and surrounding tissues on screen, ensuring medication reaches exactly where it is needed while avoiding nerves and blood vessels.",
-      whyImportant: "Traditional blind injections rely on the physician's anatomical knowledge and touch. Even experienced practitioners have a margin of error. Research shows that shoulder joint injections without ultrasound guidance achieve only about 70% accuracy. Ultrasound guidance raises accuracy above 95%, delivering more consistent results and lower complication risk.",
+      whyImportant: "Traditional blind injections rely on the physician's anatomical knowledge and touch. Even experienced practitioners have a margin of error. Research shows that shoulder joint injections without ultrasound guidance achieve only about 70% accuracy. Ultrasound guidance raises accuracy above 95%, delivering more consistent results and lower complication risk. [1]",
       suitable: [
         "Deep structures requiring precise injection (joint cavities, tendon sheaths, nerve perineural spaces)",
         "Patients with larger body types or unusual anatomy",
@@ -680,7 +680,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Injection performed under real-time ultrasound guidance",
         "Confirm medication distribution, complete treatment",
       ],
-      clinicAdvantage: "Dr. Lin's neurology training makes ultrasound interpretation more precise — not just locating the target, but assessing the condition of nerves, vessels, and soft tissue at the same time, completing diagnosis and treatment in a single appointment.",
+      clinicAdvantage: "Dr. Lin's neurology training makes ultrasound interpretation more precise — not just locating the target, but assessing the condition of nerves, vessels, and soft tissue at the same time, completing diagnosis and treatment in a single appointment. [2][3]",
       pricingNote: "Ultrasound-guided injection fees vary by site and medication. Please refer to the pricing page.",
       faqItems: [
         { q: "Does ultrasound-guided injection hurt?", a: "There is mild discomfort at needle entry, varying by site and medication. Most patients find it manageable. Local anesthesia is available if needed." },
@@ -716,7 +716,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "Using your own blood to repair your own tissue — that's the core concept of PRP.",
       eyebrow: "Treatment Guide",
       whatIs: "PRP (Platelet-Rich Plasma) is prepared by concentrating platelets from the patient's own blood. Platelets contain multiple growth factors that promote tissue repair, reduce inflammation, and accelerate healing. The entire process — blood draw, centrifugation, and injection — takes place in the clinic in about 30–45 minutes.",
-      whyImportant: "Many chronic pain conditions are rooted in tissue degeneration or incomplete healing. Pain medications and corticosteroids only suppress inflammation temporarily without repairing the damaged structure. PRP provides the growth factors tissue needs to complete the repair process the body was unable to finish on its own.",
+      whyImportant: "Many chronic pain conditions are rooted in tissue degeneration or incomplete healing. Pain medications and corticosteroids only suppress inflammation temporarily without repairing the damaged structure. PRP provides the growth factors tissue needs to complete the repair process the body was unable to finish on its own. [1]",
       suitable: [
         "Tendon degeneration (tennis elbow, plantar fasciitis, rotator cuff issues)",
         "Joint cartilage wear (knee, shoulder, hip)",
@@ -731,7 +731,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Precise injection under ultrasound guidance",
         "Post-treatment instructions and expected response",
       ],
-      clinicAdvantage: "Dr. Lin uses ultrasound assessment to determine the precise injection site and dosage for each patient — not a one-size-fits-all approach. His neurology background makes PRP neural hydrodissection for DPN more accurate, allowing multiple nerve compression sites to be addressed in one treatment.",
+      clinicAdvantage: "Dr. Lin uses ultrasound assessment to determine the precise injection site and dosage for each patient — not a one-size-fits-all approach. His neurology background makes PRP neural hydrodissection for DPN more accurate, allowing multiple nerve compression sites to be addressed in one treatment. [2][3]",
       pricingNote: "PRP fees vary by treatment site and number of sessions. Please refer to the pricing page. A course of 2–3 sessions is typically recommended.",
       faqItems: [
         { q: "How many PRP sessions are needed?", a: "A standard course is 2–3 sessions spaced 4–6 weeks apart. Some patients see significant improvement after the first session; others need the full course. Results depend on individual constitution and injury severity." },
@@ -770,7 +770,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "Using glucose to trigger the body's own repair response — an accessible regenerative treatment.",
       eyebrow: "Treatment Guide",
       whatIs: "Prolotherapy involves injecting a concentrated dextrose (glucose) solution into damaged ligaments, tendons, or joint areas to trigger a mild local inflammatory response that activates the body's repair mechanism. The principle is similar to PRP, but using glucose rather than blood products, making it more cost-accessible.",
-      whyImportant: "Ligaments and tendons have limited blood supply and poor self-repair capacity when injured. Prolotherapy provides an external stimulus to restart the healing process — particularly suitable for patients with chronic ligament laxity or persistent instability after repeated sprains.",
+      whyImportant: "Ligaments and tendons have limited blood supply and poor self-repair capacity when injured. Prolotherapy provides an external stimulus to restart the healing process — particularly suitable for patients with chronic ligament laxity or persistent instability after repeated sprains. [1]",
       suitable: [
         "Ligament laxity causing joint instability",
         "Chronic instability after repeated ankle sprains",
@@ -785,7 +785,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Post-treatment instructions for expected soreness",
         "Schedule follow-up assessment",
       ],
-      clinicAdvantage: "The effectiveness of prolotherapy depends greatly on injection precision. Ultrasound guidance ensures the dextrose reaches the ligament and tendon requiring repair — not surrounding tissue.",
+      clinicAdvantage: "The effectiveness of prolotherapy depends greatly on injection precision. Ultrasound guidance ensures the dextrose reaches the ligament and tendon requiring repair — not surrounding tissue. [2][3]",
       pricingNote: "Prolotherapy is more affordable than PRP and offers good value as a regenerative treatment. Please refer to the pricing page.",
       faqItems: [
         { q: "Which is better — prolotherapy or PRP?", a: "Both use a similar principle. PRP contains richer growth factors and is better suited for more severe injuries. Prolotherapy is more cost-effective for mild to moderate conditions or as an initial regenerative option. The two can sometimes be combined." },
@@ -822,7 +822,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "The nerve is trapped — hydrodissection uses water pressure to release it. This is where neurology training matters.",
       eyebrow: "Treatment Guide",
       whatIs: "Neural hydrodissection is performed under ultrasound guidance, injecting saline or dilute dextrose solution around the nerve to use hydraulic pressure to separate adhesions between the nerve and surrounding tissue, restoring the nerve's normal gliding space.",
-      whyImportant: "Much of the numbness, burning, and tingling experienced in chronic cases stems from nerves trapped at specific locations. Treating only the most obvious compression point is insufficient when the nerve is affected at multiple sites (double crush syndrome). Dr. Lin's neurology training allows him to trace the full course of a nerve and identify all compression sites for comprehensive treatment.",
+      whyImportant: "Much of the numbness, burning, and tingling experienced in chronic cases stems from nerves trapped at specific locations. Treating only the most obvious compression point is insufficient when the nerve is affected at multiple sites (double crush syndrome). Dr. Lin's neurology training allows him to trace the full course of a nerve and identify all compression sites for comprehensive treatment. [1]",
       suitable: [
         "Carpal tunnel syndrome (median nerve compression)",
         "Ulnar nerve entrapment (ring and little finger numbness)",
@@ -837,7 +837,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Sequential hydrodissection under ultrasound guidance",
         "Assess symptom response and schedule follow-up",
       ],
-      clinicAdvantage: "This is Dr. Lin's most differentiated treatment. His neurology training enables ultrasound-based tracing of the complete nerve path — not just the most obvious compression point — assessing the health of the entire nerve and identifying all sites requiring treatment.",
+      clinicAdvantage: "This is Dr. Lin's most differentiated treatment. His neurology training enables ultrasound-based tracing of the complete nerve path — not just the most obvious compression point — assessing the health of the entire nerve and identifying all sites requiring treatment. [2][3]",
       pricingNote: "Nerve hydrodissection fees depend on the treatment site and number of nerves addressed. Please refer to the pricing page.",
       faqItems: [
         { q: "How does nerve hydrodissection differ from corticosteroid injection?", a: "Corticosteroids primarily reduce inflammation for temporary pain relief. Hydrodissection uses hydraulic pressure to physically release adhesions, creating more space for nerve movement — targeting the underlying cause. The two can sometimes be combined." },
@@ -926,7 +926,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: 'No blood draw needed — a rich source of regenerative components from human amniotic tissue.',
       eyebrow: 'Treatment Guide',
       whatIs: 'Amniotic matrix injection uses a biologic derived from human placental amniotic membrane, rich in growth factors, extracellular matrix proteins, anti-inflammatory cytokines, and signaling molecules. These components promote tissue repair, reduce inflammation, and create a favorable environment for regeneration. Unlike PRP or BMAC, amniotic matrix is an allogeneic source — no blood draw or bone marrow aspiration is required from the patient.',
-      whyImportant: 'Some patients are not suitable candidates for PRP due to blood conditions, or prefer to avoid bone marrow aspiration. Amniotic matrix provides a high-quality regenerative alternative. Amniotic tissue has powerful natural repair and anti-inflammatory properties — it is one of nature\'s most effective regenerative materials.',
+      whyImportant: 'Some patients are not suitable candidates for PRP due to blood conditions, or prefer to avoid bone marrow aspiration. Amniotic matrix provides a high-quality regenerative alternative. Amniotic tissue has powerful natural repair and anti-inflammatory properties — it is one of nature\'s most effective regenerative materials. [1]',
       suitable: [
         'Joint cartilage degeneration (knee, shoulder, hip)',
         'Tendon injuries (rotator cuff, plantar fascia, Achilles)',
@@ -941,7 +941,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         'Precise injection under ultrasound guidance',
         'Post-treatment instructions and follow-up plan',
       ],
-      clinicAdvantage: 'Amniotic matrix injection requires precise ultrasound guidance to ensure this high-value biologic reaches exactly where repair is needed. Dr. Lin assesses each case with ultrasound to determine whether amniotic matrix, PRP, or BMAC is the most appropriate choice for the current injury.',
+      clinicAdvantage: 'Amniotic matrix injection requires precise ultrasound guidance to ensure this high-value biologic reaches exactly where repair is needed. Dr. Lin assesses each case with ultrasound to determine whether amniotic matrix, PRP, or BMAC is the most appropriate choice for the current injury. [2][3]',
       pricingNote: 'Amniotic matrix injection fees vary by treatment site. Please refer to the pricing page or contact us via LINE.',
       contraindications: [
         'Known allergy to human tissue products or amniotic components',
@@ -988,7 +988,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "Pain that won't resolve? Abnormal neovascularization may be part of the reason.",
       eyebrow: "Treatment Guide",
       whatIs: "TAME (Transcatheter Arterial Micro-Embolization) is an interventional procedure targeting the abnormal new blood vessels that proliferate in areas of chronic inflammation. Chronic pain triggers local growth of abnormal microvasculature, which carries additional nerve fibers that amplify pain signals. TAME embolizes these abnormal vessels to reduce pain at its source.",
-      whyImportant: "Some chronic pain conditions respond poorly to conventional injection therapy because the pain originates at the vascular level. When excessive abnormal neovascularization has developed, anti-inflammatory measures alone cannot achieve lasting relief. TAME represents an important option for this type of treatment-resistant chronic pain.",
+      whyImportant: "Some chronic pain conditions respond poorly to conventional injection therapy because the pain originates at the vascular level. When excessive abnormal neovascularization has developed, anti-inflammatory measures alone cannot achieve lasting relief. TAME represents an important option for this type of treatment-resistant chronic pain. [1]",
       suitable: [
         "Chronic knee pain (treatment-resistant osteoarthritis)",
         "Frozen shoulder (refractory adhesive capsulitis)",
@@ -1002,7 +1002,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Confirm embolization effect",
         "Post-procedure observation and recovery instructions",
       ],
-      clinicAdvantage: "TAME is a signature treatment at Colan Clinic, available for patients with treatment-resistant chronic pain where other approaches have been insufficient. Dr. Lin carefully assesses candidacy before proceeding — TAME is not appropriate for all chronic pain.",
+      clinicAdvantage: "TAME is a signature treatment at Colan Clinic, available for patients with treatment-resistant chronic pain where other approaches have been insufficient. Dr. Lin carefully assesses candidacy before proceeding — TAME is not appropriate for all chronic pain. [2][3]",
       pricingNote: "TAME is an advanced interventional treatment. Please refer to the pricing page or contact us via LINE for detailed fee information.",
       faqItems: [
         { q: "How does TAME differ from standard injection therapy?", a: "Standard injections target tendons, joints, or nerves. TAME targets abnormal neovascularization. The two approaches address different mechanisms and can be used in combination. TAME is typically considered when other treatments have shown limited results." },
@@ -1041,7 +1041,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "Replenishing joint fluid to help a degenerating joint move more smoothly. Advanced high-molecular-weight formulations last up to one year from a single injection.",
       eyebrow: "Treatment Guide",
       whatIs: "Hyaluronic acid (HA) injection introduces hyaluronate into the joint cavity to supplement the synovial fluid depleted by degeneration, restoring lubrication, reducing bone-on-bone friction, and alleviating pain. Options include conventional low-to-mid molecular weight formulations (covered by NHI or self-pay) and advanced high-molecular-weight cross-linked formulations, with the latter providing lasting relief from a single injection for up to 6–12 months.",
-      whyImportant: "In early to moderate osteoarthritis, declining synovial fluid quality is a significant contributor to pain. HA injection can meaningfully improve joint function and pain without more invasive intervention, making it an important conservative option for knee degeneration.",
+      whyImportant: "In early to moderate osteoarthritis, declining synovial fluid quality is a significant contributor to pain. HA injection can meaningfully improve joint function and pain without more invasive intervention, making it an important conservative option for knee degeneration. [1]",
       suitable: [
         "Mild to moderate knee osteoarthritis",
         "Joint pain from reduced synovial fluid and friction",
@@ -1056,7 +1056,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Confirm medication distribution within joint cavity",
         "Post-treatment activity recommendations",
       ],
-      clinicAdvantage: "Ultrasound guidance ensures hyaluronic acid is injected directly into the joint cavity rather than surrounding soft tissue. When effusion is present, aspiration before injection improves outcomes. Advanced high-molecular-weight cross-linked formulations can sustain results for 6–12 months from a single injection, reducing the number of clinic visits required.",
+      clinicAdvantage: "Ultrasound guidance ensures hyaluronic acid is injected directly into the joint cavity rather than surrounding soft tissue. When effusion is present, aspiration before injection improves outcomes. Advanced high-molecular-weight cross-linked formulations can sustain results for 6–12 months from a single injection, reducing the number of clinic visits required. [2][3]",
       pricingNote: "Fees vary by formulation (conventional or advanced high-molecular-weight cross-linked) and injection site. Please refer to the pricing page.",
       faqItems: [
         {
@@ -1118,7 +1118,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: 'The only TFDA-approved injectable for tendon and ligament repair — not lubrication, but regeneration.',
       eyebrow: 'Treatment Guide',
       whatIs: 'SportVis contains STABHA (Soft Tissue Adapted Biocompatible Hyaluronic Acid), an injection treatment specifically designed for tendon and ligament injuries. STABHA is the only hyaluronic acid approved by Taiwan\'s TFDA for the repair of tendons and ligaments — entirely distinct from conventional joint-lubricating hyaluronic acid. Once injected, STABHA embeds into damaged soft tissue, creating a temporary scaffold that supports cellular repair while providing three combined actions: inflammation control, tissue repair, and lubrication.',
-      whyImportant: 'Tendons and ligaments have a different repair environment from joint cavities and require a formulation that can penetrate soft tissue. Conventional hyaluronic acid lubricates joint surfaces effectively but cannot repair tendons or ligaments. SportVis\'s STABHA molecule is specifically engineered to embed in peritendinous tissue, accelerate cellular repair, reduce scarring and adhesions, and help patients return to function more quickly.',
+      whyImportant: 'Tendons and ligaments have a different repair environment from joint cavities and require a formulation that can penetrate soft tissue. Conventional hyaluronic acid lubricates joint surfaces effectively but cannot repair tendons or ligaments. SportVis\'s STABHA molecule is specifically engineered to embed in peritendinous tissue, accelerate cellular repair, reduce scarring and adhesions, and help patients return to function more quickly. [1]',
       suitable: [
         'Acute or chronic tendinopathy (tennis elbow, golfer\'s elbow, Achilles tendinopathy)',
         'Ligament injuries (ankle sprain, partial knee ligament tears)',
@@ -1133,7 +1133,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         'Post-injection instructions (avoid vigorous activity for 48 hours)',
         'Second dose injection two weeks later; assess recovery progress',
       ],
-      clinicAdvantage: 'Ultrasound guidance ensures SportVis is delivered precisely into the peritendinous soft tissue rather than the joint cavity. Dr. Lin\'s musculoskeletal ultrasound training (CIPS-certified) results in more accurate placement and more consistent outcomes.',
+      clinicAdvantage: 'Ultrasound guidance ensures SportVis is delivered precisely into the peritendinous soft tissue rather than the joint cavity. Dr. Lin\'s musculoskeletal ultrasound training (CIPS-certified) results in more accurate placement and more consistent outcomes. [2][3]',
       pricingNote: 'The standard SportVis course is 2 doses. Please refer to the pricing page or contact us via LINE.',
       contraindications: [
         'Known allergy to hyaluronic acid or STABHA components',
@@ -1197,7 +1197,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "Botulinum toxin isn't just for cosmetics — it's an effective tool for nerve pain and muscle spasm.",
       eyebrow: "Treatment Guide",
       whatIs: "Medical botulinum toxin injected into specific nerves or muscles blocks neural signal transmission to achieve pain relief and muscle relaxation. Its use in pain medicine is entirely distinct from cosmetic application — targeting pain-related nerves and deep muscles rather than surface expression lines.",
-      whyImportant: "Certain refractory neuropathic conditions — such as postherpetic neuralgia and diabetic neuropathy — and chronic headaches respond poorly to standard pain management or injection therapy. Botulinum toxin acts directly at the neural level, providing 3–6 months of pain relief.",
+      whyImportant: "Certain refractory neuropathic conditions — such as postherpetic neuralgia and diabetic neuropathy — and chronic headaches respond poorly to standard pain management or injection therapy. Botulinum toxin acts directly at the neural level, providing 3–6 months of pain relief. [1]",
       suitable: [
         "Postherpetic neuralgia (PHN)",
         "Burning pain from diabetic peripheral neuropathy",
@@ -1212,7 +1212,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Explain onset timeline (typically 7–14 days)",
         "Reassess at 3–6 months to determine if repeat injection is needed",
       ],
-      clinicAdvantage: "Dr. Lin's neurology background enables precise localization of neuropathic pain sources, identifying the most effective injection sites. Pain medicine dosing and targets differ entirely from cosmetic use and require a neurological diagnostic foundation.",
+      clinicAdvantage: "Dr. Lin's neurology background enables precise localization of neuropathic pain sources, identifying the most effective injection sites. Pain medicine dosing and targets differ entirely from cosmetic use and require a neurological diagnostic foundation. [2][3]",
       pricingNote: "Fees vary by injection site and dosage. Please refer to the pricing page or contact us via LINE.",
       faqItems: [
         { q: "How is pain-use botulinum toxin different from cosmetic use?", a: "Cosmetic use targets facial expression muscles to smooth skin. Pain medicine use targets pain-associated nerves or deep muscles to block pain signals and release spasm. The locations, depths, and dosages are completely different." },
@@ -1249,7 +1249,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "Numbness, burning, electric sensations — these are your nerves calling for help.",
       eyebrow: "Treatment Guide",
       whatIs: "Peripheral neuropathy refers to pain, numbness, burning, or tingling caused by damage or dysfunction of the peripheral nervous system. Common causes include diabetes (DPN), post-herpetic complications (PHN), nerve compression, and autoimmune conditions. Dr. Lin's neurology training enables comprehensive nerve assessment and selection of the most appropriate treatment combination.",
-      whyImportant: "Peripheral neuropathy is frequently misdiagnosed or incompletely treated because symptoms vary widely and causes are complex. Some patients take neuropathic medications for years with limited benefit because the underlying nerve compression sites have not been identified. Ultrasound can directly visualize nerve condition and locate treatable compression points.",
+      whyImportant: "Peripheral neuropathy is frequently misdiagnosed or incompletely treated because symptoms vary widely and causes are complex. Some patients take neuropathic medications for years with limited benefit because the underlying nerve compression sites have not been identified. Ultrasound can directly visualize nerve condition and locate treatable compression points. [1]",
       suitable: [
         "Diabetic peripheral neuropathy (DPN)",
         "Postherpetic neuralgia (PHN)",
@@ -1264,7 +1264,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Select treatment approach: hydrodissection, PRP hydrolysis, or botulinum toxin",
         "Regular follow-up to evaluate treatment response",
       ],
-      clinicAdvantage: "Effective neuropathy treatment requires both diagnostic capability and interventional skill. Dr. Lin's neurology background provides accurate diagnosis; ultrasound and regenerative medicine tools provide effective treatment — without the need to navigate between multiple specialties.",
+      clinicAdvantage: "Effective neuropathy treatment requires both diagnostic capability and interventional skill. Dr. Lin's neurology background provides accurate diagnosis; ultrasound and regenerative medicine tools provide effective treatment — without the need to navigate between multiple specialties. [2][3]",
       pricingNote: "Peripheral neuropathy treatment fees depend on assessment findings and the treatment approach selected. Please describe your symptoms via LINE for a detailed fee consultation.",
       faqItems: [
         { q: "Can DPN be treated?", a: "The nerve damage in DPN cannot be fully reversed, but nerve hydrodissection and PRP neural hydrolysis can improve nerve blood supply and conduction function, reducing numbness and pain symptoms. Results are enhanced with good blood glucose control." },
@@ -1304,7 +1304,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "見ながら打つから正確。すべての注射治療の基盤となる技術です。",
       eyebrow: "治療について",
       whatIs: "超音波ガイド下注射は、超音波のリアルタイム画像を見ながら注射治療を行う手技です。医師はモニター上で針先の位置・目標構造・周囲組織を明確に確認しながら、薬剤を必要な場所に正確に届け、神経や血管への損傷を回避します。",
-      whyImportant: "従来のブラインド注射は医師の解剖学的知識と感覚に依存しており、熟練した医師であっても一定の誤差が生じます。研究によると、超音波ガイドなしで行う肩関節注射の正確性はおよそ70%程度です。超音波ガイドにより正確性を95%以上に高め、安定した治療効果と低い合併症リスクを実現します。",
+      whyImportant: "従来のブラインド注射は医師の解剖学的知識と感覚に依存しており、熟練した医師であっても一定の誤差が生じます。研究によると、超音波ガイドなしで行う肩関節注射の正確性はおよそ70%程度です。超音波ガイドにより正確性を95%以上に高め、安定した治療効果と低い合併症リスクを実現します。[1]",
       suitable: [
         "精密な注射を要する深部構造（関節腔・腱鞘・神経周囲）",
         "体格が大きい方や解剖学的に特殊な患者様",
@@ -1318,7 +1318,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "超音波リアルタイムモニタリング下で注射実施",
         "薬剤分布を確認し治療完了",
       ],
-      clinicAdvantage: "林医師の神経内科トレーニングにより超音波の読影がより精密になります。ターゲット位置を特定するだけでなく、神経・血管・軟部組織の状態を同時に評価し、1回の診察で診断と治療を完結させます。",
+      clinicAdvantage: "林医師の神経内科トレーニングにより超音波の読影がより精密になります。ターゲット位置を特定するだけでなく、神経・血管・軟部組織の状態を同時に評価し、1回の診察で診断と治療を完結させます。[2][3]",
       pricingNote: "超音波ガイド下注射の費用は注射部位と使用薬剤によって異なります。料金ページをご参照ください。",
       faqItems: [
         { q: "超音波ガイド下注射は痛いですか？", a: "刺入時に軽い不快感がありますが、部位や薬剤によって異なります。ほとんどの患者様は許容範囲と感じています。必要に応じて局所麻酔も可能です。" },
@@ -1354,7 +1354,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "自分の血液で自分の組織を修復する——それがPRPの核心です。",
       eyebrow: "治療について",
       whatIs: "PRP（Platelet-Rich Plasma：多血小板血漿）は患者様自身の血液から高濃度の血小板を分離して準備します。血小板には組織修復を促進し、炎症を軽減し、治癒を加速する複数の成長因子が含まれています。採血・遠心分離・注射の全工程をクリニック内で約30〜45分で完結します。",
-      whyImportant: "多くの慢性疼痛の根本原因は組織の変性または不完全な修復です。鎮痛薬やステロイドは炎症を一時的に抑制するだけで、損傷した構造を修復しません。PRPは組織修復に必要な成長因子を提供し、体が本来完了できなかった修復プロセスを支援します。",
+      whyImportant: "多くの慢性疼痛の根本原因は組織の変性または不完全な修復です。鎮痛薬やステロイドは炎症を一時的に抑制するだけで、損傷した構造を修復しません。PRPは組織修復に必要な成長因子を提供し、体が本来完了できなかった修復プロセスを支援します。[1]",
       suitable: [
         "腱の変性（テニス肘・足底筋膜炎・腱板の問題）",
         "関節軟骨の摩耗（膝・肩・股関節）",
@@ -1369,7 +1369,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "超音波ガイド下で正確にPRPを注射",
         "術後の注意事項と予期される反応を説明",
       ],
-      clinicAdvantage: "林医師は超音波評価の結果に基づき、各患者様の注射部位と量を決定します。画一的なアプローチではありません。神経内科の背景により、DPNに対するPRP神経水解療法がより精密になり、複数の神経圧迫部位を1回の治療で対処できます。",
+      clinicAdvantage: "林医師は超音波評価の結果に基づき、各患者様の注射部位と量を決定します。画一的なアプローチではありません。神経内科の背景により、DPNに対するPRP神経水解療法がより精密になり、複数の神経圧迫部位を1回の治療で対処できます。[2][3]",
       pricingNote: "PRPの費用は治療部位と施術回数によって異なります。料金ページをご参照ください。通常2〜3回のコースを推奨しています。",
       faqItems: [
         { q: "PRPは何回必要ですか？", a: "通常は4〜6週間隔で2〜3回をコースとして推奨しています。初回から大きな改善を感じる方もいれば、フルコースが必要な方もいます。個人の体質と損傷の程度によって異なります。" },
@@ -1408,7 +1408,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "ブドウ糖で体の自己修復を促す——費用対効果の高い再生治療の選択肢。",
       eyebrow: "治療について",
       whatIs: "増生療法（Prolotherapy）は、損傷した靭帯・腱・関節部位に高濃度ブドウ糖溶液を注射し、軽度の局所炎症反応を引き起こして体の修復メカニズムを活性化します。原理はPRPに類似していますが、血液製剤ではなくブドウ糖を使用するため、費用が比較的低くなっています。",
-      whyImportant: "靭帯と腱は血液供給が元々少なく、損傷後の自己修復能力が限られています。増生療法は外部からの刺激を提供し、修復プロセスを再起動します。慢性的な靭帯弛緩や繰り返しの捻挫後に持続する不安定性を持つ患者様に特に適しています。",
+      whyImportant: "靭帯と腱は血液供給が元々少なく、損傷後の自己修復能力が限られています。増生療法は外部からの刺激を提供し、修復プロセスを再起動します。慢性的な靭帯弛緩や繰り返しの捻挫後に持続する不安定性を持つ患者様に特に適しています。[1]",
       suitable: [
         "靭帯弛緩による関節不安定性",
         "繰り返す足関節捻挫後の慢性不安定性",
@@ -1423,7 +1423,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "術後の痠痛反応について説明",
         "フォローアップ評価のスケジュール設定",
       ],
-      clinicAdvantage: "増生療法の効果は注射の精度に大きく依存します。超音波ガイドにより、ブドウ糖が周囲組織ではなく修復が必要な靭帯・腱に確実に届きます。",
+      clinicAdvantage: "増生療法の効果は注射の精度に大きく依存します。超音波ガイドにより、ブドウ糖が周囲組織ではなく修復が必要な靭帯・腱に確実に届きます。[2][3]",
       pricingNote: "増生療法はPRPより費用が低く、コストパフォーマンスの高い再生治療の選択肢です。料金ページをご参照ください。",
       faqItems: [
         { q: "増生療法とPRPはどちらが良いですか？", a: "両者の原理は類似しています。PRPはより豊富な成長因子を含み、より重度の損傷に適しています。増生療法は軽〜中程度の状態や最初の再生治療として費用対効果が高いです。組み合わせて使用することもあります。" },
@@ -1460,7 +1460,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "神経が閉じ込められている——水圧で解放するのが神経解套です。神経内科の背景があってこそできる治療です。",
       eyebrow: "治療について",
       whatIs: "神経解套注射（Neural Hydrodissection）は超音波ガイド下で、生理食塩水または希釈ブドウ糖溶液を神経周囲に注射し、水圧を利用して神経と周囲組織の癒着を剥離し、神経の正常な滑走スペースを回復させます。",
-      whyImportant: "しびれ・灼熱感・刺痛の多くは、神経が特定の部位で閉じ込められていることが根本原因です。最も明らかな圧迫部位だけを治療しても、神経が複数部位で問題を抱えている場合（ダブルクラッシュ症候群）は効果が限られます。林医師の神経内科トレーニングにより神経の走行を追跡し、すべての圧迫部位を特定して包括的に治療できます。",
+      whyImportant: "しびれ・灼熱感・刺痛の多くは、神経が特定の部位で閉じ込められていることが根本原因です。最も明らかな圧迫部位だけを治療しても、神経が複数部位で問題を抱えている場合（ダブルクラッシュ症候群）は効果が限られます。林医師の神経内科トレーニングにより神経の走行を追跡し、すべての圧迫部位を特定して包括的に治療できます。[1]",
       suitable: [
         "手根管症候群（正中神経圧迫）",
         "尺骨神経絞扼（薬指・小指のしびれ）",
@@ -1475,7 +1475,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "超音波ガイド下で順次神経解套を実施",
         "症状の改善を評価しフォローアップをスケジュール",
       ],
-      clinicAdvantage: "これは林医師の最も差別化された治療です。神経内科トレーニングにより、最も明らかな圧迫部位だけでなく神経の完全な走行を超音波で追跡し、神経全体の健康状態を評価して治療が必要なすべての部位を特定します。",
+      clinicAdvantage: "これは林医師の最も差別化された治療です。神経内科トレーニングにより、最も明らかな圧迫部位だけでなく神経の完全な走行を超音波で追跡し、神経全体の健康状態を評価して治療が必要なすべての部位を特定します。[2][3]",
       pricingNote: "神経解套注射の費用は治療部位と対処する神経の数によって異なります。料金ページをご参照ください。",
       faqItems: [
         { q: "神経解套とステロイド注射の違いは？", a: "ステロイドは主に炎症を抑えて一時的な鎮痛を行います。神経解套は水圧で癒着を物理的に剥離し、神経の活動スペースを拡大することで根本原因の解決を目指します。両者を組み合わせることもあります。" },
@@ -1564,7 +1564,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: '自己採血不要——ヒト羊膜由来の高濃度再生修復成分。',
       eyebrow: '治療について',
       whatIs: '羊膜基質注射（Amniotic Matrix Injection）はヒト胎盤羊膜由来の生物製剤を使用します。豊富な成長因子・細胞外基質タンパク・抗炎症サイトカイン・シグナル分子が含まれており、組織修復の促進・炎症の軽減・再生環境の整備に寄与します。PRPやBMACと異なり、羊膜基質は同種由来のため、患者様からの採血や骨髄吸引は必要ありません。',
-      whyImportant: '血液の状態によりPRP製造に適さない患者様や、骨髄吸引を希望されない患者様に、高品質な再生治療の選択肢を提供します。羊膜組織は自然界において強力な修復・抗炎症機能を持つ天然の再生材料です。',
+      whyImportant: '血液の状態によりPRP製造に適さない患者様や、骨髄吸引を希望されない患者様に、高品質な再生治療の選択肢を提供します。羊膜組織は自然界において強力な修復・抗炎症機能を持つ天然の再生材料です。[1]',
       suitable: [
         '関節軟骨の変性（膝・肩・股関節）',
         '腱の損傷（腱板・足底筋膜・アキレス腱）',
@@ -1579,7 +1579,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         '超音波ガイド下で羊膜基質を正確に注射',
         '術後の注意事項とフォローアップ計画を説明',
       ],
-      clinicAdvantage: '羊膜基質注射では、高価値の生物製剤が修復の必要な部位に確実に届くよう、精密な超音波ガイドが必要です。林医師は超音波評価の結果に基づき、羊膜基質・PRP・BMACのいずれが現在の損傷に最も適しているかを判断します。',
+      clinicAdvantage: '羊膜基質注射では、高価値の生物製剤が修復の必要な部位に確実に届くよう、精密な超音波ガイドが必要です。林医師は超音波評価の結果に基づき、羊膜基質・PRP・BMACのいずれが現在の損傷に最も適しているかを判断します。[2][3]',
       pricingNote: '羊膜基質注射の費用は治療部位によって異なります。料金ページをご参照いただくか、LINEでお問い合わせください。',
       contraindications: [
         'ヒト組織製品または羊膜成分への既知のアレルギー',
@@ -1626,7 +1626,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "ずっと治らない痛み？異常新生血管が原因の一つかもしれません。",
       eyebrow: "治療について",
       whatIs: "TAME（Transcatheter Arterial Micro-Embolization）は慢性炎症部位で過剰増殖した異常新生血管を塞栓するインターベンショナル治療です。慢性炎症は局所に異常な微細血管を増殖させ、これらの血管はより多くの神経線維をもたらし疼痛感覚を増強します。TAMEはこれらの異常血管を塞栓し、疼痛信号をその発生源から減らします。",
-      whyImportant: "一部の慢性疼痛は通常の注射治療に反応しにくいですが、それは疼痛の発生源が血管レベルにあるためです。異常新生血管が大量に発生している場合、抗炎症措置だけでは根本的な改善が難しいです。TAMEはこのような難治性慢性疼痛の重要な選択肢です。",
+      whyImportant: "一部の慢性疼痛は通常の注射治療に反応しにくいですが、それは疼痛の発生源が血管レベルにあるためです。異常新生血管が大量に発生している場合、抗炎症措置だけでは根本的な改善が難しいです。TAMEはこのような難治性慢性疼痛の重要な選択肢です。[1]",
       suitable: [
         "慢性膝痛（難治性変形性関節症）",
         "凍結肩（頑固な癒着性関節包炎）",
@@ -1640,7 +1640,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "塞栓効果を確認",
         "術後観察、回復の注意事項を説明",
       ],
-      clinicAdvantage: "TAMEはゴラン診療所の特徴的な治療項目の一つで、他の治療で効果が不十分な難治性慢性疼痛の患者様に適しています。林医師は治療前に適応を慎重に評価します——すべての慢性疼痛にTAMEが適切なわけではありません。",
+      clinicAdvantage: "TAMEはゴラン診療所の特徴的な治療項目の一つで、他の治療で効果が不十分な難治性慢性疼痛の患者様に適しています。林医師は治療前に適応を慎重に評価します——すべての慢性疼痛にTAMEが適切なわけではありません。[2][3]",
       pricingNote: "TAMEは高度なインターベンショナル治療です。料金ページをご参照いただくか、LINEでお問い合わせください。",
       faqItems: [
         { q: "TAMEと通常の注射治療の違いは？", a: "通常の注射は腱・関節・神経を対象とします。TAMEは異常新生血管を対象とします。両者は異なるメカニズムに対応し、組み合わせて使用することもできます。TAMEは通常、他の治療で効果が限られた場合に検討します。" },
@@ -1679,7 +1679,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "関節液を補充して、変性した関節がよりスムーズに動けるようにします。高分子量製剤は1回の注射で最長1年間効果が持続します。",
       eyebrow: "治療について",
       whatIs: "関節ヒアルロン酸（透明質酸）注射は変性で減少した関節液を補充するために関節腔にヒアルロン酸を注入し、関節の潤滑機能を回復させ、骨同士の摩擦と疼痛を軽減します。従来の低〜中分子量製剤（保険適用または自費）と、進化した高分子量架橋製剤があり、後者は1回の注射で6〜12ヶ月の効果が持続し、来院頻度を大幅に減らすことができます。",
-      whyImportant: "変形性関節症の初〜中期では、関節液の品質低下が疼痛の重要な要因の一つです。ヒアルロン酸注射はより侵襲的な治療を必要とせずに、関節機能と疼痛を効果的に改善でき、膝関節変性の保存療法として重要な選択肢です。",
+      whyImportant: "変形性関節症の初〜中期では、関節液の品質低下が疼痛の重要な要因の一つです。ヒアルロン酸注射はより侵襲的な治療を必要とせずに、関節機能と疼痛を効果的に改善でき、膝関節変性の保存療法として重要な選択肢です。[1]",
       suitable: [
         "軽〜中程度の変形性膝関節症",
         "関節液減少による関節摩擦痛",
@@ -1694,7 +1694,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "関節腔内での薬剤分布を確認",
         "術後の活動に関するアドバイスを提供",
       ],
-      clinicAdvantage: "超音波ガイドにより、ヒアルロン酸が周囲軟部組織ではなく関節腔に確実に注射されます。関節液がある場合は先に吸引してから注射することでより良い効果が得られます。高分子量架橋製剤の1回注射は6〜12ヶ月間効果が持続し、来院頻度を減らします。",
+      clinicAdvantage: "超音波ガイドにより、ヒアルロン酸が周囲軟部組織ではなく関節腔に確実に注射されます。関節液がある場合は先に吸引してから注射することでより良い効果が得られます。高分子量架橋製剤の1回注射は6〜12ヶ月間効果が持続し、来院頻度を減らします。[2][3]",
       pricingNote: "費用は製剤の種類（従来型または高分子量架橋製剤）と注射部位によって異なります。料金ページをご参照ください。",
       faqItems: [
         {
@@ -1756,7 +1756,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: '台湾TFDA唯一承認の腱・靭帯修復注射剤——潤滑ではなく、修復のために。',
       eyebrow: '治療について',
       whatIs: 'SportVisはSTABHA（軟部組織適合型生体適合性ヒアルロン酸）を含む注射治療で、腱・靭帯損傷専用に設計されています。STABHAは台湾TFDAが腱・靭帯修復に唯一承認したヒアルロン酸製剤であり、従来の関節腔潤滑用ヒアルロン酸とは全く異なります。注射後、STABHAは損傷した軟部組織に嵌入し、細胞修復を支える一時的な足場を構築しながら、炎症制御・修復促進・潤滑の3つの作用を発揮します。',
-      whyImportant: '腱・靭帯の修復環境は関節腔とは異なり、軟部組織に浸透できる特殊な製剤が必要です。従来のヒアルロン酸は関節面の潤滑に優れますが、腱・靭帯を修復することはできません。SportVisのSTABHA分子は腱周囲組織への嵌入を可能にする特殊設計で、細胞修復を加速し、瘢痕や癒着を軽減し、患者様の機能回復を速めます。',
+      whyImportant: '腱・靭帯の修復環境は関節腔とは異なり、軟部組織に浸透できる特殊な製剤が必要です。従来のヒアルロン酸は関節面の潤滑に優れますが、腱・靭帯を修復することはできません。SportVisのSTABHA分子は腱周囲組織への嵌入を可能にする特殊設計で、細胞修復を加速し、瘢痕や癒着を軽減し、患者様の機能回復を速めます。[1]',
       suitable: [
         '急性・慢性腱症（テニス肘・ゴルフ肘・アキレス腱症）',
         '靭帯損傷（足関節捻挫・膝靭帯部分断裂）',
@@ -1771,7 +1771,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         '術後注意事項を説明（48時間は激しい運動を避ける）',
         '2週間後に2回目を注射し、回復状況を評価',
       ],
-      clinicAdvantage: '超音波ガイドにより、SportVisが関節腔ではなく腱周囲軟部組織に正確に届きます。林医師の筋骨格系超音波トレーニング（CIPS認定）により、注射部位がより精密で、効果がより安定します。',
+      clinicAdvantage: '超音波ガイドにより、SportVisが関節腔ではなく腱周囲軟部組織に正確に届きます。林医師の筋骨格系超音波トレーニング（CIPS認定）により、注射部位がより精密で、効果がより安定します。[2][3]',
       pricingNote: 'SportVisの標準コースは2回です。料金ページをご参照いただくか、LINEでお問い合わせください。',
       contraindications: [
         'ヒアルロン酸またはSTABHA成分へのアレルギー',
@@ -1835,7 +1835,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "ボツリヌス毒素は美容だけではありません——神経痛と筋肉痙攣への有効な疼痛ツールです。",
       eyebrow: "治療について",
       whatIs: "医療用ボツリヌス毒素を特定の神経または筋肉に注射することで神経信号の伝達を遮断し、鎮痛と筋弛緩効果を達成します。疼痛医学での使用は美容用途とは完全に異なり、疼痛関連の神経や深層筋肉を対象とします。",
-      whyImportant: "帯状疱疹後神経痛・糖尿病性神経障害などの難治性神経痛および慢性頭痛の一部は、通常の鎮痛薬や注射治療に対する反応が限られています。ボツリヌス毒素は神経レベルに直接作用し、3〜6ヶ月の疼痛軽減を提供します。",
+      whyImportant: "帯状疱疹後神経痛・糖尿病性神経障害などの難治性神経痛および慢性頭痛の一部は、通常の鎮痛薬や注射治療に対する反応が限られています。ボツリヌス毒素は神経レベルに直接作用し、3〜6ヶ月の疼痛軽減を提供します。[1]",
       suitable: [
         "帯状疱疹後神経痛（PHN）",
         "糖尿病性末梢神経障害の灼熱感",
@@ -1850,7 +1850,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "発現時間を説明（通常7〜14日後）",
         "3〜6ヶ月後に再注射の必要性を評価",
       ],
-      clinicAdvantage: "林医師の神経内科背景により、神経痛の発生源を精密に特定し、最も効果的な注射部位を選択できます。疼痛治療に使用する用量と部位は美容用途と完全に異なり、神経内科的な診断基盤が必要です。",
+      clinicAdvantage: "林医師の神経内科背景により、神経痛の発生源を精密に特定し、最も効果的な注射部位を選択できます。疼痛治療に使用する用量と部位は美容用途と完全に異なり、神経内科的な診断基盤が必要です。[2][3]",
       pricingNote: "費用は注射部位と用量によって異なります。料金ページをご参照いただくか、LINEでお問い合わせください。",
       faqItems: [
         { q: "疼痛用と美容用のボツリヌス毒素の違いは？", a: "美容用途は表情筋を対象とし皮膚を滑らかにします。疼痛治療用途は疼痛関連の神経や深層筋肉を対象とし、疼痛信号を遮断し痙攣筋肉を弛緩させます。部位・深さ・用量が完全に異なります。" },
@@ -1887,7 +1887,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "しびれ・灼熱感・電気が走る刺痛——これらは神経からのSOS信号です。",
       eyebrow: "治療について",
       whatIs: "末梢神経痛（Peripheral Neuropathy）は末梢神経系の損傷または機能障害による疼痛・しびれ・灼熱感・刺痛を指します。主な原因には糖尿病（DPN）・帯状疱疹後遺症（PHN）・神経圧迫・自己免疫疾患などがあります。林医師の神経内科トレーニングにより、神経状態を包括的に評価し、最適な治療の組み合わせを選択できます。",
-      whyImportant: "末梢神経痛は症状が多様で原因が複雑なため、誤診または不完全な治療になることがよくあります。神経痛の薬を長年服用しても効果が限られる患者様の中には、実際の神経圧迫部位が特定されていないケースがあります。超音波で神経の状態を直接確認し、介入治療が可能な部位を特定できます。",
+      whyImportant: "末梢神経痛は症状が多様で原因が複雑なため、誤診または不完全な治療になることがよくあります。神経痛の薬を長年服用しても効果が限られる患者様の中には、実際の神経圧迫部位が特定されていないケースがあります。超音波で神経の状態を直接確認し、介入治療が可能な部位を特定できます。[1]",
       suitable: [
         "糖尿病性末梢神経障害（DPN）",
         "帯状疱疹後神経痛（PHN）",
@@ -1902,7 +1902,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "症状に応じて神経解套・PRP水解・ボツリヌス毒素を選択",
         "治療効果を評価するための定期的なフォローアップ",
       ],
-      clinicAdvantage: "神経痛の治療には診断能力と介入治療能力の両方が必要です。林医師の神経内科背景が正確な診断を提供し、超音波と再生医学ツールが効果的な治療を提供します——複数の科を転々とする必要はありません。",
+      clinicAdvantage: "神経痛の治療には診断能力と介入治療能力の両方が必要です。林医師の神経内科背景が正確な診断を提供し、超音波と再生医学ツールが効果的な治療を提供します——複数の科を転々とする必要はありません。[2][3]",
       pricingNote: "末梢神経痛治療の費用は評価結果と選択する治療方法によって異なります。LINEで症状をお伝えいただき、詳細な費用についてご相談ください。",
       faqItems: [
         { q: "DPNは治療できますか？", a: "DPNの神経損傷を完全に逆転させることはできませんが、神経解套注射とPRP神経水解により神経の血液供給と伝導機能を改善し、しびれと疼痛症状を軽減できます。血糖コントロールとの組み合わせでより良い効果が得られます。" },

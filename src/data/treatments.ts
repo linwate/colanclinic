@@ -402,7 +402,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       h1: "關節玻尿酸注射",
       heroSub: "補充關節潤滑液，讓退化的關節動得更順。高分子量製劑單次注射效果長達一年。",
       eyebrow: "治療說明",
-      whatIs: "關節玻尿酸注射將玻尿酸（透明質酸）注射到關節腔，補充因退化而減少的關節液，恢復關節的潤滑功能，減少骨頭間的摩擦和疼痛。目前可選擇傳統低至中分子量製劑（健保或自費），或進階高分子量交聯製劑，後者單次注射效果可維持半年至一年，大幅減少注射頻率。",
+      whatIs: "關節玻尿酸注射將玻尿酸（透明質酸）注射到關節腔，補充因退化而減少的關節液，恢復關節的潤滑功能，減少骨頭間的摩擦和疼痛。目前可選擇傳統低至中分子量製劑（健保或自費），或進階高分子量交聯製劑，後者單次注射效果可維持半年至一年，大幅減少注射頻率。[3]",
       whyImportant: "退化性關節炎的早中期，關節液品質下降是疼痛的重要原因之一。玻尿酸注射可以在不需要更侵入性治療的情況下，有效改善關節功能和疼痛，是膝蓋退化保守治療的重要選項。[1]",
       suitable: [
         "輕中度退化性膝關節炎",
@@ -418,7 +418,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "確認藥物在關節腔內分布",
         "說明術後活動建議",
       ],
-      clinicAdvantage: "超音波導引確保玻尿酸確實注射進關節腔，而不是周圍軟組織。有積水時可以先抽除再注射，效果更好。進階高分子量交聯製劑的單次注射可以持續 6–12 個月，減少患者回診次數。[2][3]",
+      clinicAdvantage: "超音波導引確保玻尿酸確實注射進關節腔，而不是周圍軟組織。有積水時可以先抽除再注射，效果更好。進階高分子量交聯製劑的單次注射可以持續 6–12 個月，減少患者回診次數。[2]",
       pricingNote: "關節玻尿酸費用依製劑種類（傳統低分子量或進階高分子量交聯製劑）和注射部位而定，請參考費用說明頁面。",
       faqItems: [
         {
@@ -1040,7 +1040,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       h1: "Hyaluronic Acid Joint Injection",
       heroSub: "Replenishing joint fluid to help a degenerating joint move more smoothly. Advanced high-molecular-weight formulations last up to one year from a single injection.",
       eyebrow: "Treatment Guide",
-      whatIs: "Hyaluronic acid (HA) injection introduces hyaluronate into the joint cavity to supplement the synovial fluid depleted by degeneration, restoring lubrication, reducing bone-on-bone friction, and alleviating pain. Options include conventional low-to-mid molecular weight formulations (covered by NHI or self-pay) and advanced high-molecular-weight cross-linked formulations, with the latter providing lasting relief from a single injection for up to 6–12 months.",
+      whatIs: "Hyaluronic acid (HA) injection introduces hyaluronate into the joint cavity to supplement the synovial fluid depleted by degeneration, restoring lubrication, reducing bone-on-bone friction, and alleviating pain. Options include conventional low-to-mid molecular weight formulations (covered by NHI or self-pay) and advanced high-molecular-weight cross-linked formulations, with the latter providing lasting relief from a single injection for up to 6–12 months. [3]",
       whyImportant: "In early to moderate osteoarthritis, declining synovial fluid quality is a significant contributor to pain. HA injection can meaningfully improve joint function and pain without more invasive intervention, making it an important conservative option for knee degeneration. [1]",
       suitable: [
         "Mild to moderate knee osteoarthritis",
@@ -1056,7 +1056,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Confirm medication distribution within joint cavity",
         "Post-treatment activity recommendations",
       ],
-      clinicAdvantage: "Ultrasound guidance ensures hyaluronic acid is injected directly into the joint cavity rather than surrounding soft tissue. When effusion is present, aspiration before injection improves outcomes. Advanced high-molecular-weight cross-linked formulations can sustain results for 6–12 months from a single injection, reducing the number of clinic visits required. [2][3]",
+      clinicAdvantage: "Ultrasound guidance ensures hyaluronic acid is injected directly into the joint cavity rather than surrounding soft tissue. When effusion is present, aspiration before injection improves outcomes. Advanced high-molecular-weight cross-linked formulations can sustain results for 6–12 months from a single injection, reducing the number of clinic visits required. [2]",
       pricingNote: "Fees vary by formulation (conventional or advanced high-molecular-weight cross-linked) and injection site. Please refer to the pricing page.",
       faqItems: [
         {
@@ -1678,7 +1678,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       h1: "関節ヒアルロン酸注射",
       heroSub: "関節液を補充して、変性した関節がよりスムーズに動けるようにします。高分子量製剤は1回の注射で最長1年間効果が持続します。",
       eyebrow: "治療について",
-      whatIs: "関節ヒアルロン酸（透明質酸）注射は変性で減少した関節液を補充するために関節腔にヒアルロン酸を注入し、関節の潤滑機能を回復させ、骨同士の摩擦と疼痛を軽減します。従来の低〜中分子量製剤（保険適用または自費）と、進化した高分子量架橋製剤があり、後者は1回の注射で6〜12ヶ月の効果が持続し、来院頻度を大幅に減らすことができます。",
+      whatIs: "関節ヒアルロン酸（透明質酸）注射は変性で減少した関節液を補充するために関節腔にヒアルロン酸を注入し、関節の潤滑機能を回復させ、骨同士の摩擦と疼痛を軽減します。従来の低〜中分子量製剤（保険適用または自費）と、進化した高分子量架橋製剤があり、後者は1回の注射で6〜12ヶ月の効果が持続し、来院頻度を大幅に減らすことができます。[3]",
       whyImportant: "変形性関節症の初〜中期では、関節液の品質低下が疼痛の重要な要因の一つです。ヒアルロン酸注射はより侵襲的な治療を必要とせずに、関節機能と疼痛を効果的に改善でき、膝関節変性の保存療法として重要な選択肢です。[1]",
       suitable: [
         "軽〜中程度の変形性膝関節症",
@@ -1694,7 +1694,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "関節腔内での薬剤分布を確認",
         "術後の活動に関するアドバイスを提供",
       ],
-      clinicAdvantage: "超音波ガイドにより、ヒアルロン酸が周囲軟部組織ではなく関節腔に確実に注射されます。関節液がある場合は先に吸引してから注射することでより良い効果が得られます。高分子量架橋製剤の1回注射は6〜12ヶ月間効果が持続し、来院頻度を減らします。[2][3]",
+      clinicAdvantage: "超音波ガイドにより、ヒアルロン酸が周囲軟部組織ではなく関節腔に確実に注射されます。関節液がある場合は先に吸引してから注射することでより良い効果が得られます。高分子量架橋製剤の1回注射は6〜12ヶ月間効果が持続し、来院頻度を減らします。[2]",
       pricingNote: "費用は製剤の種類（従来型または高分子量架橋製剤）と注射部位によって異なります。料金ページをご参照ください。",
       faqItems: [
         {

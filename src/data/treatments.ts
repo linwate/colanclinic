@@ -136,8 +136,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       suitable: [
         "韌帶鬆弛造成的關節不穩定",
         "反覆腳踝扭傷後的慢性不穩定",
-        "慢性肌腱疼痛（網球肘、高爾夫球肘）",
-        "薦髂關節疼痛",
+        "慢性肌腱疼痛（網球肘、高爾夫球肘）[2]",
+        "薦髂關節疼痛 [3]",
         "想嘗試再生治療但預算有限",
       ],
       steps: [
@@ -147,7 +147,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "說明術後可能的痠脹反應",
         "安排追蹤評估時間",
       ],
-      clinicAdvantage: "增生療法的效果很大程度取決於注射位置是否精準。超音波導引確保葡萄糖確實注射到需要修復的韌帶和肌腱，而不是周圍組織。[2][3]",
+      clinicAdvantage: "增生療法的效果很大程度取決於注射位置是否精準。超音波導引確保葡萄糖確實注射到需要修復的韌帶和肌腱，而不是周圍組織。",
       pricingNote: "增生療法費用較 PRP 低，是性價比高的再生治療選擇，請參考費用說明頁面。",
       faqItems: [
         { q: "增生療法和 PRP 哪個比較好？", a: "兩者原理類似，PRP 含有更多生長因子，適合較嚴重的損傷。增生療法費用較低，適合輕中度問題或想先嘗試再生治療的患者。有時候可以搭配使用。" },
@@ -774,8 +774,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       suitable: [
         "Ligament laxity causing joint instability",
         "Chronic instability after repeated ankle sprains",
-        "Chronic tendon pain (tennis elbow, golfer's elbow)",
-        "Sacroiliac joint pain",
+        "Chronic tendon pain (tennis elbow, golfer's elbow) [2]",
+        "Sacroiliac joint pain [3]",
         "Patients interested in regenerative treatment with budget considerations",
       ],
       steps: [
@@ -785,7 +785,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Post-treatment instructions for expected soreness",
         "Schedule follow-up assessment",
       ],
-      clinicAdvantage: "The effectiveness of prolotherapy depends greatly on injection precision. Ultrasound guidance ensures the dextrose reaches the ligament and tendon requiring repair — not surrounding tissue. [2][3]",
+      clinicAdvantage: "The effectiveness of prolotherapy depends greatly on injection precision. Ultrasound guidance ensures the dextrose reaches the ligament and tendon requiring repair — not surrounding tissue.",
       pricingNote: "Prolotherapy is more affordable than PRP and offers good value as a regenerative treatment. Please refer to the pricing page.",
       faqItems: [
         { q: "Which is better — prolotherapy or PRP?", a: "Both use a similar principle. PRP contains richer growth factors and is better suited for more severe injuries. Prolotherapy is more cost-effective for mild to moderate conditions or as an initial regenerative option. The two can sometimes be combined." },
@@ -1412,8 +1412,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       suitable: [
         "靭帯弛緩による関節不安定性",
         "繰り返す足関節捻挫後の慢性不安定性",
-        "慢性腱の痛み（テニス肘・ゴルフ肘）",
-        "仙腸関節痛",
+        "慢性腱の痛み（テニス肘・ゴルフ肘）[2]",
+        "仙腸関節痛 [3]",
         "再生治療に興味があるが費用面を考慮したい方",
       ],
       steps: [
@@ -1423,7 +1423,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "術後の痠痛反応について説明",
         "フォローアップ評価のスケジュール設定",
       ],
-      clinicAdvantage: "増生療法の効果は注射の精度に大きく依存します。超音波ガイドにより、ブドウ糖が周囲組織ではなく修復が必要な靭帯・腱に確実に届きます。[2][3]",
+      clinicAdvantage: "増生療法の効果は注射の精度に大きく依存します。超音波ガイドにより、ブドウ糖が周囲組織ではなく修復が必要な靭帯・腱に確実に届きます。",
       pricingNote: "増生療法はPRPより費用が低く、コストパフォーマンスの高い再生治療の選択肢です。料金ページをご参照ください。",
       faqItems: [
         { q: "増生療法とPRPはどちらが良いですか？", a: "両者の原理は類似しています。PRPはより豊富な成長因子を含み、より重度の損傷に適しています。増生療法は軽〜中程度の状態や最初の再生治療として費用対効果が高いです。組み合わせて使用することもあります。" },

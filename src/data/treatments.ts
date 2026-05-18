@@ -497,7 +497,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         },
         {
           q: '需要打幾次？',
-          a: 'StandardSportVis 標準療程為 2 劑，間隔兩週。相較於 PRP 的 2–3 次或傳統玻尿酸的 3–5 次，療程較短。醫師會根據損傷狀況決定是否需要追加。'
+          a: 'SportVis 標準療程為 2 劑，間隔兩週。相較於 PRP 的 2–3 次或傳統玻尿酸的 3–5 次，療程較短。醫師會根據損傷狀況決定是否需要追加。'
         },
         {
           q: 'SportVis 適合運動員嗎？',

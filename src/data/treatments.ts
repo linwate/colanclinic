@@ -479,7 +479,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       h1: 'SportVis 肌腱韌帶修復注射',
       heroSub: '台灣 TFDA 唯一核准的肌腱韌帶修復注射劑，不是潤滑，是修復。',
       eyebrow: '治療說明',
-      whatIs: 'SportVis 是含有 STABHA（軟組織適應性生物相容玻尿酸）的注射治療，專門針對肌腱和韌帶損傷設計。STABHA 是目前台灣 TFDA 唯一核准可用於肌腱與韌帶修復的玻尿酸製劑，與傳統關節腔潤滑用的玻尿酸完全不同。注射後 STABHA 嵌入受損組織，搭建修復所需的臨時支撐環境，同時發揮控制發炎、促進修復、提供潤滑三大作用。',
+      whatIs: 'SportVis 是含有 STABHA（軟組織適應性生物相容玻尿酸）的注射治療，專門針對肌腱和韌帶損傷設計。STABHA 是目前台灣 TFDA 唯一核准可用於肌腱與韌帶修復的玻尿酸製劑，與傳統關節腔潤滑用的玻尿酸完全不同。注射後 STABHA 嵌入受損組織，搭建修復所需的臨時支撐環境，同時發揮控制發炎、促進修復、提供潤滑三大作用。[3]',
       whyImportant: '肌腱和韌帶損傷的修復環境和關節腔不同，需要能滲透軟組織的特殊結構。傳統玻尿酸用於關節潤滑效果良好，但無法有效修復肌腱韌帶。SportVis 的 STABHA 分子結構特別設計，可以嵌入肌腱周圍組織，加速細胞修復、減少疤痕沾黏，幫助運動員和患者更快恢復功能。[1]',
       suitable: [
         '急性或慢性肌腱炎（網球肘、高爾夫球肘、跟腱炎）',
@@ -495,7 +495,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         '說明注射後注意事項（48小時避免劇烈運動）',
         '兩週後進行第二劑注射，評估恢復狀況',
       ],
-      clinicAdvantage: '超音波導引確保 SportVis 精準注射至肌腱周圍軟組織，而不是關節腔或其他位置。林醫師的肌肉骨骼超音波訓練背景（CIPS 認證）讓注射位置更精準，療效更穩定。[2][3]',
+      clinicAdvantage: '超音波導引確保 SportVis 精準注射至肌腱周圍軟組織，而不是關節腔或其他位置。林醫師的肌肉骨骼超音波訓練背景（CIPS 認證）讓注射位置更精準，療效更穩定。[2]',
       pricingNote: 'SportVis 標準療程為 2 劑，費用請參考費用說明頁面或透過 LINE 諮詢。',
       contraindications: [
         '對玻尿酸或 STABHA 成分過敏',
@@ -1117,7 +1117,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       h1: 'SportVis Tendon & Ligament Repair',
       heroSub: 'The only TFDA-approved injectable for tendon and ligament repair — not lubrication, but regeneration.',
       eyebrow: 'Treatment Guide',
-      whatIs: 'SportVis contains STABHA (Soft Tissue Adapted Biocompatible Hyaluronic Acid), an injection treatment specifically designed for tendon and ligament injuries. STABHA is the only hyaluronic acid approved by Taiwan\'s TFDA for the repair of tendons and ligaments — entirely distinct from conventional joint-lubricating hyaluronic acid. Once injected, STABHA embeds into damaged soft tissue, creating a temporary scaffold that supports cellular repair while providing three combined actions: inflammation control, tissue repair, and lubrication.',
+      whatIs: 'SportVis contains STABHA (Soft Tissue Adapted Biocompatible Hyaluronic Acid), an injection treatment specifically designed for tendon and ligament injuries. STABHA is the only hyaluronic acid approved by Taiwan\'s TFDA for the repair of tendons and ligaments — entirely distinct from conventional joint-lubricating hyaluronic acid. Once injected, STABHA embeds into damaged soft tissue, creating a temporary scaffold that supports cellular repair while providing three combined actions: inflammation control, tissue repair, and lubrication. [3]',
       whyImportant: 'Tendons and ligaments have a different repair environment from joint cavities and require a formulation that can penetrate soft tissue. Conventional hyaluronic acid lubricates joint surfaces effectively but cannot repair tendons or ligaments. SportVis\'s STABHA molecule is specifically engineered to embed in peritendinous tissue, accelerate cellular repair, reduce scarring and adhesions, and help patients return to function more quickly. [1]',
       suitable: [
         'Acute or chronic tendinopathy (tennis elbow, golfer\'s elbow, Achilles tendinopathy)',
@@ -1133,7 +1133,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         'Post-injection instructions (avoid vigorous activity for 48 hours)',
         'Second dose injection two weeks later; assess recovery progress',
       ],
-      clinicAdvantage: 'Ultrasound guidance ensures SportVis is delivered precisely into the peritendinous soft tissue rather than the joint cavity. Dr. Lin\'s musculoskeletal ultrasound training (CIPS-certified) results in more accurate placement and more consistent outcomes. [2][3]',
+      clinicAdvantage: 'Ultrasound guidance ensures SportVis is delivered precisely into the peritendinous soft tissue rather than the joint cavity. Dr. Lin\'s musculoskeletal ultrasound training (CIPS-certified) results in more accurate placement and more consistent outcomes. [2]',
       pricingNote: 'The standard SportVis course is 2 doses. Please refer to the pricing page or contact us via LINE.',
       contraindications: [
         'Known allergy to hyaluronic acid or STABHA components',
@@ -1755,7 +1755,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       h1: 'SportVis 腱・靭帯修復注射',
       heroSub: '台湾TFDA唯一承認の腱・靭帯修復注射剤——潤滑ではなく、修復のために。',
       eyebrow: '治療について',
-      whatIs: 'SportVisはSTABHA（軟部組織適合型生体適合性ヒアルロン酸）を含む注射治療で、腱・靭帯損傷専用に設計されています。STABHAは台湾TFDAが腱・靭帯修復に唯一承認したヒアルロン酸製剤であり、従来の関節腔潤滑用ヒアルロン酸とは全く異なります。注射後、STABHAは損傷した軟部組織に嵌入し、細胞修復を支える一時的な足場を構築しながら、炎症制御・修復促進・潤滑の3つの作用を発揮します。',
+      whatIs: 'SportVisはSTABHA（軟部組織適合型生体適合性ヒアルロン酸）を含む注射治療で、腱・靭帯損傷専用に設計されています。STABHAは台湾TFDAが腱・靭帯修復に唯一承認したヒアルロン酸製剤であり、従来の関節腔潤滑用ヒアルロン酸とは全く異なります。注射後、STABHAは損傷した軟部組織に嵌入し、細胞修復を支える一時的な足場を構築しながら、炎症制御・修復促進・潤滑の3つの作用を発揮します。[3]',
       whyImportant: '腱・靭帯の修復環境は関節腔とは異なり、軟部組織に浸透できる特殊な製剤が必要です。従来のヒアルロン酸は関節面の潤滑に優れますが、腱・靭帯を修復することはできません。SportVisのSTABHA分子は腱周囲組織への嵌入を可能にする特殊設計で、細胞修復を加速し、瘢痕や癒着を軽減し、患者様の機能回復を速めます。[1]',
       suitable: [
         '急性・慢性腱症（テニス肘・ゴルフ肘・アキレス腱症）',
@@ -1771,7 +1771,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         '術後注意事項を説明（48時間は激しい運動を避ける）',
         '2週間後に2回目を注射し、回復状況を評価',
       ],
-      clinicAdvantage: '超音波ガイドにより、SportVisが関節腔ではなく腱周囲軟部組織に正確に届きます。林医師の筋骨格系超音波トレーニング（CIPS認定）により、注射部位がより精密で、効果がより安定します。[2][3]',
+      clinicAdvantage: '超音波ガイドにより、SportVisが関節腔ではなく腱周囲軟部組織に正確に届きます。林医師の筋骨格系超音波トレーニング（CIPS認定）により、注射部位がより精密で、効果がより安定します。[2]',
       pricingNote: 'SportVisの標準コースは2回です。料金ページをご参照いただくか、LINEでお問い合わせください。',
       contraindications: [
         'ヒアルロン酸またはSTABHA成分へのアレルギー',

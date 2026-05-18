@@ -157,7 +157,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       references: [
         { authors: "Zarate MA, Frusso RD, Reeves KD, Cheng AL, Rabago D", title: "Dextrose Prolotherapy Versus Lidocaine Injection for Temporomandibular Dysfunction: A Pragmatic Randomized Controlled Trial", journal: "J Altern Complement Med", year: 2020, doi: "10.1089/acm.2020.0207" },
         { authors: "Bae G, Kim S, Lee S, Lee WY, Lim Y", title: "Prolotherapy for the patients with chronic musculoskeletal pain: systematic review and meta-analysis", journal: "Anesth Pain Med (Seoul)", year: 2021, doi: "10.17085/apm.20078" },
-        { authors: "Ebnerasooli S, Barghi A, et al.", title: "Peri-articular Dextrose Prolotherapy: Investigating the Effect of Injection Site on Knee Osteoarthritis Pain", journal: "Anesth Pain Med", year: 2024, doi: "10.5812/aapm-140966" },
+        { authors: "Ebnerasooli S, Barghi A, et al.", title: "Peri-articular Dextrose Prolotherapy: Investigating the Effect of Injection Site on Knee Osteoarthritis Pain: A Double-Blind, Randomized, Clinical Trial", journal: "Anesth Pain Med", year: 2024, doi: "10.5812/aapm-140966" },
       ],
       relatedSymptoms: [
         { name: "足踝疼痛", href: "/zh/symptoms/foot/" },
@@ -689,7 +689,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       references: [
         { authors: "Zarate MA, Frusso RD, Reeves KD, Cheng AL, Rabago D", title: "Dextrose Prolotherapy Versus Lidocaine Injection for Temporomandibular Dysfunction: A Pragmatic Randomized Controlled Trial", journal: "J Altern Complement Med", year: 2020, doi: "10.1089/acm.2020.0207" },
         { authors: "Bae G, Kim S, Lee S, Lee WY, Lim Y", title: "Prolotherapy for the patients with chronic musculoskeletal pain: systematic review and meta-analysis", journal: "Anesth Pain Med (Seoul)", year: 2021, doi: "10.17085/apm.20078" },
-        { authors: "Ebnerasooli S, Barghi A, et al.", title: "Peri-articular Dextrose Prolotherapy: Investigating the Effect of Injection Site on Knee Osteoarthritis Pain", journal: "Anesth Pain Med", year: 2024, doi: "10.5812/aapm-140966" },
+        { authors: "Ebnerasooli S, Barghi A, et al.", title: "Peri-articular Dextrose Prolotherapy: Investigating the Effect of Injection Site on Knee Osteoarthritis Pain: A Double-Blind, Randomized, Clinical Trial", journal: "Anesth Pain Med", year: 2024, doi: "10.5812/aapm-140966" },
       ],
       relatedSymptoms: [
         { name: "Foot & Ankle", href: "/en/symptoms/foot/" },
@@ -1221,7 +1221,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       references: [
         { authors: "Zarate MA, Frusso RD, Reeves KD, Cheng AL, Rabago D", title: "Dextrose Prolotherapy Versus Lidocaine Injection for Temporomandibular Dysfunction: A Pragmatic Randomized Controlled Trial", journal: "J Altern Complement Med", year: 2020, doi: "10.1089/acm.2020.0207" },
         { authors: "Bae G, Kim S, Lee S, Lee WY, Lim Y", title: "Prolotherapy for the patients with chronic musculoskeletal pain: systematic review and meta-analysis", journal: "Anesth Pain Med (Seoul)", year: 2021, doi: "10.17085/apm.20078" },
-        { authors: "Ebnerasooli S, Barghi A, et al.", title: "Peri-articular Dextrose Prolotherapy: Investigating the Effect of Injection Site on Knee Osteoarthritis Pain", journal: "Anesth Pain Med", year: 2024, doi: "10.5812/aapm-140966" },
+        { authors: "Ebnerasooli S, Barghi A, et al.", title: "Peri-articular Dextrose Prolotherapy: Investigating the Effect of Injection Site on Knee Osteoarthritis Pain: A Double-Blind, Randomized, Clinical Trial", journal: "Anesth Pain Med", year: 2024, doi: "10.5812/aapm-140966" },
       ],
       relatedSymptoms: [
         { name: "足・足首の痛み", href: "/ja/symptoms/foot/" },

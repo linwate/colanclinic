@@ -334,7 +334,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       references: [
         { authors: "Gomoll AH, Mandelbaum BR, Farr J, Archambault WT, Sherman SL, Tabet SK, Kimmerling KA, Mowry KC", title: "An Initial Injection and a Crossover Injection of Amniotic Suspension Allograft Following Failed Treatment with Hyaluronic Acid or Saline Are Equally Effective in the Treatment of Moderate Symptomatic Knee Osteoarthritis Over 12 Months", journal: "Arthroscopy", year: 2023, doi: "10.1016/j.arthro.2022.06.036" },
         { authors: "Nakagawa H, Sung K, Ashkani-Esfahani S, Waryasz G, May T, Sussman WI", title: "Plantar fasciitis: a comparison of ultrasound-guided fasciotomy with or without amniotic membrane allograft injection", journal: "Regen Med", year: 2022, doi: "10.2217/rme-2022-0094" },
-        { authors: "Castellanos R, Tighe S", title: "Injectable Amniotic Fluid and Its Potential Applications in Sports Medicine", journal: "Am J Sports Med", year: 2021, doi: "10.1177/0363546520921605" },
+        { authors: "Fortier LA, Cercone M, Keller LE, Delco ML, Becktell L, Wells KV", title: "Amnion and Umbilical Cord-Derived Products in Sports Medicine: From Basic Science to Clinical Application", journal: "Am J Sports Med", year: 2021, doi: "10.1177/03635465211010466" },
       ],
       relatedSymptoms: [
         { name: '膝蓋退化', href: '/zh/symptoms/knee/' },
@@ -866,7 +866,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       references: [
         { authors: "Gomoll AH, Mandelbaum BR, Farr J, Archambault WT, Sherman SL, Tabet SK, Kimmerling KA, Mowry KC", title: "An Initial Injection and a Crossover Injection of Amniotic Suspension Allograft Following Failed Treatment with Hyaluronic Acid or Saline Are Equally Effective in the Treatment of Moderate Symptomatic Knee Osteoarthritis Over 12 Months", journal: "Arthroscopy", year: 2023, doi: "10.1016/j.arthro.2022.06.036" },
         { authors: "Nakagawa H, Sung K, Ashkani-Esfahani S, Waryasz G, May T, Sussman WI", title: "Plantar fasciitis: a comparison of ultrasound-guided fasciotomy with or without amniotic membrane allograft injection", journal: "Regen Med", year: 2022, doi: "10.2217/rme-2022-0094" },
-        { authors: "Castellanos R, Tighe S", title: "Injectable Amniotic Fluid and Its Potential Applications in Sports Medicine", journal: "Am J Sports Med", year: 2021, doi: "10.1177/0363546520921605" },
+        { authors: "Fortier LA, Cercone M, Keller LE, Delco ML, Becktell L, Wells KV", title: "Amnion and Umbilical Cord-Derived Products in Sports Medicine: From Basic Science to Clinical Application", journal: "Am J Sports Med", year: 2021, doi: "10.1177/03635465211010466" },
       ],
       relatedSymptoms: [
         { name: 'Knee Degeneration', href: '/en/symptoms/knee/' },
@@ -1398,7 +1398,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       references: [
         { authors: "Gomoll AH, Mandelbaum BR, Farr J, Archambault WT, Sherman SL, Tabet SK, Kimmerling KA, Mowry KC", title: "An Initial Injection and a Crossover Injection of Amniotic Suspension Allograft Following Failed Treatment with Hyaluronic Acid or Saline Are Equally Effective in the Treatment of Moderate Symptomatic Knee Osteoarthritis Over 12 Months", journal: "Arthroscopy", year: 2023, doi: "10.1016/j.arthro.2022.06.036" },
         { authors: "Nakagawa H, Sung K, Ashkani-Esfahani S, Waryasz G, May T, Sussman WI", title: "Plantar fasciitis: a comparison of ultrasound-guided fasciotomy with or without amniotic membrane allograft injection", journal: "Regen Med", year: 2022, doi: "10.2217/rme-2022-0094" },
-        { authors: "Castellanos R, Tighe S", title: "Injectable Amniotic Fluid and Its Potential Applications in Sports Medicine", journal: "Am J Sports Med", year: 2021, doi: "10.1177/0363546520921605" },
+        { authors: "Fortier LA, Cercone M, Keller LE, Delco ML, Becktell L, Wells KV", title: "Amnion and Umbilical Cord-Derived Products in Sports Medicine: From Basic Science to Clinical Application", journal: "Am J Sports Med", year: 2021, doi: "10.1177/03635465211010466" },
       ],
       relatedSymptoms: [
         { name: '膝関節の変性', href: '/ja/symptoms/knee/' },

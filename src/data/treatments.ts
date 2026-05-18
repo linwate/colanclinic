@@ -561,11 +561,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       whatIs: "醫療用肉毒桿菌毒素（Botulinum Toxin）注射到特定神經或肌肉，阻斷神經訊號傳遞，達到止痛和肌肉放鬆的效果。在疼痛醫學的應用和美容完全不同，是針對神經痛和肌肉痙攣的治療工具。",
       whyImportant: "某些頑固性神經痛（如帶狀皰疹後神經痛、糖尿病神經病變）和慢性頭痛，用一般止痛藥或注射治療效果有限。肉毒桿菌可以直接作用在神經層面，提供 3–6 個月的疼痛緩解。[1]",
       suitable: [
-        "帶狀皰疹後神經痛（PHN）",
+        "帶狀皰疹後神經痛（PHN）[2]",
         "糖尿病周邊神經病變的燒灼感",
         "頸因性頭痛和慢性偏頭痛",
         "肌肉痙攣造成的慢性疼痛",
-        "其他神經痛治療效果有限",
+        "其他神經痛治療效果有限 [3]",
       ],
       steps: [
         "評估疼痛位置和神經分布",
@@ -574,7 +574,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "說明起效時間（通常 7–14 天後）",
         "3–6 個月後評估是否需要再次注射",
       ],
-      clinicAdvantage: "林醫師的神經科背景讓他能精準定位神經痛的來源，選擇最有效的注射位置。用於疼痛治療的劑量和位置和美容用途完全不同，需要神經科的診斷基礎。[2][3]",
+      clinicAdvantage: "林醫師的神經科背景讓他能精準定位神經痛的來源，選擇最有效的注射位置。用於疼痛治療的劑量和位置和美容用途完全不同，需要神經科的診斷基礎。",
       pricingNote: "費用依注射部位和劑量而定，請參考費用說明頁面或透過 LINE 諮詢。",
       faqItems: [
         { q: "肉毒桿菌止痛和美容用有什麼不同？", a: "美容用途針對表情肌，目標是讓皮膚平滑。止痛用途針對疼痛相關的神經或深層肌肉，目標是阻斷疼痛訊號和放鬆痙攣肌肉，位置和劑量完全不同。" },
@@ -1199,11 +1199,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       whatIs: "Medical botulinum toxin injected into specific nerves or muscles blocks neural signal transmission to achieve pain relief and muscle relaxation. Its use in pain medicine is entirely distinct from cosmetic application — targeting pain-related nerves and deep muscles rather than surface expression lines.",
       whyImportant: "Certain refractory neuropathic conditions — such as postherpetic neuralgia and diabetic neuropathy — and chronic headaches respond poorly to standard pain management or injection therapy. Botulinum toxin acts directly at the neural level, providing 3–6 months of pain relief. [1]",
       suitable: [
-        "Postherpetic neuralgia (PHN)",
+        "Postherpetic neuralgia (PHN) [2]",
         "Burning pain from diabetic peripheral neuropathy",
         "Cervicogenic headache and chronic migraine",
         "Chronic pain from muscle spasm",
-        "Neuropathic pain with limited response to other treatments",
+        "Neuropathic pain with limited response to other treatments [3]",
       ],
       steps: [
         "Assess pain location and nerve distribution",
@@ -1212,7 +1212,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Explain onset timeline (typically 7–14 days)",
         "Reassess at 3–6 months to determine if repeat injection is needed",
       ],
-      clinicAdvantage: "Dr. Lin's neurology background enables precise localization of neuropathic pain sources, identifying the most effective injection sites. Pain medicine dosing and targets differ entirely from cosmetic use and require a neurological diagnostic foundation. [2][3]",
+      clinicAdvantage: "Dr. Lin's neurology background enables precise localization of neuropathic pain sources, identifying the most effective injection sites. Pain medicine dosing and targets differ entirely from cosmetic use and require a neurological diagnostic foundation.",
       pricingNote: "Fees vary by injection site and dosage. Please refer to the pricing page or contact us via LINE.",
       faqItems: [
         { q: "How is pain-use botulinum toxin different from cosmetic use?", a: "Cosmetic use targets facial expression muscles to smooth skin. Pain medicine use targets pain-associated nerves or deep muscles to block pain signals and release spasm. The locations, depths, and dosages are completely different." },
@@ -1837,11 +1837,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       whatIs: "医療用ボツリヌス毒素を特定の神経または筋肉に注射することで神経信号の伝達を遮断し、鎮痛と筋弛緩効果を達成します。疼痛医学での使用は美容用途とは完全に異なり、疼痛関連の神経や深層筋肉を対象とします。",
       whyImportant: "帯状疱疹後神経痛・糖尿病性神経障害などの難治性神経痛および慢性頭痛の一部は、通常の鎮痛薬や注射治療に対する反応が限られています。ボツリヌス毒素は神経レベルに直接作用し、3〜6ヶ月の疼痛軽減を提供します。[1]",
       suitable: [
-        "帯状疱疹後神経痛（PHN）",
+        "帯状疱疹後神経痛（PHN）[2]",
         "糖尿病性末梢神経障害の灼熱感",
         "頸因性頭痛と慢性片頭痛",
         "筋肉痙攣による慢性疼痛",
-        "他の神経痛治療で効果が限られた方",
+        "他の神経痛治療で効果が限られた方 [3]",
       ],
       steps: [
         "疼痛部位と神経分布を評価",
@@ -1850,7 +1850,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "発現時間を説明（通常7〜14日後）",
         "3〜6ヶ月後に再注射の必要性を評価",
       ],
-      clinicAdvantage: "林医師の神経内科背景により、神経痛の発生源を精密に特定し、最も効果的な注射部位を選択できます。疼痛治療に使用する用量と部位は美容用途と完全に異なり、神経内科的な診断基盤が必要です。[2][3]",
+      clinicAdvantage: "林医師の神経内科背景により、神経痛の発生源を精密に特定し、最も効果的な注射部位を選択できます。疼痛治療に使用する用量と部位は美容用途と完全に異なり、神経内科的な診断基盤が必要です。",
       pricingNote: "費用は注射部位と用量によって異なります。料金ページをご参照いただくか、LINEでお問い合わせください。",
       faqItems: [
         { q: "疼痛用と美容用のボツリヌス毒素の違いは？", a: "美容用途は表情筋を対象とし皮膚を滑らかにします。疼痛治療用途は疼痛関連の神経や深層筋肉を対象とし、疼痛信号を遮断し痙攣筋肉を弛緩させます。部位・深さ・用量が完全に異なります。" },

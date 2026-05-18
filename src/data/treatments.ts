@@ -209,7 +209,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       references: [
         { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
         { authors: "Yen YS, Lin CH, Chiang CH, Wu CY", title: "Ultrasound-Guided Sciatic Nerve Hydrodissection Can Improve the Clinical Outcomes of Patients with Deep Gluteal Syndrome: A Case-Series Study", journal: "Diagnostics", year: 2024, doi: "10.3390/diagnostics14070757" },
-        { authors: "Chang KV, et al.", title: "Ultrasound imaging and guidance in peripheral nerve entrapment: hydrodissection highlighted", journal: "Br J Sports Med", year: 2020, doi: "10.1136/bjsports-2018-099740" },
+        { authors: "Chang KV, Wu WT, Özçakar L", title: "Ultrasound imaging and guidance in peripheral nerve entrapment: hydrodissection highlighted", journal: "Pain Manag", year: 2020, doi: "10.2217/pmt-2019-0056" },
       ],
       relatedSymptoms: [
         { name: "神經病變", href: "/zh/symptoms/neuropathy/" },
@@ -741,7 +741,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       references: [
         { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
         { authors: "Yen YS, Lin CH, Chiang CH, Wu CY", title: "Ultrasound-Guided Sciatic Nerve Hydrodissection Can Improve the Clinical Outcomes of Patients with Deep Gluteal Syndrome: A Case-Series Study", journal: "Diagnostics", year: 2024, doi: "10.3390/diagnostics14070757" },
-        { authors: "Chang KV, et al.", title: "Ultrasound imaging and guidance in peripheral nerve entrapment: hydrodissection highlighted", journal: "Br J Sports Med", year: 2020, doi: "10.1136/bjsports-2018-099740" },
+        { authors: "Chang KV, Wu WT, Özçakar L", title: "Ultrasound imaging and guidance in peripheral nerve entrapment: hydrodissection highlighted", journal: "Pain Manag", year: 2020, doi: "10.2217/pmt-2019-0056" },
       ],
       relatedSymptoms: [
         { name: "Neuropathy", href: "/en/symptoms/neuropathy/" },
@@ -1273,7 +1273,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       references: [
         { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
         { authors: "Yen YS, Lin CH, Chiang CH, Wu CY", title: "Ultrasound-Guided Sciatic Nerve Hydrodissection Can Improve the Clinical Outcomes of Patients with Deep Gluteal Syndrome: A Case-Series Study", journal: "Diagnostics", year: 2024, doi: "10.3390/diagnostics14070757" },
-        { authors: "Chang KV, et al.", title: "Ultrasound imaging and guidance in peripheral nerve entrapment: hydrodissection highlighted", journal: "Br J Sports Med", year: 2020, doi: "10.1136/bjsports-2018-099740" },
+        { authors: "Chang KV, Wu WT, Özçakar L", title: "Ultrasound imaging and guidance in peripheral nerve entrapment: hydrodissection highlighted", journal: "Pain Manag", year: 2020, doi: "10.2217/pmt-2019-0056" },
       ],
       relatedSymptoms: [
         { name: "神経障害・神経痛", href: "/ja/symptoms/neuropathy/" },

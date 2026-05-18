@@ -349,8 +349,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       h1: "TAME 微細動脈栓塞",
       heroSub: "痛了很久都沒好？異常新生血管可能是原因之一。",
       eyebrow: "治療說明",
-      whatIs: "TAME（Transcatheter Arterial Micro-Embolization）是一種介入性治療，針對慢性疼痛部位過度增生的異常新生血管進行栓塞。慢性發炎會刺激局部長出不正常的微細血管，這些血管帶來更多神經，加重疼痛感。TAME 針對這些異常血管，從根源減少疼痛信號。",
-      whyImportant: "某些慢性疼痛用一般注射治療效果有限，是因為疼痛的根源在血管層面。當局部長出大量異常新生血管，即使消炎止痛也難以根本改善。TAME 是這類難治性慢性疼痛的重要選擇。[1]",
+      whatIs: "TAME（Transcatheter Arterial Micro-Embolization）是一種介入性治療，針對慢性疼痛部位過度增生的異常新生血管進行栓塞。慢性發炎會刺激局部長出不正常的微細血管，這些血管帶來更多神經，加重疼痛感。TAME 針對這些異常血管，從根源減少疼痛信號。[1]",
+      whyImportant: "某些慢性疼痛用一般注射治療效果有限，是因為疼痛的根源在血管層面。當局部長出大量異常新生血管，即使消炎止痛也難以根本改善。TAME 是這類難治性慢性疼痛的重要選擇。[3]",
       suitable: [
         "慢性膝蓋疼痛（難治性退化性關節炎）",
         "冰凍肩（頑固性五十肩）",
@@ -364,7 +364,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "確認栓塞效果",
         "術後觀察，說明恢復注意事項",
       ],
-      clinicAdvantage: "TAME 是鈷嵐診所的特色治療項目之一，適合其他治療效果有限的難治性慢性疼痛患者。林醫師會在治療前仔細評估是否適合，不是所有慢性疼痛都需要 TAME。[2][3]",
+      clinicAdvantage: "TAME 是鈷嵐診所的特色治療項目之一，適合其他治療效果有限的難治性慢性疼痛患者。林醫師會在治療前仔細評估是否適合，不是所有慢性疼痛都需要 TAME。[2]",
       pricingNote: "TAME 為進階介入治療，請參考費用說明頁面或透過 LINE 諮詢詳細費用。",
       faqItems: [
         { q: "TAME 和一般注射治療有什麼差別？", a: "一般注射治療針對肌腱、關節或神經，TAME 針對的是異常新生血管。兩者可以搭配使用，TAME 通常在其他治療效果有限時考慮。" },
@@ -987,8 +987,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       h1: "TAME Transcatheter Arterial Micro-Embolization",
       heroSub: "Pain that won't resolve? Abnormal neovascularization may be part of the reason.",
       eyebrow: "Treatment Guide",
-      whatIs: "TAME (Transcatheter Arterial Micro-Embolization) is an interventional procedure targeting the abnormal new blood vessels that proliferate in areas of chronic inflammation. Chronic pain triggers local growth of abnormal microvasculature, which carries additional nerve fibers that amplify pain signals. TAME embolizes these abnormal vessels to reduce pain at its source.",
-      whyImportant: "Some chronic pain conditions respond poorly to conventional injection therapy because the pain originates at the vascular level. When excessive abnormal neovascularization has developed, anti-inflammatory measures alone cannot achieve lasting relief. TAME represents an important option for this type of treatment-resistant chronic pain. [1]",
+      whatIs: "TAME (Transcatheter Arterial Micro-Embolization) is an interventional procedure targeting the abnormal new blood vessels that proliferate in areas of chronic inflammation. Chronic pain triggers local growth of abnormal microvasculature, which carries additional nerve fibers that amplify pain signals. TAME embolizes these abnormal vessels to reduce pain at its source. [1]",
+      whyImportant: "Some chronic pain conditions respond poorly to conventional injection therapy because the pain originates at the vascular level. When excessive abnormal neovascularization has developed, anti-inflammatory measures alone cannot achieve lasting relief. TAME represents an important option for this type of treatment-resistant chronic pain. [3]",
       suitable: [
         "Chronic knee pain (treatment-resistant osteoarthritis)",
         "Frozen shoulder (refractory adhesive capsulitis)",
@@ -1002,7 +1002,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Confirm embolization effect",
         "Post-procedure observation and recovery instructions",
       ],
-      clinicAdvantage: "TAME is a signature treatment at Colan Clinic, available for patients with treatment-resistant chronic pain where other approaches have been insufficient. Dr. Lin carefully assesses candidacy before proceeding — TAME is not appropriate for all chronic pain. [2][3]",
+      clinicAdvantage: "TAME is a signature treatment at Colan Clinic, available for patients with treatment-resistant chronic pain where other approaches have been insufficient. Dr. Lin carefully assesses candidacy before proceeding — TAME is not appropriate for all chronic pain. [2]",
       pricingNote: "TAME is an advanced interventional treatment. Please refer to the pricing page or contact us via LINE for detailed fee information.",
       faqItems: [
         { q: "How does TAME differ from standard injection therapy?", a: "Standard injections target tendons, joints, or nerves. TAME targets abnormal neovascularization. The two approaches address different mechanisms and can be used in combination. TAME is typically considered when other treatments have shown limited results." },
@@ -1625,8 +1625,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       h1: "TAME微細動脈塞栓術",
       heroSub: "ずっと治らない痛み？異常新生血管が原因の一つかもしれません。",
       eyebrow: "治療について",
-      whatIs: "TAME（Transcatheter Arterial Micro-Embolization）は慢性炎症部位で過剰増殖した異常新生血管を塞栓するインターベンショナル治療です。慢性炎症は局所に異常な微細血管を増殖させ、これらの血管はより多くの神経線維をもたらし疼痛感覚を増強します。TAMEはこれらの異常血管を塞栓し、疼痛信号をその発生源から減らします。",
-      whyImportant: "一部の慢性疼痛は通常の注射治療に反応しにくいですが、それは疼痛の発生源が血管レベルにあるためです。異常新生血管が大量に発生している場合、抗炎症措置だけでは根本的な改善が難しいです。TAMEはこのような難治性慢性疼痛の重要な選択肢です。[1]",
+      whatIs: "TAME（Transcatheter Arterial Micro-Embolization）は慢性炎症部位で過剰増殖した異常新生血管を塞栓するインターベンショナル治療です。慢性炎症は局所に異常な微細血管を増殖させ、これらの血管はより多くの神経線維をもたらし疼痛感覚を増強します。TAMEはこれらの異常血管を塞栓し、疼痛信号をその発生源から減らします。[1]",
+      whyImportant: "一部の慢性疼痛は通常の注射治療に反応しにくいですが、それは疼痛の発生源が血管レベルにあるためです。異常新生血管が大量に発生している場合、抗炎症措置だけでは根本的な改善が難しいです。TAMEはこのような難治性慢性疼痛の重要な選択肢です。[3]",
       suitable: [
         "慢性膝痛（難治性変形性関節症）",
         "凍結肩（頑固な癒着性関節包炎）",
@@ -1640,7 +1640,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "塞栓効果を確認",
         "術後観察、回復の注意事項を説明",
       ],
-      clinicAdvantage: "TAMEはゴラン診療所の特徴的な治療項目の一つで、他の治療で効果が不十分な難治性慢性疼痛の患者様に適しています。林医師は治療前に適応を慎重に評価します——すべての慢性疼痛にTAMEが適切なわけではありません。[2][3]",
+      clinicAdvantage: "TAMEはゴラン診療所の特徴的な治療項目の一つで、他の治療で効果が不十分な難治性慢性疼痛の患者様に適しています。林医師は治療前に適応を慎重に評価します——すべての慢性疼痛にTAMEが適切なわけではありません。[2]",
       pricingNote: "TAMEは高度なインターベンショナル治療です。料金ページをご参照いただくか、LINEでお問い合わせください。",
       faqItems: [
         { q: "TAMEと通常の注射治療の違いは？", a: "通常の注射は腱・関節・神経を対象とします。TAMEは異常新生血管を対象とします。両者は異なるメカニズムに対応し、組み合わせて使用することもできます。TAMEは通常、他の治療で効果が限られた場合に検討します。" },

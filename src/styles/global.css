@@ -3809,12 +3809,13 @@ details[open] .faq-q::after {
 
 /* Academic references list (treatment pages) */
 .treatment-reference-list {
-  list-style: decimal;
-  padding-left: 1.5rem;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  counter-reset: ref-counter;
 }
 
 .treatment-reference-item {
@@ -3824,6 +3825,20 @@ details[open] .faq-q::after {
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
+  counter-increment: ref-counter;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.treatment-reference-item::before {
+  content: "[" counter(ref-counter) "]";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #0b3a6f;
+  min-width: 1.75rem;
 }
 
 .ref-authors {

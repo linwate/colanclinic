@@ -764,7 +764,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "prolotherapy": {
       slug: "prolotherapy",
-      metaTitle: "Prolotherapy (Dextrose Injection) | Colan Clinic · Luzhou",
+      metaTitle: "Prolotherapy Dextrose Injection | Colan Clinic · Luzhou Pain Treatment",
       metaDescription: "Prolotherapy uses dextrose injection to stimulate tissue repair — an accessible regenerative treatment option for ligament laxity and chronic tendon pain.",
       h1: "Prolotherapy",
       heroSub: "Using glucose to trigger the body's own repair response — an accessible regenerative treatment.",
@@ -867,7 +867,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "bmac": {
       slug: "bmac",
-      metaTitle: "BMAC Bone Marrow Concentrate | Colan Clinic · Luzhou",
+      metaTitle: "BMAC Bone Marrow Concentrate | Colan Clinic · Luzhou Pain Treatment",
       metaDescription: "BMAC harvests stem cells and growth factors from bone marrow — the most advanced regenerative option, suitable for severe degeneration or cases where PRP has shown limited results.",
       h1: "BMAC Bone Marrow Aspirate Concentrate",
       heroSub: "A more potent regenerative source than PRP — for severe joint and tissue degeneration.",
@@ -1298,8 +1298,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
   ja: {
     "ultrasound-guided": {
       slug: "ultrasound-guided",
-      metaTitle: "超音波ガイド下注射｜コランクリニック・蘆洲疼痛治療",
-      metaDescription: "超音波ガイド下注射により、リアルタイムで針先の位置を確認しながら薬剤を正確なターゲットに届けます。コランクリニックのすべての注射治療の基盤となる技術です。",
+      metaTitle: "超音波ガイド下注射｜ゴラン診療所・蘆洲疼痛治療",
+      metaDescription: "超音波ガイド下注射により、リアルタイムで針先の位置を確認しながら薬剤を正確なターゲットに届けます。ゴラン診療所のすべての注射治療の基盤となる技術です。",
       h1: "超音波ガイド下注射",
       heroSub: "見ながら打つから正確。すべての注射治療の基盤となる技術です。",
       eyebrow: "治療について",
@@ -1323,7 +1323,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       faqItems: [
         { q: "超音波ガイド下注射は痛いですか？", a: "刺入時に軽い不快感がありますが、部位や薬剤によって異なります。ほとんどの患者様は許容範囲と感じています。必要に応じて局所麻酔も可能です。" },
         { q: "従来の注射と何が違うのですか？", a: "従来の注射は手の感覚と解剖学的知識に依存しています。超音波ガイドにより針先をリアルタイムで確認でき、特に深部構造や解剖学的に複雑な部位の正確性が大幅に向上します。" },
-        { q: "毎回超音波が必要ですか？", a: "コランクリニックでは、すべての注射治療を超音波ガイド下で行います。これは基本的なスタンダードであり、追加費用はかかりません。" },
+        { q: "毎回超音波が必要ですか？", a: "ゴラン診療所では、すべての注射治療を超音波ガイド下で行います。これは基本的なスタンダードであり、追加費用はかかりません。" },
       ],
       references: [
         { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
@@ -1348,7 +1348,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "prp": {
       slug: "prp",
-      metaTitle: "PRP多血小板血漿療法｜コランクリニック・蘆洲疼痛治療",
+      metaTitle: "PRP多血小板血漿療法｜ゴラン診療所・蘆洲疼痛治療",
       metaDescription: "PRPは自己血液の成長因子を利用して変性した腱・関節・神経を修復します。中程度の損傷や慢性疼痛の繰り返しに適しています。",
       h1: "PRP多血小板血漿療法",
       heroSub: "自分の血液で自分の組織を修復する——それがPRPの核心です。",
@@ -1402,7 +1402,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "prolotherapy": {
       slug: "prolotherapy",
-      metaTitle: "増生療法（ブドウ糖注射）｜コランクリニック・蘆洲疼痛治療",
+      metaTitle: "増生療法（ブドウ糖注射）｜ゴラン診療所・蘆洲疼痛治療",
       metaDescription: "増生療法はブドウ糖注射で組織修復を促進します。靭帯弛緩や慢性腱の痛みに適したアクセスしやすい再生治療の選択肢です。",
       h1: "増生療法",
       heroSub: "ブドウ糖で体の自己修復を促す——費用対効果の高い再生治療の選択肢。",
@@ -1454,7 +1454,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "nerve-hydrodissection": {
       slug: "nerve-hydrodissection",
-      metaTitle: "神経解套注射（ハイドロリリース）｜コランクリニック・蘆洲疼痛治療",
+      metaTitle: "神経解套注射（ハイドロリリース）｜ゴラン診療所・蘆洲疼痛治療",
       metaDescription: "神経解套注射は生理食塩水で癒着した神経を剥離します。林医師の神経内科背景によりダブルクラッシュ症候群の診断と治療がより精密になります。",
       h1: "神経解套注射（ハイドロリリース）",
       heroSub: "神経が閉じ込められている——水圧で解放するのが神経解套です。神経内科の背景があってこそできる治療です。",
@@ -1505,7 +1505,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "bmac": {
       slug: "bmac",
-      metaTitle: "BMAC骨髄再生療法｜コランクリニック・蘆洲疼痛治療",
+      metaTitle: "BMAC骨髄再生療法｜ゴラン診療所・蘆洲疼痛治療",
       metaDescription: "BMACは骨髄から幹細胞と成長因子を採取します。最も高度な再生治療で、重度の変性やPRPで効果が限られた患者様に適しています。",
       h1: "BMAC骨髄再生療法",
       heroSub: "PRPより強力な再生源——重度の関節・組織変性に適した治療。",
@@ -1558,7 +1558,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     'amniotic-matrix': {
       slug: 'amniotic-matrix',
-      metaTitle: '羊膜基質注射｜コランクリニック・蘆洲疼痛治療',
+      metaTitle: '羊膜基質注射｜ゴラン診療所・蘆洲疼痛治療',
       metaDescription: '羊膜基質注射は豊富な成長因子と細胞外基質タンパクを含み、自己採血不要。関節変性・腱損傷・神経修復への1回注射で完結する再生治療の選択肢です。',
       h1: '羊膜基質注射',
       heroSub: '自己採血不要——ヒト羊膜由来の高濃度再生修復成分。',
@@ -1620,7 +1620,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "tame": {
       slug: "tame",
-      metaTitle: "TAME微細動脈塞栓術｜コランクリニック・蘆洲疼痛治療",
+      metaTitle: "TAME微細動脈塞栓術｜ゴラン診療所・蘆洲疼痛治療",
       metaDescription: "TAMEは慢性疼痛部位の異常新生血管を塞栓し、難治性慢性疼痛をその血管的根本から解決します。",
       h1: "TAME微細動脈塞栓術",
       heroSub: "ずっと治らない痛み？異常新生血管が原因の一つかもしれません。",
@@ -1640,7 +1640,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "塞栓効果を確認",
         "術後観察、回復の注意事項を説明",
       ],
-      clinicAdvantage: "TAMEはコランクリニックの特徴的な治療項目の一つで、他の治療で効果が不十分な難治性慢性疼痛の患者様に適しています。林医師は治療前に適応を慎重に評価します——すべての慢性疼痛にTAMEが適切なわけではありません。",
+      clinicAdvantage: "TAMEはゴラン診療所の特徴的な治療項目の一つで、他の治療で効果が不十分な難治性慢性疼痛の患者様に適しています。林医師は治療前に適応を慎重に評価します——すべての慢性疼痛にTAMEが適切なわけではありません。",
       pricingNote: "TAMEは高度なインターベンショナル治療です。料金ページをご参照いただくか、LINEでお問い合わせください。",
       faqItems: [
         { q: "TAMEと通常の注射治療の違いは？", a: "通常の注射は腱・関節・神経を対象とします。TAMEは異常新生血管を対象とします。両者は異なるメカニズムに対応し、組み合わせて使用することもできます。TAMEは通常、他の治療で効果が限られた場合に検討します。" },
@@ -1673,7 +1673,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "hyaluronic-acid": {
       slug: "hyaluronic-acid",
-      metaTitle: "関節ヒアルロン酸注射｜コランクリニック・蘆洲疼痛治療",
+      metaTitle: "関節ヒアルロン酸注射｜ゴラン診療所・蘆洲疼痛治療",
       metaDescription: "関節ヒアルロン酸注射で関節腔の潤滑液を補充し、摩擦と疼痛を軽減します。進化した高分子量架橋製剤は1回の注射で6〜12ヶ月の効果が持続します。",
       h1: "関節ヒアルロン酸注射",
       heroSub: "関節液を補充して、変性した関節がよりスムーズに動けるようにします。高分子量製剤は1回の注射で最長1年間効果が持続します。",
@@ -1750,7 +1750,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     'sportvis': {
       slug: 'sportvis',
-      metaTitle: 'SportVis 腱・靭帯修復注射｜コランクリニック・蘆洲疼痛治療',
+      metaTitle: 'SportVis 腱・靭帯修復注射｜ゴラン診療所・蘆洲疼痛治療',
       metaDescription: 'SportVisは台湾TFDAが唯一承認した腱・靭帯修復用ヒアルロン酸注射剤。標準コースはわずか2回、テニス肘・足関節捻挫・腱板損傷などのスポーツ傷害に適しています。',
       h1: 'SportVis 腱・靭帯修復注射',
       heroSub: '台湾TFDA唯一承認の腱・靭帯修復注射剤——潤滑ではなく、修復のために。',
@@ -1829,7 +1829,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "botulinum": {
       slug: "botulinum",
-      metaTitle: "ボツリヌス毒素疼痛注射｜コランクリニック・蘆洲疼痛治療",
+      metaTitle: "ボツリヌス毒素疼痛注射｜ゴラン診療所・蘆洲疼痛治療",
       metaDescription: "神経痛と筋肉痙攣のためのボツリヌス毒素——美容目的ではなく、難治性神経痛や筋緊張による慢性疼痛に適しています。",
       h1: "ボツリヌス毒素疼痛注射",
       heroSub: "ボツリヌス毒素は美容だけではありません——神経痛と筋肉痙攣への有効な疼痛ツールです。",
@@ -1881,7 +1881,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "peripheral-neuropathy": {
       slug: "peripheral-neuropathy",
-      metaTitle: "末梢神経痛治療｜コランクリニック・蘆洲疼痛治療",
+      metaTitle: "末梢神経痛治療｜ゴラン診療所・蘆洲疼痛治療",
       metaDescription: "DPN・PHNなどの末梢神経痛。林医師の神経内科背景と超音波評価および複数の治療ツールを組み合わせた包括的な神経痛治療アプローチを提供します。",
       h1: "末梢神経痛治療",
       heroSub: "しびれ・灼熱感・電気が走る刺痛——これらは神経からのSOS信号です。",

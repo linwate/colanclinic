@@ -27,7 +27,7 @@ export type LocalizedSymptom = {
 
 export const zh: Record<string, LocalizedSymptom> = {
   shoulder: {
-    metaTitle: "肩膀疼痛｜鈷嵐診所・蘆洲疼痛治療",
+    metaTitle: "肩膀疼痛・五十肩・旋轉肌損傷｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "五十肩、旋轉肌撕裂、肩峰下夾擠，超音波精準評估找出真正原因，非手術修復。",
     h1: "肩膀疼痛",
     heroSub: "舉手會痛、夜間痛醒、肩膀卡住？先確認問題在哪裡。",
@@ -53,7 +53,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     }
   },
   neck: {
-    metaTitle: "頸部疼痛｜鈷嵐診所・蘆洲疼痛治療",
+    metaTitle: "頸部疼痛・頸椎神經壓迫・落枕｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "頸椎壓迫、頸因性頭痛、頸部肌肉筋膜疼痛，神經科背景精準評估，超音波確認壓迫位置。",
     h1: "頸部疼痛",
     heroSub: "脖子僵硬、手麻、頭痛？先確認症狀是否來自頸椎。",
@@ -79,7 +79,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     }
   },
   back: {
-    metaTitle: "下背痛｜鈷嵐診所・蘆洲疼痛治療",
+    metaTitle: "下背痛・腰椎椎間盤・薦髂關節｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "腰椎間盤突出、薦髂關節炎、肌肉筋膜疼痛，超音波找出壓迫位置，非手術修復。",
     h1: "下背痛",
     heroSub: "腰痛一直好不了？先找出真正的壓迫位置。",
@@ -105,7 +105,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     }
   },
   hip: {
-    metaTitle: "髖臀疼痛｜鈷嵐診所・蘆洲疼痛治療",
+    metaTitle: "髖臀疼痛・梨狀肌・髖關節退化｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "髖關節退化、梨狀肌症候群、大轉子疼痛、鼠蹊部拉傷，超音波評估，非手術修復。",
     h1: "髖臀疼痛",
     heroSub: "臀部深處痛、走路卡、久坐站起來很難？先確認問題位置。",
@@ -131,7 +131,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     }
   },
   knee: {
-    metaTitle: "膝蓋退化｜鈷嵐診所・蘆洲疼痛治療",
+    metaTitle: "膝蓋退化・退化性關節炎・積水｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "退化性關節炎、半月板損傷、跳躍膝，玻尿酸至 BMAC 依程度選擇，非手術修復。",
     h1: "膝蓋退化",
     heroSub: "上下樓梯痛、蹲不下去、膝蓋腫？先確認軟骨和關節的實際狀況。",
@@ -157,7 +157,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     }
   },
   foot: {
-    metaTitle: "足部疼痛｜鈷嵐診所・蘆洲疼痛治療",
+    metaTitle: "足底筋膜炎・踝關節・跟腱炎｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "足底筋膜炎、腳踝扭傷、跟腱炎，超音波評估筋膜厚度，從保守治療到 PRP 修復。",
     h1: "足部疼痛",
     heroSub: "腳跟痛、腳踝不穩定？先評估才能有效修復。",
@@ -183,7 +183,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     }
   },
   "elbow-wrist": {
-    metaTitle: "手肘手腕疼痛｜鈷嵐診所・蘆洲疼痛治療",
+    metaTitle: "網球肘・腕隧道・手腕疼痛｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "網球肘、腕隧道症候群、TFCC 損傷、板機指，超音波確認肌腱神經狀態，精準修復。",
     h1: "手肘手腕疼痛",
     heroSub: "手肘外側痛、手腕使不上力？打針止痛前，先確認肌腱狀況。",
@@ -209,7 +209,7 @@ export const zh: Record<string, LocalizedSymptom> = {
     }
   },
   neuropathy: {
-    metaTitle: "神經病變｜鈷嵐診所・蘆洲疼痛治療",
+    metaTitle: "糖尿病神經痛・DPN・帶狀皰疹後神經痛｜鈷嵐診所・蘆洲疼痛治療",
     metaDescription: "糖尿病神經病變（DPN）、神經壓迫、手麻腳麻，神經科專科評估，超音波確認神經狀態。",
     h1: "神經病變",
     heroSub: "腳麻、燒灼感、像電到一樣？先確認是神經壓迫還是神經病變。",

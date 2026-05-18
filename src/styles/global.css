@@ -2128,6 +2128,9 @@ details[open] .faq-q::after {
     opacity: 1;
     visibility: visible;
     transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s linear 0s;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100dvh - 64px);
   }
   .nav-links a {
     padding: 0.95rem 0.25rem;

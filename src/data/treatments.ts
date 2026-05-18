@@ -582,9 +582,9 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "有沒有副作用？", a: "注射部位可能有輕微瘀青或腫脹。劑量控制在安全範圍內不會有全身性副作用。有重症肌無力或神經肌肉疾病的患者不適合使用。" },
       ],
       references: [
-        { authors: "Gupta AD, Edwards S, et al.", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
-        { authors: "Lippi L, de Sire A, et al.", title: "Multidimensional Effectiveness of Botulinum Toxin in Neuropathic Pain: A Systematic Review of Randomized Clinical Trials", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14050308" },
-        { authors: "Restivo DA, Calderone A, et al.", title: "The Use of Botulinum Toxin Injections in Peripheral Neuropathic Pain: A Systematic Review of Efficacy and Safety Outcomes", journal: "Pain Res Manag", year: 2026, doi: "10.1155/prm/7701940" },
+        { authors: "Gupta AD, Edwards S, Smith J, Snow J, Visvanathan R, Tucker G, Wilson D", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
+        { authors: "Lippi L, de Sire A, Folli A, D'Abrosca F, Grana E, Baricich A, Carda S, Invernizzi M", title: "Multidimensional Effectiveness of Botulinum Toxin in Neuropathic Pain: A Systematic Review of Randomized Clinical Trials", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14050308" },
+        { authors: "Restivo DA, Calderone A, Quartarone A, Calabrò RS, Bruschetta A", title: "The Use of Botulinum Toxin Injections in Peripheral Neuropathic Pain: A Systematic Review of Efficacy and Safety Outcomes", journal: "Pain Res Manag", year: 2026, doi: "10.1155/prm/7701940" },
       ],
       relatedSymptoms: [
         { name: "神經病變", href: "/zh/symptoms/neuropathy/" },
@@ -636,7 +636,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       references: [
         { authors: "Allam AE, et al.", title: "Perineural Platelet-Rich Plasma for Diabetic Neuropathic Pain, Could It Make a Difference?", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnz140" },
         { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
-        { authors: "Gupta AD, Edwards S, et al.", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
+        { authors: "Gupta AD, Edwards S, Smith J, Snow J, Visvanathan R, Tucker G, Wilson D", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
       ],
       relatedSymptoms: [
         { name: "神經病變", href: "/zh/symptoms/neuropathy/" },
@@ -1220,9 +1220,9 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "Are there side effects?", a: "Mild bruising or swelling at the injection site is possible. Dosing is maintained within safe limits with no systemic side effects. Patients with myasthenia gravis or neuromuscular junction disorders are not suitable candidates." },
       ],
       references: [
-        { authors: "Gupta AD, Edwards S, et al.", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
-        { authors: "Lippi L, de Sire A, et al.", title: "Multidimensional Effectiveness of Botulinum Toxin in Neuropathic Pain: A Systematic Review of Randomized Clinical Trials", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14050308" },
-        { authors: "Restivo DA, Calderone A, et al.", title: "The Use of Botulinum Toxin Injections in Peripheral Neuropathic Pain: A Systematic Review of Efficacy and Safety Outcomes", journal: "Pain Res Manag", year: 2026, doi: "10.1155/prm/7701940" },
+        { authors: "Gupta AD, Edwards S, Smith J, Snow J, Visvanathan R, Tucker G, Wilson D", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
+        { authors: "Lippi L, de Sire A, Folli A, D'Abrosca F, Grana E, Baricich A, Carda S, Invernizzi M", title: "Multidimensional Effectiveness of Botulinum Toxin in Neuropathic Pain: A Systematic Review of Randomized Clinical Trials", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14050308" },
+        { authors: "Restivo DA, Calderone A, Quartarone A, Calabrò RS, Bruschetta A", title: "The Use of Botulinum Toxin Injections in Peripheral Neuropathic Pain: A Systematic Review of Efficacy and Safety Outcomes", journal: "Pain Res Manag", year: 2026, doi: "10.1155/prm/7701940" },
       ],
       relatedSymptoms: [
         { name: "Neuropathy", href: "/en/symptoms/neuropathy/" },
@@ -1274,7 +1274,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       references: [
         { authors: "Allam AE, et al.", title: "Perineural Platelet-Rich Plasma for Diabetic Neuropathic Pain, Could It Make a Difference?", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnz140" },
         { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
-        { authors: "Gupta AD, Edwards S, et al.", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
+        { authors: "Gupta AD, Edwards S, Smith J, Snow J, Visvanathan R, Tucker G, Wilson D", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
       ],
       relatedSymptoms: [
         { name: "Neuropathy", href: "/en/symptoms/neuropathy/" },
@@ -1858,9 +1858,9 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "副作用はありますか？", a: "注射部位に軽度の内出血や腫脹が生じる可能性があります。用量は安全範囲内に維持され、全身性の副作用はありません。重症筋無力症や神経筋接合部疾患のある方は適していません。" },
       ],
       references: [
-        { authors: "Gupta AD, Edwards S, et al.", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
-        { authors: "Lippi L, de Sire A, et al.", title: "Multidimensional Effectiveness of Botulinum Toxin in Neuropathic Pain: A Systematic Review of Randomized Clinical Trials", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14050308" },
-        { authors: "Restivo DA, Calderone A, et al.", title: "The Use of Botulinum Toxin Injections in Peripheral Neuropathic Pain: A Systematic Review of Efficacy and Safety Outcomes", journal: "Pain Res Manag", year: 2026, doi: "10.1155/prm/7701940" },
+        { authors: "Gupta AD, Edwards S, Smith J, Snow J, Visvanathan R, Tucker G, Wilson D", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
+        { authors: "Lippi L, de Sire A, Folli A, D'Abrosca F, Grana E, Baricich A, Carda S, Invernizzi M", title: "Multidimensional Effectiveness of Botulinum Toxin in Neuropathic Pain: A Systematic Review of Randomized Clinical Trials", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14050308" },
+        { authors: "Restivo DA, Calderone A, Quartarone A, Calabrò RS, Bruschetta A", title: "The Use of Botulinum Toxin Injections in Peripheral Neuropathic Pain: A Systematic Review of Efficacy and Safety Outcomes", journal: "Pain Res Manag", year: 2026, doi: "10.1155/prm/7701940" },
       ],
       relatedSymptoms: [
         { name: "神経障害・神経痛", href: "/ja/symptoms/neuropathy/" },
@@ -1912,7 +1912,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       references: [
         { authors: "Allam AE, et al.", title: "Perineural Platelet-Rich Plasma for Diabetic Neuropathic Pain, Could It Make a Difference?", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnz140" },
         { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
-        { authors: "Gupta AD, Edwards S, et al.", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
+        { authors: "Gupta AD, Edwards S, Smith J, Snow J, Visvanathan R, Tucker G, Wilson D", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
       ],
       relatedSymptoms: [
         { name: "神経障害・神経痛", href: "/ja/symptoms/neuropathy/" },

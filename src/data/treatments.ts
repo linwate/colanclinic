@@ -445,6 +445,85 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "極少數有過敏反應",
       ],
     },
+    'sportvis': {
+      slug: 'sportvis',
+      metaTitle: 'SportVis 肌腱韌帶修復注射｜鈷嵐診所・蘆洲疼痛治療',
+      metaDescription: 'SportVis 是台灣 TFDA 唯一核准可用於肌腱與韌帶修復的注射劑，標準療程僅需 2 劑，適合網球肘、腳踝扭傷、旋轉肌損傷等運動傷害。',
+      h1: 'SportVis 肌腱韌帶修復注射',
+      heroSub: '台灣 TFDA 唯一核准的肌腱韌帶修復注射劑，不是潤滑，是修復。',
+      eyebrow: '治療說明',
+      whatIs: 'SportVis 是含有 STABHA（軟組織適應性生物相容玻尿酸）的注射治療，專門針對肌腱和韌帶損傷設計。STABHA 是目前台灣 TFDA 唯一核准可用於肌腱與韌帶修復的玻尿酸製劑，與傳統關節腔潤滑用的玻尿酸完全不同。注射後 STABHA 嵌入受損組織，搭建修復所需的臨時支撐環境，同時發揮控制發炎、促進修復、提供潤滑三大作用。',
+      whyImportant: '肌腱和韌帶損傷的修復環境和關節腔不同，需要能滲透軟組織的特殊結構。傳統玻尿酸用於關節潤滑效果良好，但無法有效修復肌腱韌帶。SportVis 的 STABHA 分子結構特別設計，可以嵌入肌腱周圍組織，加速細胞修復、減少疤痕沾黏，幫助運動員和患者更快恢復功能。',
+      suitable: [
+        '急性或慢性肌腱炎（網球肘、高爾夫球肘、跟腱炎）',
+        '韌帶損傷（腳踝扭傷、膝蓋韌帶部分撕裂）',
+        '旋轉肌群損傷',
+        '慢性肌腱疼痛保守治療效果有限',
+        '希望減少注射次數、縮短療程的患者',
+      ],
+      steps: [
+        '超音波評估肌腱或韌帶損傷位置和程度',
+        '確認 SportVis 適應症，解說療程內容',
+        '超音波導引下將 SportVis 注射至肌腱周圍軟組織',
+        '說明注射後注意事項（48小時避免劇烈運動）',
+        '兩週後進行第二劑注射，評估恢復狀況',
+      ],
+      clinicAdvantage: '超音波導引確保 SportVis 精準注射至肌腱周圍軟組織，而不是關節腔或其他位置。林醫師的肌肉骨骼超音波訓練背景（CIPS 認證）讓注射位置更精準，療效更穩定。',
+      pricingNote: 'SportVis 標準療程為 2 劑，費用請參考費用說明頁面或透過 LINE 諮詢。',
+      contraindications: [
+        '對玻尿酸或 STABHA 成分過敏',
+        '注射部位感染',
+        '完全性肌腱斷裂（需手術處理）',
+        '凝血功能異常',
+      ],
+      sideEffects: [
+        '注射後 24–48 小時局部輕微痠脹，屬正常反應',
+        '少數有輕微瘀青',
+        '注射後 48 小時內避免劇烈運動',
+      ],
+      faqItems: [
+        {
+          q: 'SportVis 和一般玻尿酸有什麼差別？',
+          a: '一般玻尿酸用於關節腔潤滑，針對退化性關節炎。SportVis 含有 STABHA，專門設計用於肌腱和韌帶周圍軟組織，可以嵌入受損組織促進修復，是 TFDA 唯一核准此適應症的玻尿酸製劑。'
+        },
+        {
+          q: '需要打幾次？',
+          a: 'StandardSportVis 標準療程為 2 劑，間隔兩週。相較於 PRP 的 2–3 次或傳統玻尿酸的 3–5 次，療程較短。醫師會根據損傷狀況決定是否需要追加。'
+        },
+        {
+          q: 'SportVis 適合運動員嗎？',
+          a: '非常適合。SportVis 的設計初衷就是幫助運動傷害患者快速恢復功能，減少因傷停訓時間。注射後 48 小時避免劇烈運動，之後可以依照恢復狀況逐步恢復訓練。'
+        },
+      ],
+      references: [
+        {
+          authors: 'Khan M, Shanmugaraj A, Prada C, Patel A, Babins E, Bhandari M',
+          title: 'The Role of Hyaluronic Acid for Soft Tissue Indications: A Systematic Review and Meta-Analysis',
+          journal: 'Sports Health',
+          year: 2023,
+          doi: '10.1177/19417381211073316'
+        },
+        {
+          authors: 'Crimaldi S, Liguori S, Tamburrino P, Moretti A, Paoletta M, Toro G, Iolascon G',
+          title: 'The Role of Hyaluronic Acid in Sport-Related Tendinopathies: A Narrative Review',
+          journal: 'Medicina (Kaunas)',
+          year: 2021,
+          doi: '10.3390/medicina57101088'
+        },
+        {
+          authors: 'Frizziero A, Vittadini F, Bigliardi D, Costantino C',
+          title: 'Low Molecular Weight Hyaluronic Acid (500-730 Kda) Injections in Tendinopathies: A Narrative Review',
+          journal: 'J Funct Morphol Kinesiol',
+          year: 2022,
+          doi: '10.3390/jfmk7010003'
+        },
+      ],
+      relatedSymptoms: [
+        { name: '肩膀疼痛', href: '/zh/symptoms/shoulder/' },
+        { name: '手肘手腕', href: '/zh/symptoms/elbow-wrist/' },
+        { name: '足踝疼痛', href: '/zh/symptoms/foot/' },
+      ],
+    },
     "botulinum": {
       slug: "botulinum",
       metaTitle: "肉毒桿菌止痛注射｜鈷嵐診所・蘆洲疼痛治療",
@@ -975,6 +1054,85 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Mild soreness and swelling after injection (24–48 hours)",
         "Occasional sensation of joint fullness (usually resolves within 1–3 days)",
         "Allergic reaction in rare cases",
+      ],
+    },
+    'sportvis': {
+      slug: 'sportvis',
+      metaTitle: 'SportVis Tendon & Ligament Repair | Colan Clinic · Luzhou Pain Treatment',
+      metaDescription: 'SportVis is the only TFDA-approved hyaluronic acid injection for tendon and ligament repair. Standard course is just 2 doses — suitable for tennis elbow, ankle sprain, and rotator cuff injuries.',
+      h1: 'SportVis Tendon & Ligament Repair',
+      heroSub: 'The only TFDA-approved injectable for tendon and ligament repair — not lubrication, but regeneration.',
+      eyebrow: 'Treatment Guide',
+      whatIs: 'SportVis contains STABHA (Soft Tissue Adapted Biocompatible Hyaluronic Acid), an injection treatment specifically designed for tendon and ligament injuries. STABHA is the only hyaluronic acid approved by Taiwan\'s TFDA for the repair of tendons and ligaments — entirely distinct from conventional joint-lubricating hyaluronic acid. Once injected, STABHA embeds into damaged soft tissue, creating a temporary scaffold that supports cellular repair while providing three combined actions: inflammation control, tissue repair, and lubrication.',
+      whyImportant: 'Tendons and ligaments have a different repair environment from joint cavities and require a formulation that can penetrate soft tissue. Conventional hyaluronic acid lubricates joint surfaces effectively but cannot repair tendons or ligaments. SportVis\'s STABHA molecule is specifically engineered to embed in peritendinous tissue, accelerate cellular repair, reduce scarring and adhesions, and help patients return to function more quickly.',
+      suitable: [
+        'Acute or chronic tendinopathy (tennis elbow, golfer\'s elbow, Achilles tendinopathy)',
+        'Ligament injuries (ankle sprain, partial knee ligament tears)',
+        'Rotator cuff injuries',
+        'Chronic tendon pain with limited response to conservative treatment',
+        'Patients seeking fewer injections and a shorter treatment course',
+      ],
+      steps: [
+        'Ultrasound assessment of tendon or ligament injury location and severity',
+        'Confirm SportVis indications and explain the treatment course',
+        'Ultrasound-guided injection of SportVis into the peritendinous soft tissue',
+        'Post-injection instructions (avoid vigorous activity for 48 hours)',
+        'Second dose injection two weeks later; assess recovery progress',
+      ],
+      clinicAdvantage: 'Ultrasound guidance ensures SportVis is delivered precisely into the peritendinous soft tissue rather than the joint cavity. Dr. Lin\'s musculoskeletal ultrasound training (CIPS-certified) results in more accurate placement and more consistent outcomes.',
+      pricingNote: 'The standard SportVis course is 2 doses. Please refer to the pricing page or contact us via LINE.',
+      contraindications: [
+        'Known allergy to hyaluronic acid or STABHA components',
+        'Infection at the injection site',
+        'Complete tendon rupture (requires surgical management)',
+        'Clotting disorders',
+      ],
+      sideEffects: [
+        'Mild local soreness and swelling for 24–48 hours — a normal response',
+        'Occasional minor bruising',
+        'Avoid vigorous activity for 48 hours after injection',
+      ],
+      faqItems: [
+        {
+          q: 'How is SportVis different from regular hyaluronic acid?',
+          a: 'Regular hyaluronic acid is used for joint cavity lubrication in osteoarthritis. SportVis contains STABHA, specifically designed for peritendinous soft tissue — it embeds into damaged tendon and ligament tissue to support repair. It is the only TFDA-approved hyaluronic acid for this indication.'
+        },
+        {
+          q: 'How many injections are needed?',
+          a: 'The standard SportVis course is 2 doses spaced two weeks apart — fewer than PRP (2–3 sessions) or conventional hyaluronic acid (3–5 sessions). Additional doses may be recommended based on injury severity and recovery.'
+        },
+        {
+          q: 'Is SportVis suitable for athletes?',
+          a: 'Absolutely. SportVis was designed with athletes in mind — to restore function quickly and minimize time away from training. Vigorous activity should be avoided for 48 hours after injection; return to training can progress gradually based on recovery.'
+        },
+      ],
+      references: [
+        {
+          authors: 'Khan M, Shanmugaraj A, Prada C, Patel A, Babins E, Bhandari M',
+          title: 'The Role of Hyaluronic Acid for Soft Tissue Indications: A Systematic Review and Meta-Analysis',
+          journal: 'Sports Health',
+          year: 2023,
+          doi: '10.1177/19417381211073316'
+        },
+        {
+          authors: 'Crimaldi S, Liguori S, Tamburrino P, Moretti A, Paoletta M, Toro G, Iolascon G',
+          title: 'The Role of Hyaluronic Acid in Sport-Related Tendinopathies: A Narrative Review',
+          journal: 'Medicina (Kaunas)',
+          year: 2021,
+          doi: '10.3390/medicina57101088'
+        },
+        {
+          authors: 'Frizziero A, Vittadini F, Bigliardi D, Costantino C',
+          title: 'Low Molecular Weight Hyaluronic Acid (500-730 Kda) Injections in Tendinopathies: A Narrative Review',
+          journal: 'J Funct Morphol Kinesiol',
+          year: 2022,
+          doi: '10.3390/jfmk7010003'
+        },
+      ],
+      relatedSymptoms: [
+        { name: 'Shoulder Pain', href: '/en/symptoms/shoulder/' },
+        { name: 'Elbow & Wrist', href: '/en/symptoms/elbow-wrist/' },
+        { name: 'Foot & Ankle', href: '/en/symptoms/foot/' },
       ],
     },
     "botulinum": {
@@ -1509,6 +1667,85 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "まれにアレルギー反応",
       ],
     },
+    'sportvis': {
+      slug: 'sportvis',
+      metaTitle: 'SportVis 腱・靭帯修復注射｜コランクリニック・蘆洲疼痛治療',
+      metaDescription: 'SportVisは台湾TFDAが唯一承認した腱・靭帯修復用ヒアルロン酸注射剤。標準コースはわずか2回、テニス肘・足関節捻挫・腱板損傷などのスポーツ傷害に適しています。',
+      h1: 'SportVis 腱・靭帯修復注射',
+      heroSub: '台湾TFDA唯一承認の腱・靭帯修復注射剤——潤滑ではなく、修復のために。',
+      eyebrow: '治療について',
+      whatIs: 'SportVisはSTABHA（軟部組織適合型生体適合性ヒアルロン酸）を含む注射治療で、腱・靭帯損傷専用に設計されています。STABHAは台湾TFDAが腱・靭帯修復に唯一承認したヒアルロン酸製剤であり、従来の関節腔潤滑用ヒアルロン酸とは全く異なります。注射後、STABHAは損傷した軟部組織に嵌入し、細胞修復を支える一時的な足場を構築しながら、炎症制御・修復促進・潤滑の3つの作用を発揮します。',
+      whyImportant: '腱・靭帯の修復環境は関節腔とは異なり、軟部組織に浸透できる特殊な製剤が必要です。従来のヒアルロン酸は関節面の潤滑に優れますが、腱・靭帯を修復することはできません。SportVisのSTABHA分子は腱周囲組織への嵌入を可能にする特殊設計で、細胞修復を加速し、瘢痕や癒着を軽減し、患者様の機能回復を速めます。',
+      suitable: [
+        '急性・慢性腱症（テニス肘・ゴルフ肘・アキレス腱症）',
+        '靭帯損傷（足関節捻挫・膝靭帯部分断裂）',
+        '腱板損傷',
+        '保存療法で改善が限られた慢性腱の痛み',
+        '注射回数を減らし、治療期間を短縮したい患者様',
+      ],
+      steps: [
+        '超音波で腱・靭帯の損傷部位と程度を評価',
+        'SportVis適応症を確認し、治療コースを説明',
+        '超音波ガイド下でSportVisを腱周囲軟部組織に注射',
+        '術後注意事項を説明（48時間は激しい運動を避ける）',
+        '2週間後に2回目を注射し、回復状況を評価',
+      ],
+      clinicAdvantage: '超音波ガイドにより、SportVisが関節腔ではなく腱周囲軟部組織に正確に届きます。林医師の筋骨格系超音波トレーニング（CIPS認定）により、注射部位がより精密で、効果がより安定します。',
+      pricingNote: 'SportVisの標準コースは2回です。料金ページをご参照いただくか、LINEでお問い合わせください。',
+      contraindications: [
+        'ヒアルロン酸またはSTABHA成分へのアレルギー',
+        '注射部位の感染',
+        '完全腱断裂（外科的処置が必要）',
+        '凝固障害',
+      ],
+      sideEffects: [
+        '24〜48時間の局所痠痛・腫脹（正常反応）',
+        'まれに軽微な内出血',
+        '注射後48時間は激しい運動を避ける',
+      ],
+      faqItems: [
+        {
+          q: 'SportVisと通常のヒアルロン酸の違いは？',
+          a: '通常のヒアルロン酸は変形性関節症の関節腔潤滑に使用します。SportVisはSTABHAを含み、腱周囲軟部組織専用に設計されています——損傷した腱・靭帯組織に嵌入して修復を支援します。TFDA唯一承認のヒアルロン酸製剤です。'
+        },
+        {
+          q: '何回必要ですか？',
+          a: 'SportVisの標準コースは2週間隔の2回です。PRP（2〜3回）や通常のヒアルロン酸（3〜5回）より少ない回数です。損傷の程度と回復状況に応じて追加投与を検討することもあります。'
+        },
+        {
+          q: 'アスリートに適していますか？',
+          a: '非常に適しています。SportVisはスポーツ傷害患者の機能回復を早め、トレーニング離脱期間を短縮するために設計されました。注射後48時間は激しい運動を避け、その後は回復状況に応じてトレーニングを段階的に再開できます。'
+        },
+      ],
+      references: [
+        {
+          authors: 'Khan M, Shanmugaraj A, Prada C, Patel A, Babins E, Bhandari M',
+          title: 'The Role of Hyaluronic Acid for Soft Tissue Indications: A Systematic Review and Meta-Analysis',
+          journal: 'Sports Health',
+          year: 2023,
+          doi: '10.1177/19417381211073316'
+        },
+        {
+          authors: 'Crimaldi S, Liguori S, Tamburrino P, Moretti A, Paoletta M, Toro G, Iolascon G',
+          title: 'The Role of Hyaluronic Acid in Sport-Related Tendinopathies: A Narrative Review',
+          journal: 'Medicina (Kaunas)',
+          year: 2021,
+          doi: '10.3390/medicina57101088'
+        },
+        {
+          authors: 'Frizziero A, Vittadini F, Bigliardi D, Costantino C',
+          title: 'Low Molecular Weight Hyaluronic Acid (500-730 Kda) Injections in Tendinopathies: A Narrative Review',
+          journal: 'J Funct Morphol Kinesiol',
+          year: 2022,
+          doi: '10.3390/jfmk7010003'
+        },
+      ],
+      relatedSymptoms: [
+        { name: '肩の痛み', href: '/ja/symptoms/shoulder/' },
+        { name: '肘・手首の痛み', href: '/ja/symptoms/elbow-wrist/' },
+        { name: '足・足首の痛み', href: '/ja/symptoms/foot/' },
+      ],
+    },
     "botulinum": {
       slug: "botulinum",
       metaTitle: "ボツリヌス毒素疼痛注射｜コランクリニック・蘆洲疼痛治療",
@@ -1625,6 +1862,7 @@ export const treatmentSlugs = [
   "amniotic-matrix",
   "tame",
   "hyaluronic-acid",
+  "sportvis",
   "botulinum",
   "peripheral-neuropathy",
 ]
@@ -1639,6 +1877,7 @@ export const treatmentNavLabels = {
     "amniotic-matrix": "羊膜基質注射",
     "tame": "TAME 微細動脈栓塞",
     "hyaluronic-acid": "關節玻尿酸",
+    "sportvis": "SportVis 肌腱修復",
     "botulinum": "肉毒桿菌止痛",
     "peripheral-neuropathy": "周邊神經痛治療",
   },
@@ -1651,6 +1890,7 @@ export const treatmentNavLabels = {
     "amniotic-matrix": "Amniotic Matrix Injection",
     "tame": "TAME",
     "hyaluronic-acid": "Hyaluronic Acid",
+    "sportvis": "SportVis Tendon Repair",
     "botulinum": "Botulinum Toxin",
     "peripheral-neuropathy": "Peripheral Neuropathy",
   },
@@ -1663,6 +1903,7 @@ export const treatmentNavLabels = {
     "amniotic-matrix": "羊膜基質注射",
     "tame": "TAME微細動脈塞栓術",
     "hyaluronic-acid": "関節ヒアルロン酸",
+    "sportvis": "SportVis 腱修復",
     "botulinum": "ボツリヌス毒素",
     "peripheral-neuropathy": "末梢神経痛治療",
   },

@@ -2,8 +2,8 @@
 import Layout from '../../../layouts/Layout.astro'
 import { treatments, treatmentSlugs } from '../../../data/treatments'
 
-const lang = 'en'
-const slug = 'hyaluronic-acid'
+const lang = 'ja'
+const slug = 'sportvis'
 const data = treatments[lang][slug]
 ---
 
@@ -21,7 +21,7 @@ const data = treatments[lang][slug]
     "step": data.steps.map((step, index) => ({
       "@type": "HowToStep",
       "position": index + 1,
-      "name": `Step ${index + 1}`,
+      "name": `ステップ ${index + 1}`,
       "text": step
     }))
   })} />
@@ -36,16 +36,16 @@ const data = treatments[lang][slug]
 
   <section class="fv-section">
     <div class="container">
-      <h2>What Is This Treatment</h2>
+      <h2>この治療とは</h2>
       <p>{data.whatIs}</p>
-      <h2>Why It Matters</h2>
+      <h2>なぜ重要なのか</h2>
       <p>{data.whyImportant}</p>
     </div>
   </section>
 
   <section class="fv-section">
     <div class="container">
-      <h2>Who Is It Suitable For</h2>
+      <h2>適応について</h2>
       <ul class="treatment-suitable-list">
         {data.suitable.map((item) => <li>{item}</li>)}
       </ul>
@@ -54,7 +54,7 @@ const data = treatments[lang][slug]
 
   <section class="fv-section">
     <div class="container">
-      <h2>Treatment Process</h2>
+      <h2>治療の流れ</h2>
       <ol class="treatment-steps-list">
         {data.steps.map((step) => <li>{step}</li>)}
       </ol>
@@ -63,14 +63,14 @@ const data = treatments[lang][slug]
 
   <section class="fv-section">
     <div class="container">
-      <h2>Our Approach</h2>
+      <h2>コランクリニックのアプローチ</h2>
       <p>{data.clinicAdvantage}</p>
     </div>
   </section>
 
   <section class="fv-section">
     <div class="container">
-      <h2>Side Effects & Precautions</h2>
+      <h2>副作用と注意事項</h2>
       <ul class="treatment-suitable-list">
         {data.sideEffects.map((item) => <li>{item}</li>)}
       </ul>
@@ -79,29 +79,29 @@ const data = treatments[lang][slug]
 
   <section class="fv-section">
     <div class="container">
-      <h2>Who Should Not Receive This Treatment</h2>
+      <h2>この治療が適さない場合</h2>
       <ul class="treatment-suitable-list treatment-contraindication-list">
         {data.contraindications.map((item) => <li>{item}</li>)}
       </ul>
       <p class="treatment-faq-link">
-        <a href="/en/treatment-faq/">View full treatment FAQ →</a>
+        <a href="/ja/treatment-faq/">治療に関するよくある質問を見る →</a>
       </p>
     </div>
   </section>
 
   <section class="fv-section">
     <div class="container">
-      <h2>Pricing</h2>
+      <h2>費用について</h2>
       <p>{data.pricingNote}</p>
       <p class="treatment-faq-link">
-        <a href="/en/pricing/">View full pricing →</a>
+        <a href="/ja/pricing/">料金の詳細を見る →</a>
       </p>
     </div>
   </section>
 
   <section class="fv-section">
     <div class="container">
-      <h2>FAQ</h2>
+      <h2>よくある質問</h2>
       {data.faqItems.map((item) => (
         <div class="treatment-faq-item">
           <h3>{item.q}</h3>
@@ -113,7 +113,7 @@ const data = treatments[lang][slug]
 
   <section class="fv-section">
     <div class="container">
-      <h2>Related Symptoms</h2>
+      <h2>関連症状</h2>
       <ul class="treatment-related-list">
         {data.relatedSymptoms.map((s) => (
           <li><a href={s.href}>{s.name}</a></li>
@@ -124,7 +124,7 @@ const data = treatments[lang][slug]
 
   <section class="fv-section">
     <div class="container">
-      <h2>Academic References</h2>
+      <h2>参考文献</h2>
       <ol class="treatment-reference-list">
         {data.references.map((ref, index) => (
           <li class="treatment-reference-item">
@@ -143,28 +143,19 @@ const data = treatments[lang][slug]
     </div>
   </section>
 
-  <section class="fv-section">
-    <div class="container">
-      <p>For tendon or ligament injuries such as tennis elbow or ankle sprain,
-      consider <a href="/en/treatments/sportvis/" class="credential-link">
-      SportVis Tendon & Ligament Repair →</a>,
-      designed specifically for soft tissue.</p>
-    </div>
-  </section>
-
   <section class="fv-section fv-cta-section">
     <div class="container">
-      <h2>Questions Before Your Visit?</h2>
+      <h2>ご来院前のご質問</h2>
       <p class="fv-reply-note">
-        Send us a message on LINE first — we'll help you figure out if this treatment is right for you.
+        まずLINEで症状をお伝えください。この治療がお体に合うかどうか、医師が初期判断をお伝えします。
       </p>
       <div class="fv-cta-row">
         <a href="https://line.me/R/ti/p/@twmedpro"
            class="fv-cta fv-cta-line" target="_blank" rel="noopener noreferrer">
-          LINE Consultation
+          LINEで相談
         </a>
-        <a href="/en/first-visit/" class="fv-cta fv-cta-ghost">
-          First Visit Guide
+        <a href="/ja/first-visit/" class="fv-cta fv-cta-ghost">
+          初診ガイドへ
         </a>
       </div>
     </div>

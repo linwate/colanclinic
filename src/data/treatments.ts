@@ -398,7 +398,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "hyaluronic-acid": {
       slug: "hyaluronic-acid",
       metaTitle: "關節玻尿酸注射｜鈷嵐診所・蘆洲疼痛治療",
-      metaDescription: "關節玻尿酸注射補充關節腔潤滑液，減少摩擦和疼痛，SportVis 是高分子量進階選擇，適合膝蓋退化患者。",
+      metaDescription: "關節玻尿酸注射補充關節腔潤滑液，減少摩擦和疼痛。進階高分子量交聯製劑單次注射效果可達 6–12 個月，適合膝蓋退化患者。",
       h1: "關節玻尿酸注射",
       heroSub: "補充關節潤滑液，讓退化的關節動得更順。高分子量製劑單次注射效果長達一年。",
       eyebrow: "治療說明",
@@ -419,7 +419,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "說明術後活動建議",
       ],
       clinicAdvantage: "超音波導引確保玻尿酸確實注射進關節腔，而不是周圍軟組織。有積水時可以先抽除再注射，效果更好。進階高分子量交聯製劑的單次注射可以持續 6–12 個月，減少患者回診次數。",
-      pricingNote: "標準玻尿酸和 SportVis 費用不同，請參考費用說明頁面。",
+      pricingNote: "關節玻尿酸費用依製劑種類（傳統低分子量或進階高分子量交聯製劑）和注射部位而定，請參考費用說明頁面。",
       faqItems: [
         {
           q: "玻尿酸注射要打幾次？",
@@ -1018,7 +1018,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "hyaluronic-acid": {
       slug: "hyaluronic-acid",
       metaTitle: "Hyaluronic Acid Joint Injection | Colan Clinic · Luzhou Pain Treatment",
-      metaDescription: "Hyaluronic acid injection replenishes joint lubrication to reduce friction and pain. SportVis is a high-molecular-weight advanced option for knee degeneration.",
+      metaDescription: "Hyaluronic acid joint injection replenishes synovial fluid to reduce friction and pain. Advanced high-molecular-weight cross-linked formulations provide up to 6–12 months of relief from a single injection.",
       h1: "Hyaluronic Acid Joint Injection",
       heroSub: "Replenishing joint fluid to help a degenerating joint move more smoothly. Advanced high-molecular-weight formulations last up to one year from a single injection.",
       eyebrow: "Treatment Guide",
@@ -1039,7 +1039,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Post-treatment activity recommendations",
       ],
       clinicAdvantage: "Ultrasound guidance ensures hyaluronic acid is injected directly into the joint cavity rather than surrounding soft tissue. When effusion is present, aspiration before injection improves outcomes. Advanced high-molecular-weight cross-linked formulations can sustain results for 6–12 months from a single injection, reducing the number of clinic visits required.",
-      pricingNote: "Standard HA and SportVis are priced differently. Please refer to the pricing page.",
+      pricingNote: "Fees vary by formulation (conventional or advanced high-molecular-weight cross-linked) and injection site. Please refer to the pricing page.",
       faqItems: [
         {
           q: "How many HA injections are needed?",
@@ -1638,7 +1638,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "hyaluronic-acid": {
       slug: "hyaluronic-acid",
       metaTitle: "関節ヒアルロン酸注射｜コランクリニック・蘆洲疼痛治療",
-      metaDescription: "関節ヒアルロン酸注射で関節腔の潤滑液を補充し、摩擦と疼痛を軽減します。SportVisは高分子量の進化版で膝関節変性に適しています。",
+      metaDescription: "関節ヒアルロン酸注射で関節腔の潤滑液を補充し、摩擦と疼痛を軽減します。進化した高分子量架橋製剤は1回の注射で6〜12ヶ月の効果が持続します。",
       h1: "関節ヒアルロン酸注射",
       heroSub: "関節液を補充して、変性した関節がよりスムーズに動けるようにします。高分子量製剤は1回の注射で最長1年間効果が持続します。",
       eyebrow: "治療について",
@@ -1659,7 +1659,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "術後の活動に関するアドバイスを提供",
       ],
       clinicAdvantage: "超音波ガイドにより、ヒアルロン酸が周囲軟部組織ではなく関節腔に確実に注射されます。関節液がある場合は先に吸引してから注射することでより良い効果が得られます。高分子量架橋製剤の1回注射は6〜12ヶ月間効果が持続し、来院頻度を減らします。",
-      pricingNote: "通常のヒアルロン酸とSportVisでは費用が異なります。料金ページをご参照ください。",
+      pricingNote: "費用は製剤の種類（従来型または高分子量架橋製剤）と注射部位によって異なります。料金ページをご参照ください。",
       faqItems: [
         {
           q: "ヒアルロン酸は何回注射が必要ですか？",

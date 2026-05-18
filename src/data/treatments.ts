@@ -634,8 +634,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "帶狀皰疹後神經痛能改善嗎？", a: "PHN 是頑固性神經痛，傳統藥物效果有限。肉毒桿菌注射和神經解套可以提供 3–6 個月的明顯疼痛緩解，部分患者在多次治療後症狀會持續改善。" },
       ],
       references: [
-        { authors: "Allam AE, et al.", title: "Perineural Platelet-Rich Plasma for Diabetic Neuropathic Pain, Could It Make a Difference?", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnz140" },
-        { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
+        { authors: "Hassanien M, Elawamy A, Kamel EZ, Khalifa WA, Abolfadl GM, Roushdy ASI, El Zohne RA, Makarem YS", title: "Perineural Platelet-Rich Plasma for Diabetic Neuropathic Pain, Could It Make a Difference?", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnz140" },
+        { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
         { authors: "Gupta AD, Edwards S, Smith J, Snow J, Visvanathan R, Tucker G, Wilson D", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
       ],
       relatedSymptoms: [
@@ -1272,8 +1272,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "Can postherpetic neuralgia improve?", a: "PHN is a notoriously refractory condition that responds poorly to conventional medications. Botulinum toxin injection and nerve hydrodissection can provide meaningful pain relief lasting 3–6 months, with some patients showing ongoing symptom reduction across multiple treatment cycles." },
       ],
       references: [
-        { authors: "Allam AE, et al.", title: "Perineural Platelet-Rich Plasma for Diabetic Neuropathic Pain, Could It Make a Difference?", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnz140" },
-        { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
+        { authors: "Hassanien M, Elawamy A, Kamel EZ, Khalifa WA, Abolfadl GM, Roushdy ASI, El Zohne RA, Makarem YS", title: "Perineural Platelet-Rich Plasma for Diabetic Neuropathic Pain, Could It Make a Difference?", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnz140" },
+        { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
         { authors: "Gupta AD, Edwards S, Smith J, Snow J, Visvanathan R, Tucker G, Wilson D", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
       ],
       relatedSymptoms: [
@@ -1910,8 +1910,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "帯状疱疹後神経痛は改善できますか？", a: "PHNは従来の薬物に対する反応が乏しい難治性の神経痛です。ボツリヌス毒素注射と神経解套により、3〜6ヶ月の有意な疼痛軽減が得られ、複数回の治療サイクルを通じて症状が継続的に改善する患者様もいます。" },
       ],
       references: [
-        { authors: "Allam AE, et al.", title: "Perineural Platelet-Rich Plasma for Diabetic Neuropathic Pain, Could It Make a Difference?", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnz140" },
-        { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
+        { authors: "Hassanien M, Elawamy A, Kamel EZ, Khalifa WA, Abolfadl GM, Roushdy ASI, El Zohne RA, Makarem YS", title: "Perineural Platelet-Rich Plasma for Diabetic Neuropathic Pain, Could It Make a Difference?", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnz140" },
+        { authors: "Buntragulpoontawee M, Chang KV, Vitoonpong T, Pornjaksawan S, Kitisak K, Saokaew S, Kanchanasurakit S", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
         { authors: "Gupta AD, Edwards S, Smith J, Snow J, Visvanathan R, Tucker G, Wilson D", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
       ],
       relatedSymptoms: [

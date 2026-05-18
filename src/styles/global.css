@@ -3760,3 +3760,49 @@ details[open] .faq-q::after {
   color: #c9b99a;
   font-weight: 700;
 }
+
+/* Visible breadcrumb navigation */
+.breadcrumb-nav {
+  background: #f5f3ef;
+  border-bottom: 1px solid #e5e0d8;
+  padding: 0.5rem 0;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  color: #6b5e4f;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+  margin-right: 0.25rem;
+  color: #c9b99a;
+}
+
+.breadcrumb-item a {
+  color: #0b3a6f;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-item a:hover {
+  color: #1a2f5e;
+  text-decoration: underline;
+}
+
+.breadcrumb-current {
+  color: #4a3f35;
+  font-weight: 500;
+}

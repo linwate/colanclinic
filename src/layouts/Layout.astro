@@ -248,12 +248,12 @@ const hreflangOf: Record<Lang, string> = {
             "name": lang === 'zh' ? '症狀查詢' : lang === 'en' ? 'Symptoms' : '症状から探す',
             "item": `https://colanclinic.com/${lang}/symptoms/`
           },
-          {
+          ...(slug !== 'symptoms' ? [{
             "@type": "ListItem",
             "position": 3,
             "name": title.split(/[｜|]/)[0].trim(),
             "item": `https://colanclinic.com/${lang}/${slug}/`
-          }
+          }] : [])
         ],
       })} />
     )}
@@ -516,6 +516,38 @@ const hreflangOf: Record<Lang, string> = {
     </script>
 
     <main id="main">
+      {pathname && pathname !== '' && (
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+          <div class="container">
+            <ol class="breadcrumb-list">
+              <li class="breadcrumb-item">
+                <a href={`/${lang}/`}>
+                  {lang === 'zh' ? '首頁' : lang === 'en' ? 'Home' : 'ホーム'}
+                </a>
+              </li>
+              {pathname.startsWith('symptoms/') && (
+                <li class="breadcrumb-item">
+                  <a href={`/${lang}/symptoms/`}>
+                    {lang === 'zh' ? '症狀查詢' : lang === 'en' ? 'Symptoms' : '症状から探す'}
+                  </a>
+                </li>
+              )}
+              {pathname.startsWith('treatments/') && (
+                <li class="breadcrumb-item">
+                  <a href={`/${lang}/`}>
+                    {lang === 'zh' ? '治療項目' : lang === 'en' ? 'Treatments' : '治療項目'}
+                  </a>
+                </li>
+              )}
+              {pathname !== 'symptoms' && pathname !== '' && (
+                <li class="breadcrumb-item breadcrumb-current" aria-current="page">
+                  {title.split(/[｜|]/)[0].trim()}
+                </li>
+              )}
+            </ol>
+          </div>
+        </nav>
+      )}
       <slot />
 
       <section class="fv-section map-section">

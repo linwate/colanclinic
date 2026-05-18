@@ -238,7 +238,7 @@ export const zh: Record<string, LocalizedSymptom> = {
 
 export const en: Record<string, LocalizedSymptom> = {
   shoulder: {
-    metaTitle: "Shoulder Pain | Colan Clinic · Luzhou Pain Treatment",
+    metaTitle: "Shoulder Pain · Frozen Shoulder · Rotator Cuff | Colan Clinic · Luzhou",
     metaDescription: "Frozen shoulder, rotator cuff tear, subacromial impingement — ultrasound-guided evaluation to find the real cause, non-surgical repair.",
     h1: "Shoulder Pain",
     heroSub: "Shoulder stiff, painful, won't lift? Find out where the problem actually is.",
@@ -264,7 +264,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   neck: {
-    metaTitle: "Neck Pain | Colan Clinic · Luzhou Pain Treatment",
+    metaTitle: "Neck Pain · Cervical Radiculopathy · Stiff Neck | Colan Clinic",
     metaDescription: "Cervical nerve compression, cervicogenic headache, myofascial pain — neurology-trained evaluation, ultrasound confirms compression site.",
     h1: "Neck Pain",
     heroSub: "Stiff neck, arm numbness, headaches? Find out if it's coming from your cervical spine.",
@@ -290,7 +290,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   back: {
-    metaTitle: "Lower Back Pain | Colan Clinic · Luzhou Pain Treatment",
+    metaTitle: "Lower Back Pain · Disc Herniation · Sacroiliac Joint | Colan Clinic",
     metaDescription: "Disc herniation, sacroiliac joint inflammation, myofascial pain — ultrasound pinpoints the compression site, non-surgical repair.",
     h1: "Lower Back Pain",
     heroSub: "Back pain that won't go away? Find the exact compression site first.",
@@ -316,7 +316,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   hip: {
-    metaTitle: "Hip & Buttock Pain | Colan Clinic · Luzhou Pain Treatment",
+    metaTitle: "Hip Pain · Piriformis Syndrome · Hip Osteoarthritis | Colan Clinic",
     metaDescription: "Hip joint degeneration, piriformis syndrome, greater trochanteric pain, groin strain — ultrasound evaluation, non-surgical repair.",
     h1: "Hip & Buttock Pain",
     heroSub: "Deep buttock pain, limping, hard to stand up? Pinpoint the problem location first.",
@@ -342,7 +342,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   knee: {
-    metaTitle: "Knee Degeneration | Colan Clinic · Luzhou Pain Treatment",
+    metaTitle: "Knee Osteoarthritis · Joint Effusion · Cartilage | Colan Clinic",
     metaDescription: "Osteoarthritis, meniscus tear, jumper's knee — from hyaluronic acid to BMAC based on severity, non-surgical repair.",
     h1: "Knee Degeneration",
     heroSub: "Stairs hurt, can't squat, knee swollen? Check the actual condition of cartilage and the joint.",
@@ -368,7 +368,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   foot: {
-    metaTitle: "Foot & Ankle Pain | Colan Clinic · Luzhou Pain Treatment",
+    metaTitle: "Plantar Fasciitis · Ankle Sprain · Achilles Tendon | Colan Clinic",
     metaDescription: "Plantar fasciitis, ankle sprain, Achilles tendinitis — ultrasound evaluates fascia thickness, from conservative care to PRP repair.",
     h1: "Foot & Ankle Pain",
     heroSub: "Heel pain, unstable ankle? Accurate assessment before effective repair.",
@@ -394,7 +394,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   "elbow-wrist": {
-    metaTitle: "Elbow & Wrist Pain | Colan Clinic · Luzhou Pain Treatment",
+    metaTitle: "Tennis Elbow · Carpal Tunnel · Wrist Pain | Colan Clinic · Luzhou",
     metaDescription: "Tennis elbow, carpal tunnel syndrome, TFCC injury, trigger finger — ultrasound confirms tendon and nerve status, precise repair.",
     h1: "Elbow & Wrist Pain",
     heroSub: "Outer elbow pain, weak wrist? Check tendon condition before reaching for an injection.",
@@ -420,7 +420,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   neuropathy: {
-    metaTitle: "Neuropathy & Nerve Pain | Colan Clinic · Luzhou Pain Treatment",
+    metaTitle: "Diabetic Neuropathy · DPN · Postherpetic Neuralgia | Colan Clinic",
     metaDescription: "Diabetic peripheral neuropathy (DPN), nerve compression, hand and foot numbness — neurology-trained evaluation, ultrasound nerve assessment.",
     h1: "Neuropathy & Nerve Pain",
     heroSub: "Numbness, burning, electric sensations? Find out if it's nerve compression or neuropathy.",
@@ -449,7 +449,7 @@ export const en: Record<string, LocalizedSymptom> = {
 
 export const ja: Record<string, LocalizedSymptom> = {
   shoulder: {
-    metaTitle: "肩の痛み｜ゴラン診療所・蘆洲疼痛治療",
+    metaTitle: "肩の痛み・五十肩・腱板損傷｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "五十肩、腱板断裂、肩峰下インピンジメント。超音波で正確に評価し、本当の原因を特定します。",
     h1: "肩の痛み",
     heroSub: "腕が上がらない、夜間痛、肩が固まる？まず問題の場所を確認しましょう。",
@@ -475,7 +475,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     }
   },
   neck: {
-    metaTitle: "頸部の痛み｜ゴラン診療所・蘆洲疼痛治療",
+    metaTitle: "頸部の痛み・頸椎神経根症・寝違え｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "頸椎神経根症、頸因性頭痛、筋膜性疼痛。神経内科専門の評価、超音波で圧迫部位を確認。",
     h1: "頸部の痛み",
     heroSub: "首のこわばり、腕のしびれ、頭痛？頸椎から来ているかどうか確認しましょう。",
@@ -501,7 +501,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     }
   },
   back: {
-    metaTitle: "腰痛・下背部痛｜ゴラン診療所・蘆洲疼痛治療",
+    metaTitle: "腰痛・椎間板ヘルニア・仙腸関節｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "椎間板ヘルニア、仙腸関節炎、筋膜性疼痛。超音波で圧迫部位を特定し、非手術で修復。",
     h1: "腰痛・下背部痛",
     heroSub: "なかなか治らない腰痛？まず正確な圧迫部位を特定しましょう。",
@@ -527,7 +527,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     }
   },
   hip: {
-    metaTitle: "股関節・臀部の痛み｜ゴラン診療所・蘆洲疼痛治療",
+    metaTitle: "股関節痛・梨状筋症候群・変形性股関節症｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "股関節変性、梨状筋症候群、大転子疼痛症候群、鼠径部痛。超音波評価、非手術修復。",
     h1: "股関節・臀部の痛み",
     heroSub: "臀部深部の痛み、跛行、立ち上がりにくい？まず問題の場所を特定しましょう。",
@@ -553,7 +553,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     }
   },
   knee: {
-    metaTitle: "膝関節の変性・疼痛｜ゴラン診療所・蘆洲疼痛治療",
+    metaTitle: "膝関節症・変形性関節炎・関節水腫｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "変形性膝関節症、半月板損傷、ジャンパー膝。重症度に応じてヒアルロン酸からBMACまで選択。",
     h1: "膝関節の変性・疼痛",
     heroSub: "階段が痛い、しゃがめない、膝が腫れる？軟骨と関節の実際の状態を確認しましょう。",
@@ -579,7 +579,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     }
   },
   foot: {
-    metaTitle: "足・足首の痛み｜ゴラン診療所・蘆洲疼痛治療",
+    metaTitle: "足底筋膜炎・足関節捻挫・アキレス腱症｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "足底筋膜炎、足関節捻挫、アキレス腱炎。超音波で筋膜の厚みを評価し、保存療法からPRPまで。",
     h1: "足・足首の痛み",
     heroSub: "踵の痛み、足首の不安定感？正確な評価から始めましょう。",
@@ -605,7 +605,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     }
   },
   "elbow-wrist": {
-    metaTitle: "肘・手首の痛み｜ゴラン診療所・蘆洲疼痛治療",
+    metaTitle: "テニス肘・手根管症候群・手首の痛み｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "テニス肘、手根管症候群、TFCC損傷、ばね指。超音波で腱・神経の状態を確認し精密修復。",
     h1: "肘・手首の痛み",
     heroSub: "肘の外側が痛い、手首に力が入らない？注射の前にまず腱の状態を確認しましょう。",
@@ -631,7 +631,7 @@ export const ja: Record<string, LocalizedSymptom> = {
     }
   },
   neuropathy: {
-    metaTitle: "神経障害・神経痛｜ゴラン診療所・蘆洲疼痛治療",
+    metaTitle: "糖尿病性神経障害・DPN・帯状疱疹後神経痛｜ゴラン診療所・蘆洲疼痛治療",
     metaDescription: "糖尿病性末梢神経障害(DPN)、神経圧迫、手足のしびれ。神経内科専門の評価、超音波で神経状態を確認。",
     h1: "神経障害・神経痛",
     heroSub: "しびれ、灼熱感、電気が走る感覚？神経圧迫か神経障害か、まず確認しましょう。",

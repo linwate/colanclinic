@@ -1,0 +1,142 @@
+---
+import Layout from '../../../layouts/Layout.astro'
+import { treatments, treatmentSlugs } from '../../../data/treatments'
+
+const lang = 'ja'
+const slug = 'amniotic-matrix'
+const data = treatments[lang][slug]
+---
+
+<Layout
+  title={data.metaTitle}
+  description={data.metaDescription}
+  lang={lang}
+  pathname={`treatments/${slug}`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": data.h1,
+    "description": data.whatIs,
+    "step": data.steps.map((step, index) => ({
+      "@type": "HowToStep",
+      "position": index + 1,
+      "name": `ステップ ${index + 1}`,
+      "text": step
+    }))
+  })} />
+
+  <section class="fv-hero">
+    <div class="container">
+      <p class="fv-eyebrow">{data.eyebrow}</p>
+      <h1>{data.h1}</h1>
+      <p class="fv-tagline">{data.heroSub}</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>この治療とは</h2>
+      <p>{data.whatIs}</p>
+      <h2>なぜ重要なのか</h2>
+      <p>{data.whyImportant}</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>適応について</h2>
+      <ul class="treatment-suitable-list">
+        {data.suitable.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>治療の流れ</h2>
+      <ol class="treatment-steps-list">
+        {data.steps.map((step) => <li>{step}</li>)}
+      </ol>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>コランクリニックのアプローチ</h2>
+      <p>{data.clinicAdvantage}</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>副作用と注意事項</h2>
+      <ul class="treatment-suitable-list">
+        {data.sideEffects.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>この治療が適さない場合</h2>
+      <ul class="treatment-suitable-list treatment-contraindication-list">
+        {data.contraindications.map((item) => <li>{item}</li>)}
+      </ul>
+      <p class="treatment-faq-link">
+        <a href="/ja/treatment-faq/">治療に関するよくある質問を見る →</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>費用について</h2>
+      <p>{data.pricingNote}</p>
+      <p class="treatment-faq-link">
+        <a href="/ja/pricing/">料金の詳細を見る →</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>よくある質問</h2>
+      {data.faqItems.map((item) => (
+        <div class="treatment-faq-item">
+          <h3>{item.q}</h3>
+          <p>{item.a}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>関連症状</h2>
+      <ul class="treatment-related-list">
+        {data.relatedSymptoms.map((s) => (
+          <li><a href={s.href}>{s.name}</a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="fv-section fv-cta-section">
+    <div class="container">
+      <h2>ご来院前のご質問</h2>
+      <p class="fv-reply-note">
+        まずLINEで症状をお伝えください。この治療がお体に合うかどうか、医師が初期判断をお伝えします。
+      </p>
+      <div class="fv-cta-row">
+        <a href="https://line.me/R/ti/p/@twmedpro"
+           class="fv-cta fv-cta-line" target="_blank" rel="noopener noreferrer">
+          LINEで相談
+        </a>
+        <a href="/ja/first-visit/" class="fv-cta fv-cta-ghost">
+          初診ガイドへ
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

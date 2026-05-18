@@ -254,6 +254,63 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "極少數有輕微發燒反應（治療當天）",
       ],
     },
+    'amniotic-matrix': {
+      slug: 'amniotic-matrix',
+      metaTitle: '羊膜基質注射｜鈷嵐診所・蘆洲疼痛治療',
+      metaDescription: '羊膜基質注射含豐富生長因子與細胞外基質，不需要自體抽血，單次注射適合關節退化、肌腱損傷與神經修復。',
+      h1: '羊膜基質注射',
+      heroSub: '不需要自體抽血，異體來源的高濃度再生修復成分。',
+      eyebrow: '治療說明',
+      whatIs: '羊膜基質注射（Amniotic Matrix Injection）使用來自人類胎盤羊膜的生物製劑，含有豐富的生長因子、細胞外基質蛋白、抗發炎物質和細胞素。這些成分可以促進組織修復、減少發炎、改善再生環境。和 PRP 或 BMAC 不同，羊膜基質是異體來源，不需要從患者身上抽血或抽取骨髓。',
+      whyImportant: '部分患者因為血液狀況不適合製備 PRP，或不願意接受骨髓抽取，羊膜基質提供了另一種高品質的再生治療選擇。羊膜組織在自然界中本來就有強大的修復和抗發炎功能，是天然的再生材料。',
+      suitable: [
+        '關節軟骨退化（膝蓋、肩膀、髖關節）',
+        '肌腱損傷（旋轉肌、足底筋膜、跟腱）',
+        '神經修復（配合神經解套使用）',
+        '不適合抽血製備 PRP 的患者',
+        '希望單次注射完成的患者',
+      ],
+      steps: [
+        '評估適應症，確認是否適合羊膜基質注射',
+        '說明治療內容、預期效果與可能反應',
+        '超音波確認注射目標位置',
+        '超音波導引下精準注射羊膜基質',
+        '說明術後注意事項和追蹤計畫',
+      ],
+      clinicAdvantage: '羊膜基質注射需要精準的超音波導引，確保高價值的生物製劑確實到達需要修復的位置。林醫師會依據超音波評估結果，判斷羊膜基質是否比 PRP 或 BMAC 更適合當前的損傷狀況。',
+      pricingNote: '羊膜基質注射費用依治療部位而定，請參考費用說明頁面或透過 LINE 諮詢。',
+      contraindications: [
+        '對人類組織製品或羊膜成分過敏',
+        '活動性感染或注射部位感染',
+        '惡性腫瘤',
+        '懷孕或哺乳期',
+        '凝血功能異常',
+      ],
+      sideEffects: [
+        '注射後 24–72 小時局部輕微痠脹，屬正常修復反應',
+        '極少數有輕微過敏反應',
+        '輕微瘀青',
+      ],
+      faqItems: [
+        {
+          q: '羊膜基質和 PRP 有什麼差別？',
+          a: 'PRP 從患者自身血液製備，羊膜基質是異體來源，不需要抽血。兩者都含有生長因子，但成分組成不同。羊膜基質還含有細胞外基質蛋白，對組織重建有額外幫助。適合哪一種需要醫師評估後決定。'
+        },
+        {
+          q: '羊膜基質是安全的嗎？',
+          a: '商業化的羊膜基質製品經過嚴格篩查和滅菌處理，安全紀錄良好。和所有注射治療一樣，感染風險在無菌操作下極低。對人類組織製品有已知過敏的患者不適合使用。'
+        },
+        {
+          q: '需要打幾次？',
+          a: '羊膜基質通常 1–2 次注射為一個療程，比 PRP 的次數少。具體次數依損傷程度和治療反應而定，醫師會在評估後建議最適合的療程。'
+        },
+      ],
+      relatedSymptoms: [
+        { name: '膝蓋退化', href: '/zh/symptoms/knee/' },
+        { name: '肩膀疼痛', href: '/zh/symptoms/shoulder/' },
+        { name: '足踝疼痛', href: '/zh/symptoms/foot/' },
+      ],
+    },
     "tame": {
       slug: "tame",
       metaTitle: "TAME 微細動脈栓塞｜鈷嵐診所・蘆洲疼痛治療",
@@ -677,6 +734,63 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Soreness at the bone marrow aspiration site (1–2 days, manageable with standard pain relief)",
         "Mild swelling at the injection site (24–72 hours)",
         "Mild fever on the day of treatment in rare cases",
+      ],
+    },
+    'amniotic-matrix': {
+      slug: 'amniotic-matrix',
+      metaTitle: 'Amniotic Matrix Injection | Colan Clinic · Luzhou Pain Treatment',
+      metaDescription: 'Amniotic matrix injection delivers growth factors and extracellular matrix proteins without autologous blood draw — a single-session regenerative option for joint, tendon, and nerve repair.',
+      h1: 'Amniotic Matrix Injection',
+      heroSub: 'No blood draw needed — a rich source of regenerative components from human amniotic tissue.',
+      eyebrow: 'Treatment Guide',
+      whatIs: 'Amniotic matrix injection uses a biologic derived from human placental amniotic membrane, rich in growth factors, extracellular matrix proteins, anti-inflammatory cytokines, and signaling molecules. These components promote tissue repair, reduce inflammation, and create a favorable environment for regeneration. Unlike PRP or BMAC, amniotic matrix is an allogeneic source — no blood draw or bone marrow aspiration is required from the patient.',
+      whyImportant: 'Some patients are not suitable candidates for PRP due to blood conditions, or prefer to avoid bone marrow aspiration. Amniotic matrix provides a high-quality regenerative alternative. Amniotic tissue has powerful natural repair and anti-inflammatory properties — it is one of nature\'s most effective regenerative materials.',
+      suitable: [
+        'Joint cartilage degeneration (knee, shoulder, hip)',
+        'Tendon injuries (rotator cuff, plantar fascia, Achilles)',
+        'Nerve repair (used alongside nerve hydrodissection)',
+        'Patients who are not suitable for autologous PRP preparation',
+        'Patients who prefer a single-session treatment',
+      ],
+      steps: [
+        'Assess indications and confirm suitability for amniotic matrix injection',
+        'Explain treatment content, expected outcomes, and possible responses',
+        'Ultrasound confirmation of injection target',
+        'Precise injection under ultrasound guidance',
+        'Post-treatment instructions and follow-up plan',
+      ],
+      clinicAdvantage: 'Amniotic matrix injection requires precise ultrasound guidance to ensure this high-value biologic reaches exactly where repair is needed. Dr. Lin assesses each case with ultrasound to determine whether amniotic matrix, PRP, or BMAC is the most appropriate choice for the current injury.',
+      pricingNote: 'Amniotic matrix injection fees vary by treatment site. Please refer to the pricing page or contact us via LINE.',
+      contraindications: [
+        'Known allergy to human tissue products or amniotic components',
+        'Active infection or infection at the injection site',
+        'Active malignancy',
+        'Pregnancy or breastfeeding',
+        'Clotting disorders',
+      ],
+      sideEffects: [
+        'Mild local soreness and swelling for 24–72 hours — a normal repair response',
+        'Mild allergic reaction in rare cases',
+        'Minor bruising',
+      ],
+      faqItems: [
+        {
+          q: 'How is amniotic matrix different from PRP?',
+          a: 'PRP is prepared from the patient\'s own blood; amniotic matrix is an allogeneic source requiring no blood draw. Both contain growth factors, but the composition differs — amniotic matrix also includes extracellular matrix proteins that support tissue reconstruction. Which is more appropriate depends on individual assessment.'
+        },
+        {
+          q: 'Is amniotic matrix safe?',
+          a: 'Commercial amniotic matrix products undergo rigorous screening and sterilization with a strong safety record. As with all injection treatments, infection risk is extremely low with sterile technique. Patients with known allergy to human tissue products are not suitable candidates.'
+        },
+        {
+          q: 'How many sessions are needed?',
+          a: 'Amniotic matrix typically requires 1–2 injections per course — fewer than PRP. The exact number depends on injury severity and treatment response; your physician will recommend the most appropriate plan after assessment.'
+        },
+      ],
+      relatedSymptoms: [
+        { name: 'Knee Degeneration', href: '/en/symptoms/knee/' },
+        { name: 'Shoulder Pain', href: '/en/symptoms/shoulder/' },
+        { name: 'Foot & Ankle', href: '/en/symptoms/foot/' },
       ],
     },
     "tame": {
@@ -1104,6 +1218,63 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "まれに処置当日の軽微な発熱",
       ],
     },
+    'amniotic-matrix': {
+      slug: 'amniotic-matrix',
+      metaTitle: '羊膜基質注射｜コランクリニック・蘆洲疼痛治療',
+      metaDescription: '羊膜基質注射は豊富な成長因子と細胞外基質タンパクを含み、自己採血不要。関節変性・腱損傷・神経修復への1回注射で完結する再生治療の選択肢です。',
+      h1: '羊膜基質注射',
+      heroSub: '自己採血不要——ヒト羊膜由来の高濃度再生修復成分。',
+      eyebrow: '治療について',
+      whatIs: '羊膜基質注射（Amniotic Matrix Injection）はヒト胎盤羊膜由来の生物製剤を使用します。豊富な成長因子・細胞外基質タンパク・抗炎症サイトカイン・シグナル分子が含まれており、組織修復の促進・炎症の軽減・再生環境の整備に寄与します。PRPやBMACと異なり、羊膜基質は同種由来のため、患者様からの採血や骨髄吸引は必要ありません。',
+      whyImportant: '血液の状態によりPRP製造に適さない患者様や、骨髄吸引を希望されない患者様に、高品質な再生治療の選択肢を提供します。羊膜組織は自然界において強力な修復・抗炎症機能を持つ天然の再生材料です。',
+      suitable: [
+        '関節軟骨の変性（膝・肩・股関節）',
+        '腱の損傷（腱板・足底筋膜・アキレス腱）',
+        '神経修復（神経解套との併用）',
+        '自己PRPの製造に適さない患者様',
+        '1回の注射で完結したい患者様',
+      ],
+      steps: [
+        '適応症を評価し、羊膜基質注射の適合性を確認',
+        '治療内容・期待される効果・起こりうる反応を説明',
+        '超音波で注射ターゲット位置を確認',
+        '超音波ガイド下で羊膜基質を正確に注射',
+        '術後の注意事項とフォローアップ計画を説明',
+      ],
+      clinicAdvantage: '羊膜基質注射では、高価値の生物製剤が修復の必要な部位に確実に届くよう、精密な超音波ガイドが必要です。林医師は超音波評価の結果に基づき、羊膜基質・PRP・BMACのいずれが現在の損傷に最も適しているかを判断します。',
+      pricingNote: '羊膜基質注射の費用は治療部位によって異なります。料金ページをご参照いただくか、LINEでお問い合わせください。',
+      contraindications: [
+        'ヒト組織製品または羊膜成分への既知のアレルギー',
+        '活動性感染症または注射部位の感染',
+        '悪性腫瘍',
+        '妊娠中または授乳中',
+        '凝固障害',
+      ],
+      sideEffects: [
+        '24〜72時間の局所痠痛・腫脹（正常な修復反応）',
+        'まれに軽微なアレルギー反応',
+        '軽微な内出血',
+      ],
+      faqItems: [
+        {
+          q: '羊膜基質とPRPの違いは何ですか？',
+          a: 'PRPは患者様自身の血液から製造します。羊膜基質は同種由来で採血不要です。どちらも成長因子を含みますが、組成が異なります。羊膜基質には細胞外基質タンパクも含まれており、組織の再構築に追加的な効果をもたらします。どちらが適切かは医師の評価後に決定します。'
+        },
+        {
+          q: '羊膜基質は安全ですか？',
+          a: '商業用の羊膜基質製品は厳格なスクリーニングと滅菌処理を経ており、安全性の実績があります。すべての注射治療と同様、無菌操作下での感染リスクは極めて低いです。ヒト組織製品への既知アレルギーのある患者様には適していません。'
+        },
+        {
+          q: '何回必要ですか？',
+          a: '羊膜基質は通常1〜2回の注射でコースが完了します。PRPより少ない回数です。具体的な回数は損傷の程度と治療反応によって異なり、医師が評価後に最適なプランをご提案します。'
+        },
+      ],
+      relatedSymptoms: [
+        { name: '膝関節の変性', href: '/ja/symptoms/knee/' },
+        { name: '肩の痛み', href: '/ja/symptoms/shoulder/' },
+        { name: '足・足首の痛み', href: '/ja/symptoms/foot/' },
+      ],
+    },
     "tame": {
       slug: "tame",
       metaTitle: "TAME微細動脈塞栓術｜コランクリニック・蘆洲疼痛治療",
@@ -1300,6 +1471,7 @@ export const treatmentSlugs = [
   "prolotherapy",
   "nerve-hydrodissection",
   "bmac",
+  "amniotic-matrix",
   "tame",
   "hyaluronic-acid",
   "botulinum",
@@ -1313,6 +1485,7 @@ export const treatmentNavLabels = {
     "prolotherapy": "增生療法",
     "nerve-hydrodissection": "神經解套注射",
     "bmac": "BMAC 骨髓再生",
+    "amniotic-matrix": "羊膜基質注射",
     "tame": "TAME 微細動脈栓塞",
     "hyaluronic-acid": "關節玻尿酸",
     "botulinum": "肉毒桿菌止痛",
@@ -1324,6 +1497,7 @@ export const treatmentNavLabels = {
     "prolotherapy": "Prolotherapy",
     "nerve-hydrodissection": "Nerve Hydrodissection",
     "bmac": "BMAC",
+    "amniotic-matrix": "Amniotic Matrix Injection",
     "tame": "TAME",
     "hyaluronic-acid": "Hyaluronic Acid",
     "botulinum": "Botulinum Toxin",
@@ -1335,6 +1509,7 @@ export const treatmentNavLabels = {
     "prolotherapy": "増生療法",
     "nerve-hydrodissection": "神経解套注射",
     "bmac": "BMAC骨髄再生",
+    "amniotic-matrix": "羊膜基質注射",
     "tame": "TAME微細動脈塞栓術",
     "hyaluronic-acid": "関節ヒアルロン酸",
     "botulinum": "ボツリヌス毒素",

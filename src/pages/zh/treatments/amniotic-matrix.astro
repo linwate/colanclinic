@@ -1,0 +1,142 @@
+---
+import Layout from '../../../layouts/Layout.astro'
+import { treatments, treatmentSlugs } from '../../../data/treatments'
+
+const lang = 'zh'
+const slug = 'amniotic-matrix'
+const data = treatments[lang][slug]
+---
+
+<Layout
+  title={data.metaTitle}
+  description={data.metaDescription}
+  lang={lang}
+  pathname={`treatments/${slug}`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": data.h1,
+    "description": data.whatIs,
+    "step": data.steps.map((step, index) => ({
+      "@type": "HowToStep",
+      "position": index + 1,
+      "name": `步驟 ${index + 1}`,
+      "text": step
+    }))
+  })} />
+
+  <section class="fv-hero">
+    <div class="container">
+      <p class="fv-eyebrow">{data.eyebrow}</p>
+      <h1>{data.h1}</h1>
+      <p class="fv-tagline">{data.heroSub}</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>這個治療是什麼</h2>
+      <p>{data.whatIs}</p>
+      <h2>為什麼重要</h2>
+      <p>{data.whyImportant}</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>適合的情況</h2>
+      <ul class="treatment-suitable-list">
+        {data.suitable.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>治療流程</h2>
+      <ol class="treatment-steps-list">
+        {data.steps.map((step) => <li>{step}</li>)}
+      </ol>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>鈷嵐診所的優勢</h2>
+      <p>{data.clinicAdvantage}</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>副作用與注意事項</h2>
+      <ul class="treatment-suitable-list">
+        {data.sideEffects.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>不適合的情況</h2>
+      <ul class="treatment-suitable-list treatment-contraindication-list">
+        {data.contraindications.map((item) => <li>{item}</li>)}
+      </ul>
+      <p class="treatment-faq-link">
+        <a href="/zh/treatment-faq/">查看完整治療注意事項 →</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>費用說明</h2>
+      <p>{data.pricingNote}</p>
+      <p class="treatment-faq-link">
+        <a href="/zh/pricing/">查看完整費用說明 →</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>常見問題</h2>
+      {data.faqItems.map((item) => (
+        <div class="treatment-faq-item">
+          <h3>{item.q}</h3>
+          <p>{item.a}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <h2>相關症狀</h2>
+      <ul class="treatment-related-list">
+        {data.relatedSymptoms.map((s) => (
+          <li><a href={s.href}>{s.name}</a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="fv-section fv-cta-section">
+    <div class="container">
+      <h2>有問題想先諮詢？</h2>
+      <p class="fv-reply-note">
+        歡迎先透過 LINE 描述症狀，醫師會幫你初步判斷這個治療是否適合你。
+      </p>
+      <div class="fv-cta-row">
+        <a href="https://line.me/R/ti/p/@twmedpro"
+           class="fv-cta fv-cta-line" target="_blank" rel="noopener noreferrer">
+          LINE 諮詢
+        </a>
+        <a href="/zh/first-visit/" class="fv-cta fv-cta-ghost">
+          了解初診說明
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

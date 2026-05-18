@@ -1952,7 +1952,7 @@ details[open] .faq-q::after {
   font-family: 'Noto Serif TC', 'Georgia', serif;
   color: #4a3f35;
   padding: 2.5rem 1.25rem;
-  padding-bottom: max(2.5rem, env(safe-area-inset-bottom));
+  padding-bottom: max(calc(56px + 1.5rem + env(safe-area-inset-bottom)), 2.5rem);
 }
 .footer-inner {
   max-width: var(--max);
@@ -2033,7 +2033,10 @@ details[open] .faq-q::after {
 }
 
 @media (max-width: 768px) {
-  .footer { padding: 2rem 1.2rem; }
+  .footer {
+    padding: 2rem 1.2rem;
+    padding-bottom: calc(56px + 1.5rem + env(safe-area-inset-bottom));
+  }
   .footer-top { gap: 1.5rem; }
   .footer-col { min-width: 100%; flex-basis: 100%; }
   .footer-bottom {

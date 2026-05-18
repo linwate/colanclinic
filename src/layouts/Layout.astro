@@ -232,23 +232,28 @@ const hreflangOf: Record<Lang, string> = {
         '@type': 'BreadcrumbList',
         itemListElement: [
           {
-            '@type': 'ListItem',
-            position: 1,
-            name: lang === 'en' ? 'Home' : lang === 'ja' ? 'ホーム' : '首頁',
-            item: `https://colanclinic.com/${lang}/`,
+            "@type": "ListItem",
+            "position": 1,
+            "name": lang === 'zh' ? '首頁' : lang === 'en' ? 'Home' : 'ホーム',
+            "item": `https://colanclinic.com/${lang}/`
+          },
+          slug.startsWith('treatments') ? {
+            "@type": "ListItem",
+            "position": 2,
+            "name": lang === 'zh' ? '治療項目' : lang === 'en' ? 'Treatments' : '治療項目',
+            "item": `https://colanclinic.com/${lang}/`
+          } : {
+            "@type": "ListItem",
+            "position": 2,
+            "name": lang === 'zh' ? '症狀查詢' : lang === 'en' ? 'Symptoms' : '症状から探す',
+            "item": `https://colanclinic.com/${lang}/symptoms/`
           },
           {
-            '@type': 'ListItem',
-            position: 2,
-            name: t.nav.find_symptom,
-            item: `https://colanclinic.com/${lang}/symptoms/`,
-          },
-          ...(slug !== 'symptoms' ? [{
-            '@type': 'ListItem',
-            position: 3,
-            name: title.split(/[｜|]/)[0].trim(),
-            item: canonical,
-          }] : []),
+            "@type": "ListItem",
+            "position": 3,
+            "name": title.split(/[｜|]/)[0].trim(),
+            "item": `https://colanclinic.com/${lang}/${slug}/`
+          }
         ],
       })} />
     )}

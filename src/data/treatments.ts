@@ -435,9 +435,27 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         },
       ],
       references: [
-        { authors: "Pereira TV, Jüni P, et al.", title: "Viscosupplementation for knee osteoarthritis: systematic review and meta-analysis", journal: "BMJ", year: 2022, doi: "10.1136/bmj-2022-069722" },
-        { authors: "Pojala CV, Toma S, et al.", title: "The Potential of Intra-Articular Therapies in Managing Knee Osteoarthritis: A Systematic Review", journal: "Clin Pract", year: 2024, doi: "10.3390/clinpract14050157" },
-        { authors: "Diraçoglu D, et al.", title: "EUROVISCO Consensus Guidelines for the Use of Hyaluronic Acid Viscosupplementation in Knee Osteoarthritis Based on Patient Characteristics", journal: "Cartilage", year: 2024, doi: "10.1177/19476035241271970" },
+        {
+          authors: "Lin X, Zhi F, Lan Q, Deng W, Hou X, Wan Q",
+          title: "Comparing the efficacy of different intra-articular injections for knee osteoarthritis: A network analysis",
+          journal: "Medicine (Baltimore)",
+          year: 2022,
+          doi: "10.1097/MD.0000000000029655"
+        },
+        {
+          authors: "Anhesini M, Anzai A, Katayama H, Spir IAZ, Nery MM, Tiezzi OS, Otani P, Bernardo WM",
+          title: "Use of intra-articular hyaluronic acid in knee osteoarthritis or osteoarthritis",
+          journal: "Rev Assoc Med Bras",
+          year: 2023,
+          doi: "10.1590/1806-9282.2023D698"
+        },
+        {
+          authors: "Derwich M, Mitus-Kenig M, Pawlowska E",
+          title: "Mechanisms of Action and Efficacy of Hyaluronic Acid, Corticosteroids and Platelet-Rich Plasma in the Treatment of Temporomandibular Joint Osteoarthritis: A Systematic Review",
+          journal: "Int J Mol Sci",
+          year: 2021,
+          doi: "10.3390/ijms22147405"
+        },
       ],
       relatedSymptoms: [
         { name: "膝蓋退化", href: "/zh/symptoms/knee/" },
@@ -1055,9 +1073,27 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         },
       ],
       references: [
-        { authors: "Pereira TV, Jüni P, et al.", title: "Viscosupplementation for knee osteoarthritis: systematic review and meta-analysis", journal: "BMJ", year: 2022, doi: "10.1136/bmj-2022-069722" },
-        { authors: "Pojala CV, Toma S, et al.", title: "The Potential of Intra-Articular Therapies in Managing Knee Osteoarthritis: A Systematic Review", journal: "Clin Pract", year: 2024, doi: "10.3390/clinpract14050157" },
-        { authors: "Diraçoglu D, et al.", title: "EUROVISCO Consensus Guidelines for the Use of Hyaluronic Acid Viscosupplementation in Knee Osteoarthritis Based on Patient Characteristics", journal: "Cartilage", year: 2024, doi: "10.1177/19476035241271970" },
+        {
+          authors: "Lin X, Zhi F, Lan Q, Deng W, Hou X, Wan Q",
+          title: "Comparing the efficacy of different intra-articular injections for knee osteoarthritis: A network analysis",
+          journal: "Medicine (Baltimore)",
+          year: 2022,
+          doi: "10.1097/MD.0000000000029655"
+        },
+        {
+          authors: "Anhesini M, Anzai A, Katayama H, Spir IAZ, Nery MM, Tiezzi OS, Otani P, Bernardo WM",
+          title: "Use of intra-articular hyaluronic acid in knee osteoarthritis or osteoarthritis",
+          journal: "Rev Assoc Med Bras",
+          year: 2023,
+          doi: "10.1590/1806-9282.2023D698"
+        },
+        {
+          authors: "Derwich M, Mitus-Kenig M, Pawlowska E",
+          title: "Mechanisms of Action and Efficacy of Hyaluronic Acid, Corticosteroids and Platelet-Rich Plasma in the Treatment of Temporomandibular Joint Osteoarthritis: A Systematic Review",
+          journal: "Int J Mol Sci",
+          year: 2021,
+          doi: "10.3390/ijms22147405"
+        },
       ],
       relatedSymptoms: [
         { name: "Knee Degeneration", href: "/en/symptoms/knee/" },
@@ -1675,9 +1711,27 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         },
       ],
       references: [
-        { authors: "Pereira TV, Jüni P, et al.", title: "Viscosupplementation for knee osteoarthritis: systematic review and meta-analysis", journal: "BMJ", year: 2022, doi: "10.1136/bmj-2022-069722" },
-        { authors: "Pojala CV, Toma S, et al.", title: "The Potential of Intra-Articular Therapies in Managing Knee Osteoarthritis: A Systematic Review", journal: "Clin Pract", year: 2024, doi: "10.3390/clinpract14050157" },
-        { authors: "Diraçoglu D, et al.", title: "EUROVISCO Consensus Guidelines for the Use of Hyaluronic Acid Viscosupplementation in Knee Osteoarthritis Based on Patient Characteristics", journal: "Cartilage", year: 2024, doi: "10.1177/19476035241271970" },
+        {
+          authors: "Lin X, Zhi F, Lan Q, Deng W, Hou X, Wan Q",
+          title: "Comparing the efficacy of different intra-articular injections for knee osteoarthritis: A network analysis",
+          journal: "Medicine (Baltimore)",
+          year: 2022,
+          doi: "10.1097/MD.0000000000029655"
+        },
+        {
+          authors: "Anhesini M, Anzai A, Katayama H, Spir IAZ, Nery MM, Tiezzi OS, Otani P, Bernardo WM",
+          title: "Use of intra-articular hyaluronic acid in knee osteoarthritis or osteoarthritis",
+          journal: "Rev Assoc Med Bras",
+          year: 2023,
+          doi: "10.1590/1806-9282.2023D698"
+        },
+        {
+          authors: "Derwich M, Mitus-Kenig M, Pawlowska E",
+          title: "Mechanisms of Action and Efficacy of Hyaluronic Acid, Corticosteroids and Platelet-Rich Plasma in the Treatment of Temporomandibular Joint Osteoarthritis: A Systematic Review",
+          journal: "Int J Mol Sci",
+          year: 2021,
+          doi: "10.3390/ijms22147405"
+        },
       ],
       relatedSymptoms: [
         { name: "膝関節の変性", href: "/ja/symptoms/knee/" },

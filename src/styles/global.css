@@ -1996,13 +1996,13 @@ details[open] .faq-q::after {
 }
 .footer-doctor-link a {
   font-size: 0.85rem;
-  color: #a8c8e8;
+  color: #0b3a6f;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color 0.2s;
 }
 .footer-doctor-link a:hover {
-  color: #ffffff;
+  color: #1a2f5e;
 }
 .footer-col-title {
   font-family: 'Noto Serif TC', 'Georgia', serif;
@@ -3900,7 +3900,6 @@ details[open] .faq-q::after {
   margin-top: 0.75rem;
 }
 .clinic-advantage-doctor a {
-  font-size: 0.88rem;
   color: #0b3a6f;
   text-decoration: none;
   font-weight: 500;

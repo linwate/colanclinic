@@ -259,7 +259,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       ],
       references: [
         { authors: "Boffa A, Di Martino A, Andriolo L, De Filippis R, Poggi A, Kon E, Zaffagnini S, Filardo G", title: "Bone marrow aspirate concentrate injections provide similar results versus viscosupplementation up to 24 months of follow-up in patients with symptomatic knee osteoarthritis: A randomized controlled trial", journal: "Knee Surg Sports Traumatol Arthrosc", year: 2022, doi: "10.1007/s00167-021-06793-4" },
-        { authors: "Han JH, Jung M, et al.", title: "Bone Marrow Aspirate Concentrate Injections for the Treatment of Knee Osteoarthritis: A Systematic Review of Randomized Controlled Trials", journal: "Orthop J Sports Med", year: 2024, doi: "10.1177/23259671241296555" },
+        { authors: "Han JH, Jung M, Chung K, Jung SH, Choi CH, Kim SH", title: "Bone Marrow Aspirate Concentrate Injections for the Treatment of Knee Osteoarthritis: A Systematic Review of Randomized Controlled Trials", journal: "Orthop J Sports Med", year: 2024, doi: "10.1177/23259671241296555" },
         { authors: "Baek JH, Lee SC, et al.", title: "Effectiveness and Complications of Bone Marrow Aspirate Concentrate in Patients with Knee Osteoarthritis of Kellgren-Lawrence Grades II-III", journal: "Medicina (Kaunas)", year: 2024, doi: "10.3390/medicina60060977" },
       ],
       relatedSymptoms: [
@@ -791,7 +791,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       ],
       references: [
         { authors: "Boffa A, Di Martino A, Andriolo L, De Filippis R, Poggi A, Kon E, Zaffagnini S, Filardo G", title: "Bone marrow aspirate concentrate injections provide similar results versus viscosupplementation up to 24 months of follow-up in patients with symptomatic knee osteoarthritis: A randomized controlled trial", journal: "Knee Surg Sports Traumatol Arthrosc", year: 2022, doi: "10.1007/s00167-021-06793-4" },
-        { authors: "Han JH, Jung M, et al.", title: "Bone Marrow Aspirate Concentrate Injections for the Treatment of Knee Osteoarthritis: A Systematic Review of Randomized Controlled Trials", journal: "Orthop J Sports Med", year: 2024, doi: "10.1177/23259671241296555" },
+        { authors: "Han JH, Jung M, Chung K, Jung SH, Choi CH, Kim SH", title: "Bone Marrow Aspirate Concentrate Injections for the Treatment of Knee Osteoarthritis: A Systematic Review of Randomized Controlled Trials", journal: "Orthop J Sports Med", year: 2024, doi: "10.1177/23259671241296555" },
         { authors: "Baek JH, Lee SC, et al.", title: "Effectiveness and Complications of Bone Marrow Aspirate Concentrate in Patients with Knee Osteoarthritis of Kellgren-Lawrence Grades II-III", journal: "Medicina (Kaunas)", year: 2024, doi: "10.3390/medicina60060977" },
       ],
       relatedSymptoms: [
@@ -1323,7 +1323,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       ],
       references: [
         { authors: "Boffa A, Di Martino A, Andriolo L, De Filippis R, Poggi A, Kon E, Zaffagnini S, Filardo G", title: "Bone marrow aspirate concentrate injections provide similar results versus viscosupplementation up to 24 months of follow-up in patients with symptomatic knee osteoarthritis: A randomized controlled trial", journal: "Knee Surg Sports Traumatol Arthrosc", year: 2022, doi: "10.1007/s00167-021-06793-4" },
-        { authors: "Han JH, Jung M, et al.", title: "Bone Marrow Aspirate Concentrate Injections for the Treatment of Knee Osteoarthritis: A Systematic Review of Randomized Controlled Trials", journal: "Orthop J Sports Med", year: 2024, doi: "10.1177/23259671241296555" },
+        { authors: "Han JH, Jung M, Chung K, Jung SH, Choi CH, Kim SH", title: "Bone Marrow Aspirate Concentrate Injections for the Treatment of Knee Osteoarthritis: A Systematic Review of Randomized Controlled Trials", journal: "Orthop J Sports Med", year: 2024, doi: "10.1177/23259671241296555" },
         { authors: "Baek JH, Lee SC, et al.", title: "Effectiveness and Complications of Bone Marrow Aspirate Concentrate in Patients with Knee Osteoarthritis of Kellgren-Lawrence Grades II-III", journal: "Medicina (Kaunas)", year: 2024, doi: "10.3390/medicina60060977" },
       ],
       relatedSymptoms: [

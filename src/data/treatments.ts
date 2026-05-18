@@ -400,9 +400,9 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       metaTitle: "關節玻尿酸注射｜鈷嵐診所・蘆洲疼痛治療",
       metaDescription: "關節玻尿酸注射補充關節腔潤滑液，減少摩擦和疼痛，SportVis 是高分子量進階選擇，適合膝蓋退化患者。",
       h1: "關節玻尿酸注射",
-      heroSub: "補充關節潤滑液，讓退化的關節動得更順。",
+      heroSub: "補充關節潤滑液，讓退化的關節動得更順。高分子量製劑單次注射效果長達一年。",
       eyebrow: "治療說明",
-      whatIs: "關節玻尿酸注射將玻尿酸（透明質酸）注射到關節腔，補充因退化而減少的關節液，恢復關節的潤滑功能，減少骨頭間的摩擦和疼痛。SportVis 是高分子量的進階玻尿酸，在關節腔停留時間更長，效果更持久。",
+      whatIs: "關節玻尿酸注射將玻尿酸（透明質酸）注射到關節腔，補充因退化而減少的關節液，恢復關節的潤滑功能，減少骨頭間的摩擦和疼痛。目前可選擇傳統低至中分子量製劑（健保或自費），或進階高分子量交聯製劑，後者單次注射效果可維持半年至一年，大幅減少注射頻率。",
       whyImportant: "退化性關節炎的早中期，關節液品質下降是疼痛的重要原因之一。玻尿酸注射可以在不需要更侵入性治療的情況下，有效改善關節功能和疼痛，是膝蓋退化保守治療的重要選項。",
       suitable: [
         "輕中度退化性膝關節炎",
@@ -418,12 +418,21 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "確認藥物在關節腔內分布",
         "說明術後活動建議",
       ],
-      clinicAdvantage: "超音波導引確保玻尿酸確實注射進關節腔，而不是周圍軟組織。有積水時可以先抽除再注射，效果更好。SportVis 的高分子量配方讓一次注射的效果可以持續 6–12 個月。",
+      clinicAdvantage: "超音波導引確保玻尿酸確實注射進關節腔，而不是周圍軟組織。有積水時可以先抽除再注射，效果更好。進階高分子量交聯製劑的單次注射可以持續 6–12 個月，減少患者回診次數。",
       pricingNote: "標準玻尿酸和 SportVis 費用不同，請參考費用說明頁面。",
       faqItems: [
-        { q: "玻尿酸注射要打幾次？", a: "標準玻尿酸一般建議 3–5 次為一個療程，每週一次。SportVis 通常只需要注射 1–2 次，效果可以持續較久。" },
-        { q: "玻尿酸和 PRP 哪個比較好？", a: "兩者機制不同。玻尿酸主要補充潤滑功能，PRP 提供修復生長因子。中度退化可以先考慮玻尿酸，嚴重退化可以考慮 PRP 或 BMAC，也可以搭配使用。" },
-        { q: "打完之後可以馬上走路嗎？", a: "可以，但建議當天避免劇烈運動，多休息讓藥物在關節腔內穩定。48 小時後可以恢復正常活動。" },
+        {
+          q: "玻尿酸注射要打幾次？",
+          a: "傳統低分子量玻尿酸一般建議 3–5 次為一個療程，每週一次。進階高分子量交聯製劑通常只需注射 1 次，效果可以持續 6–12 個月，大幅減少回診次數。醫師會根據退化程度和患者需求建議最適合的製劑。"
+        },
+        {
+          q: "玻尿酸和 PRP 哪個比較好？",
+          a: "兩者機制不同。玻尿酸主要補充潤滑功能，PRP 提供修復生長因子。中度退化可以先考慮玻尿酸，嚴重退化可以考慮 PRP 或 BMAC，也可以搭配使用。如果是肌腱或韌帶損傷，則建議了解 SportVis 的適應症。"
+        },
+        {
+          q: "打完之後可以馬上走路嗎？",
+          a: "可以，但建議當天避免劇烈運動，多休息讓藥物在關節腔內穩定。48 小時後可以恢復正常活動。"
+        },
       ],
       references: [
         { authors: "Pereira TV, Jüni P, et al.", title: "Viscosupplementation for knee osteoarthritis: systematic review and meta-analysis", journal: "BMJ", year: 2022, doi: "10.1136/bmj-2022-069722" },
@@ -1011,9 +1020,9 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       metaTitle: "Hyaluronic Acid Joint Injection | Colan Clinic · Luzhou Pain Treatment",
       metaDescription: "Hyaluronic acid injection replenishes joint lubrication to reduce friction and pain. SportVis is a high-molecular-weight advanced option for knee degeneration.",
       h1: "Hyaluronic Acid Joint Injection",
-      heroSub: "Replenishing joint fluid to help a degenerating joint move more smoothly.",
+      heroSub: "Replenishing joint fluid to help a degenerating joint move more smoothly. Advanced high-molecular-weight formulations last up to one year from a single injection.",
       eyebrow: "Treatment Guide",
-      whatIs: "Hyaluronic acid (HA) injection introduces hyaluronate into the joint cavity to supplement the synovial fluid depleted by degeneration, restoring lubrication, reducing bone-on-bone friction, and alleviating pain. SportVis is a high-molecular-weight formulation that remains in the joint longer, providing more durable results.",
+      whatIs: "Hyaluronic acid (HA) injection introduces hyaluronate into the joint cavity to supplement the synovial fluid depleted by degeneration, restoring lubrication, reducing bone-on-bone friction, and alleviating pain. Options include conventional low-to-mid molecular weight formulations (covered by NHI or self-pay) and advanced high-molecular-weight cross-linked formulations, with the latter providing lasting relief from a single injection for up to 6–12 months.",
       whyImportant: "In early to moderate osteoarthritis, declining synovial fluid quality is a significant contributor to pain. HA injection can meaningfully improve joint function and pain without more invasive intervention, making it an important conservative option for knee degeneration.",
       suitable: [
         "Mild to moderate knee osteoarthritis",
@@ -1029,12 +1038,21 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Confirm medication distribution within joint cavity",
         "Post-treatment activity recommendations",
       ],
-      clinicAdvantage: "Ultrasound guidance ensures hyaluronic acid is injected directly into the joint cavity rather than surrounding soft tissue. When effusion is present, aspiration before injection improves outcomes. SportVis's high-molecular-weight formulation can sustain results for 6–12 months from a single injection.",
+      clinicAdvantage: "Ultrasound guidance ensures hyaluronic acid is injected directly into the joint cavity rather than surrounding soft tissue. When effusion is present, aspiration before injection improves outcomes. Advanced high-molecular-weight cross-linked formulations can sustain results for 6–12 months from a single injection, reducing the number of clinic visits required.",
       pricingNote: "Standard HA and SportVis are priced differently. Please refer to the pricing page.",
       faqItems: [
-        { q: "How many HA injections are needed?", a: "Standard HA typically requires a course of 3–5 weekly injections. SportVis usually requires only 1–2 injections with longer-lasting results." },
-        { q: "Which is better — HA or PRP?", a: "The two work through different mechanisms. HA primarily restores lubrication; PRP provides regenerative growth factors. HA is often appropriate for moderate degeneration; PRP or BMAC for more advanced cases. They can also be combined." },
-        { q: "Can I walk immediately after the injection?", a: "Yes, though vigorous activity should be avoided for the rest of the day. Allow the medication to stabilize in the joint. Normal activity can resume after 48 hours." },
+        {
+          q: "How many HA injections are needed?",
+          a: "Conventional low-molecular-weight HA typically requires a course of 3–5 weekly injections. Advanced high-molecular-weight cross-linked formulations usually require only a single injection, with effects lasting 6–12 months — significantly reducing the frequency of clinic visits. Your physician will recommend the most appropriate formulation based on the degree of degeneration and your needs."
+        },
+        {
+          q: "Which is better — HA or PRP?",
+          a: "The two work through different mechanisms. HA primarily restores lubrication; PRP provides regenerative growth factors. HA is often appropriate for moderate degeneration; PRP or BMAC for more advanced cases. They can also be combined. For tendon or ligament injuries, SportVis is a more appropriate option — it is specifically designed for soft tissue repair rather than joint lubrication."
+        },
+        {
+          q: "Can I walk immediately after the injection?",
+          a: "Yes, though vigorous activity should be avoided for the rest of the day. Allow the medication to stabilize in the joint. Normal activity can resume after 48 hours."
+        },
       ],
       references: [
         { authors: "Pereira TV, Jüni P, et al.", title: "Viscosupplementation for knee osteoarthritis: systematic review and meta-analysis", journal: "BMJ", year: 2022, doi: "10.1136/bmj-2022-069722" },
@@ -1622,9 +1640,9 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       metaTitle: "関節ヒアルロン酸注射｜コランクリニック・蘆洲疼痛治療",
       metaDescription: "関節ヒアルロン酸注射で関節腔の潤滑液を補充し、摩擦と疼痛を軽減します。SportVisは高分子量の進化版で膝関節変性に適しています。",
       h1: "関節ヒアルロン酸注射",
-      heroSub: "関節液を補充して、変性した関節がよりスムーズに動けるようにします。",
+      heroSub: "関節液を補充して、変性した関節がよりスムーズに動けるようにします。高分子量製剤は1回の注射で最長1年間効果が持続します。",
       eyebrow: "治療について",
-      whatIs: "関節ヒアルロン酸（透明質酸）注射は変性で減少した関節液を補充するために関節腔にヒアルロン酸を注入し、関節の潤滑機能を回復させ、骨同士の摩擦と疼痛を軽減します。SportVisは高分子量製剤で関節腔内での滞留時間が長く、効果がより持続します。",
+      whatIs: "関節ヒアルロン酸（透明質酸）注射は変性で減少した関節液を補充するために関節腔にヒアルロン酸を注入し、関節の潤滑機能を回復させ、骨同士の摩擦と疼痛を軽減します。従来の低〜中分子量製剤（保険適用または自費）と、進化した高分子量架橋製剤があり、後者は1回の注射で6〜12ヶ月の効果が持続し、来院頻度を大幅に減らすことができます。",
       whyImportant: "変形性関節症の初〜中期では、関節液の品質低下が疼痛の重要な要因の一つです。ヒアルロン酸注射はより侵襲的な治療を必要とせずに、関節機能と疼痛を効果的に改善でき、膝関節変性の保存療法として重要な選択肢です。",
       suitable: [
         "軽〜中程度の変形性膝関節症",
@@ -1640,12 +1658,21 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "関節腔内での薬剤分布を確認",
         "術後の活動に関するアドバイスを提供",
       ],
-      clinicAdvantage: "超音波ガイドにより、ヒアルロン酸が周囲軟部組織ではなく関節腔に確実に注射されます。関節液がある場合は先に吸引してから注射することでより良い効果が得られます。SportVisの高分子量製剤により、1回の注射で6〜12ヶ月の効果が持続する場合があります。",
+      clinicAdvantage: "超音波ガイドにより、ヒアルロン酸が周囲軟部組織ではなく関節腔に確実に注射されます。関節液がある場合は先に吸引してから注射することでより良い効果が得られます。高分子量架橋製剤の1回注射は6〜12ヶ月間効果が持続し、来院頻度を減らします。",
       pricingNote: "通常のヒアルロン酸とSportVisでは費用が異なります。料金ページをご参照ください。",
       faqItems: [
-        { q: "ヒアルロン酸は何回注射が必要ですか？", a: "通常のヒアルロン酸は週1回、3〜5回のコースを推奨します。SportVisは通常1〜2回の注射でより長続きする効果が得られます。" },
-        { q: "ヒアルロン酸とPRPはどちらが良いですか？", a: "両者は異なるメカニズムで作用します。ヒアルロン酸は主に潤滑機能を回復させ、PRPは修復性成長因子を提供します。中程度の変性にはヒアルロン酸から、より進んだ変性にはPRPやBMACを検討します。組み合わせることもできます。" },
-        { q: "注射後すぐに歩けますか？", a: "歩けますが、当日は激しい運動を避け、薬剤が関節腔内で安定するよう安静にしてください。48時間後から通常の活動に戻れます。" },
+        {
+          q: "ヒアルロン酸は何回注射が必要ですか？",
+          a: "従来の低分子量ヒアルロン酸は週1回、3〜5回のコースを推奨します。進化した高分子量架橋製剤は通常1回の注射で6〜12ヶ月の効果が持続し、来院頻度を大幅に減らせます。変性の程度とニーズに応じて最適な製剤を医師が提案します。"
+        },
+        {
+          q: "ヒアルロン酸とPRPはどちらが良いですか？",
+          a: "両者は異なるメカニズムで作用します。ヒアルロン酸は主に潤滑機能を回復させ、PRPは修復性成長因子を提供します。中程度の変性にはヒアルロン酸から、より進んだ変性にはPRPやBMACを検討します。腱・靭帯損傷には、関節潤滑ではなく軟部組織修復専用に設計されたSportVisの方が適しています。"
+        },
+        {
+          q: "注射後すぐに歩けますか？",
+          a: "歩けますが、当日は激しい運動を避け、薬剤が関節腔内で安定するよう安静にしてください。48時間後から通常の活動に戻れます。"
+        },
       ],
       references: [
         { authors: "Pereira TV, Jüni P, et al.", title: "Viscosupplementation for knee osteoarthritis: systematic review and meta-analysis", journal: "BMJ", year: 2022, doi: "10.1136/bmj-2022-069722" },

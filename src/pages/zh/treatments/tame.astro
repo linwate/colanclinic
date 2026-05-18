@@ -122,6 +122,27 @@ const data = treatments[lang][slug]
     </div>
   </section>
 
+  <section class="fv-section">
+    <div class="container">
+      <h2>學術文獻參考</h2>
+      <ol class="treatment-reference-list">
+        {data.references.map((ref, index) => (
+          <li class="treatment-reference-item">
+            <span class="ref-authors">{ref.authors}</span>
+            <span class="ref-title">{ref.title}.</span>
+            <span class="ref-journal">{ref.journal}. {ref.year}.</span>
+            <a href={`https://doi.org/${ref.doi}`}
+               target="_blank"
+               rel="noopener noreferrer"
+               class="ref-doi">
+              DOI: {ref.doi} ↗
+            </a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
   <section class="fv-section fv-cta-section">
     <div class="container">
       <h2>有問題想先諮詢？</h2>

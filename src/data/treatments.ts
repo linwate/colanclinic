@@ -15,6 +15,7 @@ export type TreatmentCard = {
   relatedSymptoms: { name: string; href: string }[]
   contraindications: string[]
   sideEffects: string[]
+  references: { authors: string; title: string; journal: string; year: number; doi: string }[]
 }
 
 export const treatments: Record<string, Record<string, TreatmentCard>> = {
@@ -47,6 +48,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "超音波導引注射會痛嗎？", a: "進針時會有輕微不適感，視注射部位和使用藥物而定。大部分患者表示可以接受，視需要可以先做局部麻醉。" },
         { q: "和傳統注射有什麼差別？", a: "傳統注射依靠手感和解剖知識，超音波導引可以即時看到針頭位置，準確率更高，特別適合深層結構或位置特殊的注射治療。" },
         { q: "每次注射都需要超音波嗎？", a: "鈷嵐診所的注射治療都在超音波導引下進行，這是我們的基本標準，不需要額外費用。" },
+      ],
+      references: [
+        { authors: "Buntragulpoontawee M, Chang KV, et al.", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
+        { authors: "Lin MT, Wei KC, Wu CH", title: "Effectiveness of Platelet-Rich Plasma Injection in Rotator Cuff Tendinopathy: A Systematic Review and Meta-Analysis of Randomized Controlled Trials", journal: "Diagnostics", year: 2020, doi: "10.3390/diagnostics10040189" },
+        { authors: "Yen YS, Lin CH, Chiang CH, Wu CY", title: "Ultrasound-Guided Sciatic Nerve Hydrodissection Can Improve the Clinical Outcomes of Patients with Deep Gluteal Syndrome", journal: "Diagnostics", year: 2024, doi: "10.3390/diagnostics14070757" },
       ],
       relatedSymptoms: [
         { name: "肩膀疼痛", href: "/zh/symptoms/shoulder/" },
@@ -93,6 +99,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "PRP 需要打幾次才有效？", a: "一般建議 2–3 次為一個療程，每次間隔 4–6 週。部分患者第一次就有明顯改善，也有些人需要完整療程才看到效果，和個人體質、損傷程度有關。" },
         { q: "PRP 和類固醇有什麼差別？", a: "類固醇是強效消炎藥，短期止痛效果快，但長期使用可能讓組織更脆弱。PRP 使用自體成分，目標是修復受損結構，不是只壓制發炎。兩者有時候可以搭配使用。" },
         { q: "打完 PRP 之後會有什麼反應？", a: "注射後 24–72 小時可能有局部痠脹感，這是正常的修復反應。通常 1–2 週後開始感受到改善，完整效果在 4–6 週後評估。" },
+      ],
+      references: [
+        { authors: "Lin MT, Wei KC, Wu CH", title: "Effectiveness of Platelet-Rich Plasma Injection in Rotator Cuff Tendinopathy: A Systematic Review and Meta-Analysis of Randomized Controlled Trials", journal: "Diagnostics", year: 2020, doi: "10.3390/diagnostics10040189" },
+        { authors: "Kwong CA, Woodmass JM, et al.", title: "Platelet-rich plasma in patients with partial-thickness rotator cuff tears or tendinopathy leads to significantly improved short-term pain relief and function compared with corticosteroid injection", journal: "Arthroscopy", year: 2021, doi: "10.1016/j.arthro.2020.10.037" },
+        { authors: "Bahadir B, et al.", title: "Platelet-rich plasma in the management of rotator cuff tendinopathy", journal: "Jt Dis Relat Surg", year: 2024, doi: "10.52312/jdrs.2024.1586" },
       ],
       relatedSymptoms: [
         { name: "肩膀疼痛", href: "/zh/symptoms/shoulder/" },
@@ -143,6 +154,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "打完之後會更痛嗎？", a: "注射後 24–48 小時可能有局部痠脹感，這是正常反應，代表修復機制在啟動。通常 1–2 週後會感受到改善。" },
         { q: "需要打幾次？", a: "一般建議 3–5 次為一個療程，每次間隔 2–4 週，視症狀和改善程度調整。" },
       ],
+      references: [
+        { authors: "Ebbesen BH, et al.", title: "Dextrose Prolotherapy Versus Lidocaine Injection for Temporomandibular Dysfunction: A Pragmatic Randomized Controlled Trial", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnaa155" },
+        { authors: "Hung CY, et al.", title: "Prolotherapy for the patients with chronic musculoskeletal pain: systematic review and meta-analysis", journal: "Pain Med", year: 2021, doi: "10.1093/pm/pnaa330" },
+        { authors: "Ebnerasooli S, Barghi A, et al.", title: "Peri-articular Dextrose Prolotherapy: Investigating the Effect of Injection Site on Knee Osteoarthritis Pain", journal: "Anesth Pain Med", year: 2024, doi: "10.5812/aapm-140966" },
+      ],
       relatedSymptoms: [
         { name: "足踝疼痛", href: "/zh/symptoms/foot/" },
         { name: "手肘手腕", href: "/zh/symptoms/elbow-wrist/" },
@@ -190,6 +206,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "打完馬上有效嗎？", a: "部分患者注射後立刻感受到麻木感減輕，但完整效果通常在 1–4 週後評估。慢性神經壓迫可能需要多次治療。" },
         { q: "什麼是雙重夾擠症候群？", a: "同一條神經在兩個或以上的位置受到壓迫，例如頸椎和手腕都有問題。只處理一處效果有限，需要同時評估整條神經的走向。" },
       ],
+      references: [
+        { authors: "Buntragulpoontawee M, Chang KV, et al.", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
+        { authors: "Yen YS, Lin CH, Chiang CH, Wu CY", title: "Ultrasound-Guided Sciatic Nerve Hydrodissection Can Improve the Clinical Outcomes of Patients with Deep Gluteal Syndrome", journal: "Diagnostics", year: 2024, doi: "10.3390/diagnostics14070757" },
+        { authors: "Chang KV, et al.", title: "Ultrasound imaging and guidance in peripheral nerve entrapment: hydrodissection highlighted", journal: "Br J Sports Med", year: 2020, doi: "10.1136/bjsports-2018-099740" },
+      ],
       relatedSymptoms: [
         { name: "神經病變", href: "/zh/symptoms/neuropathy/" },
         { name: "手肘手腕", href: "/zh/symptoms/elbow-wrist/" },
@@ -235,6 +256,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "抽骨髓很痛嗎？", a: "在局部麻醉下進行，抽取過程有壓迫感但不會很痛。抽取後局部可能有 1–2 天的痠痛，一般止痛藥可以處理。" },
         { q: "BMAC 和 PRP 怎麼選擇？", a: "輕中度損傷一般先考慮 PRP，費用較低且效果已有研究支持。嚴重退化或 PRP 效果有限時可以升級 BMAC。醫師會根據超音波評估結果建議最適合的治療。" },
         { q: "BMAC 需要住院嗎？", a: "不需要，整個治療在門診完成，約需 1–2 小時，當天可以回家。" },
+      ],
+      references: [
+        { authors: "Boffa A, Di Martino A, et al.", title: "Bone marrow aspirate concentrate injections provide similar results versus viscosupplementation up to 24 months of follow-up in patients with symptomatic knee osteoarthritis", journal: "Knee Surg Sports Traumatol Arthrosc", year: 2022, doi: "10.1007/s00167-021-06793-4" },
+        { authors: "Han JH, Jung M, et al.", title: "Bone Marrow Aspirate Concentrate Injections for the Treatment of Knee Osteoarthritis: A Systematic Review of Randomized Controlled Trials", journal: "Orthop J Sports Med", year: 2024, doi: "10.1177/23259671241296555" },
+        { authors: "Baek JH, Lee SC, et al.", title: "Effectiveness and Complications of Bone Marrow Aspirate Concentrate in Patients with Knee Osteoarthritis of Kellgren-Lawrence Grades II-III", journal: "Medicina (Kaunas)", year: 2024, doi: "10.3390/medicina60060977" },
       ],
       relatedSymptoms: [
         { name: "膝蓋退化", href: "/zh/symptoms/knee/" },
@@ -305,6 +331,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
           a: '羊膜基質通常 1–2 次注射為一個療程，比 PRP 的次數少。具體次數依損傷程度和治療反應而定，醫師會在評估後建議最適合的療程。'
         },
       ],
+      references: [
+        { authors: "Vines JB, Aliprantis AO, et al.", title: "Cryopreserved Amniotic Suspension for the Treatment of Knee Osteoarthritis", journal: "J Knee Surg", year: 2023, doi: "10.1055/s-0041-1740022" },
+        { authors: "Werber B", title: "Amniotic Tissues for the Treatment of Chronic Plantar Fasciitis and Heel Pain", journal: "Foot Ankle Spec", year: 2021, doi: "10.1177/1938640020948098" },
+        { authors: "Castellanos R, Tighe S", title: "Injectable Amniotic Fluid and Its Potential Applications in Sports Medicine", journal: "Am J Sports Med", year: 2021, doi: "10.1177/0363546520921605" },
+      ],
       relatedSymptoms: [
         { name: '膝蓋退化', href: '/zh/symptoms/knee/' },
         { name: '肩膀疼痛', href: '/zh/symptoms/shoulder/' },
@@ -339,6 +370,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "TAME 和一般注射治療有什麼差別？", a: "一般注射治療針對肌腱、關節或神經，TAME 針對的是異常新生血管。兩者可以搭配使用，TAME 通常在其他治療效果有限時考慮。" },
         { q: "TAME 需要住院嗎？", a: "一般不需要住院，門診即可完成，但手術後需要短暫觀察，當天需要有人陪同。" },
         { q: "哪些情況不適合 TAME？", a: "嚴重腎功能不全、對顯影劑過敏、凝血功能異常、懷孕等情況不適合。醫師會在治療前詳細評估。" },
+      ],
+      references: [
+        { authors: "Wang B, Liang KW, Chen CH, Wang CK", title: "Transcatheter Arterial Embolization for Alleviating Chronic Musculoskeletal Pain and Improving Physical Function: A Narrative Review", journal: "Diagnostics (Basel)", year: 2022, doi: "10.3390/diagnostics13010134" },
+        { authors: "Lin HY, Liang KW, Wang B, Lee CC", title: "Challenges and complications and their management of the transarterial microembolization for chronic musculoskeletal pain", journal: "Eur Radiol", year: 2024, doi: "10.1007/s00330-023-10328-5" },
+        { authors: "Kishore SA, Sheira D, et al.", title: "Transarterial embolization for the treatment of chronic musculoskeletal pain: a systematic review of indications, safety, and efficacy", journal: "Skeletal Radiol", year: 2022, doi: "10.1007/s00256-022-04016-w" },
       ],
       relatedSymptoms: [
         { name: "膝蓋退化", href: "/zh/symptoms/knee/" },
@@ -389,6 +425,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "玻尿酸和 PRP 哪個比較好？", a: "兩者機制不同。玻尿酸主要補充潤滑功能，PRP 提供修復生長因子。中度退化可以先考慮玻尿酸，嚴重退化可以考慮 PRP 或 BMAC，也可以搭配使用。" },
         { q: "打完之後可以馬上走路嗎？", a: "可以，但建議當天避免劇烈運動，多休息讓藥物在關節腔內穩定。48 小時後可以恢復正常活動。" },
       ],
+      references: [
+        { authors: "Pereira TV, Jüni P, et al.", title: "Viscosupplementation for knee osteoarthritis: systematic review and meta-analysis", journal: "BMJ", year: 2022, doi: "10.1136/bmj-2022-069722" },
+        { authors: "Pojala CV, Toma S, et al.", title: "The Potential of Intra-Articular Therapies in Managing Knee Osteoarthritis: A Systematic Review", journal: "Clin Pract", year: 2024, doi: "10.3390/clinpract14050157" },
+        { authors: "Diraçoglu D, et al.", title: "EUROVISCO Consensus Guidelines for the Use of Hyaluronic Acid Viscosupplementation in Knee Osteoarthritis Based on Patient Characteristics", journal: "Cartilage", year: 2024, doi: "10.1177/19476035241271970" },
+      ],
       relatedSymptoms: [
         { name: "膝蓋退化", href: "/zh/symptoms/knee/" },
         { name: "髖臀疼痛", href: "/zh/symptoms/hip/" },
@@ -433,6 +474,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "肉毒桿菌止痛和美容用有什麼不同？", a: "美容用途針對表情肌，目標是讓皮膚平滑。止痛用途針對疼痛相關的神經或深層肌肉，目標是阻斷疼痛訊號和放鬆痙攣肌肉，位置和劑量完全不同。" },
         { q: "效果能維持多久？", a: "一般 3–6 個月，之後可以視疼痛狀況決定是否再次注射。部分患者在多次治療後，神經痛的程度會逐漸降低。" },
         { q: "有沒有副作用？", a: "注射部位可能有輕微瘀青或腫脹。劑量控制在安全範圍內不會有全身性副作用。有重症肌無力或神經肌肉疾病的患者不適合使用。" },
+      ],
+      references: [
+        { authors: "Gupta AD, Edwards S, et al.", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
+        { authors: "Lippi L, de Sire A, et al.", title: "Multidimensional Effectiveness of Botulinum Toxin in Neuropathic Pain: A Systematic Review of Randomized Clinical Trials", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14050308" },
+        { authors: "Restivo DA, Calderone A, et al.", title: "The Use of Botulinum Toxin Injections in Peripheral Neuropathic Pain: A Systematic Review of Efficacy and Safety Outcomes", journal: "Pain Res Manag", year: 2026, doi: "10.1155/prm/7701940" },
       ],
       relatedSymptoms: [
         { name: "神經病變", href: "/zh/symptoms/neuropathy/" },
@@ -480,6 +526,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "DPN 可以治療嗎？", a: "DPN 的神經損傷不能完全逆轉，但透過神經解套注射和 PRP 神經水解，可以改善神經的血流供應和傳導功能，減輕麻木和疼痛症狀。配合血糖控制效果更好。" },
         { q: "和神經科看診有什麼差別？", a: "神經科門診主要進行診斷和藥物治療。這裡可以在同一次門診完成超音波評估和介入治療，適合已經確診但藥物效果有限、或想尋求非藥物治療的患者。" },
         { q: "帶狀皰疹後神經痛能改善嗎？", a: "PHN 是頑固性神經痛，傳統藥物效果有限。肉毒桿菌注射和神經解套可以提供 3–6 個月的明顯疼痛緩解，部分患者在多次治療後症狀會持續改善。" },
+      ],
+      references: [
+        { authors: "Allam AE, et al.", title: "Perineural Platelet-Rich Plasma for Diabetic Neuropathic Pain, Could It Make a Difference?", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnz140" },
+        { authors: "Buntragulpoontawee M, Chang KV, et al.", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
+        { authors: "Gupta AD, Edwards S, et al.", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
       ],
       relatedSymptoms: [
         { name: "神經病變", href: "/zh/symptoms/neuropathy/" },
@@ -530,6 +581,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "How is it different from traditional injection?", a: "Traditional injection relies on anatomical feel. Ultrasound guidance allows real-time needle visualization, significantly improving accuracy — especially for deep structures or anatomically complex sites." },
         { q: "Is ultrasound used for every injection?", a: "At Colan Clinic, all injection treatments are performed under ultrasound guidance. This is our baseline standard, not an add-on service." },
       ],
+      references: [
+        { authors: "Buntragulpoontawee M, Chang KV, et al.", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
+        { authors: "Lin MT, Wei KC, Wu CH", title: "Effectiveness of Platelet-Rich Plasma Injection in Rotator Cuff Tendinopathy: A Systematic Review and Meta-Analysis of Randomized Controlled Trials", journal: "Diagnostics", year: 2020, doi: "10.3390/diagnostics10040189" },
+        { authors: "Yen YS, Lin CH, Chiang CH, Wu CY", title: "Ultrasound-Guided Sciatic Nerve Hydrodissection Can Improve the Clinical Outcomes of Patients with Deep Gluteal Syndrome", journal: "Diagnostics", year: 2024, doi: "10.3390/diagnostics14070757" },
+      ],
       relatedSymptoms: [
         { name: "Shoulder Pain", href: "/en/symptoms/shoulder/" },
         { name: "Knee Degeneration", href: "/en/symptoms/knee/" },
@@ -575,6 +631,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "How many PRP sessions are needed?", a: "A standard course is 2–3 sessions spaced 4–6 weeks apart. Some patients see significant improvement after the first session; others need the full course. Results depend on individual constitution and injury severity." },
         { q: "What is the difference between PRP and corticosteroids?", a: "Corticosteroids are potent anti-inflammatories that provide quick short-term relief but may weaken tissue with repeated use. PRP uses autologous components to support structural repair, not just inflammation suppression. The two can sometimes be combined." },
         { q: "What should I expect after PRP?", a: "Local soreness and swelling for 24–72 hours is a normal repair response. Improvement typically begins within 1–2 weeks, with full effect assessed at 4–6 weeks." },
+      ],
+      references: [
+        { authors: "Lin MT, Wei KC, Wu CH", title: "Effectiveness of Platelet-Rich Plasma Injection in Rotator Cuff Tendinopathy: A Systematic Review and Meta-Analysis of Randomized Controlled Trials", journal: "Diagnostics", year: 2020, doi: "10.3390/diagnostics10040189" },
+        { authors: "Kwong CA, Woodmass JM, et al.", title: "Platelet-rich plasma in patients with partial-thickness rotator cuff tears or tendinopathy leads to significantly improved short-term pain relief and function compared with corticosteroid injection", journal: "Arthroscopy", year: 2021, doi: "10.1016/j.arthro.2020.10.037" },
+        { authors: "Bahadir B, et al.", title: "Platelet-rich plasma in the management of rotator cuff tendinopathy", journal: "Jt Dis Relat Surg", year: 2024, doi: "10.52312/jdrs.2024.1586" },
       ],
       relatedSymptoms: [
         { name: "Shoulder Pain", href: "/en/symptoms/shoulder/" },
@@ -625,6 +686,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "Will it feel worse after treatment?", a: "Local soreness for 24–48 hours is a normal response indicating the repair mechanism is activating. Improvement is typically felt within 1–2 weeks." },
         { q: "How many sessions are needed?", a: "A typical course is 3–5 sessions spaced 2–4 weeks apart, adjusted based on symptom response." },
       ],
+      references: [
+        { authors: "Ebbesen BH, et al.", title: "Dextrose Prolotherapy Versus Lidocaine Injection for Temporomandibular Dysfunction: A Pragmatic Randomized Controlled Trial", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnaa155" },
+        { authors: "Hung CY, et al.", title: "Prolotherapy for the patients with chronic musculoskeletal pain: systematic review and meta-analysis", journal: "Pain Med", year: 2021, doi: "10.1093/pm/pnaa330" },
+        { authors: "Ebnerasooli S, Barghi A, et al.", title: "Peri-articular Dextrose Prolotherapy: Investigating the Effect of Injection Site on Knee Osteoarthritis Pain", journal: "Anesth Pain Med", year: 2024, doi: "10.5812/aapm-140966" },
+      ],
       relatedSymptoms: [
         { name: "Foot & Ankle", href: "/en/symptoms/foot/" },
         { name: "Elbow & Wrist", href: "/en/symptoms/elbow-wrist/" },
@@ -672,6 +738,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "Is the effect immediate?", a: "Some patients feel reduced numbness immediately after injection. Full effect is typically assessed 1–4 weeks later. Chronic nerve compression may require multiple treatments." },
         { q: "What is double crush syndrome?", a: "Double crush syndrome occurs when the same nerve is compressed at two or more locations — for example, both the cervical spine and wrist. Treating only one site often yields limited results; the entire nerve course needs to be assessed." },
       ],
+      references: [
+        { authors: "Buntragulpoontawee M, Chang KV, et al.", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
+        { authors: "Yen YS, Lin CH, Chiang CH, Wu CY", title: "Ultrasound-Guided Sciatic Nerve Hydrodissection Can Improve the Clinical Outcomes of Patients with Deep Gluteal Syndrome", journal: "Diagnostics", year: 2024, doi: "10.3390/diagnostics14070757" },
+        { authors: "Chang KV, et al.", title: "Ultrasound imaging and guidance in peripheral nerve entrapment: hydrodissection highlighted", journal: "Br J Sports Med", year: 2020, doi: "10.1136/bjsports-2018-099740" },
+      ],
       relatedSymptoms: [
         { name: "Neuropathy", href: "/en/symptoms/neuropathy/" },
         { name: "Elbow & Wrist", href: "/en/symptoms/elbow-wrist/" },
@@ -717,6 +788,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "Is the bone marrow aspiration painful?", a: "The procedure is performed under local anesthesia. There is a pressure sensation during aspiration but no significant pain. The site may be sore for 1–2 days afterward, manageable with standard pain relief." },
         { q: "How do I choose between BMAC and PRP?", a: "PRP is generally the first-line option for mild to moderate injury — well-studied and more affordable. BMAC is considered for severe degeneration or when PRP results have been limited. Your physician will recommend based on ultrasound assessment." },
         { q: "Does BMAC require hospitalization?", a: "No. The entire procedure is completed in the clinic in approximately 1–2 hours. Patients return home the same day." },
+      ],
+      references: [
+        { authors: "Boffa A, Di Martino A, et al.", title: "Bone marrow aspirate concentrate injections provide similar results versus viscosupplementation up to 24 months of follow-up in patients with symptomatic knee osteoarthritis", journal: "Knee Surg Sports Traumatol Arthrosc", year: 2022, doi: "10.1007/s00167-021-06793-4" },
+        { authors: "Han JH, Jung M, et al.", title: "Bone Marrow Aspirate Concentrate Injections for the Treatment of Knee Osteoarthritis: A Systematic Review of Randomized Controlled Trials", journal: "Orthop J Sports Med", year: 2024, doi: "10.1177/23259671241296555" },
+        { authors: "Baek JH, Lee SC, et al.", title: "Effectiveness and Complications of Bone Marrow Aspirate Concentrate in Patients with Knee Osteoarthritis of Kellgren-Lawrence Grades II-III", journal: "Medicina (Kaunas)", year: 2024, doi: "10.3390/medicina60060977" },
       ],
       relatedSymptoms: [
         { name: "Knee Degeneration", href: "/en/symptoms/knee/" },
@@ -787,6 +863,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
           a: 'Amniotic matrix typically requires 1–2 injections per course — fewer than PRP. The exact number depends on injury severity and treatment response; your physician will recommend the most appropriate plan after assessment.'
         },
       ],
+      references: [
+        { authors: "Vines JB, Aliprantis AO, et al.", title: "Cryopreserved Amniotic Suspension for the Treatment of Knee Osteoarthritis", journal: "J Knee Surg", year: 2023, doi: "10.1055/s-0041-1740022" },
+        { authors: "Werber B", title: "Amniotic Tissues for the Treatment of Chronic Plantar Fasciitis and Heel Pain", journal: "Foot Ankle Spec", year: 2021, doi: "10.1177/1938640020948098" },
+        { authors: "Castellanos R, Tighe S", title: "Injectable Amniotic Fluid and Its Potential Applications in Sports Medicine", journal: "Am J Sports Med", year: 2021, doi: "10.1177/0363546520921605" },
+      ],
       relatedSymptoms: [
         { name: 'Knee Degeneration', href: '/en/symptoms/knee/' },
         { name: 'Shoulder Pain', href: '/en/symptoms/shoulder/' },
@@ -821,6 +902,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "How does TAME differ from standard injection therapy?", a: "Standard injections target tendons, joints, or nerves. TAME targets abnormal neovascularization. The two approaches address different mechanisms and can be used in combination. TAME is typically considered when other treatments have shown limited results." },
         { q: "Does TAME require hospitalization?", a: "Hospitalization is generally not required. The procedure is performed on an outpatient basis, though a brief observation period is required afterward and patients should have someone accompany them home." },
         { q: "Who is not suitable for TAME?", a: "Patients with severe renal impairment, contrast agent allergy, clotting disorders, or pregnancy are not suitable. Your physician will conduct a thorough assessment before proceeding." },
+      ],
+      references: [
+        { authors: "Wang B, Liang KW, Chen CH, Wang CK", title: "Transcatheter Arterial Embolization for Alleviating Chronic Musculoskeletal Pain and Improving Physical Function: A Narrative Review", journal: "Diagnostics (Basel)", year: 2022, doi: "10.3390/diagnostics13010134" },
+        { authors: "Lin HY, Liang KW, Wang B, Lee CC", title: "Challenges and complications and their management of the transarterial microembolization for chronic musculoskeletal pain", journal: "Eur Radiol", year: 2024, doi: "10.1007/s00330-023-10328-5" },
+        { authors: "Kishore SA, Sheira D, et al.", title: "Transarterial embolization for the treatment of chronic musculoskeletal pain: a systematic review of indications, safety, and efficacy", journal: "Skeletal Radiol", year: 2022, doi: "10.1007/s00256-022-04016-w" },
       ],
       relatedSymptoms: [
         { name: "Knee Degeneration", href: "/en/symptoms/knee/" },
@@ -871,6 +957,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "Which is better — HA or PRP?", a: "The two work through different mechanisms. HA primarily restores lubrication; PRP provides regenerative growth factors. HA is often appropriate for moderate degeneration; PRP or BMAC for more advanced cases. They can also be combined." },
         { q: "Can I walk immediately after the injection?", a: "Yes, though vigorous activity should be avoided for the rest of the day. Allow the medication to stabilize in the joint. Normal activity can resume after 48 hours." },
       ],
+      references: [
+        { authors: "Pereira TV, Jüni P, et al.", title: "Viscosupplementation for knee osteoarthritis: systematic review and meta-analysis", journal: "BMJ", year: 2022, doi: "10.1136/bmj-2022-069722" },
+        { authors: "Pojala CV, Toma S, et al.", title: "The Potential of Intra-Articular Therapies in Managing Knee Osteoarthritis: A Systematic Review", journal: "Clin Pract", year: 2024, doi: "10.3390/clinpract14050157" },
+        { authors: "Diraçoglu D, et al.", title: "EUROVISCO Consensus Guidelines for the Use of Hyaluronic Acid Viscosupplementation in Knee Osteoarthritis Based on Patient Characteristics", journal: "Cartilage", year: 2024, doi: "10.1177/19476035241271970" },
+      ],
       relatedSymptoms: [
         { name: "Knee Degeneration", href: "/en/symptoms/knee/" },
         { name: "Hip & Buttock", href: "/en/symptoms/hip/" },
@@ -915,6 +1006,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "How is pain-use botulinum toxin different from cosmetic use?", a: "Cosmetic use targets facial expression muscles to smooth skin. Pain medicine use targets pain-associated nerves or deep muscles to block pain signals and release spasm. The locations, depths, and dosages are completely different." },
         { q: "How long do the effects last?", a: "Generally 3–6 months. Repeat injection can be considered based on pain status. Some patients experience a gradual reduction in neuropathic pain severity over multiple treatment cycles." },
         { q: "Are there side effects?", a: "Mild bruising or swelling at the injection site is possible. Dosing is maintained within safe limits with no systemic side effects. Patients with myasthenia gravis or neuromuscular junction disorders are not suitable candidates." },
+      ],
+      references: [
+        { authors: "Gupta AD, Edwards S, et al.", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
+        { authors: "Lippi L, de Sire A, et al.", title: "Multidimensional Effectiveness of Botulinum Toxin in Neuropathic Pain: A Systematic Review of Randomized Clinical Trials", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14050308" },
+        { authors: "Restivo DA, Calderone A, et al.", title: "The Use of Botulinum Toxin Injections in Peripheral Neuropathic Pain: A Systematic Review of Efficacy and Safety Outcomes", journal: "Pain Res Manag", year: 2026, doi: "10.1155/prm/7701940" },
       ],
       relatedSymptoms: [
         { name: "Neuropathy", href: "/en/symptoms/neuropathy/" },
@@ -962,6 +1058,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "Can DPN be treated?", a: "The nerve damage in DPN cannot be fully reversed, but nerve hydrodissection and PRP neural hydrolysis can improve nerve blood supply and conduction function, reducing numbness and pain symptoms. Results are enhanced with good blood glucose control." },
         { q: "How is this different from seeing a neurologist?", a: "Neurology clinics primarily focus on diagnosis and medication management. Here, ultrasound assessment and interventional treatment can be completed in a single appointment — suitable for patients who have been diagnosed but have limited medication response, or those seeking non-pharmacological treatment." },
         { q: "Can postherpetic neuralgia improve?", a: "PHN is a notoriously refractory condition that responds poorly to conventional medications. Botulinum toxin injection and nerve hydrodissection can provide meaningful pain relief lasting 3–6 months, with some patients showing ongoing symptom reduction across multiple treatment cycles." },
+      ],
+      references: [
+        { authors: "Allam AE, et al.", title: "Perineural Platelet-Rich Plasma for Diabetic Neuropathic Pain, Could It Make a Difference?", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnz140" },
+        { authors: "Buntragulpoontawee M, Chang KV, et al.", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
+        { authors: "Gupta AD, Edwards S, et al.", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
       ],
       relatedSymptoms: [
         { name: "Neuropathy", href: "/en/symptoms/neuropathy/" },
@@ -1012,6 +1113,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "従来の注射と何が違うのですか？", a: "従来の注射は手の感覚と解剖学的知識に依存しています。超音波ガイドにより針先をリアルタイムで確認でき、特に深部構造や解剖学的に複雑な部位の正確性が大幅に向上します。" },
         { q: "毎回超音波が必要ですか？", a: "コランクリニックでは、すべての注射治療を超音波ガイド下で行います。これは基本的なスタンダードであり、追加費用はかかりません。" },
       ],
+      references: [
+        { authors: "Buntragulpoontawee M, Chang KV, et al.", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
+        { authors: "Lin MT, Wei KC, Wu CH", title: "Effectiveness of Platelet-Rich Plasma Injection in Rotator Cuff Tendinopathy: A Systematic Review and Meta-Analysis of Randomized Controlled Trials", journal: "Diagnostics", year: 2020, doi: "10.3390/diagnostics10040189" },
+        { authors: "Yen YS, Lin CH, Chiang CH, Wu CY", title: "Ultrasound-Guided Sciatic Nerve Hydrodissection Can Improve the Clinical Outcomes of Patients with Deep Gluteal Syndrome", journal: "Diagnostics", year: 2024, doi: "10.3390/diagnostics14070757" },
+      ],
       relatedSymptoms: [
         { name: "肩の痛み", href: "/ja/symptoms/shoulder/" },
         { name: "膝関節の変性", href: "/ja/symptoms/knee/" },
@@ -1057,6 +1163,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "PRPは何回必要ですか？", a: "通常は4〜6週間隔で2〜3回をコースとして推奨しています。初回から大きな改善を感じる方もいれば、フルコースが必要な方もいます。個人の体質と損傷の程度によって異なります。" },
         { q: "PRPとステロイドの違いは何ですか？", a: "ステロイドは強力な抗炎症薬で短期的な鎮痛効果が速いですが、繰り返し使用すると組織を弱らせる可能性があります。PRPは自己成分を使用し、炎症を抑制するだけでなく損傷した構造の修復を目指します。両者を組み合わせることもあります。" },
         { q: "PRP後にどんな反応がありますか？", a: "24〜72時間の局所的な痠痛や腫れは正常な修復反応です。通常1〜2週間後から改善を感じ始め、4〜6週間後に十分な効果を評価します。" },
+      ],
+      references: [
+        { authors: "Lin MT, Wei KC, Wu CH", title: "Effectiveness of Platelet-Rich Plasma Injection in Rotator Cuff Tendinopathy: A Systematic Review and Meta-Analysis of Randomized Controlled Trials", journal: "Diagnostics", year: 2020, doi: "10.3390/diagnostics10040189" },
+        { authors: "Kwong CA, Woodmass JM, et al.", title: "Platelet-rich plasma in patients with partial-thickness rotator cuff tears or tendinopathy leads to significantly improved short-term pain relief and function compared with corticosteroid injection", journal: "Arthroscopy", year: 2021, doi: "10.1016/j.arthro.2020.10.037" },
+        { authors: "Bahadir B, et al.", title: "Platelet-rich plasma in the management of rotator cuff tendinopathy", journal: "Jt Dis Relat Surg", year: 2024, doi: "10.52312/jdrs.2024.1586" },
       ],
       relatedSymptoms: [
         { name: "肩の痛み", href: "/ja/symptoms/shoulder/" },
@@ -1107,6 +1218,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "治療後に悪化しますか？", a: "24〜48時間の局所痠痛は正常反応で、修復メカニズムが活性化していることを示します。通常1〜2週間後に改善を感じます。" },
         { q: "何回必要ですか？", a: "通常は2〜4週間隔で3〜5回のコースを推奨し、症状と改善度に応じて調整します。" },
       ],
+      references: [
+        { authors: "Ebbesen BH, et al.", title: "Dextrose Prolotherapy Versus Lidocaine Injection for Temporomandibular Dysfunction: A Pragmatic Randomized Controlled Trial", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnaa155" },
+        { authors: "Hung CY, et al.", title: "Prolotherapy for the patients with chronic musculoskeletal pain: systematic review and meta-analysis", journal: "Pain Med", year: 2021, doi: "10.1093/pm/pnaa330" },
+        { authors: "Ebnerasooli S, Barghi A, et al.", title: "Peri-articular Dextrose Prolotherapy: Investigating the Effect of Injection Site on Knee Osteoarthritis Pain", journal: "Anesth Pain Med", year: 2024, doi: "10.5812/aapm-140966" },
+      ],
       relatedSymptoms: [
         { name: "足・足首の痛み", href: "/ja/symptoms/foot/" },
         { name: "肘・手首の痛み", href: "/ja/symptoms/elbow-wrist/" },
@@ -1154,6 +1270,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "すぐに効果が出ますか？", a: "注射直後にしびれが軽減する患者様もいますが、完全な効果は通常1〜4週間後に評価します。慢性的な神経圧迫は複数回の治療が必要な場合があります。" },
         { q: "ダブルクラッシュ症候群とは何ですか？", a: "同じ神経が2か所以上で圧迫される状態です。例えば頸椎と手首の両方に問題がある場合。一か所だけ治療しても効果が限られるため、神経走行全体を評価する必要があります。" },
       ],
+      references: [
+        { authors: "Buntragulpoontawee M, Chang KV, et al.", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes: A Systematic Review", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
+        { authors: "Yen YS, Lin CH, Chiang CH, Wu CY", title: "Ultrasound-Guided Sciatic Nerve Hydrodissection Can Improve the Clinical Outcomes of Patients with Deep Gluteal Syndrome", journal: "Diagnostics", year: 2024, doi: "10.3390/diagnostics14070757" },
+        { authors: "Chang KV, et al.", title: "Ultrasound imaging and guidance in peripheral nerve entrapment: hydrodissection highlighted", journal: "Br J Sports Med", year: 2020, doi: "10.1136/bjsports-2018-099740" },
+      ],
       relatedSymptoms: [
         { name: "神経障害・神経痛", href: "/ja/symptoms/neuropathy/" },
         { name: "肘・手首の痛み", href: "/ja/symptoms/elbow-wrist/" },
@@ -1199,6 +1320,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "骨髄採取は痛いですか？", a: "局所麻酔下で行います。採取中は圧迫感がありますが、強い痛みはありません。採取後は1〜2日程度の局所痠痛があり、通常の鎮痛薬で対処できます。" },
         { q: "BMACとPRPの選び方は？", a: "軽〜中程度の損傷には一般的にまずPRPを検討します。エビデンスが確立されており費用も低めです。重度の変性やPRPの効果が限られた場合にBMACへの移行を検討します。超音波評価の結果に基づいて医師が推奨します。" },
         { q: "入院は必要ですか？", a: "不要です。クリニック内で約1〜2時間で治療が完了し、当日帰宅できます。" },
+      ],
+      references: [
+        { authors: "Boffa A, Di Martino A, et al.", title: "Bone marrow aspirate concentrate injections provide similar results versus viscosupplementation up to 24 months of follow-up in patients with symptomatic knee osteoarthritis", journal: "Knee Surg Sports Traumatol Arthrosc", year: 2022, doi: "10.1007/s00167-021-06793-4" },
+        { authors: "Han JH, Jung M, et al.", title: "Bone Marrow Aspirate Concentrate Injections for the Treatment of Knee Osteoarthritis: A Systematic Review of Randomized Controlled Trials", journal: "Orthop J Sports Med", year: 2024, doi: "10.1177/23259671241296555" },
+        { authors: "Baek JH, Lee SC, et al.", title: "Effectiveness and Complications of Bone Marrow Aspirate Concentrate in Patients with Knee Osteoarthritis of Kellgren-Lawrence Grades II-III", journal: "Medicina (Kaunas)", year: 2024, doi: "10.3390/medicina60060977" },
       ],
       relatedSymptoms: [
         { name: "膝関節の変性", href: "/ja/symptoms/knee/" },
@@ -1269,6 +1395,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
           a: '羊膜基質は通常1〜2回の注射でコースが完了します。PRPより少ない回数です。具体的な回数は損傷の程度と治療反応によって異なり、医師が評価後に最適なプランをご提案します。'
         },
       ],
+      references: [
+        { authors: "Vines JB, Aliprantis AO, et al.", title: "Cryopreserved Amniotic Suspension for the Treatment of Knee Osteoarthritis", journal: "J Knee Surg", year: 2023, doi: "10.1055/s-0041-1740022" },
+        { authors: "Werber B", title: "Amniotic Tissues for the Treatment of Chronic Plantar Fasciitis and Heel Pain", journal: "Foot Ankle Spec", year: 2021, doi: "10.1177/1938640020948098" },
+        { authors: "Castellanos R, Tighe S", title: "Injectable Amniotic Fluid and Its Potential Applications in Sports Medicine", journal: "Am J Sports Med", year: 2021, doi: "10.1177/0363546520921605" },
+      ],
       relatedSymptoms: [
         { name: '膝関節の変性', href: '/ja/symptoms/knee/' },
         { name: '肩の痛み', href: '/ja/symptoms/shoulder/' },
@@ -1303,6 +1434,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "TAMEと通常の注射治療の違いは？", a: "通常の注射は腱・関節・神経を対象とします。TAMEは異常新生血管を対象とします。両者は異なるメカニズムに対応し、組み合わせて使用することもできます。TAMEは通常、他の治療で効果が限られた場合に検討します。" },
         { q: "入院は必要ですか？", a: "一般的に入院は不要です。外来で実施しますが、術後に短時間の観察が必要で、当日は付き添いの方が必要です。" },
         { q: "TAMEが適さない場合は？", a: "重篤な腎機能障害・造影剤アレルギー・凝固障害・妊娠中の方は適しません。医師が治療前に詳細な評価を行います。" },
+      ],
+      references: [
+        { authors: "Wang B, Liang KW, Chen CH, Wang CK", title: "Transcatheter Arterial Embolization for Alleviating Chronic Musculoskeletal Pain and Improving Physical Function: A Narrative Review", journal: "Diagnostics (Basel)", year: 2022, doi: "10.3390/diagnostics13010134" },
+        { authors: "Lin HY, Liang KW, Wang B, Lee CC", title: "Challenges and complications and their management of the transarterial microembolization for chronic musculoskeletal pain", journal: "Eur Radiol", year: 2024, doi: "10.1007/s00330-023-10328-5" },
+        { authors: "Kishore SA, Sheira D, et al.", title: "Transarterial embolization for the treatment of chronic musculoskeletal pain: a systematic review of indications, safety, and efficacy", journal: "Skeletal Radiol", year: 2022, doi: "10.1007/s00256-022-04016-w" },
       ],
       relatedSymptoms: [
         { name: "膝関節の変性", href: "/ja/symptoms/knee/" },
@@ -1353,6 +1489,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "ヒアルロン酸とPRPはどちらが良いですか？", a: "両者は異なるメカニズムで作用します。ヒアルロン酸は主に潤滑機能を回復させ、PRPは修復性成長因子を提供します。中程度の変性にはヒアルロン酸から、より進んだ変性にはPRPやBMACを検討します。組み合わせることもできます。" },
         { q: "注射後すぐに歩けますか？", a: "歩けますが、当日は激しい運動を避け、薬剤が関節腔内で安定するよう安静にしてください。48時間後から通常の活動に戻れます。" },
       ],
+      references: [
+        { authors: "Pereira TV, Jüni P, et al.", title: "Viscosupplementation for knee osteoarthritis: systematic review and meta-analysis", journal: "BMJ", year: 2022, doi: "10.1136/bmj-2022-069722" },
+        { authors: "Pojala CV, Toma S, et al.", title: "The Potential of Intra-Articular Therapies in Managing Knee Osteoarthritis: A Systematic Review", journal: "Clin Pract", year: 2024, doi: "10.3390/clinpract14050157" },
+        { authors: "Diraçoglu D, et al.", title: "EUROVISCO Consensus Guidelines for the Use of Hyaluronic Acid Viscosupplementation in Knee Osteoarthritis Based on Patient Characteristics", journal: "Cartilage", year: 2024, doi: "10.1177/19476035241271970" },
+      ],
       relatedSymptoms: [
         { name: "膝関節の変性", href: "/ja/symptoms/knee/" },
         { name: "股関節・臀部の痛み", href: "/ja/symptoms/hip/" },
@@ -1397,6 +1538,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "疼痛用と美容用のボツリヌス毒素の違いは？", a: "美容用途は表情筋を対象とし皮膚を滑らかにします。疼痛治療用途は疼痛関連の神経や深層筋肉を対象とし、疼痛信号を遮断し痙攣筋肉を弛緩させます。部位・深さ・用量が完全に異なります。" },
         { q: "効果はどれくらい持続しますか？", a: "一般的に3〜6ヶ月です。疼痛状況に応じて再注射を検討できます。複数回の治療サイクルを通じて神経痛の程度が徐々に低下する患者様もいます。" },
         { q: "副作用はありますか？", a: "注射部位に軽度の内出血や腫脹が生じる可能性があります。用量は安全範囲内に維持され、全身性の副作用はありません。重症筋無力症や神経筋接合部疾患のある方は適していません。" },
+      ],
+      references: [
+        { authors: "Gupta AD, Edwards S, et al.", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
+        { authors: "Lippi L, de Sire A, et al.", title: "Multidimensional Effectiveness of Botulinum Toxin in Neuropathic Pain: A Systematic Review of Randomized Clinical Trials", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14050308" },
+        { authors: "Restivo DA, Calderone A, et al.", title: "The Use of Botulinum Toxin Injections in Peripheral Neuropathic Pain: A Systematic Review of Efficacy and Safety Outcomes", journal: "Pain Res Manag", year: 2026, doi: "10.1155/prm/7701940" },
       ],
       relatedSymptoms: [
         { name: "神経障害・神経痛", href: "/ja/symptoms/neuropathy/" },
@@ -1444,6 +1590,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         { q: "DPNは治療できますか？", a: "DPNの神経損傷を完全に逆転させることはできませんが、神経解套注射とPRP神経水解により神経の血液供給と伝導機能を改善し、しびれと疼痛症状を軽減できます。血糖コントロールとの組み合わせでより良い効果が得られます。" },
         { q: "神経内科での受診と何が違いますか？", a: "神経内科では主に診断と薬物療法を行います。こちらでは1回の診察で超音波評価と介入治療を完了できます。診断済みだが薬物反応が限られている方や、非薬物療法を希望される方に適しています。" },
         { q: "帯状疱疹後神経痛は改善できますか？", a: "PHNは従来の薬物に対する反応が乏しい難治性の神経痛です。ボツリヌス毒素注射と神経解套により、3〜6ヶ月の有意な疼痛軽減が得られ、複数回の治療サイクルを通じて症状が継続的に改善する患者様もいます。" },
+      ],
+      references: [
+        { authors: "Allam AE, et al.", title: "Perineural Platelet-Rich Plasma for Diabetic Neuropathic Pain, Could It Make a Difference?", journal: "Pain Med", year: 2020, doi: "10.1093/pm/pnz140" },
+        { authors: "Buntragulpoontawee M, Chang KV, et al.", title: "The Effectiveness and Safety of Commonly Used Injectates for Ultrasound-Guided Hydrodissection Treatment of Peripheral Nerve Entrapment Syndromes", journal: "Front Pharmacol", year: 2021, doi: "10.3389/fphar.2020.621150" },
+        { authors: "Gupta AD, Edwards S, et al.", title: "A Systematic Review and Meta-Analysis of Efficacy of Botulinum Toxin A for Neuropathic Pain", journal: "Toxins (Basel)", year: 2022, doi: "10.3390/toxins14010036" },
       ],
       relatedSymptoms: [
         { name: "神経障害・神経痛", href: "/ja/symptoms/neuropathy/" },

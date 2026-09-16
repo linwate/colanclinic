@@ -2049,6 +2049,19 @@ details[open] .faq-q::after {
   color: #2c2620;
 }
 
+.footer-phone {
+  margin-top: 0.35rem;
+}
+.footer-phone a {
+  font-size: 0.85rem;
+  color: #4a3f35;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-phone a:hover {
+  color: var(--cobalt);
+}
+
 .footer-legal {
   font-size: 0.72rem;
   color: #8a7a6a;

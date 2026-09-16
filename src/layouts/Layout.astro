@@ -583,6 +583,13 @@ const hreflangOf: Record<Lang, string> = {
           <div class="footer-col">
             <h3 class="footer-col-title">{t.footer.addr_label}</h3>
             <p>{t.book.addr}</p>
+            <p class="footer-phone">
+              <a href="tel:+886222820300">
+                {lang === 'en' ? 'Tel: (02) 2282-0300' :
+                 lang === 'ja' ? 'TEL: (02) 2282-0300' :
+                 '電話：(02) 2282-0300'}
+              </a>
+            </p>
           </div>
           <div class="footer-col">
             <h3 class="footer-col-title">{t.footer.hours_label}</h3>

@@ -595,6 +595,11 @@ const hreflangOf: Record<Lang, string> = {
           <span class="footer-copyright">© {new Date().getFullYear()} {t.footer.copyright_brand}</span>
           <a class="footer-mail" href="mailto:info@colanclinic.com">info@colanclinic.com</a>
         </div>
+        <p class="footer-legal">
+          {lang === 'zh' ? '依醫療機構網際網路資訊管理辦法，本網站禁止任何網際網路服務業者擅自轉錄本網站資訊供人點閱。' :
+           lang === 'en' ? 'Reproduction of content on this website by internet service providers without prior written consent is prohibited under Taiwan\'s Medical Institution Internet Information Management Regulations.' :
+           '台湾の医療機関インターネット情報管理規則に基づき、本ウェブサイトのコンテンツをインターネットサービス事業者が無断で転載することを禁止します。'}
+        </p>
       </div>
     </footer>
 

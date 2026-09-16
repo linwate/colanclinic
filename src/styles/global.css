@@ -2049,6 +2049,16 @@ details[open] .faq-q::after {
   color: #2c2620;
 }
 
+.footer-legal {
+  font-size: 0.72rem;
+  color: #8a7a6a;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(26,47,94,0.1);
+  line-height: 1.6;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 1.2rem;

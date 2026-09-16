@@ -167,7 +167,7 @@ export const zh = {
   },
   clinicEnv: {
     title: '診所環境',
-    sub: '2026年9月蘆洲開幕・以下為設計示意圖',
+    sub: '2026年11-12月蘆洲開幕・以下為設計示意圖',
     images: [
       { src: '/images/clinic-exterior.webp', alt: '鈷嵐診所外觀' },
       { src: '/images/clinic-waiting.webp', alt: '鈷嵐診所候診室' },

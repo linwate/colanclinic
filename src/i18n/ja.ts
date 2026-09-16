@@ -167,7 +167,7 @@ export const ja = {
   },
   clinicEnv: {
     title: 'クリニックの環境',
-    sub: '2026年9月開院予定・内装イメージ図',
+    sub: '2026年11〜12月開院予定・内装イメージ図',
     images: [
       { src: '/images/clinic-exterior.webp', alt: 'ゴラン診療所外観' },
       { src: '/images/clinic-waiting.webp', alt: 'ゴラン診療所待合室' },

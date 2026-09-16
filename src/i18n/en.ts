@@ -167,7 +167,7 @@ export const en = {
   },
   clinicEnv: {
     title: 'Clinic Environment',
-    sub: 'Opening September 2026 · Design concept images',
+    sub: 'Opening Nov–Dec 2026 · Design concept images',
     images: [
       { src: '/images/clinic-exterior.webp', alt: 'Colan Clinic exterior' },
       { src: '/images/clinic-waiting.webp', alt: 'Colan Clinic waiting room' },

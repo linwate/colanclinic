@@ -296,7 +296,7 @@ export const zh = {
       },
       {
         q: '付款方式有哪些？',
-        a: '掛號及診察費僅接受現金付款。自費治療項目（PRP、BMAC、TAME 等注射療程）接受現金及信用卡（Visa、Mastercard）付款。',
+        a: '掛號及診察費僅接受現金付款。自費治療項目（PRP、BMAC、TAME 等注射療程）接受現金及信用卡（Visa、Mastercard）付款。治療前將明確說明所有費用。',
       },
     ],
   },

@@ -318,7 +318,7 @@ export const zh = {
       { day: '週六', time: '預約制' },
       { day: '週日', time: '休診' },
     ],
-    phone: '電話號碼確認中',
+    phone: '(02) 2282-0300',
     emergency: '急症請透過 LINE 聯繫',
   },
   book: {

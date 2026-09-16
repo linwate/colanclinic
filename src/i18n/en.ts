@@ -334,7 +334,7 @@ export const en = {
       { day: 'Saturday', time: 'By appointment' },
       { day: 'Sunday', time: 'Closed' },
     ],
-    phone: 'To be confirmed',
+    phone: '(02) 2282-0300',
     emergency: 'For urgent matters, please contact via LINE',
   },
   book: {

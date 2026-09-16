@@ -328,7 +328,7 @@ export const ja = {
       { day: '土曜日', time: '予約制' },
       { day: '日曜日', time: '休診' },
     ],
-    phone: '確認中',
+    phone: '(02) 2282-0300',
     emergency: '急患の方はLINEにてご連絡ください',
   },
   book: {

@@ -2049,23 +2049,21 @@ details[open] .faq-q::after {
   color: #2c2620;
 }
 
-.about-doctor-photo {
-  float: right;
-  margin: 0 0 1.5rem 2rem;
-  border-radius: 12px;
-  overflow: hidden;
-  max-width: 240px;
+.about-doctor-hero {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2rem;
 }
-.about-doctor-img {
-  width: 100%;
+.about-doctor-hero-img {
+  width: 160px;
   height: auto;
+  border-radius: 50%;
   display: block;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 @media (max-width: 600px) {
-  .about-doctor-photo {
-    float: none;
-    margin: 0 auto 1.5rem;
-    max-width: 180px;
+  .about-doctor-hero-img {
+    width: 120px;
   }
 }
 

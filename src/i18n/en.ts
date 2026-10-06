@@ -23,7 +23,7 @@ export const en = {
     title: 'Colan Clinic',
     title2: 'Neurology, Pain Treatment & Regenerative Medicine in Luzhou',
     sub: 'Has the pain gone — or has your body actually healed?  Colan Clinic is located in Luzhou, New Taipei. We combine neurology, pain management, ultrasound-guided injection, and regenerative medicine to help you identify the real cause behind pain, numbness, degeneration, and nerve compression. Assessment first. No pressure to start treatment immediately.',
-    cta: 'Describe your symptoms — get a direction',
+    cta: 'Book a Precision Assessment',
   },
   stats: [
     { num: '200+', label: 'Medical Articles' },
@@ -340,7 +340,7 @@ export const en = {
   book: {
     title: 'Ready to Find Answers?',
     sub: "If your pain has lasted more than 3 months, previous treatments haven't worked, or you want to find the real cause. Start with a precision evaluation.",
-    cta: 'Describe your symptoms — get a direction',
+    cta: 'Book a Precision Assessment',
     cta2: 'Learn about the first visit',
     addr: "No. 6, Ln. 58, Sec. 2, Yong'an N. Rd., Luzhou Dist., New Taipei City",
     hours: 'Mon – Sat｜Pain Medicine・Neurology NHI Clinic・Private Appointments by Reservation',

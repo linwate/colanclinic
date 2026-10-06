@@ -779,7 +779,7 @@ body:has(.announcement-ticker) .hero { padding-top: calc(var(--nav-h) + 2rem + 3
 }
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: rgba(244, 241, 234, 0.1);
 }
@@ -812,7 +812,7 @@ body:has(.announcement-ticker) .hero { padding-top: calc(var(--nav-h) + 2rem + 3
   line-height: 1.5;
 }
 @media (max-width: 768px) {
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(3, 1fr); }
   .stat-item { padding: 1.2rem 0.8rem; }
   .stat-num { font-size: 1.8rem; }
 }
@@ -2445,7 +2445,7 @@ details[open] .faq-q::after {
   }
 
   /* Stats bar */
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(3, 1fr); }
   .stat-item { padding: 1.2rem 0.5rem; }
   .stat-num { font-size: 1.8rem; }
   .stat-label { font-size: 0.7rem; letter-spacing: 0.05em; }
@@ -2583,7 +2583,7 @@ details[open] .faq-q::after {
   .hero-sub { max-width: 100%; }
 
   /* Stats — 2 cols, no overflow clipping (grid sizes items naturally) */
-  .stats-grid { grid-template-columns: repeat(2, 1fr); width: 100%; }
+  .stats-grid { grid-template-columns: repeat(3, 1fr); width: 100%; }
 
   /* Services grids — no overflow clipping; let content wrap */
   .services-grid,

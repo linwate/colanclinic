@@ -28,7 +28,6 @@ export const zh = {
   stats: [
     { num: '200+', label: '專業衛教文章' },
     { num: '10+', label: '年臨床經驗' },
-    { num: '4', label: '服務院區' },
     { num: 'CIPS', label: '國際疼痛認證' },
   ],
   problem: {

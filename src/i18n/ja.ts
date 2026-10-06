@@ -28,7 +28,6 @@ export const ja = {
   stats: [
     { num: '200+', label: '医療衛生記事' },
     { num: '10+', label: '年の臨床経験' },
-    { num: '4', label: '診療拠点' },
     { num: 'CIPS', label: '国際疼痛認定' },
   ],
   problem: {

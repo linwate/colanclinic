@@ -28,7 +28,6 @@ export const en = {
   stats: [
     { num: '200+', label: 'Medical Articles' },
     { num: '10+', label: 'Years Experience' },
-    { num: '4', label: 'Clinic Locations' },
     { num: 'CIPS', label: "Int'l Pain Certification" },
   ],
   problem: {

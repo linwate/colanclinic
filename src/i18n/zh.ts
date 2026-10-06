@@ -312,14 +312,14 @@ export const zh = {
   },
   hours: {
     title: '門診時間',
-    note: '目前採預約制，正式門診時段將於開幕前公告。若想先了解是否適合就診，可透過 LINE 留下症狀與影像資料。',
+    note: '目前採預約制，正式門診時段將於開幕前公告。歡迎透過 LINE 預約或諮詢。',
     slots: [
       { day: '週一至週五', time: '預約制' },
       { day: '週六', time: '預約制' },
       { day: '週日', time: '休診' },
     ],
     phone: '(02) 2282-0300',
-    emergency: '急症請透過 LINE 聯繫',
+    emergency: '急症請撥打 119 或前往急診，本診所 LINE 非 24 小時回覆',
   },
   book: {
     title: '準備好了嗎？',

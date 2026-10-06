@@ -328,14 +328,14 @@ export const en = {
   },
   hours: {
     title: 'Clinic Hours',
-    note: 'Currently by appointment only. Official clinic hours will be announced before opening. Feel free to send your symptoms and imaging reports via LINE in the meantime.',
+    note: 'Appointments are required. Official clinic hours will be announced before opening. You are welcome to contact us via LINE to book or enquire.',
     slots: [
       { day: 'Mon – Fri', time: 'By appointment' },
       { day: 'Saturday', time: 'By appointment' },
       { day: 'Sunday', time: 'Closed' },
     ],
     phone: '(02) 2282-0300',
-    emergency: 'For urgent matters, please contact via LINE',
+    emergency: 'For emergencies, call 119 or go to the nearest emergency room. LINE is not monitored 24 hours.',
   },
   book: {
     title: 'Ready to Find Answers?',

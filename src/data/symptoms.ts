@@ -661,7 +661,7 @@ export const ja: Record<string, LocalizedSymptom> = {
 export const cta = {
   zh: {
     heading: "不確定你的問題是哪一種？",
-    subheading: "如果症狀已經持續一段時間，或是做過治療但沒有明顯改善，建議先透過 LINE 描述狀況。",
+    subheading: "如果症狀已經持續一段時間，或是做過治療但沒有明顯改善，建議先透過 LINE 預約諮詢。",
     description: "醫師會幫你初步判斷方向，再決定是否需要進一步評估。",
     line: { label: "先讓醫師評估", href: "https://line.me/R/ti/p/@twmedpro" },
     email: { label: "Email 詢問", href: "mailto:info@colanclinic.com" },

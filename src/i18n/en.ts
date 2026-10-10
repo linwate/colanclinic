@@ -4,7 +4,7 @@ export const en = {
     description:
       'Colan Clinic in Luzhou, New Taipei combines neurology, pain management, ultrasound-guided injection, and regenerative medicine. We evaluate headaches, numbness, chronic pain, knee degeneration, frozen shoulder, nerve compression, PRP, BMAC, and TAME. NHI and self-pay available. Assessment first, no pressure to treat.',
     keywords:
-      'neurology Luzhou, pain clinic, PRP, prolotherapy, hydrodissection, ultrasound-guided injection, botulinum toxin, needle knife, arterial stiffness, chronic inflammation, regenerative medicine, BMAC, bone marrow concentrate, Dr. Lin Wei-de',
+      'neurology Luzhou, pain clinic, PRP, prolotherapy, hydrodissection, ultrasound-guided injection, botulinum toxin, acupotomy, arterial stiffness, chronic inflammation, regenerative medicine, BMAC, bone marrow concentrate, Dr. Lin Wei-de',
   },
   nav_logo: 'Colan Clinic',
   nav: {
@@ -100,7 +100,7 @@ export const en = {
               { name: 'Ultrasound-Guided Injection', desc: 'Real-time imaging for accurate delivery' },
               { name: 'Prolotherapy', desc: 'Strengthening ligaments and joint stability' },
               { name: 'Botulinum Toxin', desc: 'Advanced option for chronic pain' },
-              { name: 'Needle Knife', desc: 'Integrated structural release' },
+              { name: 'Acupotomy', desc: 'Integrated structural release' },
             ],
           },
           {
@@ -198,8 +198,8 @@ export const en = {
           note: 'World Institute of Pain (WIP): ultrasound-guided interventional pain certification',
         },
         {
-          name: 'Needle Knife Specialist',
-          note: 'Taiwan Needle Knife Medical Association: fascial adhesion release',
+          name: 'Acupotomy Specialist',
+          note: 'Taiwan Acupotomy Medical Association: fascial adhesion release',
         },
       ],
     },

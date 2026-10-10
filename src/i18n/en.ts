@@ -233,7 +233,7 @@ export const en = {
         {
           country: '🇰🇷',
           name: 'IFAAS Lipoaspiration & Fat Transfer Course',
-          desc: 'Fat harvesting, PRP and autologous cell therapy for aesthetics and joint degeneration',
+          desc: 'Fat harvesting and fat transfer techniques',
           link: 'https://twmedpro.tw/202408_korea_liposuction/',
         },
       ],

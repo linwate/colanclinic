@@ -109,7 +109,7 @@ export const ja = {
             items: [
               { name: 'PRP療法', desc: '自己血小板による中・重度組織修復' },
               { name: 'SportVisヒアルロン酸', desc: '軟部組織専用HA、腱・靭帯修復の高度な選択肢' },
-              { name: '骨髄細胞濃縮液（BMAC）', desc: '難治性変性に対する最強の再生オプション' },
+              { name: '骨髄細胞濃縮液（BMAC）', desc: '難治性変性に適した高度な再生オプション' },
               { name: '羊膜基質注射', desc: '天然成長因子による組織再生・抗炎症' },
               { name: '自己脂肪細胞注射', desc: '脂肪由来細胞による関節・組織修復' },
               { name: '微細動脈塞栓術（TAME）', desc: '血管から難治性疼痛をコントロール' },
@@ -215,13 +215,13 @@ export const ja = {
         {
           country: '🇰🇷',
           name: 'Kyoto MSK Ultrasound Asian Meeting 2025',
-          desc: 'アジア筋骨格系超音波国際会議。最新超音波ガイド技術の研修',
+          desc: 'アジア筋骨格系超音波国際会議。超音波ガイド技術の研修',
           link: 'https://twmedpro.tw/kyoto-osaka-msk-ultrasound-2025/',
         },
         {
           country: '🌍',
           name: 'VIPS 2025｜インターベンショナル疼痛シンポジウム',
-          desc: '3日間の集中研修で、最新インターベンショナル疼痛治療技術と臨床応用を学ぶ',
+          desc: '3日間の集中研修で、インターベンショナル疼痛治療技術と臨床応用を学ぶ',
           link: 'https://twmedpro.tw/vips-2025-interventional-pain-symposium-review/',
         },
         {

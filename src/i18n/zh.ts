@@ -109,7 +109,7 @@ export const zh = {
             items: [
               { name: 'PRP 增生療法', desc: '自體血小板促進組織修復，適合中重度損傷' },
               { name: 'SportVis 舒健玻尿酸', desc: '軟組織專用玻尿酸，修復肌腱韌帶的進階選項' },
-              { name: '骨髓細胞濃縮液（BMAC）', desc: '頑固性退化的最強再生選項，自體骨髓萃取' },
+              { name: '骨髓細胞濃縮液（BMAC）', desc: '適合頑固性退化的進階再生選項，自體骨髓萃取' },
               { name: '羊膜基質注射', desc: '天然修復因子，促進組織再生與抗發炎' },
               { name: '自體脂肪細胞注射', desc: '自身脂肪萃取，用於關節修復與組織再生' },
               { name: '微細動脈栓塞（TAME）', desc: '從血管端控制頑固疼痛，退化性關節炎與肌腱病變的進階選項' },
@@ -209,13 +209,13 @@ export const zh = {
         {
           country: '🇰🇷',
           name: 'Kyoto MSK Ultrasound Asian Meeting 2025',
-          desc: '亞洲肌肉骨骼超音波國際研討會，進修最新超音波導引技術',
+          desc: '亞洲肌肉骨骼超音波國際研討會，進修超音波導引技術',
           link: 'https://twmedpro.tw/kyoto-osaka-msk-ultrasound-2025/',
         },
         {
           country: '🌍',
           name: 'VIPS 2025｜介入性疼痛治療國際研討會',
-          desc: '三天密集進修，涵蓋最新介入性疼痛治療技術與臨床應用',
+          desc: '三天密集進修，涵蓋介入性疼痛治療技術與臨床應用',
           link: 'https://twmedpro.tw/vips-2025-interventional-pain-symposium-review/',
         },
         {

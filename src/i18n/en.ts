@@ -109,7 +109,7 @@ export const en = {
             items: [
               { name: 'PRP Therapy', desc: 'Platelet-rich plasma for moderate to severe tissue repair' },
               { name: 'SportVis Hyaluronic Acid', desc: 'Soft tissue HA for tendon and ligament repair' },
-              { name: 'BMAC', desc: 'Bone marrow concentrate - strongest regenerative option' },
+              { name: 'BMAC', desc: 'Bone marrow concentrate - an advanced regenerative option for treatment-resistant degeneration' },
               { name: 'Amniotic Matrix', desc: 'Natural growth factors for tissue repair' },
               { name: 'Autologous Fat Cell Injection', desc: 'Fat-derived cells for joint and tissue repair' },
               { name: 'TAME', desc: 'Vascular-based pain control for refractory arthritis and tendinopathy' },
@@ -227,7 +227,7 @@ export const en = {
         {
           country: '🌍',
           name: 'VIPS 2025 · Interventional Pain Symposium',
-          desc: '3-day intensive training in cutting-edge interventional pain treatment and clinical application',
+          desc: '3-day intensive training in interventional pain treatment techniques and clinical application',
           link: 'https://twmedpro.tw/vips-2025-interventional-pain-symposium-review/',
         },
         {

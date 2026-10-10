@@ -475,11 +475,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     'sportvis': {
       slug: 'sportvis',
       metaTitle: 'SportVis 肌腱韌帶修復注射｜鈷嵐診所・蘆洲疼痛治療',
-      metaDescription: 'SportVis 是台灣 TFDA 唯一核准可用於肌腱與韌帶修復的注射劑，標準療程僅需 2 劑，適合網球肘、腳踝扭傷、旋轉肌損傷等運動傷害。',
+      metaDescription: 'SportVis 是經台灣 TFDA 核准用於肌腱與韌帶修復的注射劑，標準療程僅需 2 劑，適合網球肘、腳踝扭傷、旋轉肌損傷等運動傷害。',
       h1: 'SportVis 肌腱韌帶修復注射',
-      heroSub: '台灣 TFDA 唯一核准的肌腱韌帶修復注射劑，不是潤滑，是修復。',
+      heroSub: '經台灣 TFDA 核准用於肌腱與韌帶修復的注射劑，不是潤滑，是修復。',
       eyebrow: '治療說明',
-      whatIs: 'SportVis 是含有 STABHA（軟組織適應性生物相容玻尿酸）的注射治療，專門針對肌腱和韌帶損傷設計。STABHA 是目前台灣 TFDA 唯一核准可用於肌腱與韌帶修復的玻尿酸製劑，與傳統關節腔潤滑用的玻尿酸完全不同。注射後 STABHA 嵌入受損組織，搭建修復所需的臨時支撐環境，同時發揮控制發炎、促進修復、提供潤滑三大作用。[3]',
+      whatIs: 'SportVis 是含有 STABHA（軟組織適應性生物相容玻尿酸）的注射治療，專門針對肌腱和韌帶損傷設計。STABHA 是經台灣 TFDA 核准可用於肌腱與韌帶修復的玻尿酸製劑，與傳統關節腔潤滑用的玻尿酸完全不同。注射後 STABHA 嵌入受損組織，搭建修復所需的臨時支撐環境，同時發揮控制發炎、促進修復、提供潤滑三大作用。[3]',
       whyImportant: '肌腱和韌帶損傷的修復環境和關節腔不同，需要能滲透軟組織的特殊結構。傳統玻尿酸用於關節潤滑效果良好，但無法有效修復肌腱韌帶。SportVis 的 STABHA 分子結構特別設計，可以嵌入肌腱周圍組織，加速細胞修復、減少疤痕沾黏，幫助運動員和患者更快恢復功能。[1]',
       suitable: [
         '急性或慢性肌腱炎（網球肘、高爾夫球肘、跟腱炎）',
@@ -511,7 +511,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       faqItems: [
         {
           q: 'SportVis 和一般玻尿酸有什麼差別？',
-          a: '一般玻尿酸用於關節腔潤滑，針對退化性關節炎。SportVis 含有 STABHA，專門設計用於肌腱和韌帶周圍軟組織，可以嵌入受損組織促進修復，是 TFDA 唯一核准此適應症的玻尿酸製劑。'
+          a: '一般玻尿酸用於關節腔潤滑，針對退化性關節炎。SportVis 含有 STABHA，專門設計用於肌腱和韌帶周圍軟組織，可以嵌入受損組織促進修復，是經 TFDA 核准此適應症的玻尿酸製劑。'
         },
         {
           q: '需要打幾次？',
@@ -574,7 +574,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "說明起效時間（通常 7–14 天後）",
         "3–6 個月後評估是否需要再次注射",
       ],
-      clinicAdvantage: "林醫師的神經科背景讓他能精準定位神經痛的來源，選擇最有效的注射位置。用於疼痛治療的劑量和位置和美容用途完全不同，需要神經科的診斷基礎。",
+      clinicAdvantage: "林醫師的神經科背景讓他能精準定位神經痛的來源，選擇最適合的注射位置。用於疼痛治療的劑量和位置和美容用途完全不同，需要神經科的診斷基礎。",
       pricingNote: "費用依注射部位和劑量而定，請參考費用說明頁面或透過 LINE 諮詢。",
       faqItems: [
         { q: "肉毒桿菌止痛和美容用有什麼不同？", a: "美容用途針對表情肌，目標是讓皮膚平滑。止痛用途針對疼痛相關的神經或深層肌肉，目標是阻斷疼痛訊號和放鬆痙攣肌肉，位置和劑量完全不同。" },
@@ -868,7 +868,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "bmac": {
       slug: "bmac",
       metaTitle: "BMAC Bone Marrow Concentrate | Colan Clinic · Luzhou Pain Treatment",
-      metaDescription: "BMAC harvests stem cells and growth factors from bone marrow — the most advanced regenerative option, suitable for severe degeneration or cases where PRP has shown limited results.",
+      metaDescription: "BMAC harvests stem cells and growth factors from bone marrow — an advanced regenerative option, suitable for severe degeneration or cases where PRP has shown limited results.",
       h1: "BMAC Bone Marrow Aspirate Concentrate",
       heroSub: "A more potent regenerative source than PRP — for severe joint and tissue degeneration.",
       eyebrow: "Treatment Guide",
@@ -1113,11 +1113,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     'sportvis': {
       slug: 'sportvis',
       metaTitle: 'SportVis Tendon & Ligament Repair | Colan Clinic · Luzhou',
-      metaDescription: 'SportVis is the only TFDA-approved hyaluronic acid injection for tendon and ligament repair. Standard course is just 2 doses — suitable for tennis elbow, ankle sprain, and rotator cuff injuries.',
+      metaDescription: 'SportVis is a TFDA-approved hyaluronic acid injection for tendon and ligament repair. Standard course is just 2 doses — suitable for tennis elbow, ankle sprain, and rotator cuff injuries.',
       h1: 'SportVis Tendon & Ligament Repair',
-      heroSub: 'The only TFDA-approved injectable for tendon and ligament repair — not lubrication, but regeneration.',
+      heroSub: 'A TFDA-approved injectable for tendon and ligament repair — not lubrication, but regeneration.',
       eyebrow: 'Treatment Guide',
-      whatIs: 'SportVis contains STABHA (Soft Tissue Adapted Biocompatible Hyaluronic Acid), an injection treatment specifically designed for tendon and ligament injuries. STABHA is the only hyaluronic acid approved by Taiwan\'s TFDA for the repair of tendons and ligaments — entirely distinct from conventional joint-lubricating hyaluronic acid. Once injected, STABHA embeds into damaged soft tissue, creating a temporary scaffold that supports cellular repair while providing three combined actions: inflammation control, tissue repair, and lubrication. [3]',
+      whatIs: 'SportVis contains STABHA (Soft Tissue Adapted Biocompatible Hyaluronic Acid), an injection treatment specifically designed for tendon and ligament injuries. STABHA is a hyaluronic acid approved by Taiwan\'s TFDA for the repair of tendons and ligaments — entirely distinct from conventional joint-lubricating hyaluronic acid. Once injected, STABHA embeds into damaged soft tissue, creating a temporary scaffold that supports cellular repair while providing three combined actions: inflammation control, tissue repair, and lubrication. [3]',
       whyImportant: 'Tendons and ligaments have a different repair environment from joint cavities and require a formulation that can penetrate soft tissue. Conventional hyaluronic acid lubricates joint surfaces effectively but cannot repair tendons or ligaments. SportVis\'s STABHA molecule is specifically engineered to embed in peritendinous tissue, accelerate cellular repair, reduce scarring and adhesions, and help patients return to function more quickly. [1]',
       suitable: [
         'Acute or chronic tendinopathy (tennis elbow, golfer\'s elbow, Achilles tendinopathy)',
@@ -1149,7 +1149,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       faqItems: [
         {
           q: 'How is SportVis different from regular hyaluronic acid?',
-          a: 'Regular hyaluronic acid is used for joint cavity lubrication in osteoarthritis. SportVis contains STABHA, specifically designed for peritendinous soft tissue — it embeds into damaged tendon and ligament tissue to support repair. It is the only TFDA-approved hyaluronic acid for this indication.'
+          a: 'Regular hyaluronic acid is used for joint cavity lubrication in osteoarthritis. SportVis contains STABHA, specifically designed for peritendinous soft tissue — it embeds into damaged tendon and ligament tissue to support repair. It is a TFDA-approved hyaluronic acid for this indication.'
         },
         {
           q: 'How many injections are needed?',
@@ -1212,7 +1212,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "Explain onset timeline (typically 7–14 days)",
         "Reassess at 3–6 months to determine if repeat injection is needed",
       ],
-      clinicAdvantage: "Dr. Lin's neurology background enables precise localization of neuropathic pain sources, identifying the most effective injection sites. Pain medicine dosing and targets differ entirely from cosmetic use and require a neurological diagnostic foundation.",
+      clinicAdvantage: "Dr. Lin's neurology background enables precise localization of neuropathic pain sources, identifying the most suitable injection sites. Pain medicine dosing and targets differ entirely from cosmetic use and require a neurological diagnostic foundation.",
       pricingNote: "Fees vary by injection site and dosage. Please refer to the pricing page or contact us via LINE.",
       faqItems: [
         { q: "How is pain-use botulinum toxin different from cosmetic use?", a: "Cosmetic use targets facial expression muscles to smooth skin. Pain medicine use targets pain-associated nerves or deep muscles to block pain signals and release spasm. The locations, depths, and dosages are completely different." },
@@ -1475,7 +1475,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "超音波ガイド下で順次神経解套を実施",
         "症状の改善を評価しフォローアップをスケジュール",
       ],
-      clinicAdvantage: "これは林医師の最も差別化された治療です。神経内科トレーニングにより、最も明らかな圧迫部位だけでなく神経の完全な走行を超音波で追跡し、神経全体の健康状態を評価して治療が必要なすべての部位を特定します。",
+      clinicAdvantage: "これは林医師の差別化された治療です。神経内科トレーニングにより、最も明らかな圧迫部位だけでなく神経の完全な走行を超音波で追跡し、神経全体の健康状態を評価して治療が必要なすべての部位を特定します。",
       pricingNote: "神経解套注射の費用は治療部位と対処する神経の数によって異なります。料金ページをご参照ください。",
       faqItems: [
         { q: "神経解套とステロイド注射の違いは？", a: "ステロイドは主に炎症を抑えて一時的な鎮痛を行います。神経解套は水圧で癒着を物理的に剥離し、神経の活動スペースを拡大することで根本原因の解決を目指します。両者を組み合わせることもあります。" },
@@ -1506,7 +1506,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "bmac": {
       slug: "bmac",
       metaTitle: "BMAC骨髄再生療法｜ゴラン診療所・蘆洲疼痛治療",
-      metaDescription: "BMACは骨髄から幹細胞と成長因子を採取します。最も高度な再生治療で、重度の変性やPRPで効果が限られた患者様に適しています。",
+      metaDescription: "BMACは骨髄から幹細胞と成長因子を採取します。高度な再生治療で、重度の変性やPRPで効果が限られた患者様に適しています。",
       h1: "BMAC骨髄再生療法",
       heroSub: "PRPより強力な再生源—重度の関節・組織変性に適した治療。",
       eyebrow: "治療について",
@@ -1751,11 +1751,11 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     'sportvis': {
       slug: 'sportvis',
       metaTitle: 'SportVis 腱・靭帯修復注射｜ゴラン診療所・蘆洲疼痛治療',
-      metaDescription: 'SportVisは台湾TFDAが唯一承認した腱・靭帯修復用ヒアルロン酸注射剤。標準コースはわずか2回、テニス肘・足関節捻挫・腱板損傷などのスポーツ傷害に適しています。',
+      metaDescription: 'SportVisは台湾TFDAが承認した腱・靭帯修復用ヒアルロン酸注射剤。標準コースはわずか2回、テニス肘・足関節捻挫・腱板損傷などのスポーツ傷害に適しています。',
       h1: 'SportVis 腱・靭帯修復注射',
-      heroSub: '台湾TFDA唯一承認の腱・靭帯修復注射剤—潤滑ではなく、修復のために。',
+      heroSub: '台湾TFDA承認の腱・靭帯修復注射剤—潤滑ではなく、修復のために。',
       eyebrow: '治療について',
-      whatIs: 'SportVisはSTABHA（軟部組織適合型生体適合性ヒアルロン酸）を含む注射治療で、腱・靭帯損傷専用に設計されています。STABHAは台湾TFDAが腱・靭帯修復に唯一承認したヒアルロン酸製剤であり、従来の関節腔潤滑用ヒアルロン酸とは全く異なります。注射後、STABHAは損傷した軟部組織に嵌入し、細胞修復を支える一時的な足場を構築しながら、炎症制御・修復促進・潤滑の3つの作用を発揮します。[3]',
+      whatIs: 'SportVisはSTABHA（軟部組織適合型生体適合性ヒアルロン酸）を含む注射治療で、腱・靭帯損傷専用に設計されています。STABHAは台湾TFDAが腱・靭帯修復に承認したヒアルロン酸製剤であり、従来の関節腔潤滑用ヒアルロン酸とは全く異なります。注射後、STABHAは損傷した軟部組織に嵌入し、細胞修復を支える一時的な足場を構築しながら、炎症制御・修復促進・潤滑の3つの作用を発揮します。[3]',
       whyImportant: '腱・靭帯の修復環境は関節腔とは異なり、軟部組織に浸透できる特殊な製剤が必要です。従来のヒアルロン酸は関節面の潤滑に優れますが、腱・靭帯を修復することはできません。SportVisのSTABHA分子は腱周囲組織への嵌入を可能にする特殊設計で、細胞修復を加速し、瘢痕や癒着を軽減し、患者様の機能回復を速めます。[1]',
       suitable: [
         '急性・慢性腱症（テニス肘・ゴルフ肘・アキレス腱症）',
@@ -1787,7 +1787,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       faqItems: [
         {
           q: 'SportVisと通常のヒアルロン酸の違いは？',
-          a: '通常のヒアルロン酸は変形性関節症の関節腔潤滑に使用します。SportVisはSTABHAを含み、腱周囲軟部組織専用に設計されています—損傷した腱・靭帯組織に嵌入して修復を支援します。TFDA唯一承認のヒアルロン酸製剤です。'
+          a: '通常のヒアルロン酸は変形性関節症の関節腔潤滑に使用します。SportVisはSTABHAを含み、腱周囲軟部組織専用に設計されています—損傷した腱・靭帯組織に嵌入して修復を支援します。TFDA承認のヒアルロン酸製剤です。'
         },
         {
           q: '何回必要ですか？',
@@ -1850,7 +1850,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
         "発現時間を説明（通常7〜14日後）",
         "3〜6ヶ月後に再注射の必要性を評価",
       ],
-      clinicAdvantage: "林医師の神経内科背景により、神経痛の発生源を精密に特定し、最も効果的な注射部位を選択できます。疼痛治療に使用する用量と部位は美容用途と完全に異なり、神経内科的な診断基盤が必要です。",
+      clinicAdvantage: "林医師の神経内科背景により、神経痛の発生源を精密に特定し、最適な注射部位を選択できます。疼痛治療に使用する用量と部位は美容用途と完全に異なり、神経内科的な診断基盤が必要です。",
       pricingNote: "費用は注射部位と用量によって異なります。料金ページをご参照いただくか、LINEでお問い合わせください。",
       faqItems: [
         { q: "疼痛用と美容用のボツリヌス毒素の違いは？", a: "美容用途は表情筋を対象とし皮膚を滑らかにします。疼痛治療用途は疼痛関連の神経や深層筋肉を対象とし、疼痛信号を遮断し痙攣筋肉を弛緩させます。部位・深さ・用量が完全に異なります。" },

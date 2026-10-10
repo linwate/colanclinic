@@ -111,7 +111,7 @@ export const en = {
               { name: 'SportVis Hyaluronic Acid', desc: 'Soft tissue HA for tendon and ligament repair' },
               { name: 'BMAC', desc: 'Bone marrow concentrate - an advanced regenerative option for treatment-resistant degeneration' },
               { name: 'Amniotic Matrix', desc: 'Natural growth factors for tissue repair' },
-              { name: 'Autologous Fat Cell Injection', desc: 'Fat-derived cells for joint and tissue repair' },
+              { name: 'Autologous Fat Injection', desc: 'Fat-derived injection; indications confirmed at consultation' },
               { name: 'TAME', desc: 'Vascular-based pain control for refractory arthritis and tendinopathy' },
             ],
           },

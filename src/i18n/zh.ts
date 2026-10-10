@@ -221,7 +221,7 @@ export const zh = {
         {
           country: '🇰🇷',
           name: 'IFAAS 脂肪移植進修',
-          desc: '脂肪抽取、PRP 與自體細胞修復於醫美與關節退化領域之應用',
+          desc: '脂肪抽取與移植技術進修',
           link: 'https://twmedpro.tw/202408_korea_liposuction/',
         },
       ],

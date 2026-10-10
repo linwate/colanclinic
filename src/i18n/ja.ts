@@ -227,7 +227,7 @@ export const ja = {
         {
           country: '🇰🇷',
           name: 'IFAAS 脂肪移植研修',
-          desc: '脂肪採取・PRP・自己細胞修復の美容医療・関節変性への応用',
+          desc: '脂肪採取・移植技術研修',
           link: 'https://twmedpro.tw/202408_korea_liposuction/',
         },
       ],

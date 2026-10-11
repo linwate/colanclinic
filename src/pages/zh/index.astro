@@ -68,8 +68,8 @@ const trainingFlags = ['🇰🇷', '🇯🇵', '🇰🇷', '🌍', '🇰🇷']
         {t.approach.points.map((p, i) => (
           <div class="approach-card">
             <span class="approach-num">{String(i + 1).padStart(2, '0')}</span>
-            <h3 class="approach-label">{p.label}</h3>
-            <p class="approach-text">{p.text}</p>
+            <h3 class="approach-label">{p.title}</h3>
+            <p class="approach-text">{p.desc}</p>
           </div>
         ))}
       </div>

@@ -42,28 +42,19 @@ export const en = {
     close: "The problem isn't effort. It's not finding the real cause.",
   },
   approach: {
-    tag: 'Integrated View',
-    title: 'Pain × Chronic Inflammation × Whole-body Degeneration',
-    title2: 'Three faces of one underlying imbalance',
-    desc: "From a neurologist's clinical perspective, stubborn pain, chronic inflammation and whole-body degeneration aren't usually separate problems — they're interlinked stages on the same axis of imbalance. Colan Clinic integrates assessments across all three so you see the whole picture, not just one symptom at a time.",
+    tag: 'Our Process',
+    title: 'Three Steps to Find the Real Problem',
+    title2: 'Nerve mapping · Ultrasound assessment · You decide',
+    desc: 'Not every pain needs immediate treatment. At Colan Clinic, assessment comes first. You will know exactly where the problem is, what your options are, and what it costs.',
     points: [
-      {
-        label: 'Neurology Lens',
-        text: 'Grounded in headache, dizziness, numbness, insomnia, and post-stroke care, understanding how the nervous system connects to systemic inflammation.',
-      },
-      {
-        label: 'Structural Pain Assessment',
-        text: 'Ultrasound-guided localization of true compression and inflammation sites, not guesswork from imaging reports alone.',
-      },
-      {
-        label: 'Vascular Health',
-        text: 'Non-invasive arterial stiffness testing to capture cardiovascular risk and systemic inflammation markers.',
-      },
+      { title: 'Nerve Mapping', desc: 'Using a neurology background to trace nerve pathways and identify compression and entrapment sites.' },
+      { title: 'Ultrasound Assessment', desc: 'Real-time imaging to confirm the actual condition of tendons, ligaments, joints, and nerves — no waiting for reports.' },
+      { title: 'You Decide', desc: 'After the assessment, your options and fees are explained clearly. You choose — no pressure.' },
     ],
   },
   services: {
     title: 'Services',
-    sub: 'NHI Clinic · Self-Pay Appointment · Signature Integrated Evaluation',
+    sub: 'NHI Clinic · Self-Pay Appointment',
     scopes: {
       nhi: 'NHI',
       private: 'Self-Pay',
@@ -106,27 +97,15 @@ export const en = {
           },
           {
             label: 'Advanced Regeneration',
-            desc: 'For severe degeneration, refractory pain, or cases needing stronger regenerative power',
+            desc: 'For severe degeneration or refractory pain despite repeated treatment',
             items: [
               { name: 'PRP Therapy', desc: 'Platelet-rich plasma for moderate to severe tissue repair' },
               { name: 'SportVis Hyaluronic Acid', desc: 'Soft tissue HA for tendon and ligament repair' },
               { name: 'BMAC', desc: 'Bone marrow concentrate - an advanced regenerative option for treatment-resistant degeneration' },
-              { name: 'Amniotic Matrix', desc: 'Natural growth factors for tissue repair' },
+              { name: 'Amniotic Matrix', desc: 'Contains natural repair factors to support tissue repair and reduce inflammation' },
               { name: 'Autologous Fat Injection', desc: 'Fat-derived injection; indications confirmed at consultation' },
               { name: 'TAME', desc: 'Vascular-based pain control for refractory arthritis and tendinopathy' },
             ],
-          },
-        ],
-      },
-      {
-        key: 'signature',
-        title: 'Signature Integrated Evaluation',
-        desc: "Colan's differentiator: vessels and pain on the same assessment blueprint.",
-        items: [
-          {
-            name: 'Arterial Stiffness × Chronic Pain Integrated Evaluation',
-            desc: 'NHI and self-pay combined as indicated, linking chronic inflammation with the root of pain for a whole-body view.',
-            scope: 'hybrid',
           },
         ],
       },

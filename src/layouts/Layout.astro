@@ -115,6 +115,52 @@ const hreflangOf: Record<Lang, string> = {
   en: 'en',
   ja: 'ja',
 }
+
+// Fonts: request only the sans family this language actually renders with
+// (--sans in global.css is Noto Sans TC, or Noto Sans JP for html[lang="ja"]).
+// Previously all three families were requested on every page, so zh/en pages
+// paid for the JP subset CSS and ja pages for the TC one.
+const sansParam =
+  lang === 'ja'
+    ? 'family=Noto+Sans+JP:wght@400;500;600;700'
+    : 'family=Noto+Sans+TC:wght@400;500;600;700'
+const sansFontHref = `https://fonts.googleapis.com/css2?${sansParam}&display=swap`
+// Noto Serif TC is footer-only (.footer, .footer-brand, .footer-col-title),
+// i.e. always below the fold — loaded async so it never blocks first paint.
+// Noto Serif TC is used only inside the footer, whose text is a bounded set of
+// static strings. Requesting the full family pulled 14 subset files (~1.1 MB)
+// to render a few dozen glyphs, so the request is narrowed to exactly the
+// characters the footer renders, derived at build time from the same strings
+// the markup below uses. Any glyph not in the set falls back to Georgia/serif,
+// so this list must stay in sync with the footer markup.
+const footerSerifStrings = [
+  t.footer.brand,
+  t.footer.tagline,
+  t.footer.addr_label,
+  t.footer.hours_label,
+  t.footer.hours_main,
+  t.footer.hours_sub,
+  t.footer.reservation_note,
+  t.footer.copyright_brand,
+  t.book.addr,
+  'info@colanclinic.com',
+  '©　→',
+  '0123456789',
+  lang === 'zh'
+    ? '主治醫師：林瑋德醫師 →'
+    : lang === 'en'
+      ? 'Physician: Dr. Lin Wei-De →'
+      : '担当医師：林瑋德医師 →',
+  lang === 'en' ? 'Tel: (02) 2282-0300' : lang === 'ja' ? 'TEL: (02) 2282-0300' : '電話：(02) 2282-0300',
+  lang === 'zh'
+    ? '依醫療機構網際網路資訊管理辦法，本網站禁止任何網際網路服務業者擅自轉錄本網站資訊供人點閱。'
+    : lang === 'en'
+      ? "Reproduction of content on this website by internet service providers without prior written consent is prohibited under Taiwan's Medical Institution Internet Information Management Regulations."
+      : '台湾の医療機関インターネット情報管理規則に基づき、本ウェブサイトのコンテンツをインターネットサービス事業者が無断で転載することを禁止します。',
+].join('')
+const serifSubset = [...new Set(footerSerifStrings)].sort().join('')
+const serifFontHref =
+  `https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600&text=${encodeURIComponent(serifSubset)}&display=swap`
 ---
 
 <!DOCTYPE html>
@@ -155,15 +201,17 @@ const hreflangOf: Record<Lang, string> = {
     <link rel="alternate" hreflang="ja" href={`https://colanclinic.com/ja/${pageSegment}`} />
     <link rel="alternate" hreflang="x-default" href={`https://colanclinic.com/zh/${pageSegment}`} />
 
-    <!-- Fonts -->
+    <!-- Fonts: body sans is critical (loaded directly so the fetch starts in
+         the first round trip); footer serif is deferred. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;500;600&display=swap"
+    <link rel="preload" as="style" href={sansFontHref}
       onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href={serifFontHref} media="print"
+      onload="this.onload=null;this.media='all'">
     <noscript>
-      <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;500;600&display=swap">
+      <link rel="stylesheet" href={sansFontHref} />
+      <link rel="stylesheet" href={serifFontHref} />
     </noscript>
 
     <!-- MedicalClinic + Physician structured data -->

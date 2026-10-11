@@ -9,7 +9,7 @@ export const ja = {
   nav_logo: 'ゴラン診療所',
   nav: {
     about: '林医師',
-    approach: '診療の考え方',
+    approach: '評価プロセス',
     services: '診療',
     faq: 'FAQ',
     book: 'ご予約',

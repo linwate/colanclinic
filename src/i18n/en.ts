@@ -9,7 +9,7 @@ export const en = {
   nav_logo: 'Colan Clinic',
   nav: {
     about: 'Dr. Lin',
-    approach: 'Approach',
+    approach: 'Our Process',
     services: 'Services',
     faq: 'FAQ',
     book: 'Book Now',

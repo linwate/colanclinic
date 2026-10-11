@@ -9,7 +9,7 @@ export const zh = {
   nav_logo: '鈷嵐診所',
   nav: {
     about: '關於醫師',
-    approach: '整合視角',
+    approach: '評估流程',
     services: '診療項目',
     faq: '就診常見問題',
     book: '立即預約',

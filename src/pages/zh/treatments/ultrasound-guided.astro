@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro'
+import '../../../styles/article.css'
 import { treatments, treatmentSlugs } from '../../../data/treatments'
 
 const lang = 'zh'
@@ -163,6 +164,17 @@ const data = treatments[lang][slug]
           了解初診說明
         </a>
       </div>
+    </div>
+  </section>
+
+  <section class="art-related">
+    <div class="container">
+      <h2 class="art-related-heading">延伸閱讀</h2>
+      <a href="/zh/articles/ultrasound-guided-injection/" class="art-related-card">
+        <span class="art-related-label">文章</span>
+        <span class="art-related-title">超音波導引注射是什麼？適應症、流程與風險完整說明</span>
+        <span class="art-related-arrow">→</span>
+      </a>
     </div>
   </section>
 </Layout>

@@ -26,7 +26,11 @@ const articles = defineCollection({
     category: z.string(),
     tags: z.array(z.string()),
     summary: z.string(),          // art-summary 用
-    thesis: z.string().optional() // art-thesis 用
+    thesis: z.string().optional(), // art-thesis 用
+    relatedTreatment: z.object({
+      url: z.string(),
+      title: z.string()
+    }).optional()
   })
 })
 

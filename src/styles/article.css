@@ -135,3 +135,122 @@
   .art-body { font-size: 1.05rem; }
   .art-body h2 { font-size: 1.4rem; }
 }
+
+/* ============================================================
+   Cross-links: article <-> treatment, and the home article grid
+   Variable names follow global.css (--line, --bg-card, --bg-alt,
+   --gold, --gold-soft, --ink-mute) rather than the --border/--surface
+   names, which this project does not define.
+   ============================================================ */
+
+.art-related {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+.art-related-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink-mute);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.art-related-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s;
+}
+.art-related-card:hover {
+  background: var(--bg-alt);
+}
+.art-related-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gold);
+  background: var(--gold-soft);
+  padding: 0.2em 0.5em;
+  border-radius: var(--radius);
+  white-space: nowrap;
+}
+.art-related-title {
+  flex: 1;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.art-related-arrow {
+  color: var(--ink-mute);
+}
+
+/* Home articles section */
+.home-articles {
+  padding: 4rem 0;
+  background: var(--bg);
+}
+.home-articles-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cobalt);
+  margin-bottom: 1.5rem;
+}
+.home-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.home-article-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.home-article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+.home-article-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+.home-article-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--cobalt);
+  margin: 0;
+}
+.home-article-summary {
+  font-size: 0.875rem;
+  color: var(--ink-mute);
+  line-height: 1.6;
+  flex: 1;
+  margin: 0;
+}
+.home-article-date {
+  font-size: 0.75rem;
+  color: var(--ink-mute);
+}
+.home-articles-more {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--gold);
+  text-decoration: none;
+}
+.home-articles-more:hover {
+  text-decoration: underline;
+}

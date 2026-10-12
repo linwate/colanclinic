@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro'
+import '../../../styles/article.css'
 import { treatments, treatmentSlugs } from '../../../data/treatments'
 
 const lang = 'en'
@@ -163,6 +164,17 @@ const data = treatments[lang][slug]
           First Visit Guide
         </a>
       </div>
+    </div>
+  </section>
+
+  <section class="art-related">
+    <div class="container">
+      <h2 class="art-related-heading">Further Reading</h2>
+      <a href="/en/articles/ultrasound-guided-injection/" class="art-related-card">
+        <span class="art-related-label">Article</span>
+        <span class="art-related-title">What Is Ultrasound-Guided Injection? Indications, Procedure &amp; FAQ</span>
+        <span class="art-related-arrow">→</span>
+      </a>
     </div>
   </section>
 </Layout>

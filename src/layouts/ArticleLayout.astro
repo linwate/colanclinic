@@ -19,6 +19,7 @@ export interface Props {
     tags: string[]
     summary: string
     thesis?: string
+    relatedTreatment?: { url: string; title: string }
   }
   /** Q/A pairs parsed from the body; drives the FAQPage block. */
   faq?: { question: string; answer: string }[]
@@ -28,9 +29,9 @@ const { lang, data, faq = [] } = Astro.props
 const url = `https://colanclinic.com/${lang}/articles/${data.slug}/`
 
 const label = {
-  zh: { summary: '摘要', thesis: '核心論點', articles: '文章', home: '首頁', by: '作者', orcid: 'ORCID' },
-  en: { summary: 'SUMMARY', thesis: 'KEY POINT', articles: 'Articles', home: 'Home', by: 'By', orcid: 'ORCID' },
-  ja: { summary: '要約', thesis: '要点', articles: '記事', home: 'ホーム', by: '著者', orcid: 'ORCID' },
+  zh: { summary: '摘要', thesis: '核心論點', articles: '文章', home: '首頁', by: '作者', orcid: 'ORCID', related: '相關治療', relatedLabel: '治療項目' },
+  en: { summary: 'SUMMARY', thesis: 'KEY POINT', articles: 'Articles', home: 'Home', by: 'By', orcid: 'ORCID', related: 'Related Treatment', relatedLabel: 'Treatment' },
+  ja: { summary: '要約', thesis: '要点', articles: '記事', home: 'ホーム', by: '著者', orcid: 'ORCID', related: '関連治療', relatedLabel: '治療' },
 }[lang]
 
 const author = lang === 'en' ? data.authorEn : data.author
@@ -121,5 +122,18 @@ const faqPage = faq.length
     <div class="art-body">
       <slot />
     </div>
+
+    {data.relatedTreatment && (
+      <section class="art-related">
+        <div class="container">
+          <h2 class="art-related-heading">{label.related}</h2>
+          <a href={data.relatedTreatment.url} class="art-related-card">
+            <span class="art-related-label">{label.relatedLabel}</span>
+            <span class="art-related-title">{data.relatedTreatment.title}</span>
+            <span class="art-related-arrow">→</span>
+          </a>
+        </div>
+      </section>
+    )}
   </article>
 </Layout>

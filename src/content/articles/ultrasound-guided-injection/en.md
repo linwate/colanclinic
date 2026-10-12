@@ -12,6 +12,9 @@ category: Treatment Guide
 tags: ['ultrasound-guided', 'injection', 'interventional']
 summary: Ultrasound-guided injection uses real-time imaging to guide the needle to the exact target, significantly improving accuracy and reducing complications compared to blind injection.
 thesis: Traditional injections rely on surface landmarks — a best guess. Ultrasound guidance makes the entire needle path visible in real time, which matters most for deep joints, small tendons, and nerve structures.
+relatedTreatment:
+  url: /en/treatments/ultrasound-guided/
+  title: Ultrasound-Guided Interventional Treatment
 ---
 
 ## What Is Ultrasound-Guided Injection?

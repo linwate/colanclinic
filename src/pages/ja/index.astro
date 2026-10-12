@@ -1,10 +1,16 @@
 ---
 import Layout from '../../layouts/Layout.astro'
+import { getCollection } from 'astro:content'
+import '../../styles/article.css'
 import { useTranslations } from '../../i18n'
 
 const lang = 'ja'
 const t = useTranslations(lang)
 type Scope = keyof typeof t.services.scopes
+
+const latestArticles = (await getCollection('articles', (a) => a.data.lang === 'ja'))
+  .sort((a, b) => b.data.publishDate.localeCompare(a.data.publishDate))
+  .slice(0, 3)
 
 const trainingFlags = ['🇰🇷', '🇯🇵', '🇰🇷', '🌍', '🇰🇷']
 ---
@@ -167,6 +173,26 @@ const trainingFlags = ['🇰🇷', '🇯🇵', '🇰🇷', '🌍', '🇰🇷']
       </p>
     </div>
   </section>
+
+  <!-- LATEST ARTICLES -->
+  {latestArticles.length > 0 && (
+    <section class="home-articles">
+      <div class="container">
+        <h2 class="home-articles-heading">最新記事</h2>
+        <div class="home-articles-grid">
+          {latestArticles.map((article) => (
+            <a href={`/ja/articles/${article.data.slug}/`} class="home-article-card">
+              <span class="home-article-category">{article.data.category}</span>
+              <h3 class="home-article-title">{article.data.title}</h3>
+              <p class="home-article-summary">{article.data.summary}</p>
+              <span class="home-article-date">{article.data.publishDate}</span>
+            </a>
+          ))}
+        </div>
+        <a href="/ja/articles/" class="home-articles-more">すべての記事を見る</a>
+      </div>
+    </section>
+  )}
 
   <!-- CLINIC ENVIRONMENT -->
   <section class="clinic-env" id="clinic-env">

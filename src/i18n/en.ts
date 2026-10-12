@@ -154,10 +154,10 @@ export const en = {
     title: 'Clinic Environment',
     sub: 'Opening Nov–Dec 2026 · Design concept images',
     images: [
-      { src: '/images/clinic-exterior.webp', alt: 'Colan Clinic exterior' },
-      { src: '/images/clinic-waiting.webp', alt: 'Colan Clinic waiting room' },
-      { src: '/images/clinic-hall.webp', alt: 'Colan Clinic waiting area' },
-      { src: '/images/clinic-reception.webp', alt: 'Colan Clinic reception' },
+      { src: '/images/clinic-exterior.webp', alt: 'Colan Clinic exterior', width: 1488, height: 717 },
+      { src: '/images/clinic-waiting.webp', alt: 'Colan Clinic waiting room', width: 1816, height: 1333 },
+      { src: '/images/clinic-hall.webp', alt: 'Colan Clinic waiting area', width: 1181, height: 912 },
+      { src: '/images/clinic-reception.webp', alt: 'Colan Clinic reception', width: 1898, height: 1322 },
     ],
   },
   doctor: {

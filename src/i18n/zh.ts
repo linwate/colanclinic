@@ -154,10 +154,10 @@ export const zh = {
     title: '診所環境',
     sub: '2026年11-12月蘆洲開幕・以下為設計示意圖',
     images: [
-      { src: '/images/clinic-exterior.webp', alt: '鈷嵐診所外觀' },
-      { src: '/images/clinic-waiting.webp', alt: '鈷嵐診所候診室' },
-      { src: '/images/clinic-hall.webp', alt: '鈷嵐診所候診區' },
-      { src: '/images/clinic-reception.webp', alt: '鈷嵐診所櫃台' },
+      { src: '/images/clinic-exterior.webp', alt: '鈷嵐診所外觀', width: 1488, height: 717 },
+      { src: '/images/clinic-waiting.webp', alt: '鈷嵐診所候診室', width: 1816, height: 1333 },
+      { src: '/images/clinic-hall.webp', alt: '鈷嵐診所候診區', width: 1181, height: 912 },
+      { src: '/images/clinic-reception.webp', alt: '鈷嵐診所櫃台', width: 1898, height: 1322 },
     ],
   },
   doctor: {

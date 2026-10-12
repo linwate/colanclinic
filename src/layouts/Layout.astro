@@ -26,7 +26,16 @@ const canonical = `https://colanclinic.com/${lang}/${pageSegment}`
 // On a subpage, nav anchors must navigate back to the home page first;
 // on home, anchors are pure fragments.
 const navHome = slug ? `/${lang}/` : ''
-const ogImage = 'https://colanclinic.com/images/doctor.webp'
+// TODO: og images needed: og-treatment.webp, og-symptom.webp
+// Until those exist, treatment and symptom pages fall back to doctor.webp.
+const OG_IMAGES_READY = false
+const ogImageFile =
+  OG_IMAGES_READY && slug.startsWith('treatments/')
+    ? 'og-treatment.webp'
+    : OG_IMAGES_READY && slug.startsWith('symptoms')
+      ? 'og-symptom.webp'
+      : 'doctor.webp'
+const ogImage = `https://colanclinic.com/images/${ogImageFile}`
 
 interface Settings {
   active?: boolean

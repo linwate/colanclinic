@@ -154,10 +154,10 @@ export const ja = {
     title: 'クリニックの環境',
     sub: '2026年11〜12月開院予定・内装イメージ図',
     images: [
-      { src: '/images/clinic-exterior.webp', alt: 'ゴラン診療所外観' },
-      { src: '/images/clinic-waiting.webp', alt: 'ゴラン診療所待合室' },
-      { src: '/images/clinic-hall.webp', alt: 'ゴラン診療所待合エリア' },
-      { src: '/images/clinic-reception.webp', alt: 'ゴラン診療所受付' },
+      { src: '/images/clinic-exterior.webp', alt: 'ゴラン診療所外観', width: 1488, height: 717 },
+      { src: '/images/clinic-waiting.webp', alt: 'ゴラン診療所待合室', width: 1816, height: 1333 },
+      { src: '/images/clinic-hall.webp', alt: 'ゴラン診療所待合エリア', width: 1181, height: 912 },
+      { src: '/images/clinic-reception.webp', alt: 'ゴラン診療所受付', width: 1898, height: 1322 },
     ],
   },
   doctor: {

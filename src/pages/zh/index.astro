@@ -177,7 +177,7 @@ const trainingFlags = ['🇰🇷', '🇯🇵', '🇰🇷', '🌍', '🇰🇷']
       <div class="clinic-env-grid">
         {t.clinicEnv.images.map((img) => (
           <figure class="clinic-env-item">
-            <img src={img.src} alt={img.alt} loading="lazy" decoding="async" />
+            <img src={img.src} alt={img.alt} width={img.width} height={img.height} loading="lazy" decoding="async" />
           </figure>
         ))}
       </div>
@@ -191,7 +191,7 @@ const trainingFlags = ['🇰🇷', '🇯🇵', '🇰🇷', '🌍', '🇰🇷']
         <source srcset="/images/doctor.webp" type="image/webp" />
         <img
           src="/images/doctor.jpg"
-          alt={t.doctor.title}
+          alt="林瑋德醫師 — 鈷嵐診所超音波介入治療專科"
           class="doctor-photo"
           width="280"
           height="360"

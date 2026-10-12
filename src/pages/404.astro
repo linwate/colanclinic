@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+// Served by Cloudflare Pages for any unmatched path, in any language tree.
+// zh is the default locale, so the copy is zh.
+const lang = 'zh' as const
+---
+
+<Layout
+  lang={lang}
+  pathname=""
+  title="找不到頁面 | 鈷嵐診所"
+  description="您要找的頁面可能已移動或不存在。您可以回到鈷嵐診所首頁，或從治療項目與症狀查詢，找到需要的疼痛治療、超音波評估與再生醫學資訊。"
+>
+  <section class="fv-hero">
+    <div class="container">
+      <p class="fv-eyebrow">404</p>
+      <h1>找不到這個頁面</h1>
+      <p class="fv-tagline">您要找的頁面可能已移動或不存在。</p>
+    </div>
+  </section>
+
+  <section class="fv-section">
+    <div class="container">
+      <div class="fv-cta-row">
+        <a href="/zh/" class="fv-cta fv-cta-ghost">回到首頁</a>
+        <a href="/zh/#services" class="fv-cta fv-cta-ghost">治療項目</a>
+        <a href="/zh/symptoms/" class="fv-cta fv-cta-ghost">症狀查詢</a>
+      </div>
+    </div>
+  </section>
+</Layout>

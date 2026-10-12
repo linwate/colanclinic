@@ -238,7 +238,7 @@ export const zh: Record<string, LocalizedSymptom> = {
 
 export const en: Record<string, LocalizedSymptom> = {
   shoulder: {
-    metaTitle: "Shoulder Pain · Frozen Shoulder · Rotator Cuff | Colan Clinic",
+    metaTitle: "Shoulder Pain · Frozen Shoulder | Colan Clinic",
     metaDescription: "Frozen shoulder, rotator cuff tear, subacromial impingement — ultrasound-guided evaluation to find the real cause, non-surgical repair.",
     h1: "Shoulder Pain",
     heroSub: "Shoulder stiff, painful, won't lift? Find out where the problem actually is.",
@@ -264,7 +264,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   neck: {
-    metaTitle: "Neck Pain · Cervical Radiculopathy · Stiff Neck | Colan Clinic",
+    metaTitle: "Neck Pain · Cervical Radiculopathy | Colan Clinic",
     metaDescription: "Cervical nerve compression, cervicogenic headache, myofascial pain — neurology-trained evaluation, ultrasound confirms compression site.",
     h1: "Neck Pain",
     heroSub: "Stiff neck, arm numbness, headaches? Find out if it's coming from your cervical spine.",
@@ -290,7 +290,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   back: {
-    metaTitle: "Lower Back Pain · Disc Herniation · Sacroiliac Joint | Colan Clinic",
+    metaTitle: "Lower Back Pain · Disc Herniation | Colan Clinic",
     metaDescription: "Disc herniation, sacroiliac joint inflammation, myofascial pain — ultrasound pinpoints the compression site, non-surgical repair.",
     h1: "Lower Back Pain",
     heroSub: "Back pain that won't go away? Find the exact compression site first.",
@@ -316,7 +316,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   hip: {
-    metaTitle: "Hip Pain · Piriformis Syndrome · Hip Osteoarthritis | Colan Clinic",
+    metaTitle: "Hip Pain · Piriformis Syndrome | Colan Clinic",
     metaDescription: "Hip joint degeneration, piriformis syndrome, greater trochanteric pain, groin strain — ultrasound evaluation, non-surgical repair.",
     h1: "Hip & Buttock Pain",
     heroSub: "Deep buttock pain, limping, hard to stand up? Pinpoint the problem location first.",
@@ -342,7 +342,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   knee: {
-    metaTitle: "Knee Osteoarthritis · Joint Effusion · Cartilage | Colan Clinic",
+    metaTitle: "Knee Osteoarthritis · Joint Effusion | Colan Clinic",
     metaDescription: "Osteoarthritis, meniscus tear, jumper's knee — from hyaluronic acid to BMAC based on severity, non-surgical repair.",
     h1: "Knee Degeneration",
     heroSub: "Stairs hurt, can't squat, knee swollen? Check the actual condition of cartilage and the joint.",
@@ -368,7 +368,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   foot: {
-    metaTitle: "Plantar Fasciitis · Ankle Sprain · Achilles Tendon | Colan Clinic",
+    metaTitle: "Plantar Fasciitis · Ankle Sprain | Colan Clinic",
     metaDescription: "Plantar fasciitis, ankle sprain, Achilles tendinitis — ultrasound evaluates fascia thickness, from conservative care to PRP repair.",
     h1: "Foot & Ankle Pain",
     heroSub: "Heel pain, unstable ankle? Accurate assessment before effective repair.",
@@ -420,7 +420,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   neuropathy: {
-    metaTitle: "Diabetic Neuropathy · DPN · Postherpetic Neuralgia | Colan Clinic",
+    metaTitle: "Diabetic Neuropathy · DPN | Colan Clinic",
     metaDescription: "Diabetic peripheral neuropathy (DPN), nerve compression, hand and foot numbness — neurology-trained evaluation, ultrasound nerve assessment.",
     h1: "Neuropathy & Nerve Pain",
     heroSub: "Numbness, burning, electric sensations? Find out if it's nerve compression or neuropathy.",
@@ -704,7 +704,7 @@ export const treatmentLink = {
 export const indexMeta = {
   zh: {
     title: "症狀查詢｜鈷嵐診所・蘆洲疼痛治療",
-    description: "肩頸、下背、膝蓋、足部、手肘手腕、神經病變—依症狀找到對應的治療方向。",
+    description: "肩頸、下背、膝蓋、足踝、手肘手腕與神經病變等症狀查詢，依疼痛、痠麻與無力的位置找到對應治療方向，超音波導引精準診斷，位於新北蘆洲。",
     h1: "症狀查詢",
     intro: "選擇最接近你症狀的分類，找到可能的原因和治療方向。"
   },
@@ -716,7 +716,7 @@ export const indexMeta = {
   },
   ja: {
     title: "症状から探す｜ゴラン診療所・蘆洲疼痛治療",
-    description: "肩・腰・膝・足・肘手首・神経障害—症状から適切な治療の方向性を見つける。",
+    description: "肩・腰・膝・足・肘手首・神経障害などの症状から治療の方向性を確認します。痛み・しびれ・脱力を超音波ガイド下に評価する新北市蘆洲のゴラン診療所。",
     h1: "症状から探す",
     intro: "あなたの症状に最も近い分類を選んで、考えられる原因と治療の方向性を確認してください。"
   },

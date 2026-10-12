@@ -816,7 +816,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "nerve-hydrodissection": {
       slug: "nerve-hydrodissection",
-      metaTitle: "Nerve Hydrodissection | Colan Clinic · Luzhou Pain Treatment",
+      metaTitle: "Nerve Hydrodissection | Colan Clinic",
       metaDescription: "Nerve hydrodissection uses saline to release adhesions around compressed nerves, with neurology-trained assessment of double crush syndrome.",
       h1: "Nerve Hydrodissection",
       heroSub: "The nerve is trapped — hydrodissection uses water pressure to release it. This is where neurology training matters.",

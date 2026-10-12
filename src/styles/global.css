@@ -1151,7 +1151,6 @@ body:has(.announcement-ticker) .hero { padding-top: calc(var(--nav-h) + 2rem + 3
   font-weight: 500;
   padding: 0.2rem 0.6rem;
   border-radius: var(--radius);
-  white-space: nowrap;
   letter-spacing: 0.04em;
 }
 .process-type-label.nhi {
@@ -1229,7 +1228,6 @@ body:has(.announcement-ticker) .hero { padding-top: calc(var(--nav-h) + 2rem + 3
   font-weight: 600;
   margin-bottom: 0.45rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 .nhi-item {
   background: rgba(26, 47, 110, 0.06);

@@ -54,7 +54,7 @@ export const ja = {
   },
   services: {
     title: '診療メニュー',
-    sub: '健康保険外来・自費診療（完全予約制）',
+    sub: '健康保険外来・複合評価専門外来',
     scopes: {
       nhi: '保険',
       private: '自費',
@@ -80,8 +80,8 @@ export const ja = {
       },
       {
         key: 'private',
-        title: '自費予約診療',
-        desc: '疼痛修復を軸に、時間をかけて丁寧に診療します。',
+        title: '複合評価専門外来',
+        desc: '診察料 500・超音波評価 600（当日注射治療費用に充当可）。慢性・複合疼痛に対する包括的超音波評価。時間にゆとりを持って対応します。',
         subgroups: [
           {
             label: '精密注射',
@@ -122,7 +122,7 @@ export const ja = {
     sub: '来院前に、何が起こるかを知っておいてください',
     nhiLabel: '健康保険外来',
     nhiNote: '初期スクリーニングと重点的な超音波評価',
-    selfLabel: '自費予約診療',
+    selfLabel: '複合評価専門外来',
     selfNote: '包括的な超音波全体評価、時間に余裕あり',
     moreLink: '詳しくはこちら。初診ガイドとよくある質問 →',
     steps: [
@@ -302,7 +302,7 @@ export const ja = {
     hours_label: '診療時間',
     hours_main: '月〜土',
     hours_sub: '疼痛科・神経科 健保診療',
-    reservation_note: '自費診療はご予約ください',
+    reservation_note: '複合評価専門外来はご予約ください',
     copyright_brand: 'ゴラン診療所｜新北市蘆洲区',
   },
   hours: {
@@ -322,7 +322,7 @@ export const ja = {
     cta: '精密評価を予約する',
     cta2: '初診の流れを確認する',
     addr: '台湾 新北市蘆洲区永安北路二段58巷6号',
-    hours: '月〜土｜疼痛科・神経科 健康保険外来・自費診療は予約制',
+    hours: '月〜土｜疼痛科・神経科 健康保険外来・複合評価専門外来は予約制',
     mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
     mapLabel: '📍 Google マップで経路案内',
     qrLabel: 'QRコードでLINE友だち追加',

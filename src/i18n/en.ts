@@ -54,7 +54,7 @@ export const en = {
   },
   services: {
     title: 'Services',
-    sub: 'NHI Clinic · Self-Pay Appointment',
+    sub: 'NHI Clinic · Complex Assessment Clinic',
     scopes: {
       nhi: 'NHI',
       private: 'Self-Pay',
@@ -80,8 +80,8 @@ export const en = {
       },
       {
         key: 'private',
-        title: 'Private Appointment',
-        desc: 'Pain repair focused. More time for in-depth discussion.',
+        title: 'Complex Assessment Clinic',
+        desc: 'Consultation fee NTD 500 · Ultrasound assessment NTD 600 (applicable toward same-day injection treatment). Comprehensive ultrasound evaluation for chronic or complex pain.',
         subgroups: [
           {
             label: 'Precision Injection',
@@ -122,7 +122,7 @@ export const en = {
     sub: 'Know what to expect before you arrive',
     nhiLabel: 'NHI Consultation',
     nhiNote: 'Quick initial screening with focused ultrasound assessment',
-    selfLabel: 'Private Appointment',
+    selfLabel: 'Complex Assessment Clinic',
     selfNote: 'Comprehensive full ultrasound evaluation with more time',
     moreLink: 'Want to know more? See our full First Visit Guide →',
     steps: [
@@ -328,7 +328,7 @@ export const en = {
     cta: 'Book a Precision Assessment',
     cta2: 'Learn about the first visit',
     addr: "No. 6, Ln. 58, Sec. 2, Yong'an N. Rd., Luzhou Dist., New Taipei City",
-    hours: 'Mon – Sat｜Pain Medicine・Neurology NHI Clinic・Private Appointments by Reservation',
+    hours: 'Mon – Sat｜Pain Medicine・Neurology NHI Clinic・Complex Assessment Clinics by Reservation',
     mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
     mapLabel: '📍 Open Google Maps Navigation',
     qrLabel: 'Scan to add LINE',

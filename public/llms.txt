@@ -1,6 +1,6 @@
 # Colan Clinic (鈷嵐診所) — AI Reading Guide
 # https://colanclinic.com
-# Last updated: 2026-05-11
+# Last updated: 2026-10-13
 
 ## About This Site
 Colan Clinic is a self-pay pain medicine clinic located in Luzhou, New Taipei City, Taiwan.
@@ -53,6 +53,10 @@ Founded by Dr. Lin Wei-De (林瑋德), a physician with neurology training speci
 - Nerve hydrodissection (神經解套注射)
 - Hyaluronic acid injection / SportVis (關節玻尿酸)
 - Botulinum toxin for pain (肉毒桿菌止痛)
+
+## Site Structure
+- 75 indexable pages (25 per language: zh / en / ja), plus a non-indexed 404 page
+- Trilingual metaTitle and metaDescription optimization completed 2026-10-13
 
 ## Content Policy
 - All medical content reviewed by Dr. Lin Wei-De

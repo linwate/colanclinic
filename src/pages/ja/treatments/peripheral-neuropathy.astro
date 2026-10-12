@@ -15,9 +15,16 @@ const data = treatments[lang][slug]
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "HowTo",
+    "@type": "MedicalWebPage",
     "name": data.h1,
     "description": data.whatIs,
+    "about": {
+      "@type": "MedicalCondition",
+      "name": data.h1
+    },
+    "audience": {
+      "@type": "Patient"
+    },
     "step": data.steps.map((step, index) => ({
       "@type": "HowToStep",
       "position": index + 1,

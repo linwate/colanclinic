@@ -328,7 +328,7 @@ export const en = {
     cta: 'Book a Precision Assessment',
     cta2: 'Learn about the first visit',
     addr: "No. 6, Ln. 58, Sec. 2, Yong'an N. Rd., Luzhou Dist., New Taipei City",
-    hours: 'Mon – Sat｜Pain Medicine・Neurology NHI Clinic・Complex Assessment Clinics by Reservation',
+    hours: 'Mon – Sat｜Pain Medicine・Neurology NHI Clinic・Specialist Clinic by Appointment',
     mapLink: 'https://maps.app.goo.gl/WYC9Hb8qjyi6CbLj8',
     mapLabel: '📍 Open Google Maps Navigation',
     qrLabel: 'Scan to add LINE',

@@ -11,6 +11,20 @@ const treatmentLinkData = treatmentLink[lang]
 
 <Layout title={data.metaTitle} description={data.metaDescription} lang={lang} pathname={`symptoms/${slug}`}>
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "MedicalCondition",
+    "name": data.h1,
+    "possibleTreatment": {
+      "@type": "MedicalTherapy",
+      "name": "超音波導引介入治療"
+    },
+    "relevantSpecialty": {
+      "@type": "MedicalSpecialty",
+      "name": "Pain Medicine"
+    }
+  })} />
+
   <section class="fv-hero">
     <div class="container">
       <p class="fv-eyebrow">症狀說明</p>

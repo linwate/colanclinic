@@ -54,7 +54,7 @@ export const en = {
   },
   services: {
     title: 'Services',
-    sub: 'NHI Clinic · Complex Assessment Clinic',
+    sub: 'NHI Clinic · Specialist Clinic',
     scopes: {
       nhi: 'NHI',
       private: 'Self-Pay',
@@ -80,7 +80,7 @@ export const en = {
       },
       {
         key: 'private',
-        title: 'Complex Assessment Clinic',
+        title: 'Specialist Clinic',
         desc: 'Consultation fee NTD 500 · Ultrasound assessment NTD 600 (applicable toward same-day injection treatment). Comprehensive ultrasound evaluation for chronic or complex pain.',
         subgroups: [
           {

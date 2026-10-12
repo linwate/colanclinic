@@ -189,16 +189,12 @@
   color: var(--ink-mute);
 }
 
-/* Home articles section */
+/* Home articles section — .section-title (global.css) supplies the heading
+   style, matching 初診流程 / 診療項目; padding and background match the
+   sibling home sections (.process, .clinic-env). */
 .home-articles {
-  padding: 4rem 0;
+  padding: 3rem 0;
   background: var(--bg);
-}
-.home-articles-heading {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--cobalt);
-  margin-bottom: 1.5rem;
 }
 .home-articles-grid {
   display: grid;

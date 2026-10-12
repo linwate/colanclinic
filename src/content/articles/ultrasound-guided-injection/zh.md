@@ -3,7 +3,7 @@ lang: zh
 slug: ultrasound-guided-injection
 title: 超音波導引注射是什麼？適應症、流程與風險完整說明
 metaTitle: 超音波導引注射是什麼 | 鈷嵐診所
-metaDescription: 超音波導引注射讓醫師即時確認針頭位置，精準治療關節、肌腱與神經。了解適應症、治療流程與常見問題。
+metaDescription: 超音波導引注射讓醫師即時看到針頭位置，精準治療關節、肌腱與神經等深層組織。了解適應症、治療流程與常見問題解答。
 publishDate: '2026-10-13'
 author: 林瑋德醫師
 authorEn: Dr. Lin Wei-De

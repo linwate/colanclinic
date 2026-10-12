@@ -1512,7 +1512,7 @@ body:has(.announcement-ticker) .fv-hero { padding-top: calc(6rem + 40px); }
    ============================================================ */
 .clinic-env {
   padding: 3rem 0;
-  background: #ece8df;
+  background: var(--bg-alt);
 }
 .clinic-env-sub {
   color: var(--ink-mute);

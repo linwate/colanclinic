@@ -19,18 +19,12 @@ const data = treatments[lang][slug]
     "name": data.h1,
     "description": data.whatIs,
     "about": {
-      "@type": "MedicalCondition",
+      "@type": "MedicalProcedure",
       "name": data.h1
     },
     "audience": {
       "@type": "Patient"
-    },
-    "step": data.steps.map((step, index) => ({
-      "@type": "HowToStep",
-      "position": index + 1,
-      "name": `ステップ ${index + 1}`,
-      "text": step
-    }))
+    }
   })} />
 
   <section class="fv-hero">

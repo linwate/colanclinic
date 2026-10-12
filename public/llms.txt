@@ -3,7 +3,7 @@
 # Last updated: 2026-10-13
 
 ## About This Site
-Colan Clinic is a self-pay pain medicine clinic located in Luzhou, New Taipei City, Taiwan.
+Colan Clinic is a 複雜評估特約門診（specialist self-pay clinic） pain medicine clinic located in Luzhou, New Taipei City, Taiwan.
 Founded by Dr. Lin Wei-De (林瑋德), a physician with neurology training specializing in pain medicine, musculoskeletal ultrasound, and regenerative medicine.
 
 ## Core Pages (Priority Reading)
@@ -40,7 +40,7 @@ Founded by Dr. Lin Wei-De (林瑋德), a physician with neurology training speci
 - Physician: 林瑋德醫師 / Dr. Lin Wei-De
 - Specialty: Pain Medicine, Neurology, Regenerative Medicine
 - Location: Luzhou District, New Taipei City, Taiwan
-- Opening: September 2026
+- Opening: Nov–Dec 2026
 - Contact: info@colanclinic.com
 - LINE: @twmedpro
 
@@ -62,4 +62,4 @@ Founded by Dr. Lin Wei-De (林瑋德), a physician with neurology training speci
 - All medical content reviewed by Dr. Lin Wei-De
 - No guaranteed treatment outcomes
 - Assessment-first approach — no pressure sales
-- NHI (健保) and self-pay options available
+- NHI (健保) and 複雜評估特約門診（specialist self-pay clinic） options available

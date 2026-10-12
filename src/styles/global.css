@@ -1489,12 +1489,12 @@ body:has(.announcement-ticker) .fv-hero { padding-top: calc(6rem + 40px); }
   min-width: 180px;
   text-align: center;
 }
-.fv-cta-line { background: #06c755; color: #fff; }
-.fv-cta-line:hover { background: #05b04a; }
+.fv-cta-line { background: #06C755; color: #fff; }
+.fv-cta-line:hover { background: #05B34C; }
 .fv-cta-mail { background: var(--cobalt); color: var(--cobalt-ink); }
 .fv-cta-mail:hover { background: var(--cobalt-light); }
-.fv-cta-wa { background: #25d366; color: #fff; }
-.fv-cta-wa:hover { background: #1fbe5b; }
+.fv-cta-wa { background: #25D366; color: #fff; }
+.fv-cta-wa:hover { background: #21BE5C; }
 .fv-cta-ghost {
   background: transparent;
   color: var(--cobalt);
@@ -2942,7 +2942,10 @@ details[open] .faq-q::after {
 }
 
 .cta-icons-row a:last-child {
-  background-color: #25a244;
+  background-color: #25D366;
+}
+.cta-icons-row a:last-child:hover {
+  background-color: #21BE5C;
 }
 
 .cta-icons-row a:active {

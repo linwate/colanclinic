@@ -81,7 +81,7 @@ export const en = {
       {
         key: 'private',
         title: 'Specialist Clinic',
-        desc: 'Consultation fee NTD 500 · Ultrasound assessment NTD 600 (applicable toward same-day injection treatment). Comprehensive ultrasound evaluation for chronic or complex pain.',
+        desc: 'Consultation fee NTD 500 · Ultrasound assessment NTD 600 per zone; ultrasound fee applicable toward injection in the same zone. Comprehensive ultrasound evaluation for chronic or complex pain.',
         subgroups: [
           {
             label: 'Precision Injection',

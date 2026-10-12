@@ -14,14 +14,15 @@
   /* ink */
   --ink: #1f1f1f;         /* body text */
   --ink-soft: #3d3d3d;    /* dimmer body */
-  --ink-mute: #6b6b6b;    /* muted labels, captions */
+  --ink-mute: #676767;    /* muted labels, captions — AA 4.5:1 on --bg-alt */
   --ink-faint: #9a9892;   /* disabled / meta */
 
   /* brand */
   --cobalt: #1a2f6e;
   --cobalt-light: #2c4594;
   --cobalt-ink: #f4f1ea;  /* foreground on cobalt */
-  --gold: #b8924a;
+  --gold: #7d6331;        /* AA 4.5:1 on the beige surfaces */
+  --gold-on-dark: #c2a264; /* AA 4.5:1 on the cobalt blog cards */
   --gold-soft: rgba(184, 146, 74, 0.12);
 
   /* lines */
@@ -270,7 +271,7 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
 }
 .ticker-sep {
   font-size: 0.95rem;
-  color: rgba(244, 241, 234, 0.55);
+  color: rgba(244, 241, 234, 0.62);
   padding: 0 0.6rem;
   flex-shrink: 0;
 }
@@ -1016,13 +1017,13 @@ body:has(.announcement-ticker) .hero { padding-top: calc(var(--nav-h) + 2rem + 3
 }
 /* Advanced group accent — the last sub-group in the self-pay stack */
 .service-group:last-of-type .service-group-header {
-  border-bottom-color: #2e7d32;
+  border-bottom-color: #2c7730;
 }
-.service-group:last-of-type .service-group-label { color: #2e7d32; }
+.service-group:last-of-type .service-group-label { color: #2c7730; }
 .service-group:last-of-type .service-card { background: #f8fdf8; }
 .service-group:last-of-type .service-card:hover,
 .service-group:last-of-type .service-card:active { background: #ffffff; }
-.service-group:last-of-type .service-name { color: #2e7d32; }
+.service-group:last-of-type .service-name { color: #2c7730; }
 
 @media (max-width: 768px) {
   .service-group-header {
@@ -1159,7 +1160,7 @@ body:has(.announcement-ticker) .hero { padding-top: calc(var(--nav-h) + 2rem + 3
 }
 .process-type-label.self {
   background: #e8f5e9;
-  color: #2e7d32;
+  color: #2c7730;
 }
 .process-type-note {
   font-size: 0.82rem;
@@ -1185,7 +1186,7 @@ body:has(.announcement-ticker) .hero { padding-top: calc(var(--nav-h) + 2rem + 3
   font-size: 2rem;
   font-weight: 700;
   color: var(--cobalt);
-  opacity: 0.25;
+  opacity: 0.55;
   flex-shrink: 0;
   width: 3rem;
   line-height: 1;
@@ -1235,10 +1236,10 @@ body:has(.announcement-ticker) .hero { padding-top: calc(var(--nav-h) + 2rem + 3
 }
 .self-item {
   background: #f0faf0;
-  border-left: 2px solid #2e7d32;
+  border-left: 2px solid #2c7730;
 }
 .nhi-item .split-label { color: var(--cobalt); }
-.self-item .split-label { color: #2e7d32; }
+.self-item .split-label { color: #2c7730; }
 
 @media (max-width: 768px) {
   .process-step { gap: 1rem; }
@@ -1486,12 +1487,12 @@ body:has(.announcement-ticker) .fv-hero { padding-top: calc(6rem + 40px); }
   min-width: 180px;
   text-align: center;
 }
-.fv-cta-line { background: #06c755; color: #fff; }
-.fv-cta-line:hover { background: #05b04a; }
+.fv-cta-line { background: #06C755; color: #fff; }
+.fv-cta-line:hover { background: #05B34C; }
 .fv-cta-mail { background: var(--cobalt); color: var(--cobalt-ink); }
 .fv-cta-mail:hover { background: var(--cobalt-light); }
-.fv-cta-wa { background: #25d366; color: #fff; }
-.fv-cta-wa:hover { background: #1fbe5b; }
+.fv-cta-wa { background: #25D366; color: #fff; }
+.fv-cta-wa:hover { background: #21BE5C; }
 .fv-cta-ghost {
   background: transparent;
   color: var(--cobalt);
@@ -2008,7 +2009,7 @@ details[open] .faq-q::after {
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #8a7960;
+  color: #786a54;
   margin: 0 0 0.5rem;
 }
 .footer-col p {
@@ -2081,7 +2082,7 @@ details[open] .faq-q::after {
 
 .footer-legal {
   font-size: 0.72rem;
-  color: #8a7a6a;
+  color: #77695c;
   margin-top: 1rem;
   padding-top: 0.75rem;
   border-top: 1px solid rgba(26,47,94,0.1);
@@ -2225,7 +2226,7 @@ details[open] .faq-q::after {
 
 .blog-note {
   font-size: 0.85rem;
-  color: rgba(242,240,235,0.55);
+  color: rgba(242,240,235,0.62);
   margin-bottom: 1.5rem;
   line-height: 1.7;
 }
@@ -2301,7 +2302,7 @@ details[open] .faq-q::after {
 }
 .blog-card-tag {
   font-size: 0.72rem;
-  color: var(--gold);
+  color: var(--gold-on-dark);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 700;
@@ -2939,7 +2940,10 @@ details[open] .faq-q::after {
 }
 
 .cta-icons-row a:last-child {
-  background-color: #25a244;
+  background-color: #25D366;
+}
+.cta-icons-row a:last-child:hover {
+  background-color: #21BE5C;
 }
 
 .cta-icons-row a:active {

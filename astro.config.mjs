@@ -3,7 +3,6 @@ import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
-import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
@@ -20,7 +19,6 @@ export default defineConfig({
   },
 
   integrations: [
-    react(),
     sitemap({
       // Exclude the 404 page: it is a real route in the build output but must
       // never be submitted for indexing.

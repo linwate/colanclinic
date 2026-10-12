@@ -2,8 +2,8 @@
 lang: en
 slug: ultrasound-guided-injection
 title: What Is Ultrasound-Guided Injection? Indications, Procedure & Risks
-metaTitle: Ultrasound-Guided Injection | Colan Clinic
-metaDescription: Ultrasound-guided injection allows real-time visualization of the needle, enabling precise treatment of joints, tendons, and nerves. Learn about indications and procedure.
+metaTitle: What Is Ultrasound-Guided Injection? | Colan Clinic
+metaDescription: Ultrasound-guided injection shows the needle in real time, so joints, tendons and nerves are treated precisely. Indications, procedure and FAQs.
 publishDate: '2026-10-13'
 author: 林瑋德醫師
 authorEn: Dr. Lin Wei-De

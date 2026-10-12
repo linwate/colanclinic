@@ -2,8 +2,8 @@
 lang: ja
 slug: ultrasound-guided-injection
 title: 超音波ガイド下注射とは？適応・手順・リスクの完全解説
-metaTitle: 超音波ガイド下注射とは | ゴラン診療所
-metaDescription: 超音波ガイド下注射はリアルタイム画像で針先を確認しながら行う精密注射です。関節・腱・神経への適応や手順を解説します。
+metaTitle: 超音波ガイド下注射とは？ | ゴラン診療所
+metaDescription: 超音波ガイド下注射はリアルタイム画像で針先を確認しながら行う精密注射です。関節・腱・神経への適応、治療の流れとよくある質問を解説します。
 publishDate: '2026-10-13'
 author: 林瑋德醫師
 authorEn: Dr. Lin Wei-De

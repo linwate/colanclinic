@@ -23,7 +23,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "ultrasound-guided": {
       slug: "ultrasound-guided",
       metaTitle: "超音波導引注射｜鈷嵐診所・蘆洲疼痛治療",
-      metaDescription: "超音波導引注射讓醫師在門診即時確認針頭位置，確保藥物精準到達目標位置，是鈷嵐診所所有注射治療的核心工具。",
+      metaDescription: "超音波導引注射讓醫師在門診即時確認針頭位置，確保藥物精準到達目標位置，是鈷嵐診所所有注射治療的核心工具，適用於肩頸、膝蓋與足踝的痠痛評估。",
       h1: "超音波導引注射",
       heroSub: "看得到才打得準，這是所有注射治療的基礎。",
       eyebrow: "治療說明",
@@ -73,7 +73,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "prp": {
       slug: "prp",
       metaTitle: "PRP 高濃度血小板注射｜鈷嵐診所・蘆洲疼痛治療",
-      metaDescription: "PRP 利用自體血液中的生長因子，協助退化的肌腱、關節和神經進行修復，適合中度損傷、反覆發作的慢性疼痛。",
+      metaDescription: "PRP 利用自體血液中的生長因子，協助退化的肌腱、關節和神經進行修復，適合中度損傷、反覆發作的慢性疼痛。新北蘆洲鈷嵐診所於超音波導引下評估注射部位。",
       h1: "PRP 高濃度血小板注射",
       heroSub: "利用自身血液中的生長因子，提供組織修復所需的環境，這是 PRP 的核心概念。",
       eyebrow: "治療說明",
@@ -127,7 +127,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "prolotherapy": {
       slug: "prolotherapy",
       metaTitle: "增生療法（葡萄糖注射）｜鈷嵐診所・蘆洲疼痛治療",
-      metaDescription: "增生療法利用葡萄糖注射刺激組織修復，是入門級再生治療，適合韌帶鬆弛、慢性肌腱疼痛的患者。",
+      metaDescription: "增生療法利用葡萄糖注射刺激組織修復，是入門級再生治療，適合韌帶鬆弛、慢性肌腱疼痛的患者。新北蘆洲鈷嵐診所於超音波導引下確認注射位置。",
       h1: "增生療法",
       heroSub: "用葡萄糖刺激身體自我修復，費用合理的再生治療選擇。",
       eyebrow: "治療說明",
@@ -179,7 +179,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "nerve-hydrodissection": {
       slug: "nerve-hydrodissection",
       metaTitle: "神經解套注射｜鈷嵐診所・蘆洲疼痛治療",
-      metaDescription: "神經解套注射用生理食鹽水分離沾黏的神經，林醫師神經科背景讓雙重夾擠的診斷和治療更精準。",
+      metaDescription: "神經解套注射用生理食鹽水分離沾黏的神經，林醫師神經科背景讓雙重夾擠的診斷和治療更精準，適合手麻、腳麻、灼熱感與無力的蘆洲患者。",
       h1: "神經解套注射",
       heroSub: "神經被卡住了，用水把它鬆開。這是神經科背景才能做好的治療。",
       eyebrow: "治療說明",
@@ -230,7 +230,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "bmac": {
       slug: "bmac",
       metaTitle: "BMAC 骨髓再生療法｜鈷嵐診所・蘆洲疼痛治療",
-      metaDescription: "BMAC 從骨髓抽取修復相關細胞和生長因子，是進階的再生治療選項，適合嚴重退化或 PRP 效果有限的患者。",
+      metaDescription: "BMAC 從骨髓抽取修復相關細胞和生長因子，是進階的再生治療選項，適合嚴重退化或 PRP 效果有限的患者，於新北蘆洲鈷嵐診所超音波導引下施作。",
       h1: "BMAC 骨髓再生療法",
       heroSub: "適合較嚴重損傷的進階再生來源。",
       eyebrow: "治療說明",
@@ -283,7 +283,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     'amniotic-matrix': {
       slug: 'amniotic-matrix',
       metaTitle: '羊膜基質注射｜鈷嵐診所・蘆洲疼痛治療',
-      metaDescription: '羊膜基質注射含豐富生長因子與細胞外基質，不需要自體抽血，單次注射適合關節退化、肌腱損傷與神經修復。',
+      metaDescription: '羊膜基質注射含豐富生長因子與細胞外基質，不需要自體抽血，單次注射適合關節退化、肌腱損傷與神經修復，新北蘆洲鈷嵐診所評估後說明適應症。',
       h1: '羊膜基質注射',
       heroSub: '不需要自體抽血，異體來源的高濃度再生修復成分。',
       eyebrow: '治療說明',
@@ -345,7 +345,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "tame": {
       slug: "tame",
       metaTitle: "TAME 微細動脈栓塞｜鈷嵐診所・蘆洲疼痛治療",
-      metaDescription: "TAME 針對慢性疼痛部位的異常新生血管進行栓塞，從血管根源解決難治性慢性疼痛。",
+      metaDescription: "TAME 針對慢性疼痛部位的異常新生血管進行栓塞，從血管根源解決難治性慢性疼痛，適合久痛不癒的退化性關節炎與肌腱病變患者，蘆洲鈷嵐診所評估。",
       h1: "TAME 微細動脈栓塞",
       heroSub: "痛了很久都沒好？異常新生血管可能是原因之一。",
       eyebrow: "治療說明",
@@ -398,7 +398,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "hyaluronic-acid": {
       slug: "hyaluronic-acid",
       metaTitle: "關節玻尿酸注射｜鈷嵐診所・蘆洲疼痛治療",
-      metaDescription: "關節玻尿酸注射補充關節腔潤滑液，減少摩擦和疼痛。進階高分子量交聯製劑單次注射效果可達 6–12 個月，適合膝蓋退化患者。",
+      metaDescription: "關節玻尿酸注射補充關節腔潤滑液，減少摩擦和疼痛。進階高分子量交聯製劑單次注射效果可達 6–12 個月，蘆洲鈷嵐診所依磨損程度建議劑型。",
       h1: "關節玻尿酸注射",
       heroSub: "補充關節潤滑液，讓退化的關節動得更順。高分子量製劑單次注射效果長達一年。",
       eyebrow: "治療說明",
@@ -475,7 +475,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     'sportvis': {
       slug: 'sportvis',
       metaTitle: 'SportVis 肌腱韌帶修復注射｜鈷嵐診所・蘆洲疼痛治療',
-      metaDescription: 'SportVis 是經台灣 TFDA 核准用於肌腱與韌帶修復的注射劑，標準療程僅需 2 劑，適合網球肘、腳踝扭傷、旋轉肌損傷等運動傷害。',
+      metaDescription: 'SportVis 是經台灣 TFDA 核准用於肌腱與韌帶修復的注射劑，標準療程僅需 2 劑，適合網球肘、腳踝扭傷、旋轉肌損傷，超音波導引下施作。',
       h1: 'SportVis 肌腱韌帶修復注射',
       heroSub: '經台灣 TFDA 核准用於肌腱與韌帶修復的注射劑，不是潤滑，是修復。',
       eyebrow: '治療說明',
@@ -554,7 +554,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "botulinum": {
       slug: "botulinum",
       metaTitle: "肉毒桿菌止痛注射｜鈷嵐診所・蘆洲疼痛治療",
-      metaDescription: "肉毒桿菌用於神經痛和肌肉痙攣的疼痛控制，不是美容用途，適合頑固性神經痛、肌肉緊繃造成的慢性疼痛。",
+      metaDescription: "肉毒桿菌用於神經痛和肌肉痙攣的疼痛控制，不是美容用途，適合頑固性神經痛、肌肉緊繃造成的慢性疼痛與頸肩僵硬，新北蘆洲鈷嵐診所評估後施作。",
       h1: "肉毒桿菌止痛注射",
       heroSub: "肉毒桿菌不只是美容，它也是神經痛和肌肉痙攣的有效止痛工具。",
       eyebrow: "治療說明",
@@ -606,7 +606,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "peripheral-neuropathy": {
       slug: "peripheral-neuropathy",
       metaTitle: "周邊神經痛治療｜鈷嵐診所・蘆洲疼痛治療",
-      metaDescription: "DPN、PHN 等周邊神經痛，林醫師神經科背景結合超音波評估和多種治療工具，提供完整的神經痛治療方案。",
+      metaDescription: "DPN、PHN 等周邊神經痛，林醫師神經科背景結合超音波評估和多種治療工具，提供完整治療方案，改善手腳麻木、刺痛與無力，位於新北蘆洲。",
       h1: "周邊神經痛治療",
       heroSub: "腳麻、燒灼感、像電到一樣的刺痛—這些是神經在發出求救訊號。",
       eyebrow: "治療說明",
@@ -660,8 +660,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
   en: {
     "ultrasound-guided": {
       slug: "ultrasound-guided",
-      metaTitle: "Ultrasound-Guided Injection | Colan Clinic · Luzhou Pain Treatment",
-      metaDescription: "Ultrasound-guided injection allows real-time confirmation of needle placement, ensuring medication reaches the exact target. It is the foundation of all injection treatments at Colan Clinic.",
+      metaTitle: "Ultrasound-Guided Injection | Colan Clinic",
+      metaDescription: "Ultrasound-guided injection allows real-time confirmation of needle placement, ensuring medication reaches the exact target.",
       h1: "Ultrasound-Guided Injection",
       heroSub: "Seeing where you're going is the foundation of accurate injection treatment.",
       eyebrow: "Treatment Guide",
@@ -710,8 +710,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "prp": {
       slug: "prp",
-      metaTitle: "PRP Platelet-Rich Plasma | Colan Clinic · Luzhou Pain Treatment",
-      metaDescription: "PRP uses growth factors from your own blood to support repair of degenerating tendons, joints, and nerves. Suitable for moderate injuries and recurring chronic pain.",
+      metaTitle: "PRP Platelet-Rich Plasma | Colan Clinic",
+      metaDescription: "PRP uses growth factors from your own blood to support repair of degenerating tendons, joints, and nerves. For moderate or recurring pain.",
       h1: "PRP Platelet-Rich Plasma",
       heroSub: "PRP uses growth factors from your own blood to support the body's tissue repair process.",
       eyebrow: "Treatment Guide",
@@ -764,8 +764,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "prolotherapy": {
       slug: "prolotherapy",
-      metaTitle: "Prolotherapy Dextrose Injection | Colan Clinic · Luzhou Pain Treatment",
-      metaDescription: "Prolotherapy uses dextrose injection to stimulate tissue repair — an accessible regenerative treatment option for ligament laxity and chronic tendon pain.",
+      metaTitle: "Prolotherapy Dextrose Injection | Colan Clinic",
+      metaDescription: "Prolotherapy uses dextrose injection to stimulate tissue repair — an accessible regenerative option for ligament laxity and tendon pain.",
       h1: "Prolotherapy",
       heroSub: "Using glucose to trigger the body's own repair response — an accessible regenerative treatment.",
       eyebrow: "Treatment Guide",
@@ -817,7 +817,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "nerve-hydrodissection": {
       slug: "nerve-hydrodissection",
       metaTitle: "Nerve Hydrodissection | Colan Clinic · Luzhou Pain Treatment",
-      metaDescription: "Nerve hydrodissection uses saline to release adhesions around compressed nerves. Dr. Lin's neurology background enables more precise diagnosis and treatment of double crush syndrome.",
+      metaDescription: "Nerve hydrodissection uses saline to release adhesions around compressed nerves, with neurology-trained assessment of double crush syndrome.",
       h1: "Nerve Hydrodissection",
       heroSub: "The nerve is trapped — hydrodissection uses water pressure to release it. This is where neurology training matters.",
       eyebrow: "Treatment Guide",
@@ -867,8 +867,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "bmac": {
       slug: "bmac",
-      metaTitle: "BMAC Bone Marrow Concentrate | Colan Clinic · Luzhou Pain Treatment",
-      metaDescription: "BMAC harvests repair-associated cells and growth factors from bone marrow — an advanced regenerative option, suitable for severe degeneration or cases where PRP has shown limited results.",
+      metaTitle: "BMAC Bone Marrow Concentrate | Colan Clinic",
+      metaDescription: "BMAC harvests repair-associated cells and growth factors from bone marrow — an advanced option for severe degeneration or limited PRP response.",
       h1: "BMAC Bone Marrow Aspirate Concentrate",
       heroSub: "An advanced regenerative source for more severe tissue damage.",
       eyebrow: "Treatment Guide",
@@ -920,8 +920,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     'amniotic-matrix': {
       slug: 'amniotic-matrix',
-      metaTitle: 'Amniotic Matrix Injection | Colan Clinic · Luzhou Pain Treatment',
-      metaDescription: 'Amniotic matrix injection delivers growth factors and extracellular matrix proteins without autologous blood draw — a single-session regenerative option for joint, tendon, and nerve repair.',
+      metaTitle: 'Amniotic Matrix Injection | Colan Clinic',
+      metaDescription: 'Amniotic matrix injection delivers growth factors and matrix proteins with no blood draw — one session for joint, tendon, and nerve repair.',
       h1: 'Amniotic Matrix Injection',
       heroSub: 'No blood draw needed — a rich source of regenerative components from human amniotic tissue.',
       eyebrow: 'Treatment Guide',
@@ -982,7 +982,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "tame": {
       slug: "tame",
-      metaTitle: "TAME Micro-Embolization | Colan Clinic · Luzhou Pain Treatment",
+      metaTitle: "TAME Micro-Embolization | Colan Clinic",
       metaDescription: "TAME targets abnormal neovascularization at chronic pain sites, addressing treatment-resistant chronic pain at its vascular root.",
       h1: "TAME Transcatheter Arterial Micro-Embolization",
       heroSub: "Pain that won't resolve? Abnormal neovascularization may be part of the reason.",
@@ -1035,8 +1035,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "hyaluronic-acid": {
       slug: "hyaluronic-acid",
-      metaTitle: "Hyaluronic Acid Joint Injection | Colan Clinic · Luzhou Pain Treatment",
-      metaDescription: "Hyaluronic acid joint injection replenishes synovial fluid to reduce friction and pain. Advanced high-molecular-weight cross-linked formulations provide up to 6–12 months of relief from a single injection.",
+      metaTitle: "Hyaluronic Acid Joint Injection | Colan Clinic",
+      metaDescription: "Hyaluronic acid joint injection replenishes synovial fluid to reduce friction and pain. High-molecular-weight formulations last 6–12 months.",
       h1: "Hyaluronic Acid Joint Injection",
       heroSub: "Replenishing joint fluid to help a degenerating joint move more smoothly. Advanced high-molecular-weight formulations last up to one year from a single injection.",
       eyebrow: "Treatment Guide",
@@ -1113,7 +1113,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     'sportvis': {
       slug: 'sportvis',
       metaTitle: 'SportVis Tendon & Ligament Repair | Colan Clinic · Luzhou',
-      metaDescription: 'SportVis is a TFDA-approved hyaluronic acid injection for tendon and ligament repair. Standard course is just 2 doses — suitable for tennis elbow, ankle sprain, and rotator cuff injuries.',
+      metaDescription: 'SportVis is a TFDA-approved hyaluronic acid injection for tendon and ligament repair — a standard course of two doses for sprain or tendon pain.',
       h1: 'SportVis Tendon & Ligament Repair',
       heroSub: 'A TFDA-approved injectable for tendon and ligament repair — not lubrication, but regeneration.',
       eyebrow: 'Treatment Guide',
@@ -1191,7 +1191,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "botulinum": {
       slug: "botulinum",
-      metaTitle: "Botulinum Toxin for Pain | Colan Clinic · Luzhou Pain Treatment",
+      metaTitle: "Botulinum Toxin for Pain | Colan Clinic",
       metaDescription: "Botulinum toxin for neuropathic pain and muscle spasm — not cosmetic use. Suitable for refractory nerve pain and chronic pain from muscle tension.",
       h1: "Botulinum Toxin for Pain",
       heroSub: "Botulinum toxin isn't just for cosmetics — it's an effective tool for nerve pain and muscle spasm.",
@@ -1243,8 +1243,8 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     },
     "peripheral-neuropathy": {
       slug: "peripheral-neuropathy",
-      metaTitle: "Peripheral Neuropathy Treatment | Colan Clinic · Luzhou Pain Treatment",
-      metaDescription: "DPN, PHN, and other peripheral neuropathies — Dr. Lin's neurology background combined with ultrasound assessment and multiple treatment tools provides a comprehensive neuropathy treatment approach.",
+      metaTitle: "Peripheral Neuropathy Treatment | Colan Clinic",
+      metaDescription: "DPN, PHN, and other peripheral neuropathies, assessed with neurology training and ultrasound to guide a combined treatment approach.",
       h1: "Peripheral Neuropathy Treatment",
       heroSub: "Numbness, burning, electric sensations — these are your nerves calling for help.",
       eyebrow: "Treatment Guide",
@@ -1349,7 +1349,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "prp": {
       slug: "prp",
       metaTitle: "PRP多血小板血漿療法｜ゴラン診療所・蘆洲疼痛治療",
-      metaDescription: "PRPは自己血液の成長因子を利用して、変性した腱・関節・神経の修復をサポートします。中程度の損傷や慢性疼痛の繰り返しに適しています。",
+      metaDescription: "自己血液の成長因子を利用し、変性した腱・関節・神経の修復をサポートします。蘆洲のゴラン診療所が痛みやしびれを超音波ガイド下に評価します。",
       h1: "PRP多血小板血漿療法",
       heroSub: "自己の血液中の成長因子を活用して、組織修復に必要な環境を整えるのがPRPの基本概念です。",
       eyebrow: "治療について",
@@ -1403,7 +1403,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "prolotherapy": {
       slug: "prolotherapy",
       metaTitle: "増生療法（ブドウ糖注射）｜ゴラン診療所・蘆洲疼痛治療",
-      metaDescription: "増生療法はブドウ糖注射で組織修復を促進します。靭帯弛緩や慢性腱の痛みに適したアクセスしやすい再生治療の選択肢です。",
+      metaDescription: "増生療法はブドウ糖注射で組織修復を促進します。靭帯弛緩や慢性の腱の痛みに適した再生治療です。新北市蘆洲のゴラン診療所で評価します。",
       h1: "増生療法",
       heroSub: "ブドウ糖で体の自己修復を促す—費用対効果の高い再生治療の選択肢。",
       eyebrow: "治療について",
@@ -1455,7 +1455,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "nerve-hydrodissection": {
       slug: "nerve-hydrodissection",
       metaTitle: "神経解套注射（ハイドロリリース）｜ゴラン診療所・蘆洲疼痛治療",
-      metaDescription: "神経解套注射は生理食塩水で癒着した神経を剥離します。林医師の神経内科背景によりダブルクラッシュ症候群の診断と治療がより精密になります。",
+      metaDescription: "神経解套注射は生理食塩水で癒着した神経を剥離します。神経内科背景によりダブルクラッシュ症候群の診断と治療が精密に。しびれやこわばりに対応。",
       h1: "神経解套注射（ハイドロリリース）",
       heroSub: "神経が閉じ込められている—水圧で解放するのが神経解套です。神経内科の背景があってこそできる治療です。",
       eyebrow: "治療について",
@@ -1506,7 +1506,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "bmac": {
       slug: "bmac",
       metaTitle: "BMAC骨髄再生療法｜ゴラン診療所・蘆洲疼痛治療",
-      metaDescription: "BMACは骨髄から修復関連細胞と成長因子を採取します。高度な再生治療で、重度の変性やPRPで効果が限られた患者様に適しています。",
+      metaDescription: "BMACは骨髄から修復関連細胞と成長因子を採取する高度な再生治療。重度の変性やPRPで効果が限られた方に。蘆洲のゴラン診療所で超音波ガイド下に施行。",
       h1: "BMAC骨髄再生療法",
       heroSub: "より重篤な組織損傷に適した高度な再生源。",
       eyebrow: "治療について",
@@ -1621,7 +1621,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "tame": {
       slug: "tame",
       metaTitle: "TAME微細動脈塞栓術｜ゴラン診療所・蘆洲疼痛治療",
-      metaDescription: "TAMEは慢性疼痛部位の異常新生血管を塞栓し、難治性慢性疼痛をその血管的根本から解決します。",
+      metaDescription: "TAMEは慢性疼痛部位の異常新生血管を塞栓し、難治性の痛みを血管的根本から治療します。変形性関節症や腱の痛みが長引く方に。蘆洲のゴラン診療所。",
       h1: "TAME微細動脈塞栓術",
       heroSub: "ずっと治らない痛み？異常新生血管が原因の一つかもしれません。",
       eyebrow: "治療について",
@@ -1830,7 +1830,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
     "botulinum": {
       slug: "botulinum",
       metaTitle: "ボツリヌス毒素疼痛注射｜ゴラン診療所・蘆洲疼痛治療",
-      metaDescription: "神経痛と筋肉痙攣のためのボツリヌス毒素—美容目的ではなく、難治性神経痛や筋緊張による慢性疼痛に適しています。",
+      metaDescription: "神経痛と筋肉痙攣のためのボツリヌス毒素—美容目的ではありません。難治性神経痛や筋緊張による慢性の痛み・こわばりに適しています。蘆洲で対応。",
       h1: "ボツリヌス毒素疼痛注射",
       heroSub: "ボツリヌス毒素は美容だけではありません—神経痛と筋肉痙攣への有効な疼痛ツールです。",
       eyebrow: "治療について",

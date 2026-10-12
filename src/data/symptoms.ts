@@ -28,7 +28,7 @@ export type LocalizedSymptom = {
 export const zh: Record<string, LocalizedSymptom> = {
   shoulder: {
     metaTitle: "肩膀疼痛・五十肩・旋轉肌損傷｜鈷嵐診所・蘆洲疼痛治療",
-    metaDescription: "五十肩、旋轉肌撕裂、肩峰下夾擠，超音波精準評估找出真正原因，非手術修復。",
+    metaDescription: "五十肩、旋轉肌撕裂、肩峰下夾擠，超音波精準評估找出真正原因，非手術修復。新北蘆洲鈷嵐診所提供超音波導引注射、增生療法與 PRP。",
     h1: "肩膀疼痛",
     heroSub: "舉手會痛、夜間痛醒、肩膀卡住？先確認問題在哪裡。",
     introParagraphs: [
@@ -54,7 +54,7 @@ export const zh: Record<string, LocalizedSymptom> = {
   },
   neck: {
     metaTitle: "頸部疼痛・頸椎神經壓迫・落枕｜鈷嵐診所・蘆洲疼痛治療",
-    metaDescription: "頸椎壓迫、頸因性頭痛、頸部肌肉筋膜疼痛，神經科背景精準評估，超音波確認壓迫位置。",
+    metaDescription: "頸椎壓迫、頸因性頭痛、頸部肌肉筋膜疼痛，神經科背景精準評估，超音波確認壓迫位置。新北蘆洲鈷嵐診所處理痠、痛、麻與手部無力。",
     h1: "頸部疼痛",
     heroSub: "脖子僵硬、手麻、頭痛？先確認症狀是否來自頸椎。",
     introParagraphs: [
@@ -80,7 +80,7 @@ export const zh: Record<string, LocalizedSymptom> = {
   },
   back: {
     metaTitle: "下背痛・腰椎椎間盤・薦髂關節｜鈷嵐診所・蘆洲疼痛治療",
-    metaDescription: "腰椎間盤突出、薦髂關節炎、肌肉筋膜疼痛，超音波找出壓迫位置，非手術修復。",
+    metaDescription: "腰椎間盤突出、薦髂關節炎、肌肉筋膜疼痛，超音波找出壓迫位置，非手術修復。新北蘆洲鈷嵐診所提供增生療法與超音波導引注射評估。",
     h1: "下背痛",
     heroSub: "腰痛一直好不了？先找出真正的壓迫位置。",
     introParagraphs: [
@@ -106,7 +106,7 @@ export const zh: Record<string, LocalizedSymptom> = {
   },
   hip: {
     metaTitle: "髖臀疼痛・梨狀肌・髖關節退化｜鈷嵐診所・蘆洲疼痛治療",
-    metaDescription: "髖關節退化、梨狀肌症候群、大轉子疼痛、鼠蹊部拉傷，超音波評估，非手術修復。",
+    metaDescription: "髖關節退化、梨狀肌症候群、大轉子疼痛、鼠蹊部拉傷，超音波評估，非手術修復。新北蘆洲鈷嵐診所針對久坐痠痛與走路無力進行評估。",
     h1: "髖臀疼痛",
     heroSub: "臀部深處痛、走路卡、久坐站起來很難？先確認問題位置。",
     introParagraphs: [
@@ -132,7 +132,7 @@ export const zh: Record<string, LocalizedSymptom> = {
   },
   knee: {
     metaTitle: "膝蓋退化・退化性關節炎・積水｜鈷嵐診所・蘆洲疼痛治療",
-    metaDescription: "退化性關節炎、半月板損傷、跳躍膝，玻尿酸至 BMAC 依程度選擇，非手術修復。",
+    metaDescription: "退化性關節炎、半月板損傷、跳躍膝，玻尿酸至 BMAC 依程度選擇，非手術修復。新北蘆洲鈷嵐診所於超音波導引下評估膝關節磨損。",
     h1: "膝蓋退化",
     heroSub: "上下樓梯痛、蹲不下去、膝蓋腫？先確認軟骨和關節的實際狀況。",
     introParagraphs: [
@@ -158,7 +158,7 @@ export const zh: Record<string, LocalizedSymptom> = {
   },
   foot: {
     metaTitle: "足底筋膜炎・踝關節・跟腱炎｜鈷嵐診所・蘆洲疼痛治療",
-    metaDescription: "足底筋膜炎、腳踝扭傷、跟腱炎，超音波評估筋膜厚度，從保守治療到 PRP 修復。",
+    metaDescription: "足底筋膜炎、腳踝扭傷、跟腱炎，超音波評估筋膜厚度，從保守治療到 PRP 修復。新北蘆洲鈷嵐診所處理晨起第一步疼痛與久站痠痛。",
     h1: "足部疼痛",
     heroSub: "腳跟痛、腳踝不穩定？先評估才能有效修復。",
     introParagraphs: [
@@ -184,7 +184,7 @@ export const zh: Record<string, LocalizedSymptom> = {
   },
   "elbow-wrist": {
     metaTitle: "網球肘・腕隧道・手腕疼痛｜鈷嵐診所・蘆洲疼痛治療",
-    metaDescription: "網球肘、腕隧道症候群、TFCC 損傷、板機指，超音波確認肌腱神經狀態，精準修復。",
+    metaDescription: "網球肘、腕隧道症候群、TFCC 損傷、板機指，超音波確認肌腱神經狀態，精準修復。新北蘆洲鈷嵐診所處理手腕痠痛、手指麻木與無力。",
     h1: "手肘手腕疼痛",
     heroSub: "手肘外側痛、手腕使不上力？打針止痛前，先確認肌腱狀況。",
     introParagraphs: [
@@ -210,7 +210,7 @@ export const zh: Record<string, LocalizedSymptom> = {
   },
   neuropathy: {
     metaTitle: "糖尿病神經痛・DPN・帶狀皰疹後神經痛｜鈷嵐診所・蘆洲疼痛治療",
-    metaDescription: "糖尿病神經病變（DPN）、神經壓迫、手麻腳麻，神經科專科評估，超音波確認神經狀態。",
+    metaDescription: "糖尿病神經病變（DPN）、神經壓迫、手麻腳麻，神經科專科評估，超音波確認神經狀態。新北蘆洲鈷嵐診所處理灼熱、刺痛與無力感。",
     h1: "神經病變",
     heroSub: "腳麻、燒灼感、像電到一樣？先確認是神經壓迫還是神經病變。",
     introParagraphs: [
@@ -238,7 +238,7 @@ export const zh: Record<string, LocalizedSymptom> = {
 
 export const en: Record<string, LocalizedSymptom> = {
   shoulder: {
-    metaTitle: "Shoulder Pain · Frozen Shoulder · Rotator Cuff | Colan Clinic · Luzhou",
+    metaTitle: "Shoulder Pain · Frozen Shoulder · Rotator Cuff | Colan Clinic",
     metaDescription: "Frozen shoulder, rotator cuff tear, subacromial impingement — ultrasound-guided evaluation to find the real cause, non-surgical repair.",
     h1: "Shoulder Pain",
     heroSub: "Shoulder stiff, painful, won't lift? Find out where the problem actually is.",
@@ -394,7 +394,7 @@ export const en: Record<string, LocalizedSymptom> = {
     }
   },
   "elbow-wrist": {
-    metaTitle: "Tennis Elbow · Carpal Tunnel · Wrist Pain | Colan Clinic · Luzhou",
+    metaTitle: "Tennis Elbow · Carpal Tunnel · Wrist Pain | Colan Clinic",
     metaDescription: "Tennis elbow, carpal tunnel syndrome, TFCC injury, trigger finger — ultrasound confirms tendon and nerve status, precise repair.",
     h1: "Elbow & Wrist Pain",
     heroSub: "Outer elbow pain, weak wrist? Check tendon condition before reaching for an injection.",
@@ -450,7 +450,7 @@ export const en: Record<string, LocalizedSymptom> = {
 export const ja: Record<string, LocalizedSymptom> = {
   shoulder: {
     metaTitle: "肩の痛み・五十肩・腱板損傷｜ゴラン診療所・蘆洲疼痛治療",
-    metaDescription: "五十肩、腱板断裂、肩峰下インピンジメント。超音波で正確に評価し、本当の原因を特定します。",
+    metaDescription: "五十肩、腱板断裂、肩峰下インピンジメント。超音波で正確に評価し本当の原因を特定します。新北市蘆洲のゴラン診療所でPRP療法にも対応します。",
     h1: "肩の痛み",
     heroSub: "腕が上がらない、夜間痛、肩が固まる？まず問題の場所を確認しましょう。",
     introParagraphs: [
@@ -476,7 +476,7 @@ export const ja: Record<string, LocalizedSymptom> = {
   },
   neck: {
     metaTitle: "頸部の痛み・頸椎神経根症・寝違え｜ゴラン診療所・蘆洲疼痛治療",
-    metaDescription: "頸椎神経根症、頸因性頭痛、筋膜性疼痛。神経内科専門の評価、超音波で圧迫部位を確認。",
+    metaDescription: "頸椎神経根症、頸因性頭痛、筋膜性疼痛。神経内科専門の評価、超音波で圧迫部位を確認。新北市蘆洲のゴラン診療所が痛み・しびれに対応します。",
     h1: "頸部の痛み",
     heroSub: "首のこわばり、腕のしびれ、頭痛？頸椎から来ているかどうか確認しましょう。",
     introParagraphs: [
@@ -502,7 +502,7 @@ export const ja: Record<string, LocalizedSymptom> = {
   },
   back: {
     metaTitle: "腰痛・椎間板ヘルニア・仙腸関節｜ゴラン診療所・蘆洲疼痛治療",
-    metaDescription: "椎間板ヘルニア、仙腸関節炎、筋膜性疼痛。超音波で圧迫部位を特定し、非手術で修復。",
+    metaDescription: "椎間板ヘルニア、仙腸関節炎、筋膜性疼痛。超音波で圧迫部位を特定し非手術で修復。新北市蘆洲のゴラン診療所が腰の痛み・しびれに対応します。",
     h1: "腰痛・下背部痛",
     heroSub: "なかなか治らない腰痛？まず正確な圧迫部位を特定しましょう。",
     introParagraphs: [
@@ -528,7 +528,7 @@ export const ja: Record<string, LocalizedSymptom> = {
   },
   hip: {
     metaTitle: "股関節痛・梨状筋症候群・変形性股関節症｜ゴラン診療所・蘆洲疼痛治療",
-    metaDescription: "股関節変性、梨状筋症候群、大転子疼痛症候群、鼠径部痛。超音波評価、非手術修復。",
+    metaDescription: "股関節変性、梨状筋症候群、大転子疼痛症候群、鼠径部痛。超音波評価で非手術修復。新北市蘆洲のゴラン診療所が長時間の座位による痛みに対応。",
     h1: "股関節・臀部の痛み",
     heroSub: "臀部深部の痛み、跛行、立ち上がりにくい？まず問題の場所を特定しましょう。",
     introParagraphs: [
@@ -554,7 +554,7 @@ export const ja: Record<string, LocalizedSymptom> = {
   },
   knee: {
     metaTitle: "膝関節症・変形性関節炎・関節水腫｜ゴラン診療所・蘆洲疼痛治療",
-    metaDescription: "変形性膝関節症、半月板損傷、ジャンパー膝。重症度に応じてヒアルロン酸からBMACまで選択。",
+    metaDescription: "変形性膝関節症、半月板損傷、ジャンパー膝。重症度に応じてヒアルロン酸からBMACまで選択。新北市蘆洲のゴラン診療所で超音波ガイド下に治療。",
     h1: "膝関節の変性・疼痛",
     heroSub: "階段が痛い、しゃがめない、膝が腫れる？軟骨と関節の実際の状態を確認しましょう。",
     introParagraphs: [
@@ -580,7 +580,7 @@ export const ja: Record<string, LocalizedSymptom> = {
   },
   foot: {
     metaTitle: "足底筋膜炎・足関節捻挫・アキレス腱症｜ゴラン診療所・蘆洲疼痛治療",
-    metaDescription: "足底筋膜炎、足関節捻挫、アキレス腱炎。超音波で筋膜の厚みを評価し、保存療法からPRPまで。",
+    metaDescription: "足底筋膜炎、足関節捻挫、アキレス腱炎。超音波で筋膜の厚みを評価し、保存療法からPRP療法まで。蘆洲のゴラン診療所が朝一歩目の痛みに対応。",
     h1: "足・足首の痛み",
     heroSub: "踵の痛み、足首の不安定感？正確な評価から始めましょう。",
     introParagraphs: [
@@ -606,7 +606,7 @@ export const ja: Record<string, LocalizedSymptom> = {
   },
   "elbow-wrist": {
     metaTitle: "テニス肘・手根管症候群・手首の痛み｜ゴラン診療所・蘆洲疼痛治療",
-    metaDescription: "テニス肘、手根管症候群、TFCC損傷、ばね指。超音波で腱・神経の状態を確認し精密修復。",
+    metaDescription: "テニス肘、手根管症候群、TFCC損傷、ばね指。超音波で腱・神経の状態を確認し精密修復。新北市蘆洲のゴラン診療所が手のしびれにも対応します。",
     h1: "肘・手首の痛み",
     heroSub: "肘の外側が痛い、手首に力が入らない？注射の前にまず腱の状態を確認しましょう。",
     introParagraphs: [
@@ -632,7 +632,7 @@ export const ja: Record<string, LocalizedSymptom> = {
   },
   neuropathy: {
     metaTitle: "糖尿病性神経障害・DPN・帯状疱疹後神経痛｜ゴラン診療所・蘆洲疼痛治療",
-    metaDescription: "糖尿病性末梢神経障害(DPN)、神経圧迫、手足のしびれ。神経内科専門の評価、超音波で神経状態を確認。",
+    metaDescription: "糖尿病性末梢神経障害(DPN)、神経圧迫、手足のしびれ。神経内科専門の評価と超音波で神経状態を確認。蘆洲のゴラン診療所が灼熱感にも対応します。",
     h1: "神経障害・神経痛",
     heroSub: "しびれ、灼熱感、電気が走る感覚？神経圧迫か神経障害か、まず確認しましょう。",
     introParagraphs: [

@@ -122,7 +122,7 @@ export const en = {
     sub: 'Know what to expect before you arrive',
     nhiLabel: 'NHI Consultation',
     nhiNote: 'Quick initial screening with focused ultrasound assessment',
-    selfLabel: 'Complex Assessment Clinic',
+    selfLabel: 'Specialist Clinic',
     selfNote: 'Comprehensive full ultrasound evaluation with more time',
     moreLink: 'Want to know more? See our full First Visit Guide →',
     steps: [

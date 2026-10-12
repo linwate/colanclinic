@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content'
+import Layout from '../../../layouts/Layout.astro'
+import '../../../styles/article.css'
+
+const lang = 'zh' as const
+
+const articles = (await getCollection('articles', (e) => e.data.lang === 'zh')).sort(
+  (a, b) => (a.data.publishDate < b.data.publishDate ? 1 : -1)
+)
+---
+
+<Layout
+  lang={lang}
+  pathname="articles"
+  title="文章｜鈷嵐診所・蘆洲疼痛治療"
+  description="鈷嵐診所的疼痛治療與再生醫學文章，由林瑋德醫師撰寫，說明超音波導引注射、PRP 等治療的適應症、流程與術後照護。"
+>
+  <section class="fv-hero">
+    <div class="container">
+      <h1>文章</h1>
+      <p class="fv-tagline">由林瑋德醫師撰寫的治療說明與臨床觀點。</p>
+    </div>
+  </section>
+
+  <div class="art-list">
+    {articles.length === 0 && <p class="art-list-empty">目前還沒有文章。</p>}
+    {articles.map((a) => (
+      <article class="art-list-item">
+        <h2><a href={`/zh/articles/${a.data.slug}/`}>{a.data.title}</a></h2>
+        <p class="art-list-meta">
+          <time datetime={a.data.publishDate}>{a.data.publishDate}</time>
+          <span class="art-byline-sep">·</span>{a.data.category}
+        </p>
+        <p class="art-list-summary">{a.data.summary}</p>
+      </article>
+    ))}
+  </div>
+</Layout>

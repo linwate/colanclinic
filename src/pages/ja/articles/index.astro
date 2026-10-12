@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content'
+import Layout from '../../../layouts/Layout.astro'
+import '../../../styles/article.css'
+
+const lang = 'ja' as const
+
+const articles = (await getCollection('articles', (e) => e.data.lang === 'ja')).sort(
+  (a, b) => (a.data.publishDate < b.data.publishDate ? 1 : -1)
+)
+---
+
+<Layout
+  lang={lang}
+  pathname="articles"
+  title="記事｜ゴラン診療所・蘆洲疼痛治療"
+  description="林瑋德医師による疼痛治療・再生医療の記事。超音波ガイド下注射やPRPの適応・手順・術後ケアについて解説します。"
+>
+  <section class="fv-hero">
+    <div class="container">
+      <h1>記事</h1>
+      <p class="fv-tagline">林瑋德医師による治療ガイドと臨床の視点。</p>
+    </div>
+  </section>
+
+  <div class="art-list">
+    {articles.length === 0 && <p class="art-list-empty">記事はまだありません。</p>}
+    {articles.map((a) => (
+      <article class="art-list-item">
+        <h2><a href={`/ja/articles/${a.data.slug}/`}>{a.data.title}</a></h2>
+        <p class="art-list-meta">
+          <time datetime={a.data.publishDate}>{a.data.publishDate}</time>
+          <span class="art-byline-sep">·</span>{a.data.category}
+        </p>
+        <p class="art-list-summary">{a.data.summary}</p>
+      </article>
+    ))}
+  </div>
+</Layout>

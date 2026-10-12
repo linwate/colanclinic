@@ -1,0 +1,125 @@
+---
+import Layout from './Layout.astro'
+import '../styles/article.css'
+import type { Lang } from '../i18n'
+
+export interface Props {
+  lang: Lang
+  /** Article frontmatter (see src/content.config.ts). */
+  data: {
+    slug: string
+    title: string
+    metaTitle: string
+    metaDescription: string
+    publishDate: string
+    author: string
+    authorEn: string
+    orcid: string
+    category: string
+    tags: string[]
+    summary: string
+    thesis?: string
+  }
+  /** Q/A pairs parsed from the body; drives the FAQPage block. */
+  faq?: { question: string; answer: string }[]
+}
+
+const { lang, data, faq = [] } = Astro.props
+const url = `https://colanclinic.com/${lang}/articles/${data.slug}/`
+
+const label = {
+  zh: { summary: '摘要', thesis: '核心論點', articles: '文章', home: '首頁', by: '作者', orcid: 'ORCID' },
+  en: { summary: 'SUMMARY', thesis: 'KEY POINT', articles: 'Articles', home: 'Home', by: 'By', orcid: 'ORCID' },
+  ja: { summary: '要約', thesis: '要点', articles: '記事', home: 'ホーム', by: '著者', orcid: 'ORCID' },
+}[lang]
+
+const author = lang === 'en' ? data.authorEn : data.author
+
+const medicalWebPage = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalWebPage',
+  name: data.title,
+  description: data.metaDescription,
+  url,
+  inLanguage: lang === 'zh' ? 'zh-Hant' : lang,
+  datePublished: data.publishDate,
+  keywords: data.tags.join(', '),
+  author: {
+    '@type': 'Physician',
+    name: data.author,
+    alternateName: data.authorEn,
+    sameAs: `https://orcid.org/${data.orcid}`,
+  },
+  reviewedBy: {
+    '@type': 'Physician',
+    name: data.author,
+    alternateName: data.authorEn,
+    sameAs: `https://orcid.org/${data.orcid}`,
+  },
+  lastReviewed: data.publishDate,
+  audience: { '@type': 'Patient' },
+  publisher: { '@type': 'MedicalClinic', name: '鈷嵐診所', url: 'https://colanclinic.com' },
+}
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: label.home, item: `https://colanclinic.com/${lang}/` },
+    { '@type': 'ListItem', position: 2, name: label.articles, item: `https://colanclinic.com/${lang}/articles/` },
+    { '@type': 'ListItem', position: 3, name: data.title, item: url },
+  ],
+}
+
+const faqPage = faq.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    }
+  : null
+---
+
+<Layout
+  lang={lang}
+  title={data.metaTitle}
+  description={data.metaDescription}
+  pathname={`articles/${data.slug}`}
+>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(medicalWebPage)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumb)} />
+  {faqPage && (
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqPage)} />
+  )}
+
+  <article class="art">
+    <header class="art-header">
+      <p class="art-category">{data.category}</p>
+      <h1>{data.title}</h1>
+      <p class="art-byline">
+        {label.by}：{author}
+        <span class="art-byline-sep">·</span>
+        <time datetime={data.publishDate}>{data.publishDate}</time>
+        <span class="art-byline-sep">·</span>
+        <a href={`https://orcid.org/${data.orcid}`} target="_blank" rel="noopener noreferrer">
+          {label.orcid} {data.orcid}
+        </a>
+      </p>
+    </header>
+
+    <div class="art-summary">
+      <span class="art-summary-label">{label.summary}</span>
+      <p>{data.summary}</p>
+    </div>
+
+    {data.thesis && <p class="art-thesis">{data.thesis}</p>}
+
+    <div class="art-body">
+      <slot />
+    </div>
+  </article>
+</Layout>

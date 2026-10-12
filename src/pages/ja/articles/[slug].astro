@@ -1,0 +1,24 @@
+---
+import { getCollection, render } from 'astro:content'
+import ArticleLayout from '../../../layouts/ArticleLayout.astro'
+
+const lang = 'ja' as const
+
+export async function getStaticPaths() {
+  const entries = await getCollection('articles', (e) => e.data.lang === 'ja')
+  return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+
+// Pull "**Q：…**" blocks out of the raw markdown so the FAQ schema stays in
+// sync with the visible text instead of being maintained separately.
+const faq = [...entry.body.matchAll(/\*\*Q[：:]\s*(.+?)\*\*\s*\n(.+?)(?=\n\s*\n|$)/gs)].map(
+  (m) => ({ question: m[1].trim(), answer: m[2].replace(/\s+/g, ' ').trim() })
+)
+---
+
+<ArticleLayout lang={lang} data={entry.data} faq={faq}>
+  <Content />
+</ArticleLayout>

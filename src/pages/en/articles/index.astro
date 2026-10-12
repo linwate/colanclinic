@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content'
+import Layout from '../../../layouts/Layout.astro'
+import '../../../styles/article.css'
+
+const lang = 'en' as const
+
+const articles = (await getCollection('articles', (e) => e.data.lang === 'en')).sort(
+  (a, b) => (a.data.publishDate < b.data.publishDate ? 1 : -1)
+)
+---
+
+<Layout
+  lang={lang}
+  pathname="articles"
+  title="Articles | Colan Clinic · Luzhou"
+  description="Articles on pain medicine and regenerative treatment by Dr. Lin Wei-De, covering indications, procedures and aftercare for ultrasound-guided injection and PRP."
+>
+  <section class="fv-hero">
+    <div class="container">
+      <h1>Articles</h1>
+      <p class="fv-tagline">Treatment guides and clinical notes by Dr. Lin Wei-De.</p>
+    </div>
+  </section>
+
+  <div class="art-list">
+    {articles.length === 0 && <p class="art-list-empty">No articles yet.</p>}
+    {articles.map((a) => (
+      <article class="art-list-item">
+        <h2><a href={`/en/articles/${a.data.slug}/`}>{a.data.title}</a></h2>
+        <p class="art-list-meta">
+          <time datetime={a.data.publishDate}>{a.data.publishDate}</time>
+          <span class="art-byline-sep">·</span>{a.data.category}
+        </p>
+        <p class="art-list-summary">{a.data.summary}</p>
+      </article>
+    ))}
+  </div>
+</Layout>

@@ -1,0 +1,137 @@
+/* ============================================================
+   Article components (art-*) — shares the global.css palette
+   Mobile first; widths grow at 768px.
+   ============================================================ */
+
+.art {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 var(--pad-x);
+}
+
+/* Header */
+.art-header {
+  padding: 2rem 0 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+.art-category {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  margin: 0 0 0.6rem;
+}
+.art-header h1 {
+  font-size: 1.5rem;
+  line-height: 1.35;
+  color: var(--cobalt);
+  margin: 0 0 0.75rem;
+  text-wrap: balance;
+}
+
+/* Byline */
+.art-byline {
+  font-size: 0.8rem;
+  color: var(--ink-mute);
+  line-height: 1.7;
+  margin: 0;
+}
+.art-byline a {
+  color: var(--ink-mute);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.art-byline a:hover { color: var(--cobalt); }
+.art-byline-sep { margin: 0 0.4rem; color: var(--ink-faint); }
+
+/* Summary box */
+.art-summary {
+  background: var(--bg-alt);
+  border-left: 3px solid var(--cobalt);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.1rem;
+  margin: 1.75rem 0 0;
+}
+.art-summary-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--cobalt);
+  margin: 0 0 0.4rem;
+}
+.art-summary p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+
+/* Thesis / core argument */
+.art-thesis {
+  border-left: 3px solid var(--gold);
+  padding: 0.5rem 0 0.5rem 1.1rem;
+  margin: 1.25rem 0 0;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--ink-soft);
+}
+
+/* Body */
+.art-body {
+  padding: 1.5rem 0 2.5rem;
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--ink);
+}
+.art-body h2 {
+  font-size: 1.2rem;
+  color: var(--cobalt);
+  margin: 2rem 0 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line-soft);
+}
+.art-body h3 { font-size: 1.05rem; color: var(--ink); margin: 1.5rem 0 0.5rem; }
+.art-body p { margin: 0 0 1.1rem; }
+.art-body ul,
+.art-body ol { margin: 0 0 1.1rem; padding-left: 1.4rem; }
+.art-body li { margin: 0 0 0.45rem; }
+.art-body strong { color: var(--cobalt); }
+.art-body a { color: var(--cobalt); text-underline-offset: 2px; }
+.art-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin: 0 0 1.25rem;
+}
+.art-body th,
+.art-body td {
+  border: 1px solid var(--line);
+  padding: 0.55rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+.art-body th { background: var(--bg-alt); font-weight: 600; color: var(--cobalt); }
+.art-table-wrap { overflow-x: auto; }
+
+/* Article list */
+.art-list { max-width: 720px; margin: 0 auto; padding: 1.5rem var(--pad-x) 3rem; }
+.art-list-item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.art-list-item h2 { font-size: 1.1rem; margin: 0 0 0.4rem; line-height: 1.4; }
+.art-list-item h2 a { color: var(--cobalt); text-decoration: none; }
+.art-list-item h2 a:hover { text-decoration: underline; }
+.art-list-meta { font-size: 0.78rem; color: var(--ink-mute); margin: 0 0 0.5rem; }
+.art-list-summary { font-size: 0.92rem; line-height: 1.7; color: var(--ink-soft); margin: 0; }
+.art-list-empty { color: var(--ink-mute); font-size: 0.95rem; }
+
+@media (min-width: 768px) {
+  .art-header { padding: 3rem 0 1.5rem; }
+  .art-header h1 { font-size: 2rem; }
+  .art-body { font-size: 1.05rem; }
+  .art-body h2 { font-size: 1.4rem; }
+}

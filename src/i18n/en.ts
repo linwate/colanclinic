@@ -8,6 +8,7 @@ export const en = {
   },
   nav_logo: 'Colan Clinic',
   nav: {
+    philosophy: 'Our Philosophy',
     about: 'Dr. Lin Wei-De',
     approach: 'Our Process',
     services: 'Treatments',

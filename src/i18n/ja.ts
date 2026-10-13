@@ -8,6 +8,7 @@ export const ja = {
   },
   nav_logo: 'ゴラン診療所',
   nav: {
+    philosophy: '診療理念',
     about: '林医師紹介',
     approach: '評価プロセス',
     services: '診療',

@@ -8,6 +8,7 @@ export const zh = {
   },
   nav_logo: '鈷嵐診所',
   nav: {
+    philosophy: '診所理念',
     about: '醫師介紹',
     approach: '評估流程',
     services: '診療項目',

@@ -97,6 +97,10 @@
 .art-body p { margin: 0 0 1.1rem; }
 .art-body ul,
 .art-body ol { margin: 0 0 1.1rem; padding-left: 1.4rem; }
+/* Tailwind preflight sets `ol,ul,menu{list-style:none}` globally, so markers
+   have to be restored explicitly inside article bodies. */
+.art-body ol { list-style-type: decimal; }
+.art-body ul { list-style-type: disc; }
 .art-body li { margin: 0 0 0.45rem; }
 .art-body strong { color: var(--cobalt); }
 .art-body a { color: var(--cobalt); text-underline-offset: 2px; }

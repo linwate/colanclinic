@@ -8,7 +8,7 @@ export const zh = {
   },
   nav_logo: '鈷嵐診所',
   nav: {
-    about: '關於醫師',
+    about: '醫師介紹',
     approach: '評估流程',
     services: '診療項目',
     faq: '就診常見問題',
@@ -17,6 +17,9 @@ export const zh = {
     treatment_faq: '治療常見問題',
     fees: '費用參考',
     find_symptom: '症狀查詢',
+    clinic: '關於鈷嵐',
+    articles: '衛教文章',
+    testimonials: '治療心得',
   },
   hero: {
     tag: '新北市蘆洲區・神經科・疼痛・再生醫學',

@@ -458,14 +458,27 @@ const serifFontHref =
           <span class="nav-burger-bar"></span>
         </button>
         <div class="nav-links" id="primary-nav-links">
+
+          {/* 關於鈷嵐 */}
           <div class="nav-dropdown">
             <button type="button" class="nav-dropdown-btn" aria-expanded="false" tabindex="0">
-              {t.nav.find_symptom}
-              <span class="nav-dropdown-arrow">▾</span>
+              {t.nav.clinic}<span class="nav-dropdown-arrow">▾</span>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href={`/${lang}/about/`} class="nav-dropdown-item">{t.nav.about}</a>
+              <a href={`/${lang}/first-visit/`} class="nav-dropdown-item">{t.nav.first_visit}</a>
+              <a href={`/${lang}/pricing/`} class="nav-dropdown-item">{t.nav.fees}</a>
+            </div>
+          </div>
+
+          {/* 症狀查詢 */}
+          <div class="nav-dropdown">
+            <button type="button" class="nav-dropdown-btn" aria-expanded="false" tabindex="0">
+              {t.nav.find_symptom}<span class="nav-dropdown-arrow">▾</span>
             </button>
             <div class="nav-dropdown-menu">
               <a href={`/${lang}/symptoms/`} class="nav-dropdown-item nav-dropdown-all">
-                {lang === 'zh' ? '所有症狀查詢 →' : lang === 'en' ? 'All Symptoms →' : '症状一覧 →'}
+                {lang === 'zh' ? '所有症狀 →' : lang === 'en' ? 'All Symptoms →' : '症状一覧 →'}
               </a>
               <hr class="nav-dropdown-divider" />
               {['shoulder','neck','back','hip','knee','foot','elbow-wrist','neuropathy'].map((slug) => (
@@ -475,10 +488,11 @@ const serifFontHref =
               ))}
             </div>
           </div>
+
+          {/* 診療項目 */}
           <div class="nav-dropdown">
             <button type="button" class="nav-dropdown-btn" aria-expanded="false" tabindex="0">
-              {lang === 'zh' ? '治療項目' : lang === 'en' ? 'Treatments' : '治療項目'}
-              <span class="nav-dropdown-arrow">▾</span>
+              {t.nav.services}<span class="nav-dropdown-arrow">▾</span>
             </button>
             <div class="nav-dropdown-menu">
               {treatmentSlugs.map((slug) => (
@@ -488,14 +502,19 @@ const serifFontHref =
               ))}
             </div>
           </div>
-          <a href={`${navHome}#services`}>{t.nav.services}</a>
-          <a href={`/${lang}/pricing/`}>{t.nav.fees}</a>
-          <a href={`/${lang}/about/`}>
-            {lang === 'zh' ? '醫師介紹' : lang === 'en' ? 'About Dr. Lin' : '医師紹介'}
-          </a>
-          <a href={`/${lang}/first-visit/`}>{t.nav.first_visit}</a>
+
+          {/* 衛教文章 */}
+          <a href={`/${lang}/articles/`}>{t.nav.articles}</a>
+
+          {/* 治療心得 */}
+          <a href={`${navHome}#faq`}>{t.nav.testimonials}</a>
+
+          {/* 常見問題 */}
           <a href={`${navHome}#faq`}>{t.nav.faq}</a>
+
+          {/* 立即預約 */}
           <a href={`${navHome}#book`} class="nav-cta">{t.nav.book}</a>
+
         </div>
         <a href={`${navHome}#book`} class="nav-mobile-cta">{t.nav.book}</a>
         <div class="lang-switch" role="group" aria-label="Language">

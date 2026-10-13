@@ -11,7 +11,7 @@ export const zh = {
     about: '醫師介紹',
     approach: '評估流程',
     services: '診療項目',
-    faq: '就診常見問題',
+    faq: '常見問題',
     book: '立即預約',
     first_visit: '初診說明',
     treatment_faq: '治療常見問題',

@@ -28,7 +28,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "看得到才打得準，這是所有注射治療的基礎。",
       eyebrow: "治療說明",
       whatIs: "超音波導引注射是在超音波即時影像的監控下進行注射治療。醫師可以在螢幕上清楚看到針頭位置、目標結構和周圍組織，確保藥物精準到達需要治療的位置，避免傷害周圍神經和血管。",
-      whyImportant: "傳統的盲打注射依靠醫師的解剖知識和手感，即使經驗豐富的醫師也有一定的誤差率。研究顯示，肩膀關節注射若不使用超音波導引，準確率只有約 70%。超音波導引可以將準確率提升到 95% 以上，治療效果更穩定，併發症風險更低。[1][2]",
+      whyImportant: "傳統的盲打注射依靠醫師的解剖知識和手感，即使經驗豐富的醫師也有一定的誤差率。統合分析顯示，超音波導引在深層與細小結構的準確率明顯較高：髖關節約 100% 對比徒手約 72%（Hoeber et al., 2016），肩鎖關節 93.6% 對比 68.2%、二頭肌腱鞘 86.7% 對比 26.7%（Aly et al., 2015）；但肩峰下空間兩者差異不顯著。2024 年的綜合回顧指出，準確率的優勢明確，對長期止痛與功能改善的影響則各研究結果不一（Shen et al., 2024）。",
       suitable: [
         "需要精準注射的深層結構（如關節腔、腱鞘、神經周圍）",
         "體型較大或解剖位置特殊的患者",
@@ -666,7 +666,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "Seeing where you're going is the foundation of accurate injection treatment.",
       eyebrow: "Treatment Guide",
       whatIs: "Ultrasound-guided injection is performed under real-time ultrasound imaging. The physician can clearly see the needle position, target structure, and surrounding tissues on screen, ensuring medication reaches exactly where it is needed while avoiding nerves and blood vessels.",
-      whyImportant: "Traditional blind injections rely on the physician's anatomical knowledge and touch. Even experienced practitioners have a margin of error. Research shows that shoulder joint injections without ultrasound guidance achieve only about 70% accuracy. Ultrasound guidance raises accuracy above 95%, delivering more consistent results and lower complication risk. [1][2]",
+      whyImportant: "Traditional blind injections rely on the physician's anatomical knowledge and touch, and even experienced practitioners have a margin of error. Meta-analyses show ultrasound guidance is markedly more accurate for deep or small structures: about 100% versus 72% for the hip joint (Hoeber et al., 2016), 93.6% versus 68.2% for the acromioclavicular joint and 86.7% versus 26.7% for the biceps tendon sheath (Aly et al., 2015) — though the difference is not significant for the subacromial space. A 2024 umbrella review found the accuracy advantage consistent, while effects on longer-term pain and function varied between studies (Shen et al., 2024).",
       suitable: [
         "Deep structures requiring precise injection (joint cavities, tendon sheaths, nerve perineural spaces)",
         "Patients with larger body types or unusual anatomy",
@@ -1304,7 +1304,7 @@ export const treatments: Record<string, Record<string, TreatmentCard>> = {
       heroSub: "見ながら打つから正確。すべての注射治療の基盤となる技術です。",
       eyebrow: "治療について",
       whatIs: "超音波ガイド下注射は、超音波のリアルタイム画像を見ながら注射治療を行う手技です。医師はモニター上で針先の位置・目標構造・周囲組織を明確に確認しながら、薬剤を必要な場所に正確に届け、神経や血管への損傷を回避します。",
-      whyImportant: "従来のブラインド注射は医師の解剖学的知識と感覚に依存しており、熟練した医師であっても一定の誤差が生じます。研究によると、超音波ガイドなしで行う肩関節注射の正確性はおよそ70%程度です。超音波ガイドにより正確性を95%以上に高め、安定した治療効果と低い合併症リスクを実現します。[1][2]",
+      whyImportant: "従来のブラインド注射は医師の解剖学的知識と感覚に依存しており、熟練した医師であっても一定の誤差が生じます。メタアナリシスでは、深部や細かい構造において超音波ガイドの正確性が明らかに高いことが示されています：股関節は約100%に対し徒手は約72%（Hoeber et al., 2016）、肩鎖関節は93.6%対68.2%、上腕二頭筋腱鞘は86.7%対26.7%（Aly et al., 2015）。ただし肩峰下腔では有意差は認められていません。2024年のアンブレラレビューでは、正確性の優位性は一貫している一方、長期的な除痛と機能改善への影響は研究により結果が異なると報告されています（Shen et al., 2024）。",
       suitable: [
         "精密な注射を要する深部構造（関節腔・腱鞘・神経周囲）",
         "体格が大きい方や解剖学的に特殊な患者様",

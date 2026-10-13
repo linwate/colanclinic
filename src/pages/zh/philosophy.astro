@@ -8,6 +8,55 @@ const description = '林瑋德醫師神經內科背景，專注蘆洲地區慢�
 ---
 
 <Layout {title} {description} {lang} pathname="philosophy">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "第一次看診需要帶什麼資料？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "之前的影像報告（X 光、MRI、超音波）、在其他地方的治療紀錄，以及你自己對這段時間疼痛變化的描述，都有幫助。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "需要自費嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "超音波引導注射、神經動態檢查與再生療程屬於自費項目。一般門診掛號和基本理學檢查可使用健保。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "第一次看診多久？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "通常是 30 到 45 分鐘，病史詢問、理學檢查、超音波評估會在同一次完成。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "PRP 多久才有效果？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "大多數人在注射後二到四週開始有感覺，完整的修復過程大約需要三到六個月。進步速度跟受傷部位、嚴重程度、後續配合情況都有關係。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "打了還是會痛是正常的嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "注射後一到三天的局部不適是正常的，這是組織修復的反應，不代表沒有效果。如果超過一週持續明顯疼痛，需要回診評估。"
+        }
+      }
+    ]
+  }
+  )} />
+
   <section class="fv-section">
     <div class="container">
 

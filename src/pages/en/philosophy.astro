@@ -8,6 +8,55 @@ const description = 'Dr. Lin Wei-De brings neurology training to chronic pain ca
 ---
 
 <Layout {title} {description} {lang} pathname="philosophy">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What should I bring to the first appointment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Previous imaging (X-ray, MRI, ultrasound), records of treatments you've received elsewhere, and your own description of how the pain has changed over time — all of these help."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this clinic self-pay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ultrasound-guided injections, nerve dynamic assessment, and regenerative therapies are self-pay. Basic consultation and physical examination are covered by NHI."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long is the first visit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually 30 to 45 minutes. History, physical examination, and ultrasound assessment are all done in one visit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When does PRP start to work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most patients begin to notice a difference two to four weeks after injection. Full tissue repair takes around three to six months. The timeline varies with injury site, severity, and how well loading is managed afterward."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it normal to still feel pain after the injection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some local discomfort in the first one to three days is expected — it reflects the tissue repair process, not a sign of failure. If significant pain continues beyond one week, come back for reassessment."
+        }
+      }
+    ]
+  }
+  )} />
+
   <section class="fv-section">
     <div class="container">
 

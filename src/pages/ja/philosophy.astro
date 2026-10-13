@@ -8,6 +8,55 @@ const description = '林瑋德医師の神経内科バックグラウンドを�
 ---
 
 <Layout {title} {description} {lang} pathname="philosophy">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "初診時に持参するものは？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "これまでの画像検査（レントゲン・MRI・超音波）、他院での治療記録、そして自分自身の痛みの経過についての説明があると診察がスムーズです。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "自費診療ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "超音波ガイド下注射・神経動態検査・再生療法は自費診療です。基本的な診察と理学検査は健保が適用されます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "初診の所要時間は？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "通常30〜45分です。問診・理学検査・超音波評価を1回の受診で行います。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "PRPはいつ効果が出ますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "多くの方は注射後2〜4週間で変化を感じ始めます。組織の完全な修復には3〜6ヶ月かかります。部位・重症度・その後の管理状況によって異なります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "注射後もまだ痛いのは正常ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "注射後1〜3日間の局所的な不快感は正常な組織修復反応で、効果がないサインではありません。1週間を超えて強い痛みが続く場合は受診してください。"
+        }
+      }
+    ]
+  }
+  )} />
+
   <section class="fv-section">
     <div class="container">
 
